@@ -117,62 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iconamoon--eye-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconamoon--eye-light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hugeicons--analytics-03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hugeicons--analytics-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wallpaper_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpaper_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="radix-icons--people1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\radix-icons--people1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jam--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--delete-outline-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--delete-outline-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jam--write (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--write (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="uil--clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\uil--clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="uil--setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\uil--setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabler--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabler--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jam--write" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--write.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--delete-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--delete-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic--baseline-tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic--baseline-tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lucide--search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lucide--search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--add-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--add-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabler--ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabler--ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="radix-icons--people" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\radix-icons--people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jam--write (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--write (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--square-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--square-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="kryptonContextMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="Movie.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Type.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Duration.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Showtimes.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="editBtn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="iconSpec1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGjSURBVEhL3ZXNK6ZRGMZ/NTsl2UnKR0TJhqnBzMJfYKWUYSMWYjHKYpqNvZ2Flb/CzpQmWwnJ
+        V7NGvvI9xNQM3boe3e6e531fsuFXp55znftc9/l4zjnwhigFqqP4WnwGLoE7YDQ2RoqBdqDDlcoY5PgC
+        XAH/gBMl+R6DjA/AhAJiuVB7xMyvZd4FVAAHwH4MNL45wyVg3pWpGAy0aVn+A93SPgE3wFqIfWAduAU+
+        xoYUWp35V2nW71xaZ4h/4C+wEsUUbJR/NNM+aS3OvDfEP2IdFqMYaHYj75fWBJxpH5LZpJIvgZmbkcV5
+        8+NCzI1cCbz5kLQGmft9yElWgizzw7BUeUlLkKyvtdlvbLzI3DCTBVdPlsD0MWl1OkimDbhYowQoC9oT
+        YoJJaeOq1wJ70gZdXMIc8DuKnrhEOzp4RUCVM89alk1dG5n4GdSrvgv8VCK/yWls6NLLxCcYUT0py0BP
+        iI/kTWBHfUvftsGzwA+gJsRlsa0ZZ/JLo01uxucwrL4zscHT6P75eF3nKqvqc1TIk1kOTLvnr5Byql/a
+        3uR3yD36j5jQlndVjQAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>
