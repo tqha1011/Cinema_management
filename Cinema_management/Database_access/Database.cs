@@ -41,7 +41,7 @@ namespace Cinema_management.DAL
             return new SqlConnection(connectionString);
         }
 
-        public DataTable readData(string query, SqlParameter[] parameters = null)
+        public DataTable ReadData(string query, SqlParameter[] parameters = null)
         {
             DataTable dataTable = new DataTable();
             if(string.IsNullOrEmpty(connectionString))
@@ -75,7 +75,7 @@ namespace Cinema_management.DAL
             return dataTable;
         }
 
-        public bool changeData(string query, SqlParameter[] parameters = null)
+        public bool ChangeData(string query, SqlParameter[] parameters = null)
         {
             bool success = false;
             if (string.IsNullOrEmpty(connectionString)) // kiểm tra chuỗi kết nối
