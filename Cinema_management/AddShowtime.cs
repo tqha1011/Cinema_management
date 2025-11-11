@@ -7,18 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Krypton.Toolkit;
 
 namespace Cinema_management
 {
-    public partial class Form1 : KryptonForm
+    public partial class AddShowtime : UserControl
     {
-        public Form1()
+        public AddShowtime()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void kryptonLabel2_Click(object sender, EventArgs e)
         {
 
         }

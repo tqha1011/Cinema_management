@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Krypton.Toolkit;
 
 namespace Cinema_management
 {
-    public partial class Form1 : KryptonForm
+    public partial class UCRooms : UserControl
     {
-        public Form1()
+        public UCRooms()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
