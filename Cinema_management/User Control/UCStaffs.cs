@@ -21,5 +21,11 @@ namespace Cinema_management
         {
 
         }
+
+        private void btnAddStaff_Click(object sender, EventArgs e)
+        {
+            AddStaff addStaff = new AddStaff();
+
+        }
     }
 }
