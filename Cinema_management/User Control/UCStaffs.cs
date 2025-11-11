@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cinema_management.Staff_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,8 +25,8 @@ namespace Cinema_management
 
         private void btnAddStaff_Click(object sender, EventArgs e)
         {
-            AddStaff addStaff = new AddStaff();
-
+            AddStaff_popup addStaffPopup = new AddStaff_popup();
+            addStaffPopup.ShowDialog(this); // Hien thi Usercontrol AddStaff trong mot popup
         }
     }
 }

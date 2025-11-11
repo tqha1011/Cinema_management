@@ -96,11 +96,17 @@
     <Compile Include="RoomCardControl.Designer.cs">
       <DependentUpon>RoomCardControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddStaff.cs">
+    <Compile Include="Staff Management\AddStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddStaff.Designer.cs">
+    <Compile Include="Staff Management\AddStaff.Designer.cs">
       <DependentUpon>AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Management\AddStaff_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Management\AddStaff_popup.Designer.cs">
+      <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UCStaffs.cs">
       <SubType>UserControl</SubType>
@@ -172,8 +178,11 @@
     <EmbeddedResource Include="RoomCardControl.resx">
       <DependentUpon>RoomCardControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddStaff.resx">
+    <EmbeddedResource Include="Staff Management\AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
+      <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCStaffs.resx">
       <DependentUpon>UCStaffs.cs</DependentUpon>
@@ -196,6 +205,7 @@
     <EmbeddedResource Include="User Control\UCTickets1.resx">
       <DependentUpon>UCTickets1.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -207,11 +217,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Logic\" />

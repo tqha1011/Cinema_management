@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Krypton.Toolkit.IconSpec iconSpec11 = new Krypton.Toolkit.IconSpec();
+            Krypton.Toolkit.IconSpec iconSpec5 = new Krypton.Toolkit.IconSpec();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCStaffs));
-            Krypton.Toolkit.IconSpec iconSpec12 = new Krypton.Toolkit.IconSpec();
+            Krypton.Toolkit.IconSpec iconSpec6 = new Krypton.Toolkit.IconSpec();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDeleteStaff = new Krypton.Toolkit.KryptonButton();
             this.btnUpdateStaff = new Krypton.Toolkit.KryptonButton();
@@ -107,16 +107,18 @@
             this.btnDeleteStaff.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteStaff.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.btnDeleteStaff.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnDeleteStaff.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.btnDeleteStaff.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDeleteStaff.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnDeleteStaff.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnDeleteStaff.StatePressed.Border.Rounding = 10F;
             this.btnDeleteStaff.StatePressed.Border.Width = 0;
+            this.btnDeleteStaff.StatePressed.Content.Padding = new System.Windows.Forms.Padding(-1, 2, -1, -1);
             this.btnDeleteStaff.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnDeleteStaff.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteStaff.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.btnDeleteStaff.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.btnDeleteStaff.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDeleteStaff.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnDeleteStaff.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -158,8 +160,8 @@
             this.btnUpdateStaff.StatePressed.Content.Padding = new System.Windows.Forms.Padding(-1, 2, -1, -1);
             this.btnUpdateStaff.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnUpdateStaff.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateStaff.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.btnUpdateStaff.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.btnUpdateStaff.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnUpdateStaff.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnUpdateStaff.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -415,9 +417,9 @@
             // editBtn
             // 
             this.editBtn.HeaderText = "Edit";
-            iconSpec11.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
-            iconSpec11.Icon = ((System.Drawing.Image)(resources.GetObject("iconSpec11.Icon")));
-            this.editBtn.IconSpecs.Add(iconSpec11);
+            iconSpec5.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
+            iconSpec5.Icon = ((System.Drawing.Image)(resources.GetObject("iconSpec5.Icon")));
+            this.editBtn.IconSpecs.Add(iconSpec5);
             this.editBtn.MinimumWidth = 8;
             this.editBtn.Name = "editBtn";
             this.editBtn.Text = "Edit";
@@ -427,9 +429,9 @@
             // delBtn
             // 
             this.delBtn.HeaderText = "Delete";
-            iconSpec12.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
-            iconSpec12.Icon = ((System.Drawing.Image)(resources.GetObject("iconSpec12.Icon")));
-            this.delBtn.IconSpecs.Add(iconSpec12);
+            iconSpec6.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
+            iconSpec6.Icon = ((System.Drawing.Image)(resources.GetObject("iconSpec6.Icon")));
+            this.delBtn.IconSpecs.Add(iconSpec6);
             this.delBtn.MinimumWidth = 8;
             this.delBtn.Name = "delBtn";
             this.delBtn.Text = "Delete";
