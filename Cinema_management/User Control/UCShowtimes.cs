@@ -32,5 +32,22 @@ namespace Cinema_management
         {
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            // Change from UserControl to Form for modal dialog functionality
+            AddShowtime addShowtime = new AddShowtime();
+            Form form = new Form
+            {
+                Text = "Add Showtime",
+                AutoSize = true,
+                AutoSizeMode = AutoSizeMode.GrowAndShrink,
+                StartPosition = FormStartPosition.CenterParent
+            };
+            addShowtime.Dock = DockStyle.Fill;
+            form.Controls.Add(addShowtime);
+            //chang
+            form.ShowDialog();
+        }
     }
 }
