@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnAdd = new Krypton.Toolkit.KryptonPanel();
+            this.btnExitAddStaf = new System.Windows.Forms.Button();
             this.lblAdd = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
@@ -50,7 +51,8 @@
             this.txbAgain = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonDateTimePicker1 = new Krypton.Toolkit.KryptonDateTimePicker();
             this.cbGender = new Krypton.Toolkit.KryptonComboBox();
-            this.btnExitAddStaf = new System.Windows.Forms.Button();
+            this.kryptonLabel12 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonDateTimePicker2 = new Krypton.Toolkit.KryptonDateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).BeginInit();
             this.pnAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbGender)).BeginInit();
@@ -67,6 +69,23 @@
             this.pnAdd.Size = new System.Drawing.Size(674, 64);
             this.pnAdd.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnAdd.TabIndex = 2;
+            // 
+            // btnExitAddStaf
+            // 
+            this.btnExitAddStaf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExitAddStaf.BackColor = System.Drawing.Color.Transparent;
+            this.btnExitAddStaf.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnExitAddStaf.FlatAppearance.BorderSize = 0;
+            this.btnExitAddStaf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitAddStaf.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitAddStaf.Location = new System.Drawing.Point(645, 8);
+            this.btnExitAddStaf.Name = "btnExitAddStaf";
+            this.btnExitAddStaf.Size = new System.Drawing.Size(26, 23);
+            this.btnExitAddStaf.TabIndex = 1;
+            this.btnExitAddStaf.Text = "X";
+            this.btnExitAddStaf.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnExitAddStaf.UseVisualStyleBackColor = false;
+            this.btnExitAddStaf.Click += new System.EventHandler(this.btnExitAddStaf_Click);
             // 
             // lblAdd
             // 
@@ -147,7 +166,7 @@
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(42, 353);
+            this.kryptonLabel7.Location = new System.Drawing.Point(42, 419);
             this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(90, 28);
@@ -158,7 +177,7 @@
             // 
             // kryptonLabel8
             // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(42, 399);
+            this.kryptonLabel8.Location = new System.Drawing.Point(42, 479);
             this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel8.Name = "kryptonLabel8";
             this.kryptonLabel8.Size = new System.Drawing.Size(140, 28);
@@ -169,7 +188,7 @@
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(44, 442);
+            this.kryptonLabel9.Location = new System.Drawing.Point(44, 522);
             this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(92, 28);
@@ -180,7 +199,7 @@
             // 
             // kryptonLabel10
             // 
-            this.kryptonLabel10.Location = new System.Drawing.Point(44, 491);
+            this.kryptonLabel10.Location = new System.Drawing.Point(44, 571);
             this.kryptonLabel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel10.Name = "kryptonLabel10";
             this.kryptonLabel10.Size = new System.Drawing.Size(103, 28);
@@ -191,7 +210,7 @@
             // 
             // kryptonLabel11
             // 
-            this.kryptonLabel11.Location = new System.Drawing.Point(44, 541);
+            this.kryptonLabel11.Location = new System.Drawing.Point(44, 621);
             this.kryptonLabel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel11.Name = "kryptonLabel11";
             this.kryptonLabel11.Size = new System.Drawing.Size(161, 28);
@@ -227,7 +246,7 @@
             // 
             // txbPosition
             // 
-            this.txbPosition.Location = new System.Drawing.Point(212, 353);
+            this.txbPosition.Location = new System.Drawing.Point(212, 419);
             this.txbPosition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbPosition.Name = "txbPosition";
             this.txbPosition.Size = new System.Drawing.Size(398, 27);
@@ -235,7 +254,7 @@
             // 
             // txbAccount
             // 
-            this.txbAccount.Location = new System.Drawing.Point(212, 442);
+            this.txbAccount.Location = new System.Drawing.Point(212, 522);
             this.txbAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbAccount.Name = "txbAccount";
             this.txbAccount.Size = new System.Drawing.Size(398, 27);
@@ -243,17 +262,19 @@
             // 
             // txbPassword
             // 
-            this.txbPassword.Location = new System.Drawing.Point(212, 492);
+            this.txbPassword.Location = new System.Drawing.Point(212, 572);
             this.txbPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbPassword.Name = "txbPassword";
+            this.txbPassword.PasswordChar = '*';
             this.txbPassword.Size = new System.Drawing.Size(398, 27);
             this.txbPassword.TabIndex = 5;
             // 
             // txbAgain
             // 
-            this.txbAgain.Location = new System.Drawing.Point(212, 542);
+            this.txbAgain.Location = new System.Drawing.Point(212, 622);
             this.txbAgain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbAgain.Name = "txbAgain";
+            this.txbAgain.PasswordChar = '*';
             this.txbAgain.Size = new System.Drawing.Size(398, 27);
             this.txbAgain.TabIndex = 5;
             // 
@@ -278,28 +299,31 @@
             this.cbGender.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cbGender.TabIndex = 7;
             // 
-            // btnExitAddStaf
+            // kryptonLabel12
             // 
-            this.btnExitAddStaf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExitAddStaf.BackColor = System.Drawing.Color.Transparent;
-            this.btnExitAddStaf.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnExitAddStaf.FlatAppearance.BorderSize = 0;
-            this.btnExitAddStaf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitAddStaf.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitAddStaf.Location = new System.Drawing.Point(645, 8);
-            this.btnExitAddStaf.Name = "btnExitAddStaf";
-            this.btnExitAddStaf.Size = new System.Drawing.Size(26, 23);
-            this.btnExitAddStaf.TabIndex = 1;
-            this.btnExitAddStaf.Text = "X";
-            this.btnExitAddStaf.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnExitAddStaf.UseVisualStyleBackColor = false;
-            this.btnExitAddStaf.Click += new System.EventHandler(this.btnExitAddStaf_Click);
+            this.kryptonLabel12.Location = new System.Drawing.Point(44, 358);
+            this.kryptonLabel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel12.Name = "kryptonLabel12";
+            this.kryptonLabel12.Size = new System.Drawing.Size(140, 28);
+            this.kryptonLabel12.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel12.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel12.TabIndex = 8;
+            this.kryptonLabel12.Values.Text = "Start Working: ";
+            // 
+            // kryptonDateTimePicker2
+            // 
+            this.kryptonDateTimePicker2.Location = new System.Drawing.Point(212, 358);
+            this.kryptonDateTimePicker2.Name = "kryptonDateTimePicker2";
+            this.kryptonDateTimePicker2.Size = new System.Drawing.Size(240, 25);
+            this.kryptonDateTimePicker2.TabIndex = 9;
             // 
             // AddStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.kryptonDateTimePicker2);
+            this.Controls.Add(this.kryptonLabel12);
             this.Controls.Add(this.cbGender);
             this.Controls.Add(this.kryptonDateTimePicker1);
             this.Controls.Add(this.txbAgain);
@@ -323,7 +347,7 @@
             this.Controls.Add(this.pnAdd);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddStaff";
-            this.Size = new System.Drawing.Size(674, 598);
+            this.Size = new System.Drawing.Size(674, 673);
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).EndInit();
             this.pnAdd.ResumeLayout(false);
             this.pnAdd.PerformLayout();
@@ -358,5 +382,7 @@
         private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
         private Krypton.Toolkit.KryptonComboBox cbGender;
         private System.Windows.Forms.Button btnExitAddStaf;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel12;
+        private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker2;
     }
 }
