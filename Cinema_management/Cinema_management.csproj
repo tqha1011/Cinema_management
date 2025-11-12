@@ -108,6 +108,8 @@
     <Compile Include="Staff Management\AddStaff_popup.Designer.cs">
       <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff Management\Staff.cs" />
+    <Compile Include="Staff Management\StaffLogic.cs" />
     <Compile Include="User Control\UCStaffs.cs">
       <SubType>UserControl</SubType>
     </Compile>
