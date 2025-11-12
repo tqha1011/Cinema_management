@@ -17,7 +17,7 @@ namespace Cinema_management.DAL
         // Constructor để khởi tạo chuỗi kết nối từ App.config
         public Database()
         {
-            string connectionName = "local";  // Tên chuỗi kết nối trong App.config
+            string connectionName = "azure";  // Tên chuỗi kết nối trong App.config
 
             // Code bên dưới lấy chuỗi kết nối từ App.config
             // try - catch để không crash chương trình nếu không tìm thấy chuỗi kết nối
