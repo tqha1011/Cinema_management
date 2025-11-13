@@ -30,7 +30,6 @@
         {
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.pnAdd = new Krypton.Toolkit.KryptonPanel();
-            this.txbMovieName = new Krypton.Toolkit.KryptonTextBox();
             this.lblMovieName = new Krypton.Toolkit.KryptonLabel();
             this.kryptonDateTimePicker1 = new Krypton.Toolkit.KryptonDateTimePicker();
             this.lblRlDate = new Krypton.Toolkit.KryptonLabel();
@@ -42,9 +41,13 @@
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.btnSave = new Krypton.Toolkit.KryptonButton();
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
+            this.cbbMovieName = new Krypton.Toolkit.KryptonComboBox();
+            this.kryptonDateTimePicker3 = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.lblEndDate = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).BeginInit();
             this.pnAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbbGenre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbbMovieName)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabel1
@@ -68,23 +71,6 @@
             this.pnAdd.Size = new System.Drawing.Size(1067, 131);
             this.pnAdd.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnAdd.TabIndex = 1;
-            // 
-            // txbMovieName
-            // 
-            this.txbMovieName.CueHint.Color1 = System.Drawing.Color.DimGray;
-            this.txbMovieName.CueHint.CueHintText = "Enter movie name";
-            this.txbMovieName.CueHint.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbMovieName.Location = new System.Drawing.Point(63, 212);
-            this.txbMovieName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txbMovieName.Name = "txbMovieName";
-            this.txbMovieName.Size = new System.Drawing.Size(509, 52);
-            this.txbMovieName.StateActive.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
-            this.txbMovieName.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
-            this.txbMovieName.StateCommon.Border.Rounding = 10F;
-            this.txbMovieName.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.txbMovieName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbMovieName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
-            this.txbMovieName.TabIndex = 5;
             // 
             // lblMovieName
             // 
@@ -111,15 +97,15 @@
             this.lblRlDate.Location = new System.Drawing.Point(652, 168);
             this.lblRlDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblRlDate.Name = "lblRlDate";
-            this.lblRlDate.Size = new System.Drawing.Size(77, 40);
+            this.lblRlDate.Size = new System.Drawing.Size(147, 40);
             this.lblRlDate.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblRlDate.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRlDate.TabIndex = 6;
-            this.lblRlDate.Values.Text = "Date";
+            this.lblRlDate.Values.Text = "Start Date";
             // 
             // kryptonDateTimePicker2
             // 
-            this.kryptonDateTimePicker2.Location = new System.Drawing.Point(63, 344);
+            this.kryptonDateTimePicker2.Location = new System.Drawing.Point(337, 344);
             this.kryptonDateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonDateTimePicker2.Name = "kryptonDateTimePicker2";
             this.kryptonDateTimePicker2.Size = new System.Drawing.Size(264, 41);
@@ -128,7 +114,7 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(63, 299);
+            this.kryptonLabel2.Location = new System.Drawing.Point(337, 299);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(146, 40);
@@ -140,7 +126,7 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(391, 299);
+            this.kryptonLabel3.Location = new System.Drawing.Point(63, 299);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(94, 40);
@@ -156,13 +142,7 @@
             this.cbbGenre.CueHint.CueHintText = "Select genre";
             this.cbbGenre.CueHint.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbGenre.DropDownWidth = 156;
-            this.cbbGenre.Items.AddRange(new object[] {
-            "Phòng 1",
-            "Phòng 2",
-            "Phòng 3",
-            "Phòng 4",
-            "Phòng 5"});
-            this.cbbGenre.Location = new System.Drawing.Point(391, 344);
+            this.cbbGenre.Location = new System.Drawing.Point(63, 344);
             this.cbbGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbGenre.Name = "cbbGenre";
             this.cbbGenre.Size = new System.Drawing.Size(213, 42);
@@ -175,14 +155,14 @@
             this.cbbGenre.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.cbbGenre.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbGenre.TabIndex = 10;
-            this.cbbGenre.Text = "Phòng 1";
             // 
             // kryptonTextBox1
             // 
             this.kryptonTextBox1.CueHint.Color1 = System.Drawing.Color.DimGray;
-            this.kryptonTextBox1.CueHint.CueHintText = "Enter ticket price";
+            this.kryptonTextBox1.CueHint.CueHintText = "0 đ";
             this.kryptonTextBox1.CueHint.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.Location = new System.Drawing.Point(652, 344);
+            this.kryptonTextBox1.Enabled = false;
+            this.kryptonTextBox1.Location = new System.Drawing.Point(63, 449);
             this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(360, 52);
@@ -196,7 +176,7 @@
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(652, 299);
+            this.kryptonLabel4.Location = new System.Drawing.Point(63, 404);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(165, 40);
@@ -222,7 +202,6 @@
             this.btnSave.TabIndex = 13;
             this.btnSave.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnSave.Values.Text = "Save Showtime";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -242,31 +221,66 @@
             this.btnCancel.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnCancel.Values.Text = "Cancel";
             // 
+            // cbbMovieName
+            // 
+            this.cbbMovieName.DropDownWidth = 382;
+            this.cbbMovieName.Location = new System.Drawing.Point(63, 212);
+            this.cbbMovieName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbMovieName.Name = "cbbMovieName";
+            this.cbbMovieName.Size = new System.Drawing.Size(509, 42);
+            this.cbbMovieName.StateCommon.ComboBox.Border.Rounding = 5F;
+            this.cbbMovieName.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cbbMovieName.TabIndex = 5;
+            // 
+            // kryptonDateTimePicker3
+            // 
+            this.kryptonDateTimePicker3.Location = new System.Drawing.Point(652, 344);
+            this.kryptonDateTimePicker3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonDateTimePicker3.Name = "kryptonDateTimePicker3";
+            this.kryptonDateTimePicker3.Size = new System.Drawing.Size(213, 41);
+            this.kryptonDateTimePicker3.StateCommon.Border.Rounding = 5F;
+            this.kryptonDateTimePicker3.TabIndex = 16;
+            // 
+            // lblEndDate
+            // 
+            this.lblEndDate.Location = new System.Drawing.Point(652, 299);
+            this.lblEndDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblEndDate.Name = "lblEndDate";
+            this.lblEndDate.Size = new System.Drawing.Size(135, 40);
+            this.lblEndDate.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblEndDate.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndDate.TabIndex = 15;
+            this.lblEndDate.Values.Text = "End Date";
+            // 
             // AddShowtime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.kryptonLabel2);
+            this.Controls.Add(this.kryptonDateTimePicker2);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.kryptonLabel4);
             this.Controls.Add(this.cbbGenre);
-            this.Controls.Add(this.kryptonDateTimePicker2);
+            this.Controls.Add(this.lblEndDate);
+            this.Controls.Add(this.kryptonDateTimePicker3);
             this.Controls.Add(this.kryptonLabel3);
-            this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.kryptonDateTimePicker1);
             this.Controls.Add(this.lblRlDate);
-            this.Controls.Add(this.txbMovieName);
+            this.Controls.Add(this.cbbMovieName);
             this.Controls.Add(this.pnAdd);
             this.Controls.Add(this.lblMovieName);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddShowtime";
             this.Size = new System.Drawing.Size(1067, 562);
+            this.Load += new System.EventHandler(this.AddShowtime_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).EndInit();
             this.pnAdd.ResumeLayout(false);
             this.pnAdd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbbGenre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbbMovieName)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,7 +290,6 @@
 
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonPanel pnAdd;
-        private Krypton.Toolkit.KryptonTextBox txbMovieName;
         private Krypton.Toolkit.KryptonLabel lblMovieName;
         private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
         private Krypton.Toolkit.KryptonLabel lblRlDate;
@@ -288,5 +301,8 @@
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private Krypton.Toolkit.KryptonButton btnSave;
         private Krypton.Toolkit.KryptonButton btnCancel;
+        private Krypton.Toolkit.KryptonComboBox cbbMovieName;
+        private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker3;
+        private Krypton.Toolkit.KryptonLabel lblEndDate;
     }
 }

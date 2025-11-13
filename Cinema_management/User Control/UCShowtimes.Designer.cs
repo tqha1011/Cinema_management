@@ -49,7 +49,7 @@
             this.Movie = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Type = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Duration = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.Showtimes = new Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn();
+            this.Showtimes = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.editBtn = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButton6 = new Krypton.Toolkit.KryptonButton();
@@ -136,6 +136,7 @@
             this.btnDelete.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnDelete.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__delete_outline_rounded__1_;
             this.btnDelete.Values.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -177,7 +178,6 @@
             this.btnUpdate.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnUpdate.Values.Image = global::Cinema_management.Properties.Resources.jam__write__1_1;
             this.btnUpdate.Values.Text = "Update";
-           // this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -415,13 +415,8 @@
             // 
             // Showtimes
             // 
-            this.Showtimes.Checked = false;
-            this.Showtimes.CustomFormat = "dd/mm/yyyy";
-            this.Showtimes.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.Showtimes.HeaderText = "Showtimes";
             this.Showtimes.MinimumWidth = 8;
-            this.Showtimes.Name = "Showtimes";
-            this.Showtimes.ShowCheckBox = true;
             this.Showtimes.Width = 400;
             // 
             // editBtn
@@ -631,7 +626,7 @@
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Movie;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Type;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Duration;
-        private Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn Showtimes;
+        private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Showtimes;
         private Krypton.Toolkit.KryptonDataGridViewButtonColumn editBtn;
     }
 }

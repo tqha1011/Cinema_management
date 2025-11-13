@@ -8,31 +8,194 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
-using Cinema_management.DAL; // Thêm thư viện để truy cập Database
-using System.Data.SqlClient; // Thêm thư viện SQL
+using Cinema_management.DAL;
+using System.Data.SqlClient;
 
 namespace Cinema_management
 {
     public partial class UCShowtimes : UserControl
     {
+        private string currentRoomFilter = "All Showtimes";
+
         public UCShowtimes()
         {
             InitializeComponent();
+
+            this.dgvShows.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShows_CellContentClick);
         }
 
-        // 1. Tạo phương thức mới để tải dữ liệu
+        /// <summary>
+        /// Chạy khi UserControl được tải: Cài đặt giao diện và tải dữ liệu lần đầu.
+        /// </summary>
+        private void UCShowtimes_Load(object sender, EventArgs e)
+        {
+            btnUpdate.Visible = false;
+            btnDelete.Visible = false;
+
+            if (dgvShows.Columns.Contains("Type"))
+            {
+                dgvShows.Columns["Type"].HeaderText = "Room";
+                dgvShows.Columns["Type"].Name = "Room";
+            }
+
+            KryptonDataGridViewCheckBoxColumn chkColumn = new KryptonDataGridViewCheckBoxColumn();
+            chkColumn.HeaderText = "";
+            chkColumn.Name = "chkSelect";
+            chkColumn.Width = 50;
+            chkColumn.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            chkColumn.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            if (!dgvShows.Columns.Contains("chkSelect"))
+            {
+                dgvShows.Columns.Insert(0, chkColumn);
+            }
+
+            dtpSearchDate.Format = DateTimePickerFormat.Custom;
+            dtpSearchDate.CustomFormat = "dd/MM/yyyy";
+            dtpSearchDate.Value = DateTime.Today;
+
+            this.dtpSearchDate.ValueChanged += new System.EventHandler(this.Filter_Changed);
+            this.kryptonButton1.Click += new System.EventHandler(this.RoomFilter_Click);
+            this.kryptonButton2.Click += new System.EventHandler(this.RoomFilter_Click);
+            this.kryptonButton3.Click += new System.EventHandler(this.RoomFilter_Click);
+            this.kryptonButton4.Click += new System.EventHandler(this.RoomFilter_Click);
+            this.kryptonButton5.Click += new System.EventHandler(this.RoomFilter_Click);
+            this.kryptonButton6.Click += new System.EventHandler(this.RoomFilter_Click);
+
+            this.dgvShows.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShows_CellValueChanged);
+            this.dgvShows.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvShows_CurrentCellDirtyStateChanged);
+
+            LoadShowtimesData();
+        }
+
+        /// <summary>
+        /// Kích hoạt sự kiện CellValueChanged ngay lập tức khi tick/bỏ tick checkbox.
+        /// </summary>
+        private void dgvShows_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dgvShows.IsCurrentCellDirty)
+            {
+                if (dgvShows.CurrentCell.OwningColumn.Name == "chkSelect")
+                {
+                    dgvShows.CommitEdit(DataGridViewDataErrorContexts.Commit);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Được gọi khi giá trị ô checkbox thay đổi, dùng để cập nhật nút Delete.
+        /// </summary>
+        private void dgvShows_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dgvShows.Columns["chkSelect"].Index && e.RowIndex >= 0)
+            {
+                UpdateDeleteButtonVisibility();
+            }
+        }
+
+        /// <summary>
+        /// Ẩn/Hiện nút Delete dựa trên việc có checkbox nào được chọn hay không.
+        /// </summary>
+        private void UpdateDeleteButtonVisibility()
+        {
+            bool anyChecked = false;
+            foreach (DataGridViewRow row in dgvShows.Rows)
+            {
+                if (Convert.ToBoolean(row.Cells["chkSelect"].Value) == true)
+                {
+                    anyChecked = true;
+                    break;
+                }
+            }
+            btnDelete.Visible = anyChecked;
+        }
+
+        /// <summary>
+        /// Xử lý khi nhấn nút "Edit" (biểu tượng) trong một hàng của bảng.
+        /// </summary>
+        private void dgvShows_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && dgvShows.Columns[e.ColumnIndex].Name == "editBtn")
+            {
+                int maSuatChieu = (int)dgvShows.Rows[e.RowIndex].Tag;
+                OpenShowtimeForm(maSuatChieu);
+            }
+        }
+
+        /// <summary>
+        /// Hàm trung tâm để mở Form Add/Edit. Nếu 'showtimeID' là null, mở ở chế độ Add.
+        /// </summary>
+        private void OpenShowtimeForm(int? showtimeID)
+        {
+            AddShowtime addShowtime = new AddShowtime();
+
+            if (showtimeID.HasValue)
+            {
+                addShowtime.ShowtimeIDToEdit = showtimeID.Value;
+            }
+
+            Form form = new Form
+            {
+                Text = showtimeID.HasValue ? "Edit Showtime" : "Add Showtime",
+                StartPosition = FormStartPosition.CenterParent,
+                ClientSize = new System.Drawing.Size(1067, 562), // Kích thước bạn yêu cầu
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
+
+            addShowtime.Dock = DockStyle.Fill;
+            form.Controls.Add(addShowtime);
+
+            form.ShowDialog();
+            LoadShowtimesData();
+        }
+
+        /// <summary>
+        /// Tải lại dữ liệu khi thay đổi bộ lọc (ngày).
+        /// </summary>
+        private void Filter_Changed(object sender, EventArgs e)
+        {
+            LoadShowtimesData();
+        }
+
+        /// <summary>
+        /// Tải lại dữ liệu khi thay đổi bộ lọc (phòng).
+        /// </summary>
+        private void RoomFilter_Click(object sender, EventArgs e)
+        {
+            KryptonButton clickedButton = sender as KryptonButton;
+            if (clickedButton != null)
+            {
+                currentRoomFilter = clickedButton.Text;
+
+                foreach (KryptonButton btn in kryptonPanel1.Controls.OfType<KryptonButton>())
+                {
+                    btn.StateCommon.Back.Color1 = Color.Transparent;
+                    btn.StateCommon.Back.Color2 = Color.Transparent;
+                }
+                clickedButton.StateCommon.Back.Color1 = Color.FromArgb(94, 53, 168);
+                clickedButton.StateCommon.Back.Color2 = Color.FromArgb(94, 53, 168);
+
+                LoadShowtimesData();
+            }
+        }
+
+        /// <summary>
+        /// Tải dữ liệu suất chiếu từ CSDL lên DataGridView dựa trên bộ lọc.
+        /// </summary>
         private void LoadShowtimesData()
         {
             try
             {
                 Database db = new Database();
+                DateTime selectedDate = dtpSearchDate.Value.Date;
 
-                // 2. Câu truy vấn SQL để lấy dữ liệu
-                // Câu lệnh này JOIN các bảng để lấy thông tin Tên phim, Loại phòng, Thời lượng và Thời gian chiếu
                 string query = @"
                     SELECT 
+                        sc.MASUATCHIEU, 
                         p.TENPHIM AS MovieName, 
-                        lp.LOAIPHONG AS RoomType, 
+                        pc.TENPHONG AS RoomName, 
                         p.THOILUONGPHIM AS Duration, 
                         sc.THOIGIANCHIEU AS Showtime
                     FROM 
@@ -43,32 +206,49 @@ namespace Cinema_management
                         PHONGCHIEU pc ON sc.MAPHONG = pc.MAPHONG
                     JOIN 
                         LOAIPHONG lp ON pc.MALOAIPHONG = lp.MALOAIPHONG
-                    ORDER BY 
-                        sc.THOIGIANCHIEU;
-                "; //
+                    WHERE 
+                        CAST(sc.THOIGIANCHIEU AS DATE) = @SelectedDate 
+                ";
 
-                // 3. Thực thi truy vấn và lấy kết quả
-                DataTable dt = db.ReadData(query);
+                List<SqlParameter> parameters = new List<SqlParameter>
+                {
+                    new SqlParameter("@SelectedDate", selectedDate)
+                };
 
-                // 4. Xóa các hàng cũ trong DataGridView
+                if (currentRoomFilter != "All Showtimes")
+                {
+                    query += " AND pc.TENPHONG = @RoomName";
+                    parameters.Add(new SqlParameter("@RoomName", currentRoomFilter));
+                }
+                query += " ORDER BY pc.TENPHONG, sc.THOIGIANCHIEU";
+
+                DataTable dt = db.ReadData(query, parameters.ToArray());
+
+                DataTable tempTable = dt.Clone();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    tempTable.ImportRow(dr);
+                }
+
                 dgvShows.Rows.Clear();
 
-                // 5. Thêm dữ liệu từ DataTable vào DataGridView
-                if (dt != null && dt.Rows.Count > 0)
+                if (tempTable != null && tempTable.Rows.Count > 0)
                 {
-                    foreach (DataRow row in dt.Rows)
+                    foreach (DataRow row in tempTable.Rows)
                     {
+                        int maSuatChieu = Convert.ToInt32(row["MASUATCHIEU"]);
                         string movieName = row["MovieName"].ToString();
-                        string roomType = row["RoomType"].ToString(); // Đây là LOAIPHONG (vd: '2D', 'Standard')
+                        string roomName = row["RoomName"].ToString();
                         string duration = row["Duration"].ToString();
-                        DateTime showtime = Convert.ToDateTime(row["Showtime"]); // Lấy giá trị DateTime
+                        DateTime showtime = Convert.ToDateTime(row["Showtime"]);
 
-                        // Thêm hàng mới
-                        // Chúng ta truyền đối tượng 'showtime' (kiểu DateTime) trực tiếp vào cột thứ 4
-                        // vì nó là KryptonDataGridViewDateTimePickerColumn
-                        dgvShows.Rows.Add(movieName, roomType, duration, showtime);
+                        int rowIndex = dgvShows.Rows.Add(false, movieName, roomName, duration, showtime.ToString("HH:mm"));
+                        dgvShows.Rows[rowIndex].Tag = maSuatChieu;
                     }
                 }
+
+                MergeShowtimeCells(tempTable);
+                UpdateDeleteButtonVisibility();
             }
             catch (Exception ex)
             {
@@ -76,55 +256,120 @@ namespace Cinema_management
             }
         }
 
-        // 6. Sửa sự kiện Load để gọi phương thức tải dữ liệu
-        private void UCShowtimes_Load(object sender, EventArgs e)
+        /// <summary>
+        /// Gom nhóm trực quan các ô trong bảng (ẩn tên phim/phòng nếu giống hàng trên).
+        /// </summary>
+        private void MergeShowtimeCells(DataTable dt)
         {
-            // Xóa dòng code dữ liệu giả của bạn
-            // dgvShows.Rows.Add("Bo gia", "2d", "120", "21:00");
+            if (dgvShows.Rows.Count == 0) return;
 
-            // Gọi phương thức tải dữ liệu thật
-            LoadShowtimesData();
+            for (int i = 0; i < dgvShows.Rows.Count; i++)
+            {
+                dgvShows.Rows[i].Cells["Movie"].Style.ForeColor = Color.Black;
+                dgvShows.Rows[i].Cells["Room"].Style.ForeColor = Color.Black;
+                dgvShows.Rows[i].Cells["chkSelect"].Style.Padding = new Padding(0);
+                dgvShows.Rows[i].Cells["Movie"].Style.Padding = new Padding(0);
+                dgvShows.Rows[i].Cells["Room"].Style.Padding = new Padding(0);
+                dgvShows.Rows[i].Cells["Duration"].Style.Padding = new Padding(0);
+
+                if (i == 0) continue;
+
+                string currentMovie = dt.Rows[i]["MovieName"].ToString();
+                string prevMovie = dt.Rows[i - 1]["MovieName"].ToString();
+                string currentRoom = dt.Rows[i]["RoomName"].ToString();
+                string prevRoom = dt.Rows[i - 1]["RoomName"].ToString();
+
+                if (currentMovie == prevMovie && currentRoom == prevRoom)
+                {
+                    var currentMovieCell = dgvShows.Rows[i].Cells["Movie"];
+                    var currentRoomCell = dgvShows.Rows[i].Cells["Room"];
+
+                    currentMovieCell.Value = "";
+                    currentMovieCell.Style.ForeColor = currentMovieCell.Style.BackColor;
+                    currentRoomCell.Value = "";
+                    currentRoomCell.Style.ForeColor = currentRoomCell.Style.BackColor;
+
+                    dgvShows.Rows[i].Cells["chkSelect"].Style.Padding = new Padding(0, -1, 0, 0);
+                    currentMovieCell.Style.Padding = new Padding(0, -1, 0, 0);
+                    currentRoomCell.Style.Padding = new Padding(0, -1, 0, 0);
+                    dgvShows.Rows[i].Cells["Duration"].Style.Padding = new Padding(0, -1, 0, 0);
+                }
+            }
         }
 
-        private void lvShowtimes_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Xử lý logic cho nút Delete (xóa các hàng đã được tick).
+        /// </summary>
+        private void btnDelete_Click(object sender, EventArgs e)
         {
+            List<int> idsToDelete = new List<int>();
+            foreach (DataGridViewRow row in dgvShows.Rows)
+            {
+                DataGridViewCheckBoxCell chk = row.Cells["chkSelect"] as DataGridViewCheckBoxCell;
+                if (chk != null && Convert.ToBoolean(chk.Value) == true)
+                {
+                    idsToDelete.Add((int)row.Tag);
+                }
+            }
 
+            if (idsToDelete.Count == 0)
+            {
+                MessageBox.Show("Vui lòng đánh dấu vào ít nhất một suất chiếu để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string message = $"Bạn có chắc chắn muốn xóa {idsToDelete.Count} suất chiếu đã chọn không?";
+            DialogResult result = MessageBox.Show(message, "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Database db = new Database();
+                int successCount = 0;
+                int failCount = 0;
+                foreach (int maSuatChieu in idsToDelete)
+                {
+                    try
+                    {
+                        string query = "DELETE FROM SUATCHIEU WHERE MASUATCHIEU = @MaSuatChieu";
+                        SqlParameter[] parameters = { new SqlParameter("@MaSuatChieu", maSuatChieu) };
+                        if (db.ChangeData(query, parameters))
+                        {
+                            successCount++;
+                        }
+                        else
+                        {
+                            failCount++;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        failCount++;
+                    }
+                }
+
+                string successMessage = $"Đã xóa thành công {successCount} suất chiếu.";
+                if (failCount > 0)
+                {
+                    successMessage += $"\nXóa thất bại {failCount} suất chiếu (Có thể do đã có vé được bán).";
+                }
+                MessageBox.Show(successMessage, "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (successCount > 0)
+                {
+                    LoadShowtimesData();
+                }
+            }
         }
 
-        private void lblShowtimes_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Xử lý logic cho nút Add New (mở form ở chế độ Add).
+        /// </summary>
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // Tạo UserControl AddShowtime
-            AddShowtime addShowtime = new AddShowtime();
-
-            // Tạo một Form mới để chứa UserControl
-            Form form = new Form
-            {
-                Text = "Add Showtime",
-                StartPosition = FormStartPosition.CenterParent,
-
-                // --- SỬA LỖI TẠI ĐÂY ---
-                // Xóa AutoSize và đặt ClientSize cố định
-                // Lấy kích thước từ file AddShowtime.Designer.cs
-                ClientSize = new System.Drawing.Size(1067, 562),
-                FormBorderStyle = FormBorderStyle.FixedDialog, // Tùy chọn: Chống người dùng thay đổi kích thước
-                MaximizeBox = false,
-                MinimizeBox = false
-            };
-
-            // Đặt DockStyle.Fill cho UserControl
-            addShowtime.Dock = DockStyle.Fill;
-            form.Controls.Add(addShowtime);
-
-            // Hiển thị form
-            form.ShowDialog();
-
-            // Sau khi form đóng, tải lại dữ liệu
-            LoadShowtimesData();
+            OpenShowtimeForm(null);
         }
+
+        private void lvShowtimes_Click(object sender, EventArgs e) { }
+        private void lblShowtimes_Click(object sender, EventArgs e) { }
     }
 }
