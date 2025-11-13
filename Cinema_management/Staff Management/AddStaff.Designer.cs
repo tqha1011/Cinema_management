@@ -45,17 +45,19 @@
             this.txbName = new Krypton.Toolkit.KryptonTextBox();
             this.txbEmail = new Krypton.Toolkit.KryptonTextBox();
             this.txbPhoneNum = new Krypton.Toolkit.KryptonTextBox();
-            this.txbPosition = new Krypton.Toolkit.KryptonTextBox();
             this.txbAccount = new Krypton.Toolkit.KryptonTextBox();
             this.txbPassword = new Krypton.Toolkit.KryptonTextBox();
-            this.txbAgain = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonDateTimePicker1 = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.txbPasswordConfirm = new Krypton.Toolkit.KryptonTextBox();
+            this.datePickerBirth = new Krypton.Toolkit.KryptonDateTimePicker();
             this.cbGender = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonLabel12 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonDateTimePicker2 = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.datePickerHire = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.btnSaveStaff = new Krypton.Toolkit.KryptonButton();
+            this.cboPosition = new Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).BeginInit();
             this.pnAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbGender)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboPosition)).BeginInit();
             this.SuspendLayout();
             // 
             // pnAdd
@@ -66,7 +68,7 @@
             this.pnAdd.Location = new System.Drawing.Point(0, 0);
             this.pnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnAdd.Name = "pnAdd";
-            this.pnAdd.Size = new System.Drawing.Size(674, 64);
+            this.pnAdd.Size = new System.Drawing.Size(687, 64);
             this.pnAdd.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnAdd.TabIndex = 2;
             // 
@@ -78,7 +80,7 @@
             this.btnExitAddStaf.FlatAppearance.BorderSize = 0;
             this.btnExitAddStaf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitAddStaf.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitAddStaf.Location = new System.Drawing.Point(645, 8);
+            this.btnExitAddStaf.Location = new System.Drawing.Point(658, 8);
             this.btnExitAddStaf.Name = "btnExitAddStaf";
             this.btnExitAddStaf.Size = new System.Drawing.Size(26, 23);
             this.btnExitAddStaf.TabIndex = 1;
@@ -244,14 +246,6 @@
             this.txbPhoneNum.Size = new System.Drawing.Size(398, 27);
             this.txbPhoneNum.TabIndex = 5;
             // 
-            // txbPosition
-            // 
-            this.txbPosition.Location = new System.Drawing.Point(212, 419);
-            this.txbPosition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbPosition.Name = "txbPosition";
-            this.txbPosition.Size = new System.Drawing.Size(398, 27);
-            this.txbPosition.TabIndex = 5;
-            // 
             // txbAccount
             // 
             this.txbAccount.Location = new System.Drawing.Point(212, 522);
@@ -269,22 +263,22 @@
             this.txbPassword.Size = new System.Drawing.Size(398, 27);
             this.txbPassword.TabIndex = 5;
             // 
-            // txbAgain
+            // txbPasswordConfirm
             // 
-            this.txbAgain.Location = new System.Drawing.Point(212, 622);
-            this.txbAgain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbAgain.Name = "txbAgain";
-            this.txbAgain.PasswordChar = '*';
-            this.txbAgain.Size = new System.Drawing.Size(398, 27);
-            this.txbAgain.TabIndex = 5;
+            this.txbPasswordConfirm.Location = new System.Drawing.Point(212, 622);
+            this.txbPasswordConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbPasswordConfirm.Name = "txbPasswordConfirm";
+            this.txbPasswordConfirm.PasswordChar = '*';
+            this.txbPasswordConfirm.Size = new System.Drawing.Size(398, 27);
+            this.txbPasswordConfirm.TabIndex = 5;
             // 
-            // kryptonDateTimePicker1
+            // datePickerBirth
             // 
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(212, 205);
-            this.kryptonDateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(240, 25);
-            this.kryptonDateTimePicker1.TabIndex = 6;
+            this.datePickerBirth.Location = new System.Drawing.Point(212, 205);
+            this.datePickerBirth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.datePickerBirth.Name = "datePickerBirth";
+            this.datePickerBirth.Size = new System.Drawing.Size(240, 25);
+            this.datePickerBirth.TabIndex = 6;
             // 
             // cbGender
             // 
@@ -298,6 +292,7 @@
             this.cbGender.Size = new System.Drawing.Size(240, 26);
             this.cbGender.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cbGender.TabIndex = 7;
+            this.cbGender.SelectedIndexChanged += new System.EventHandler(this.cbGender_SelectedIndexChanged);
             // 
             // kryptonLabel12
             // 
@@ -310,26 +305,58 @@
             this.kryptonLabel12.TabIndex = 8;
             this.kryptonLabel12.Values.Text = "Start Working: ";
             // 
-            // kryptonDateTimePicker2
+            // datePickerHire
             // 
-            this.kryptonDateTimePicker2.Location = new System.Drawing.Point(212, 358);
-            this.kryptonDateTimePicker2.Name = "kryptonDateTimePicker2";
-            this.kryptonDateTimePicker2.Size = new System.Drawing.Size(240, 25);
-            this.kryptonDateTimePicker2.TabIndex = 9;
+            this.datePickerHire.Location = new System.Drawing.Point(212, 358);
+            this.datePickerHire.Name = "datePickerHire";
+            this.datePickerHire.Size = new System.Drawing.Size(240, 25);
+            this.datePickerHire.TabIndex = 9;
+            // 
+            // btnSaveStaff
+            // 
+            this.btnSaveStaff.Location = new System.Drawing.Point(495, 686);
+            this.btnSaveStaff.Name = "btnSaveStaff";
+            this.btnSaveStaff.Size = new System.Drawing.Size(115, 37);
+            this.btnSaveStaff.StateCommon.Back.Color1 = System.Drawing.Color.Black;
+            this.btnSaveStaff.StateCommon.Back.Color2 = System.Drawing.Color.Black;
+            this.btnSaveStaff.StateCommon.Border.Rounding = 10F;
+            this.btnSaveStaff.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSaveStaff.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnSaveStaff.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveStaff.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSaveStaff.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnSaveStaff.StatePressed.Content.Padding = new System.Windows.Forms.Padding(-1, 2, -1, -1);
+            this.btnSaveStaff.TabIndex = 10;
+            this.btnSaveStaff.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnSaveStaff.Values.Text = "Save";
+            this.btnSaveStaff.Click += new System.EventHandler(this.btnSaveStaff_Click);
+            // 
+            // cboPosition
+            // 
+            this.cboPosition.DropDownWidth = 240;
+            this.cboPosition.Items.AddRange(new object[] {
+            "Quản lý",
+            "Nhân viên"});
+            this.cboPosition.Location = new System.Drawing.Point(212, 419);
+            this.cboPosition.Name = "cboPosition";
+            this.cboPosition.Size = new System.Drawing.Size(240, 26);
+            this.cboPosition.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cboPosition.TabIndex = 11;
             // 
             // AddStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.kryptonDateTimePicker2);
+            this.Controls.Add(this.cboPosition);
+            this.Controls.Add(this.btnSaveStaff);
+            this.Controls.Add(this.datePickerHire);
             this.Controls.Add(this.kryptonLabel12);
             this.Controls.Add(this.cbGender);
-            this.Controls.Add(this.kryptonDateTimePicker1);
-            this.Controls.Add(this.txbAgain);
+            this.Controls.Add(this.datePickerBirth);
+            this.Controls.Add(this.txbPasswordConfirm);
             this.Controls.Add(this.txbPassword);
             this.Controls.Add(this.txbAccount);
-            this.Controls.Add(this.txbPosition);
             this.Controls.Add(this.txbPhoneNum);
             this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.txbName);
@@ -347,11 +374,12 @@
             this.Controls.Add(this.pnAdd);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddStaff";
-            this.Size = new System.Drawing.Size(674, 673);
+            this.Size = new System.Drawing.Size(687, 758);
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).EndInit();
             this.pnAdd.ResumeLayout(false);
             this.pnAdd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbGender)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboPosition)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,14 +403,15 @@
         private Krypton.Toolkit.KryptonTextBox txbName;
         private Krypton.Toolkit.KryptonTextBox txbEmail;
         private Krypton.Toolkit.KryptonTextBox txbPhoneNum;
-        private Krypton.Toolkit.KryptonTextBox txbPosition;
         private Krypton.Toolkit.KryptonTextBox txbAccount;
         private Krypton.Toolkit.KryptonTextBox txbPassword;
-        private Krypton.Toolkit.KryptonTextBox txbAgain;
-        private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private Krypton.Toolkit.KryptonTextBox txbPasswordConfirm;
+        private Krypton.Toolkit.KryptonDateTimePicker datePickerBirth;
         private Krypton.Toolkit.KryptonComboBox cbGender;
         private System.Windows.Forms.Button btnExitAddStaf;
         private Krypton.Toolkit.KryptonLabel kryptonLabel12;
-        private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker2;
+        private Krypton.Toolkit.KryptonDateTimePicker datePickerHire;
+        private Krypton.Toolkit.KryptonButton btnSaveStaff;
+        private Krypton.Toolkit.KryptonComboBox cboPosition;
     }
 }

@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Krypton.Toolkit.IconSpec iconSpec5 = new Krypton.Toolkit.IconSpec();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCStaffs));
-            Krypton.Toolkit.IconSpec iconSpec6 = new Krypton.Toolkit.IconSpec();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDeleteStaff = new Krypton.Toolkit.KryptonButton();
             this.btnUpdateStaff = new Krypton.Toolkit.KryptonButton();
@@ -46,13 +43,11 @@
             this.dgvMM = new Krypton.Toolkit.KryptonDataGridView();
             this.ID = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.StaffName = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.Gender = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.editBtn = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.delBtn = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -323,6 +318,7 @@
             // 
             // dgvMM
             // 
+            this.dgvMM.AutoGenerateKryptonColumns = false;
             this.dgvMM.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -332,9 +328,7 @@
             this.Birthday,
             this.PhoneNumber,
             this.Email,
-            this.Position,
-            this.editBtn,
-            this.delBtn});
+            this.Position});
             this.dgvMM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMM.Location = new System.Drawing.Point(0, 0);
             this.dgvMM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -361,6 +355,7 @@
             // 
             // ID
             // 
+            this.ID.DataPropertyName = "ID";
             this.ID.HeaderText = "ID";
             this.ID.MinimumWidth = 8;
             this.ID.Name = "ID";
@@ -369,6 +364,7 @@
             // 
             // StaffName
             // 
+            this.StaffName.DataPropertyName = "Full Name";
             this.StaffName.HeaderText = "Full Name";
             this.StaffName.MinimumWidth = 8;
             this.StaffName.Name = "StaffName";
@@ -377,16 +373,17 @@
             // 
             // Gender
             // 
-            this.Gender.DropDownWidth = 121;
+            this.Gender.DataPropertyName = "Gender";
             this.Gender.HeaderText = "Gender";
-            this.Gender.Items.Add("Nam");
-            this.Gender.Items.Add("Nữ");
             this.Gender.MinimumWidth = 8;
             this.Gender.Name = "Gender";
+            this.Gender.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Gender.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Gender.Width = 150;
             // 
             // Birthday
             // 
+            this.Birthday.DataPropertyName = "Birthday";
             this.Birthday.HeaderText = "Birthday";
             this.Birthday.MinimumWidth = 8;
             this.Birthday.Name = "Birthday";
@@ -395,6 +392,7 @@
             // 
             // PhoneNumber
             // 
+            this.PhoneNumber.DataPropertyName = "Phone Number";
             this.PhoneNumber.HeaderText = "Phone Number";
             this.PhoneNumber.MinimumWidth = 8;
             this.PhoneNumber.Name = "PhoneNumber";
@@ -402,6 +400,7 @@
             // 
             // Email
             // 
+            this.Email.DataPropertyName = "Email";
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 8;
             this.Email.Name = "Email";
@@ -409,33 +408,11 @@
             // 
             // Position
             // 
+            this.Position.DataPropertyName = "Position";
             this.Position.HeaderText = "Position";
             this.Position.MinimumWidth = 8;
             this.Position.Name = "Position";
             this.Position.Width = 150;
-            // 
-            // editBtn
-            // 
-            this.editBtn.HeaderText = "Edit";
-            iconSpec5.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
-            iconSpec5.Icon = ((System.Drawing.Image)(resources.GetObject("iconSpec5.Icon")));
-            this.editBtn.IconSpecs.Add(iconSpec5);
-            this.editBtn.MinimumWidth = 8;
-            this.editBtn.Name = "editBtn";
-            this.editBtn.Text = "Edit";
-            this.editBtn.UseColumnTextForButtonValue = true;
-            this.editBtn.Width = 150;
-            // 
-            // delBtn
-            // 
-            this.delBtn.HeaderText = "Delete";
-            iconSpec6.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
-            iconSpec6.Icon = ((System.Drawing.Image)(resources.GetObject("iconSpec6.Icon")));
-            this.delBtn.IconSpecs.Add(iconSpec6);
-            this.delBtn.MinimumWidth = 8;
-            this.delBtn.Name = "delBtn";
-            this.delBtn.Text = "Delete";
-            this.delBtn.Width = 150;
             // 
             // UCStaffs
             // 
@@ -449,6 +426,7 @@
             this.Name = "UCStaffs";
             this.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
             this.Size = new System.Drawing.Size(939, 550);
+            this.Load += new System.EventHandler(this.UCStaffs_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -485,12 +463,10 @@
         private Krypton.Toolkit.KryptonDataGridView dgvMM;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn ID;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn StaffName;
-        private Krypton.Toolkit.KryptonDataGridViewComboBoxColumn Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn Birthday;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Position;
-        private Krypton.Toolkit.KryptonDataGridViewButtonColumn editBtn;
-        private Krypton.Toolkit.KryptonDataGridViewButtonColumn delBtn;
     }
 }
