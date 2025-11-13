@@ -22,5 +22,10 @@ namespace Cinema_management.Staff_Management
         {
 
         }
+
+        private void addStaff1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
