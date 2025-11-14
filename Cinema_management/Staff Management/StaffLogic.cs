@@ -209,7 +209,7 @@ namespace Cinema_management.Staff_Management
         public DataTable ShowListStaff()
         {
             string query = "SELECT MANV AS 'ID', HOTEN AS 'Full Name', GIOITINH AS 'Gender', NGAYSINH AS 'Birthday', " +
-                           "SODIENTHOAI AS 'Phone Number', EMAIL AS 'Email' , VAITRO AS 'Position' FROM NHANVIEN";
+                           "SODIENTHOAI AS 'Phone Number', EMAIL AS 'Email' , VAITRO AS 'Position', NGAYVAOLAM AS 'Hire Date' FROM NHANVIEN";
             return dtb.ReadData(query);
 
         }
