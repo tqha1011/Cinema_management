@@ -36,8 +36,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Krypton.Toolkit, Version=95.25.8.235, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Toolkit.95.25.8.235\lib\net472\Krypton.Toolkit.dll</HintPath>
+    <Reference Include="Krypton.Toolkit, Version=95.25.10.293, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>packages\Krypton.Toolkit.95.25.10.293\lib\net472\Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -191,6 +191,7 @@
     <EmbeddedResource Include="User Control\UCTickets1.resx">
       <DependentUpon>UCTickets1.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -202,9 +203,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Logic\" />
