@@ -48,6 +48,7 @@
             this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HireDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -125,6 +126,7 @@
             this.btnDeleteStaff.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnDeleteStaff.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__delete_outline_rounded__1_;
             this.btnDeleteStaff.Values.Text = "Delete";
+            this.btnDeleteStaff.Click += new System.EventHandler(this.btnDeleteStaff_Click);
             // 
             // btnUpdateStaff
             // 
@@ -318,6 +320,10 @@
             // 
             // dgvMM
             // 
+            this.dgvMM.AllowUserToAddRows = false;
+            this.dgvMM.AllowUserToDeleteRows = false;
+            this.dgvMM.AllowUserToResizeColumns = false;
+            this.dgvMM.AllowUserToResizeRows = false;
             this.dgvMM.AutoGenerateKryptonColumns = false;
             this.dgvMM.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -328,18 +334,23 @@
             this.Birthday,
             this.PhoneNumber,
             this.Email,
-            this.Position});
+            this.Position,
+            this.HireDate});
             this.dgvMM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMM.Location = new System.Drawing.Point(0, 0);
             this.dgvMM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvMM.Name = "dgvMM";
+            this.dgvMM.ReadOnly = true;
             this.dgvMM.RowHeadersVisible = false;
             this.dgvMM.RowHeadersWidth = 62;
             this.dgvMM.RowTemplate.Height = 40;
+            this.dgvMM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMM.Size = new System.Drawing.Size(891, 347);
             this.dgvMM.StateCommon.Background.Color1 = System.Drawing.Color.White;
+            this.dgvMM.StateCommon.Background.Color2 = System.Drawing.Color.White;
             this.dgvMM.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dgvMM.StateCommon.DataCell.Back.Color1 = System.Drawing.Color.White;
+            this.dgvMM.StateCommon.DataCell.Back.Color2 = System.Drawing.Color.White;
             this.dgvMM.StateCommon.DataCell.Border.Color1 = System.Drawing.Color.LightGray;
             this.dgvMM.StateCommon.DataCell.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.dgvMM.StateCommon.DataCell.Content.Color1 = System.Drawing.Color.Black;
@@ -351,6 +362,8 @@
             this.dgvMM.StateCommon.HeaderColumn.Content.Color1 = System.Drawing.Color.White;
             this.dgvMM.StateCommon.HeaderColumn.Content.Color2 = System.Drawing.Color.White;
             this.dgvMM.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvMM.StateSelected.DataCell.Back.Color1 = System.Drawing.Color.Aqua;
+            this.dgvMM.StateSelected.DataCell.Back.Color2 = System.Drawing.Color.Aqua;
             this.dgvMM.TabIndex = 1;
             // 
             // ID
@@ -359,6 +372,7 @@
             this.ID.HeaderText = "ID";
             this.ID.MinimumWidth = 8;
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ID.Width = 150;
             // 
@@ -368,6 +382,7 @@
             this.StaffName.HeaderText = "Full Name";
             this.StaffName.MinimumWidth = 8;
             this.StaffName.Name = "StaffName";
+            this.StaffName.ReadOnly = true;
             this.StaffName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.StaffName.Width = 200;
             // 
@@ -377,6 +392,7 @@
             this.Gender.HeaderText = "Gender";
             this.Gender.MinimumWidth = 8;
             this.Gender.Name = "Gender";
+            this.Gender.ReadOnly = true;
             this.Gender.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Gender.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Gender.Width = 150;
@@ -387,6 +403,7 @@
             this.Birthday.HeaderText = "Birthday";
             this.Birthday.MinimumWidth = 8;
             this.Birthday.Name = "Birthday";
+            this.Birthday.ReadOnly = true;
             this.Birthday.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Birthday.Width = 150;
             // 
@@ -396,6 +413,7 @@
             this.PhoneNumber.HeaderText = "Phone Number";
             this.PhoneNumber.MinimumWidth = 8;
             this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.ReadOnly = true;
             this.PhoneNumber.Width = 200;
             // 
             // Email
@@ -404,6 +422,7 @@
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 8;
             this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             this.Email.Width = 250;
             // 
             // Position
@@ -412,7 +431,17 @@
             this.Position.HeaderText = "Position";
             this.Position.MinimumWidth = 8;
             this.Position.Name = "Position";
+            this.Position.ReadOnly = true;
             this.Position.Width = 150;
+            // 
+            // HireDate
+            // 
+            this.HireDate.DataPropertyName = "Hire Date";
+            this.HireDate.HeaderText = "Hire Date";
+            this.HireDate.MinimumWidth = 6;
+            this.HireDate.Name = "HireDate";
+            this.HireDate.ReadOnly = true;
+            this.HireDate.Width = 125;
             // 
             // UCStaffs
             // 
@@ -468,5 +497,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Position;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HireDate;
     }
 }
