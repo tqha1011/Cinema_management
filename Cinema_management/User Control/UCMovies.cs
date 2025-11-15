@@ -17,6 +17,25 @@ namespace Cinema_management
         public UCMovies()
         {
             InitializeComponent();
+
+            // đăng ký: khi addNewMovie1 bắn sk MovieSaved thì hàm AddNewMovie1_MovieSaved form này chạy
+            addNewMovie1.MovieSaved += AddNewMovie1_MovieSaved;
+
+            addNewMovie1.Visible = false;
+        }
+
+        private void AddNewMovie1_MovieSaved(object sender, Movie movieData)
+        {
+            // movieData chính là đối tượng "newMovie" được gửi từ AddNewMovie.cs
+            dgvMM.Rows.Add(
+                movieData.MovieName,
+                movieData.Genre,
+                movieData.AgeRating,
+                movieData.Duration,
+                movieData.Description,
+                movieData.ReleaseDate
+                );
+            addNewMovie1.Visible = false;
         }
         private void UCMovies_Load(object sender, EventArgs e)
         {
@@ -24,10 +43,8 @@ namespace Cinema_management
             dgvMM.ReadOnly = true;
             dgvMM.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
-            dgvMM.StateCommon.Background.Color1 = Color.White;
-            //dgvMM.StateCommon.HeaderColumn.Content.Font = new Font("Microsoft YaHei UI", 12);
-            //dgvMM.StateCommon.DataCell.Content.Font = new Font("Microsoft YaHei UI", 10);
-
+            Color white = Color.White;
+            dgvMM.StateCommon.Background.Color1 = white;
             dgvMM.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
 
 
@@ -47,6 +64,12 @@ namespace Cinema_management
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            addNewMovie1.Visible = true;
+            addNewMovie1.BringToFront(); //dua len lop tren cung
         }
     }
 }
