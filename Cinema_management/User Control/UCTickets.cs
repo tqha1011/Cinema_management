@@ -21,5 +21,10 @@ namespace Cinema_management
         {
 
         }
+
+        private void seatMapContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
