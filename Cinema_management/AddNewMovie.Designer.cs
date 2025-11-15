@@ -64,7 +64,6 @@
             this.pnAdd.Size = new System.Drawing.Size(800, 105);
             this.pnAdd.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnAdd.TabIndex = 0;
-            this.pnAdd.Paint += new System.Windows.Forms.PaintEventHandler(this.pnAdd_Paint);
             // 
             // kryptonLabel1
             // 
@@ -250,15 +249,11 @@
             // 
             // kryptonDateTimePicker1
             // 
-            this.kryptonDateTimePicker1.CalendarTodayDate = new System.DateTime(2025, 11, 12, 0, 0, 0, 0);
-            this.kryptonDateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.kryptonDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.kryptonDateTimePicker1.Location = new System.Drawing.Point(474, 541);
             this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
             this.kryptonDateTimePicker1.Size = new System.Drawing.Size(270, 34);
             this.kryptonDateTimePicker1.StateCommon.Border.Rounding = 5F;
             this.kryptonDateTimePicker1.TabIndex = 5;
-            this.kryptonDateTimePicker1.ValueNullable = new System.DateTime(2025, 11, 13, 0, 0, 0, 0);
             // 
             // lblDescription
             // 
@@ -303,7 +298,6 @@
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnCancel.Values.Text = "Cancel";
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -321,7 +315,6 @@
             this.btnSave.TabIndex = 6;
             this.btnSave.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnSave.Values.Text = "Save Movie";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pictureBox1
             // 
