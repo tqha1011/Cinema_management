@@ -11,7 +11,6 @@ namespace Cinema_management
 {
     public partial class AddNewMovie : UserControl
     {
-        // --- 1. BIẾN BẠN ĐANG THIẾU LÀ ĐÂY ---
         public int? MovieIDToEdit { get; set; } = null;
         // ---------------------------------
 
@@ -30,9 +29,7 @@ namespace Cinema_management
             this.btnUploadPoster.Click += new System.EventHandler(this.pictureBox1_Click);
         }
 
-        /// <summary>
-        /// Tải form: Kiểm tra xem đang "Add" hay "Edit"
-        /// </summary>
+        // Tải form: Kiểm tra xem đang "Add" hay "Edit"
         private void AddNewMovie_Load(object sender, EventArgs e)
         {
             kryptonDateTimePicker1.Format = DateTimePickerFormat.Custom;
@@ -40,13 +37,13 @@ namespace Cinema_management
 
             if (MovieIDToEdit.HasValue)
             {
-                // --- CHẾ ĐỘ EDIT ---
+                //EDIT 
                 btnSave.Text = "Update";
                 LoadMovieForEditing(MovieIDToEdit.Value);
             }
             else
             {
-                // --- CHẾ ĐỘ ADD ---
+                //ADD
                 btnSave.Text = "Save Movie";
             }
         }
