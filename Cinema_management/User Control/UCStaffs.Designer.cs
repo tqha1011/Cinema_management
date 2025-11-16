@@ -170,6 +170,7 @@
             this.btnUpdateStaff.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnUpdateStaff.Values.Image = global::Cinema_management.Properties.Resources.jam__write__1_1;
             this.btnUpdateStaff.Values.Text = "Update";
+            this.btnUpdateStaff.Click += new System.EventHandler(this.btnUpdateStaff_Click);
             // 
             // flowLayoutPanel1
             // 
