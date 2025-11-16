@@ -1,4 +1,7 @@
-﻿namespace Cinema_management
+﻿using System;
+using System.Windows.Forms;
+
+namespace Cinema_management
 {
     partial class AddNewMovie
     {
@@ -194,11 +197,10 @@
             this.cbbAge.CueHint.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbAge.DropDownWidth = 156;
             this.cbbAge.Items.AddRange(new object[] {
-            "P",
-            "K",
-            "T13",
-            "T16",
-            "T18"});
+            "0",
+            "13",
+            "16",
+            "18"});
             this.cbbAge.Location = new System.Drawing.Point(258, 429);
             this.cbbAge.Name = "cbbAge";
             this.cbbAge.Size = new System.Drawing.Size(160, 34);
@@ -211,7 +213,7 @@
             this.cbbAge.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.cbbAge.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbAge.TabIndex = 4;
-            this.cbbAge.Text = "P";
+            this.cbbAge.Text = "0";
             // 
             // lblDuration
             // 
@@ -409,6 +411,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void pnAdd_Paint(object sender, PaintEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
