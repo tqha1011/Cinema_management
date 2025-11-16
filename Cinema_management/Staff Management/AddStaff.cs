@@ -60,5 +60,10 @@ namespace Cinema_management
         {
 
         }
+
+        private void AddStaff_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -81,5 +81,10 @@ namespace Cinema_management
                 MessageBox.Show("Da xay ra loi: " + ex.Message, "Loi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnUpdateStaff_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
