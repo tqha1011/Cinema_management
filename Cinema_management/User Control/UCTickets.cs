@@ -9,12 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Cinema_management
 {
     public partial class UCTickets : UserControl
     {
-        string connectionString = "Server=tcp:it008-sever-zerobug.database.windows.net,1433;Database=CinemaManagement_DB;User ID=thaotien_it008;Password=Zerobug2025;Encrypt=True;";
+        string connectionString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
 
         private struct SuatChieuInfo
         {
