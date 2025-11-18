@@ -83,6 +83,7 @@ namespace Cinema_management
         {
             if (currentStaffId > 0)
             {
+                lblAdd.Text = "Update Staff";
                 LoadStaffForUpdate();
             }
         }
