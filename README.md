@@ -1,6 +1,8 @@
 # 🎥🎬 Cinema_management
 
-Welcome to Zerobug's project. This project is for 
+Welcome to Zerobug's project.
+
+This project is for **IT008-Lập trình trực quan** subject in UIT-VNUHCM
 
 ![ElmoFireGIF](https://github.com/user-attachments/assets/43f51b59-30e9-4c20-8012-04bdad649056)
 
