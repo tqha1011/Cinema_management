@@ -97,5 +97,18 @@ namespace Cinema_management
                 LoadStaffs(); // Tai lai danh sach nhan vien sau khi cap nhat
             }
         }
+
+        private void pictureBoxFind_Click(object sender, EventArgs e)
+        {
+            string seacrh_name = txbSearchStaff.Text;
+            if(seacrh_name == "")
+            {
+                LoadStaffs(); // neu khong co tu khoa tim kiem thi tai lai danh sach nhan vien
+            }
+            else
+            {
+                dgvMM.DataSource = staffLogic.SearchStaff(seacrh_name); // tim kiem nhan vien theo ten
+            }
+        }
     }
 }

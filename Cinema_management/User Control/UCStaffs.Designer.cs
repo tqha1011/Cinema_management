@@ -38,7 +38,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pnSearch = new Krypton.Toolkit.KryptonPanel();
             this.txbSearchStaff = new Krypton.Toolkit.KryptonTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFind = new System.Windows.Forms.PictureBox();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
             this.dgvMM = new Krypton.Toolkit.KryptonDataGridView();
             this.ID = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
@@ -54,7 +54,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnSearch)).BeginInit();
             this.pnSearch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
@@ -91,6 +91,14 @@
             this.btnDeleteStaff.Location = new System.Drawing.Point(767, 2);
             this.btnDeleteStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteStaff.Name = "btnDeleteStaff";
+            this.btnDeleteStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.Black;
+            this.btnDeleteStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.Black;
+            this.btnDeleteStaff.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDeleteStaff.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDeleteStaff.OverrideFocus.Back.Color1 = System.Drawing.Color.Black;
+            this.btnDeleteStaff.OverrideFocus.Back.Color2 = System.Drawing.Color.Black;
+            this.btnDeleteStaff.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDeleteStaff.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnDeleteStaff.Size = new System.Drawing.Size(133, 46);
             this.btnDeleteStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.btnDeleteStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
@@ -135,6 +143,14 @@
             this.btnUpdateStaff.Location = new System.Drawing.Point(628, 2);
             this.btnUpdateStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateStaff.Name = "btnUpdateStaff";
+            this.btnUpdateStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.Black;
+            this.btnUpdateStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.Black;
+            this.btnUpdateStaff.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnUpdateStaff.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnUpdateStaff.OverrideFocus.Back.Color1 = System.Drawing.Color.Black;
+            this.btnUpdateStaff.OverrideFocus.Back.Color2 = System.Drawing.Color.Black;
+            this.btnUpdateStaff.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnUpdateStaff.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnUpdateStaff.Size = new System.Drawing.Size(133, 46);
             this.btnUpdateStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.btnUpdateStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
@@ -215,6 +231,14 @@
             this.btnAddStaff.Location = new System.Drawing.Point(392, 2);
             this.btnAddStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddStaff.Name = "btnAddStaff";
+            this.btnAddStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.Black;
+            this.btnAddStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.Black;
+            this.btnAddStaff.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnAddStaff.OverrideFocus.Back.Color1 = System.Drawing.Color.Black;
+            this.btnAddStaff.OverrideFocus.Back.Color2 = System.Drawing.Color.Black;
+            this.btnAddStaff.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnAddStaff.Size = new System.Drawing.Size(230, 46);
             this.btnAddStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.btnAddStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
@@ -271,7 +295,7 @@
             // pnSearch
             // 
             this.pnSearch.Controls.Add(this.txbSearchStaff);
-            this.pnSearch.Controls.Add(this.pictureBox1);
+            this.pnSearch.Controls.Add(this.pictureBoxFind);
             this.pnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnSearch.Location = new System.Drawing.Point(3, 2);
             this.pnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 24);
@@ -283,7 +307,7 @@
             // txbSearchStaff
             // 
             this.txbSearchStaff.CueHint.Color1 = System.Drawing.Color.Gray;
-            this.txbSearchStaff.CueHint.CueHintText = "Search staff\'s ID or name...";
+            this.txbSearchStaff.CueHint.CueHintText = "Search staff\'s name...";
             this.txbSearchStaff.CueHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSearchStaff.Location = new System.Drawing.Point(41, 8);
             this.txbSearchStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -293,16 +317,17 @@
             this.txbSearchStaff.StateCommon.Border.Rounding = 10F;
             this.txbSearchStaff.TabIndex = 1;
             // 
-            // pictureBox1
+            // pictureBoxFind
             // 
-            this.pictureBox1.Image = global::Cinema_management.Properties.Resources.lucide__search;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 29);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxFind.Image = global::Cinema_management.Properties.Resources.lucide__search;
+            this.pictureBoxFind.Location = new System.Drawing.Point(14, 8);
+            this.pictureBoxFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxFind.Name = "pictureBoxFind";
+            this.pictureBoxFind.Size = new System.Drawing.Size(21, 29);
+            this.pictureBoxFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxFind.TabIndex = 0;
+            this.pictureBoxFind.TabStop = false;
+            this.pictureBoxFind.Click += new System.EventHandler(this.pictureBoxFind_Click);
             // 
             // kryptonGroup1
             // 
@@ -374,7 +399,7 @@
             this.ID.MinimumWidth = 8;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
-            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.ID.Width = 150;
             // 
             // StaffName
@@ -384,7 +409,7 @@
             this.StaffName.MinimumWidth = 8;
             this.StaffName.Name = "StaffName";
             this.StaffName.ReadOnly = true;
-            this.StaffName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.StaffName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.StaffName.Width = 200;
             // 
             // Gender
@@ -394,7 +419,7 @@
             this.Gender.MinimumWidth = 8;
             this.Gender.Name = "Gender";
             this.Gender.ReadOnly = true;
-            this.Gender.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Gender.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Gender.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Gender.Width = 150;
             // 
@@ -405,7 +430,7 @@
             this.Birthday.MinimumWidth = 8;
             this.Birthday.Name = "Birthday";
             this.Birthday.ReadOnly = true;
-            this.Birthday.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Birthday.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Birthday.Width = 150;
             // 
             // PhoneNumber
@@ -415,6 +440,7 @@
             this.PhoneNumber.MinimumWidth = 8;
             this.PhoneNumber.Name = "PhoneNumber";
             this.PhoneNumber.ReadOnly = true;
+            this.PhoneNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.PhoneNumber.Width = 200;
             // 
             // Email
@@ -424,6 +450,7 @@
             this.Email.MinimumWidth = 8;
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
+            this.Email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Email.Width = 250;
             // 
             // Position
@@ -433,6 +460,7 @@
             this.Position.MinimumWidth = 8;
             this.Position.Name = "Position";
             this.Position.ReadOnly = true;
+            this.Position.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Position.Width = 150;
             // 
             // HireDate
@@ -442,6 +470,7 @@
             this.HireDate.MinimumWidth = 6;
             this.HireDate.Name = "HireDate";
             this.HireDate.ReadOnly = true;
+            this.HireDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.HireDate.Width = 125;
             // 
             // UCStaffs
@@ -465,7 +494,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnSearch)).EndInit();
             this.pnSearch.ResumeLayout(false);
             this.pnSearch.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
@@ -488,7 +517,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Krypton.Toolkit.KryptonPanel pnSearch;
         private Krypton.Toolkit.KryptonTextBox txbSearchStaff;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxFind;
         private Krypton.Toolkit.KryptonGroup kryptonGroup1;
         private Krypton.Toolkit.KryptonDataGridView dgvMM;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn ID;

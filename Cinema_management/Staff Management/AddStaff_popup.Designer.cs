@@ -40,7 +40,7 @@
             this.panelHost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHost.Location = new System.Drawing.Point(10, 10);
             this.panelHost.Name = "panelHost";
-            this.panelHost.Size = new System.Drawing.Size(678, 767);
+            this.panelHost.Size = new System.Drawing.Size(646, 735);
             this.panelHost.StateCommon.Color1 = System.Drawing.Color.White;
             this.panelHost.StateCommon.Color2 = System.Drawing.Color.White;
             this.panelHost.TabIndex = 0;
@@ -50,14 +50,14 @@
             this.panelChu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChu.Location = new System.Drawing.Point(0, 0);
             this.panelChu.Name = "panelChu";
-            this.panelChu.Size = new System.Drawing.Size(678, 767);
+            this.panelChu.Size = new System.Drawing.Size(646, 735);
             this.panelChu.TabIndex = 0;
             // 
             // AddStaff_popup
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(698, 787);
+            this.ClientSize = new System.Drawing.Size(666, 755);
             this.CloseBox = false;
             this.ControlBox = false;
             this.Controls.Add(this.panelHost);
