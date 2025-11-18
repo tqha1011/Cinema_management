@@ -32,6 +32,6 @@ This project is for **IT008-Lập trình trực quan** subject in UIT-VNUHCM
 ## 🗃️ Database schema
 ![erd Database (1)](https://github.com/user-attachments/assets/9a47715c-899c-4868-92c2-02216f85fe93)
 
-<p align="right"><a href="#cinema_managment">Quay lại đầu trang</a></p>
+<p align="right"><a href="#cinema-managment">Quay lại đầu trang</a></p>
 
  
