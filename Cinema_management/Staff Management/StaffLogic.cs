@@ -241,5 +241,36 @@ namespace Cinema_management.Staff_Management
             return dtb.ChangeData(query, sqlParameters);
         }
         #endregion
+
+        #region
+        public Staff GetStaffById(int ID)
+        {
+            string query = "SELECT * FROM NHANVIEN WHERE MANV = @ID";
+            SqlParameter[] sqlParameters = new SqlParameter[]
+            {
+                new SqlParameter("@ID", ID)
+            };
+            DataTable dt = dtb.ReadData(query, sqlParameters);
+            if (dtb.Equals(null) || dt.Rows.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                Staff staff = new Staff();
+                staff.Id = Convert.ToInt32(dt.Rows[0]["MANV"]);
+                staff.Name = dt.Rows[0]["HOTEN"].ToString();
+                staff.Gender = dt.Rows[0]["GIOITINH"].ToString();
+                staff.PhoneNumber = dt.Rows[0]["SODIENTHOAI"].ToString();
+                staff.BirthDate = Convert.ToDateTime(dt.Rows[0]["NGAYSINH"]);
+                staff.HireDate = Convert.ToDateTime(dt.Rows[0]["NGAYVAOLAM"]);
+                staff.Position = dt.Rows[0]["VAITRO"].ToString();
+                staff.Email = dt.Rows[0]["EMAIL"].ToString();
+                staff.AccountUsername = dt.Rows[0]["USERNAME"].ToString();
+                staff.AccountPassword = dt.Rows[0]["PASSWORD"].ToString();
+                return staff;
+            }
+        }
+        #endregion
     }
 }

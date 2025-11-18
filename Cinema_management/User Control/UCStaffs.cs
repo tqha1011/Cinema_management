@@ -84,7 +84,18 @@ namespace Cinema_management
 
         private void btnUpdateStaff_Click(object sender, EventArgs e)
         {
-
+            if (dgvMM.CurrentRow == null)
+            {
+                MessageBox.Show("Hay chon 1 staff de cap nhat");
+                return;
+            }
+            else
+            {
+                int id = Convert.ToInt32(dgvMM.CurrentRow.Cells["ID"].Value); // lay MANV cua dong hien tai
+                AddStaff_popup addStaffPopup = new AddStaff_popup(id);
+                addStaffPopup.ShowDialog(this); // Hien thi Usercontrol AddStaff trong mot popup
+                LoadStaffs(); // Tai lai danh sach nhan vien sau khi cap nhat
+            }
         }
     }
 }
