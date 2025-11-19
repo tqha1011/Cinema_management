@@ -135,7 +135,6 @@ namespace Cinema_management
         /// </summary>
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // Chỉ cần gọi hàm OpenMovieForm
             OpenMovieForm(null);
         }
 
@@ -210,7 +209,6 @@ namespace Cinema_management
 
         #endregion
 
-        // Bỏ mấy hàm linh tinh không dùng
         private void kryptonButton1_Click(object sender, EventArgs e) { }
         private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
         private void kryptonButton2_Click(object sender, EventArgs e) { }
