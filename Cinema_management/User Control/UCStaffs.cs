@@ -14,6 +14,7 @@ namespace Cinema_management
     public partial class UCStaffs : UserControl
     {
         private StaffLogic staffLogic;
+        private BindingSource staffBindingSource = new BindingSource(); // khoi tao binding source de luu tru danh sach nhan vien
         public UCStaffs()
         {
             InitializeComponent();
@@ -21,8 +22,9 @@ namespace Cinema_management
         // Ham load danh sach nhan vien
         private void LoadStaffs()
         {
-            // load danh sach nhan vien tu database va hien thi tren giao dien
-            dgvMM.DataSource = staffLogic.ShowListStaff();
+            DataTable dt = staffLogic.ShowListStaff();
+            staffBindingSource.DataSource = dt; // dung BindingSource de luu tru danh sach nhan vien, giup tang toc truy xuat tim kiem va loc du lieu
+            dgvMM.DataSource = staffBindingSource;
         }
         private void UCStaffs_Load(object sender, EventArgs e)
         {
@@ -108,6 +110,22 @@ namespace Cinema_management
             else
             {
                 dgvMM.DataSource = staffLogic.SearchStaff(seacrh_name); // tim kiem nhan vien theo ten
+            }
+        }
+
+        private void txbSearchStaff_TextChanged(object sender, EventArgs e)
+        {
+            string search_name = txbSearchStaff.Text.Trim(); // tao bien luu tu khoa nguoi dung nhap
+            if(string.IsNullOrEmpty(search_name))
+            {
+                staffBindingSource.RemoveFilter(); // neu khong co tu khoa thi xoa bieu thuc loc
+            }
+            else
+            {
+                string column = "Full Name";
+                string escaped = search_name.Replace("'", "''");
+                string filter_expression = string.Format("[{0}] LIKE '%{1}%'", column, escaped);
+                staffBindingSource.Filter = filter_expression; // ap dung bieu thuc loc len BindingSource
             }
         }
     }
