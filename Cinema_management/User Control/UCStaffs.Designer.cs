@@ -316,6 +316,7 @@
             this.txbSearchStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
             this.txbSearchStaff.StateCommon.Border.Rounding = 10F;
             this.txbSearchStaff.TabIndex = 1;
+            this.txbSearchStaff.TextChanged += new System.EventHandler(this.txbSearchStaff_TextChanged);
             // 
             // pictureBoxFind
             // 
