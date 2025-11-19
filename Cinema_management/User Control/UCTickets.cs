@@ -302,5 +302,58 @@ namespace Cinema_management
         {
 
         }
+
+        private void seatMapContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelSidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            // 1. Kiểm tra xem có_ghế nào được chọn không
+            if (DSGheDangChon.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất một ghế để tiếp tục.",
+                                "Thông báo",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 2. Cập nhật lại_số_ghế đã bán 
+            this.CountGheDaBan += DSGheDangChon.Count;
+            CapNhatSoGhe(); // Cập nhật label đếm số ghế
+
+            // 3. Đổi trạng thái các ghế đang chọn thành "Đã bán"
+            foreach (KryptonButton btnGhe in DSGheDangChon)
+            {
+                // Đổi màu nền
+                btnGhe.StateCommon.Back.Color1 = colorGheDaDat;
+                btnGhe.StateCommon.Back.Color2 = colorGheDaDat;
+                btnGhe.StateCommon.Border.Color1 = colorGheDaDat;
+                // Đổi màu chữ
+                btnGhe.StateCommon.Content.ShortText.Color1 = chuGheDaDat;
+
+                // Vô hiệu hóa nút
+                btnGhe.Enabled = false;
+
+                // Gỡ sự kiện Click
+                btnGhe.Click -= BtnGhe_Click;
+            }
+
+            // 4. Xóa danh sách ghế đang chọn
+            DSGheDangChon.Clear();
+
+            // 5. Cập nhật lại thông tin vé 
+            CapNhatThongTinVe();
+
+            //////////////////////////// Hiện form thanh toan ở đây //////////////////////
+
+        }
     }
 }

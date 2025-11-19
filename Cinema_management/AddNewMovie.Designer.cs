@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace Cinema_management
+﻿namespace Cinema_management
 {
     partial class AddNewMovie
     {
@@ -51,7 +48,6 @@ namespace Cinema_management
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
             this.btnSave = new Krypton.Toolkit.KryptonButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnUploadPoster = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).BeginInit();
             this.pnAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbbGenre)).BeginInit();
@@ -197,10 +193,11 @@ namespace Cinema_management
             this.cbbAge.CueHint.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbAge.DropDownWidth = 156;
             this.cbbAge.Items.AddRange(new object[] {
-            "0",
-            "13",
-            "16",
-            "18"});
+            "P",
+            "K",
+            "T13",
+            "T16",
+            "T18"});
             this.cbbAge.Location = new System.Drawing.Point(258, 429);
             this.cbbAge.Name = "cbbAge";
             this.cbbAge.Size = new System.Drawing.Size(160, 34);
@@ -213,7 +210,7 @@ namespace Cinema_management
             this.cbbAge.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.cbbAge.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbAge.TabIndex = 4;
-            this.cbbAge.Text = "0";
+            this.cbbAge.Text = "P";
             // 
             // lblDuration
             // 
@@ -334,53 +331,11 @@ namespace Cinema_management
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // btnUploadPoster
-            // 
-            this.btnUploadPoster.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnUploadPoster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUploadPoster.Location = new System.Drawing.Point(53, 184);
-            this.btnUploadPoster.Name = "btnUploadPoster";
-            this.btnUploadPoster.Size = new System.Drawing.Size(170, 49);
-            this.btnUploadPoster.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnUploadPoster.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnUploadPoster.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnUploadPoster.StateCommon.Border.Rounding = 10F;
-            this.btnUploadPoster.StateCommon.Border.Width = 0;
-            this.btnUploadPoster.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnUploadPoster.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUploadPoster.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnUploadPoster.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnUploadPoster.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUploadPoster.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnUploadPoster.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnUploadPoster.StatePressed.Border.Rounding = 10F;
-            this.btnUploadPoster.StatePressed.Border.Width = 0;
-            this.btnUploadPoster.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnUploadPoster.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUploadPoster.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.btnUploadPoster.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.btnUploadPoster.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnUploadPoster.StateTracking.Border.Rounding = 10F;
-            this.btnUploadPoster.StateTracking.Border.Width = 0;
-            this.btnUploadPoster.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnUploadPoster.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUploadPoster.TabIndex = 7;
-            this.btnUploadPoster.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnUploadPoster.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__add_rounded;
-            this.btnUploadPoster.Values.Text = "Upload Poster";
-            // 
             // AddNewMovie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnUploadPoster);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.kryptonDateTimePicker1);
@@ -413,11 +368,6 @@ namespace Cinema_management
 
         }
 
-        private void pnAdd_Paint(object sender, PaintEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
 
         private Krypton.Toolkit.KryptonPanel pnAdd;
@@ -440,6 +390,5 @@ namespace Cinema_management
         private Krypton.Toolkit.KryptonTextBox txbScript;
         private Krypton.Toolkit.KryptonButton btnCancel;
         private Krypton.Toolkit.KryptonButton btnSave;
-        private Krypton.Toolkit.KryptonButton btnUploadPoster;
     }
 }
