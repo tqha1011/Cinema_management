@@ -57,17 +57,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewMovie.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddNewMovie.Designer.cs">
-      <DependentUpon>AddNewMovie.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddShowtime.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie\AddUpdateMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie\AddUpdateMovie.Designer.cs">
+      <DependentUpon>AddUpdateMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Database_access\Database.cs" />
     <Compile Include="FormMain.cs">
@@ -111,6 +111,12 @@
     </Compile>
     <Compile Include="Staff Management\Staff.cs" />
     <Compile Include="Staff Management\StaffLogic.cs" />
+    <Compile Include="User Control\UCMovies1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UCMovies1.Designer.cs">
+      <DependentUpon>UCMovies1.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCStaffs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,12 +134,6 @@
     </Compile>
     <Compile Include="User Control\UCDashboard.Designer.cs">
       <DependentUpon>UCDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Control\UCMovies.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UCMovies.Designer.cs">
-      <DependentUpon>UCMovies.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UCRooms.cs">
       <SubType>UserControl</SubType>
@@ -153,11 +153,11 @@
     <Compile Include="User Control\UCTickets1.Designer.cs">
       <DependentUpon>UCTickets1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddNewMovie.resx">
-      <DependentUpon>AddNewMovie.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddShowtime.resx">
       <DependentUpon>AddShowtime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie\AddUpdateMovie.resx">
+      <DependentUpon>AddUpdateMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -187,6 +187,9 @@
     <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
       <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UCMovies1.resx">
+      <DependentUpon>UCMovies1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCStaffs.resx">
       <DependentUpon>UCStaffs.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,9 +198,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCDashboard.resx">
       <DependentUpon>UCDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UCMovies.resx">
-      <DependentUpon>UCMovies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCRooms.resx">
       <DependentUpon>UCRooms.cs</DependentUpon>
