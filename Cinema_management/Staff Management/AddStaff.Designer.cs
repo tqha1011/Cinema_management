@@ -68,7 +68,7 @@
             this.pnAdd.Location = new System.Drawing.Point(0, 0);
             this.pnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnAdd.Name = "pnAdd";
-            this.pnAdd.Size = new System.Drawing.Size(687, 64);
+            this.pnAdd.Size = new System.Drawing.Size(675, 64);
             this.pnAdd.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnAdd.TabIndex = 2;
             // 
@@ -80,7 +80,7 @@
             this.btnExitAddStaf.FlatAppearance.BorderSize = 0;
             this.btnExitAddStaf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitAddStaf.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitAddStaf.Location = new System.Drawing.Point(658, 8);
+            this.btnExitAddStaf.Location = new System.Drawing.Point(646, 8);
             this.btnExitAddStaf.Name = "btnExitAddStaf";
             this.btnExitAddStaf.Size = new System.Drawing.Size(26, 23);
             this.btnExitAddStaf.TabIndex = 1;
@@ -345,8 +345,7 @@
             // 
             // AddStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.cboPosition);
             this.Controls.Add(this.btnSaveStaff);
@@ -374,7 +373,8 @@
             this.Controls.Add(this.pnAdd);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddStaff";
-            this.Size = new System.Drawing.Size(687, 758);
+            this.Size = new System.Drawing.Size(675, 744);
+            this.Load += new System.EventHandler(this.AddStaff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).EndInit();
             this.pnAdd.ResumeLayout(false);
             this.pnAdd.PerformLayout();

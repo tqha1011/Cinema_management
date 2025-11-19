@@ -81,5 +81,34 @@ namespace Cinema_management
                 MessageBox.Show("Da xay ra loi: " + ex.Message, "Loi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnUpdateStaff_Click(object sender, EventArgs e)
+        {
+            if (dgvMM.CurrentRow == null)
+            {
+                MessageBox.Show("Hay chon 1 staff de cap nhat");
+                return;
+            }
+            else
+            {
+                int id = Convert.ToInt32(dgvMM.CurrentRow.Cells["ID"].Value); // lay MANV cua dong hien tai
+                AddStaff_popup addStaffPopup = new AddStaff_popup(id);
+                addStaffPopup.ShowDialog(this); // Hien thi Usercontrol AddStaff trong mot popup
+                LoadStaffs(); // Tai lai danh sach nhan vien sau khi cap nhat
+            }
+        }
+
+        private void pictureBoxFind_Click(object sender, EventArgs e)
+        {
+            string seacrh_name = txbSearchStaff.Text;
+            if(seacrh_name == "")
+            {
+                LoadStaffs(); // neu khong co tu khoa tim kiem thi tai lai danh sach nhan vien
+            }
+            else
+            {
+                dgvMM.DataSource = staffLogic.SearchStaff(seacrh_name); // tim kiem nhan vien theo ten
+            }
+        }
     }
 }

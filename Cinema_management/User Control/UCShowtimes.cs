@@ -20,7 +20,6 @@ namespace Cinema_management
         public UCShowtimes()
         {
             InitializeComponent();
-
             this.dgvShows.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShows_CellContentClick);
         }
 
@@ -54,7 +53,12 @@ namespace Cinema_management
             dtpSearchDate.CustomFormat = "dd/MM/yyyy";
             dtpSearchDate.Value = DateTime.Today;
 
+            // --- THÊM MỚI: Tải ComboBox lọc phim ---
+            LoadMovieFilterComboBox();
+
+            // Gắn sự kiện
             this.dtpSearchDate.ValueChanged += new System.EventHandler(this.Filter_Changed);
+            this.cbbMovieFilter.SelectedIndexChanged += new System.EventHandler(this.Filter_Changed); // THÊM MỚI
             this.kryptonButton1.Click += new System.EventHandler(this.RoomFilter_Click);
             this.kryptonButton2.Click += new System.EventHandler(this.RoomFilter_Click);
             this.kryptonButton3.Click += new System.EventHandler(this.RoomFilter_Click);
@@ -66,6 +70,37 @@ namespace Cinema_management
             this.dgvShows.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvShows_CurrentCellDirtyStateChanged);
 
             LoadShowtimesData();
+        }
+
+        /// <summary>
+        /// --- HÀM MỚI: Tải danh sách phim vào ComboBox lọc ---
+        /// </summary>
+        private void LoadMovieFilterComboBox()
+        {
+            try
+            {
+                Database db = new Database();
+                string query = "SELECT TENPHIM FROM PHIM ORDER BY TENPHIM";
+                DataTable dt = db.ReadData(query);
+
+                if (dt != null)
+                {
+                    // Tạo một hàng mới cho "Tất cả phim"
+                    DataRow newRow = dt.NewRow();
+                    newRow["TENPHIM"] = "Tất cả phim";
+                    dt.Rows.InsertAt(newRow, 0); // Thêm vào đầu danh sách
+
+                    cbbMovieFilter.DataSource = dt;
+                    cbbMovieFilter.DisplayMember = "TENPHIM";
+                    cbbMovieFilter.ValueMember = "TENPHIM";
+                    cbbMovieFilter.DropDownStyle = ComboBoxStyle.DropDownList;
+                    cbbMovieFilter.SelectedIndex = 0; // Chọn "Tất cả phim" làm mặc định
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải danh sách phim: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         /// <summary>
@@ -138,7 +173,7 @@ namespace Cinema_management
             {
                 Text = showtimeID.HasValue ? "Edit Showtime" : "Add Showtime",
                 StartPosition = FormStartPosition.CenterParent,
-                ClientSize = new System.Drawing.Size(1067, 562), // Kích thước bạn yêu cầu
+                ClientSize = new System.Drawing.Size(1067, 562),
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 MaximizeBox = false,
                 MinimizeBox = false
@@ -152,7 +187,7 @@ namespace Cinema_management
         }
 
         /// <summary>
-        /// Tải lại dữ liệu khi thay đổi bộ lọc (ngày).
+        /// Tải lại dữ liệu khi thay đổi bộ lọc (ngày hoặc phim).
         /// </summary>
         private void Filter_Changed(object sender, EventArgs e)
         {
@@ -220,6 +255,14 @@ namespace Cinema_management
                     query += " AND pc.TENPHONG = @RoomName";
                     parameters.Add(new SqlParameter("@RoomName", currentRoomFilter));
                 }
+
+                // --- THÊM MỚI: Lọc theo phim ---
+                if (cbbMovieFilter.SelectedValue != null && cbbMovieFilter.SelectedValue.ToString() != "Tất cả phim")
+                {
+                    query += " AND p.TENPHIM = @TenPhim";
+                    parameters.Add(new SqlParameter("@TenPhim", cbbMovieFilter.SelectedValue.ToString()));
+                }
+
                 query += " ORDER BY pc.TENPHONG, sc.THOIGIANCHIEU";
 
                 DataTable dt = db.ReadData(query, parameters.ToArray());

@@ -29,39 +29,35 @@
         private void InitializeComponent()
         {
             this.panelHost = new Krypton.Toolkit.KryptonPanel();
-            this.addStaff1 = new Cinema_management.AddStaff();
+            this.panelChu = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.panelHost)).BeginInit();
             this.panelHost.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHost
             // 
-            this.panelHost.Controls.Add(this.addStaff1);
+            this.panelHost.Controls.Add(this.panelChu);
             this.panelHost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHost.Location = new System.Drawing.Point(10, 10);
             this.panelHost.Name = "panelHost";
-            this.panelHost.Size = new System.Drawing.Size(672, 767);
+            this.panelHost.Size = new System.Drawing.Size(646, 735);
             this.panelHost.StateCommon.Color1 = System.Drawing.Color.White;
             this.panelHost.StateCommon.Color2 = System.Drawing.Color.White;
             this.panelHost.TabIndex = 0;
             // 
-            // addStaff1
+            // panelChu
             // 
-            this.addStaff1.BackColor = System.Drawing.Color.White;
-            this.addStaff1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addStaff1.Location = new System.Drawing.Point(0, 0);
-            this.addStaff1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.addStaff1.Name = "addStaff1";
-            this.addStaff1.Size = new System.Drawing.Size(672, 767);
-            this.addStaff1.TabIndex = 0;
-            this.addStaff1.Load += new System.EventHandler(this.addStaff1_Load_1);
+            this.panelChu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChu.Location = new System.Drawing.Point(0, 0);
+            this.panelChu.Name = "panelChu";
+            this.panelChu.Size = new System.Drawing.Size(646, 735);
+            this.panelChu.TabIndex = 0;
             // 
             // AddStaff_popup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(692, 787);
+            this.ClientSize = new System.Drawing.Size(666, 755);
             this.CloseBox = false;
             this.ControlBox = false;
             this.Controls.Add(this.panelHost);
@@ -78,6 +74,7 @@
             this.StateCommon.Border.Rounding = 10F;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.White;
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
+            this.Load += new System.EventHandler(this.AddStaff_popup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelHost)).EndInit();
             this.panelHost.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -87,6 +84,6 @@
         #endregion
 
         private Krypton.Toolkit.KryptonPanel panelHost;
-        private AddStaff addStaff1;
+        private System.Windows.Forms.Panel panelChu;
     }
 }
