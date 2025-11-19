@@ -40,7 +40,7 @@ namespace Cinema_management
         {
             pnContentforUC.Controls.Clear();
 
-            UCMovies uc = new UCMovies();
+            UCMovies1 uc = new UCMovies1();
             uc.Dock = DockStyle.Fill;
 
             pnContentforUC.Controls.Add(uc);

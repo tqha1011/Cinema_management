@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Krypton.Toolkit.IconSpec iconSpec7 = new Krypton.Toolkit.IconSpec();
-            Krypton.Toolkit.IconSpec iconSpec8 = new Krypton.Toolkit.IconSpec();
+            Krypton.Toolkit.IconSpec iconSpec1 = new Krypton.Toolkit.IconSpec();
+            Krypton.Toolkit.IconSpec iconSpec2 = new Krypton.Toolkit.IconSpec();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblMovieManagement = new Krypton.Toolkit.KryptonLabel();
@@ -37,18 +37,18 @@
             this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
             this.dgvMM = new Krypton.Toolkit.KryptonDataGridView();
-            this.MovieName = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.Genre = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.AgeRating = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
-            this.Duration = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.editBtn = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.delBtn = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pnSearch = new Krypton.Toolkit.KryptonPanel();
             this.txbSearchMovie = new Krypton.Toolkit.KryptonTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnSearchDate = new Krypton.Toolkit.KryptonPanel();
             this.dtpSearchDate = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.MovieName = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.Genre = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.AgeRating = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
+            this.Duration = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.editBtn = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.delBtn = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
@@ -201,67 +201,6 @@
             this.dgvMM.TabIndex = 2;
             this.dgvMM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView1_CellContentClick);
             // 
-            // MovieName
-            // 
-            this.MovieName.HeaderText = "Movie Name";
-            this.MovieName.MinimumWidth = 8;
-            this.MovieName.Name = "MovieName";
-            this.MovieName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MovieName.Width = 200;
-            // 
-            // Genre
-            // 
-            this.Genre.HeaderText = "Genre";
-            this.Genre.MinimumWidth = 8;
-            this.Genre.Name = "Genre";
-            this.Genre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Genre.Width = 250;
-            // 
-            // AgeRating
-            // 
-            this.AgeRating.DropDownWidth = 121;
-            this.AgeRating.HeaderText = "AgeRating";
-            this.AgeRating.Items.Add("P");
-            this.AgeRating.Items.Add("K");
-            this.AgeRating.Items.Add("T13");
-            this.AgeRating.Items.Add("T16");
-            this.AgeRating.Items.Add("T18");
-            this.AgeRating.MinimumWidth = 8;
-            this.AgeRating.Name = "AgeRating";
-            this.AgeRating.Width = 150;
-            // 
-            // Duration
-            // 
-            this.Duration.HeaderText = "Duration";
-            this.Duration.MinimumWidth = 8;
-            this.Duration.Name = "Duration";
-            this.Duration.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Duration.Width = 120;
-            // 
-            // editBtn
-            // 
-            this.editBtn.HeaderText = "Edit";
-            iconSpec7.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
-            iconSpec7.Icon = null;
-            this.editBtn.IconSpecs.Add(iconSpec7);
-            this.editBtn.MinimumWidth = 8;
-            this.editBtn.Name = "editBtn";
-            this.editBtn.Text = "Edit";
-            this.editBtn.UseColumnTextForButtonValue = true;
-            this.editBtn.Width = 130;
-            // 
-            // delBtn
-            // 
-            this.delBtn.HeaderText = "Delete";
-            iconSpec8.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
-            iconSpec8.Icon = null;
-            this.delBtn.IconSpecs.Add(iconSpec8);
-            this.delBtn.MinimumWidth = 8;
-            this.delBtn.Name = "delBtn";
-            this.delBtn.Text = "Delete";
-            this.delBtn.UseColumnTextForButtonValue = true;
-            this.delBtn.Width = 130;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
@@ -336,6 +275,71 @@
             this.dtpSearchDate.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
             this.dtpSearchDate.StateCommon.Border.Rounding = 10F;
             this.dtpSearchDate.TabIndex = 1;
+            // 
+            // MovieName
+            // 
+            this.MovieName.DataPropertyName = "TENPHIM";
+            this.MovieName.HeaderText = "Movie Name";
+            this.MovieName.MinimumWidth = 8;
+            this.MovieName.Name = "MovieName";
+            this.MovieName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.MovieName.Width = 200;
+            // 
+            // Genre
+            // 
+            this.Genre.DataPropertyName = "THELOAIPHIM";
+            this.Genre.HeaderText = "Genre";
+            this.Genre.MinimumWidth = 8;
+            this.Genre.Name = "Genre";
+            this.Genre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Genre.Width = 250;
+            // 
+            // AgeRating
+            // 
+            this.AgeRating.DataPropertyName = "GIOIHANTUOI";
+            this.AgeRating.DropDownWidth = 121;
+            this.AgeRating.HeaderText = "AgeRating";
+            this.AgeRating.Items.Add("P");
+            this.AgeRating.Items.Add("K");
+            this.AgeRating.Items.Add("T13");
+            this.AgeRating.Items.Add("T16");
+            this.AgeRating.Items.Add("T18");
+            this.AgeRating.MinimumWidth = 8;
+            this.AgeRating.Name = "AgeRating";
+            this.AgeRating.Width = 150;
+            // 
+            // Duration
+            // 
+            this.Duration.DataPropertyName = "THOILUONG";
+            this.Duration.HeaderText = "Duration";
+            this.Duration.MinimumWidth = 8;
+            this.Duration.Name = "Duration";
+            this.Duration.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Duration.Width = 120;
+            // 
+            // editBtn
+            // 
+            this.editBtn.HeaderText = "Edit";
+            iconSpec1.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
+            iconSpec1.Icon = null;
+            this.editBtn.IconSpecs.Add(iconSpec1);
+            this.editBtn.MinimumWidth = 8;
+            this.editBtn.Name = "editBtn";
+            this.editBtn.Text = "Edit";
+            this.editBtn.UseColumnTextForButtonValue = true;
+            this.editBtn.Width = 130;
+            // 
+            // delBtn
+            // 
+            this.delBtn.HeaderText = "Delete";
+            iconSpec2.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
+            iconSpec2.Icon = null;
+            this.delBtn.IconSpecs.Add(iconSpec2);
+            this.delBtn.MinimumWidth = 8;
+            this.delBtn.Name = "delBtn";
+            this.delBtn.Text = "Delete";
+            this.delBtn.UseColumnTextForButtonValue = true;
+            this.delBtn.Width = 130;
             // 
             // UCMovies
             // 
