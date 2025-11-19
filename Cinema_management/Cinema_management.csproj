@@ -69,6 +69,12 @@
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddUpdateMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUpdateMovie.Designer.cs">
+      <DependentUpon>AddUpdateMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database_access\Database.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="Staff Management\Staff.cs" />
     <Compile Include="Staff Management\StaffLogic.cs" />
+    <Compile Include="UCMovies1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMovies1.Designer.cs">
+      <DependentUpon>UCMovies1.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCStaffs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,6 +171,9 @@
     <EmbeddedResource Include="AddShowtime.resx">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddUpdateMovie.resx">
+      <DependentUpon>AddUpdateMovie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
       <DependentUpon>AddStaff_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMovies1.resx">
+      <DependentUpon>UCMovies1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCStaffs.resx">
       <DependentUpon>UCStaffs.cs</DependentUpon>
@@ -221,7 +239,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Logic\" />
+    <Folder Include="Posters\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hugeicons--analytics-03.png" />
   </ItemGroup>

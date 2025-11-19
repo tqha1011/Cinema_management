@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.panelTopInfo = new Krypton.Toolkit.KryptonPanel();
-            this.lblTGianChieu = new Krypton.Toolkit.KryptonLabel();
-            this.lblSeatsCount = new Krypton.Toolkit.KryptonLabel();
-            this.lblRoomName = new Krypton.Toolkit.KryptonLabel();
             this.panelSidebar = new Krypton.Toolkit.KryptonPanel();
             this.btnContinue = new Krypton.Toolkit.KryptonButton();
             this.bdeLine = new Krypton.Toolkit.KryptonBorderEdge();
@@ -59,6 +56,9 @@
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.panelScreen = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.lblRoomName = new Krypton.Toolkit.KryptonLabel();
+            this.lblSeatsCount = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel10 = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.panelTopInfo)).BeginInit();
             this.panelTopInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelSidebar)).BeginInit();
@@ -88,39 +88,6 @@
             this.panelTopInfo.Size = new System.Drawing.Size(1471, 100);
             this.panelTopInfo.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.panelTopInfo.TabIndex = 0;
-            // 
-            // lblTGianChieu
-            // 
-            this.lblTGianChieu.Location = new System.Drawing.Point(539, 29);
-            this.lblTGianChieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lblTGianChieu.Name = "lblTGianChieu";
-            this.lblTGianChieu.Size = new System.Drawing.Size(506, 40);
-            this.lblTGianChieu.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.lblTGianChieu.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTGianChieu.TabIndex = 0;
-            this.lblTGianChieu.Values.Text = "28/10/2025 21:00 - 28/10/2025 23:30";
-            // 
-            // lblSeatsCount
-            // 
-            this.lblSeatsCount.Location = new System.Drawing.Point(232, 29);
-            this.lblSeatsCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lblSeatsCount.Name = "lblSeatsCount";
-            this.lblSeatsCount.Size = new System.Drawing.Size(242, 40);
-            this.lblSeatsCount.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.lblSeatsCount.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeatsCount.TabIndex = 0;
-            this.lblSeatsCount.Values.Text = "Số ghế (128/128)";
-            // 
-            // lblRoomName
-            // 
-            this.lblRoomName.Location = new System.Drawing.Point(40, 29);
-            this.lblRoomName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lblRoomName.Name = "lblRoomName";
-            this.lblRoomName.Size = new System.Drawing.Size(141, 40);
-            this.lblRoomName.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.lblRoomName.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoomName.TabIndex = 0;
-            this.lblRoomName.Values.Text = "Phòng 01";
             // 
             // panelSidebar
             // 
@@ -341,16 +308,13 @@
             // 
             // pnlSeats
             // 
-            this.pnlSeats.AutoScroll = true;
-            this.pnlSeats.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSeats.Location = new System.Drawing.Point(0, 50);
-            this.pnlSeats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnlSeats.Name = "pnlSeats";
-            this.pnlSeats.Size = new System.Drawing.Size(984, 615);
-            this.pnlSeats.StateCommon.Color1 = System.Drawing.Color.White;
-            this.pnlSeats.StateNormal.Color1 = System.Drawing.Color.White;
-            this.pnlSeats.TabIndex = 2;
-            this.pnlSeats.Paint += new System.Windows.Forms.PaintEventHandler(this.seatMapContainer_Paint);
+            this.seatMapContainer.AutoScroll = true;
+            this.seatMapContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.seatMapContainer.Location = new System.Drawing.Point(0, 40);
+            this.seatMapContainer.Name = "seatMapContainer";
+            this.seatMapContainer.Size = new System.Drawing.Size(739, 491);
+            this.seatMapContainer.StateCommon.Color1 = System.Drawing.Color.White;
+            this.seatMapContainer.TabIndex = 2;
             // 
             // panelLegend
             // 
@@ -455,6 +419,36 @@
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Màn hình";
+            // 
+            // lblRoomName
+            // 
+            this.lblRoomName.Location = new System.Drawing.Point(30, 23);
+            this.lblRoomName.Name = "lblRoomName";
+            this.lblRoomName.Size = new System.Drawing.Size(108, 30);
+            this.lblRoomName.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
+            this.lblRoomName.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoomName.TabIndex = 0;
+            this.lblRoomName.Values.Text = "Phòng 01";
+            // 
+            // lblSeatsCount
+            // 
+            this.lblSeatsCount.Location = new System.Drawing.Point(174, 23);
+            this.lblSeatsCount.Name = "lblSeatsCount";
+            this.lblSeatsCount.Size = new System.Drawing.Size(183, 30);
+            this.lblSeatsCount.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
+            this.lblSeatsCount.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeatsCount.TabIndex = 0;
+            this.lblSeatsCount.Values.Text = "Số ghế (128/128)";
+            // 
+            // kryptonLabel10
+            // 
+            this.kryptonLabel10.Location = new System.Drawing.Point(404, 23);
+            this.kryptonLabel10.Name = "kryptonLabel10";
+            this.kryptonLabel10.Size = new System.Drawing.Size(381, 30);
+            this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel10.TabIndex = 0;
+            this.kryptonLabel10.Values.Text = "28/10/2025 21:00 - 28/10/2025 23:30";
             // 
             // UCTickets
             // 
