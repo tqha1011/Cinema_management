@@ -1,13 +1,13 @@
-﻿using Cinema_management.Staff_Management;
+﻿using Cinema_management.MessageboxCustom.Utils;
+using Cinema_management.Staff_Management;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Cinema_management.MessageboxCustom;
 
 namespace Cinema_management
 {
@@ -29,7 +29,7 @@ namespace Cinema_management
         private void UCStaffs_Load(object sender, EventArgs e)
         {
             staffLogic = new StaffLogic();
-            LoadStaffs(); 
+            LoadStaffs();
         }
 
         private void UCStaffs_VisibleChanged(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace Cinema_management
 
         private void btnDeleteStaff_Click(object sender, EventArgs e)
         {
-            if(dgvMM.CurrentRow == null)
+            if (dgvMM.CurrentRow == null)
             {
                 MessageBox.Show("Hay chon 1 staff de xoa");
                 return;
@@ -60,27 +60,27 @@ namespace Cinema_management
             {
                 int id = Convert.ToInt32(dgvMM.CurrentRow.Cells["ID"].Value); // lay MANV cua dong hien tai
                 string name = dgvMM.CurrentRow.Cells["StaffName"].Value.ToString(); // lay ten cua dong hien tai
-                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên " + name + " ?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult result = Alert.ShowWarning("Bạn có chắc chắn muốn xóa nhân viên " + name + " không?");
                 if (result == DialogResult.Yes) // neu xac nhan xoa
                 {
                     if (staffLogic.DeleteStaff(id)) // xoa thanh cong
                     {
-                        MessageBox.Show("Xóa nhân viên thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Alert.Show("Xóa nhân viên thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
                         LoadStaffs();
                     }
                     else // xoa that bai
                     {
-                        MessageBox.Show("Xóa nhân viên thất bại!", "Thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Alert.Show("Xóa nhân viên thất bại!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                     }
                 }
             }
-            catch(NullReferenceException)  // xu ly loi null neu chua chon staff nao de xoa
+            catch (NullReferenceException)  // xu ly loi null neu chua chon staff nao de xoa
             {
-                MessageBox.Show("Du lieu nhan vien khong hop le");
+                MessageBox.Show("Hãy chọn 1 staff để xóa");
             }
-            catch(Exception ex) // xu ly cac loi khac
+            catch (Exception ex) // xu ly cac loi khac
             {
-                MessageBox.Show("Da xay ra loi: " + ex.Message, "Loi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Đã xảy ra lỗi: " + ex.Message, MessagboxCustom.AlertMessagebox.AlertType.Error);
             }
         }
 
@@ -88,7 +88,7 @@ namespace Cinema_management
         {
             if (dgvMM.CurrentRow == null)
             {
-                MessageBox.Show("Hay chon 1 staff de cap nhat");
+                MessageBox.Show("Hãy chọn 1 staff để cập nhật");
                 return;
             }
             else
@@ -103,7 +103,7 @@ namespace Cinema_management
         private void pictureBoxFind_Click(object sender, EventArgs e)
         {
             string seacrh_name = txbSearchStaff.Text;
-            if(seacrh_name == "")
+            if (seacrh_name == "")
             {
                 LoadStaffs(); // neu khong co tu khoa tim kiem thi tai lai danh sach nhan vien
             }
@@ -116,7 +116,7 @@ namespace Cinema_management
         private void txbSearchStaff_TextChanged(object sender, EventArgs e)
         {
             string search_name = txbSearchStaff.Text.Trim(); // tao bien luu tu khoa nguoi dung nhap
-            if(string.IsNullOrEmpty(search_name))
+            if (string.IsNullOrEmpty(search_name))
             {
                 staffBindingSource.RemoveFilter(); // neu khong co tu khoa thi xoa bieu thuc loc
             }
