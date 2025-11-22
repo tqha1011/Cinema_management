@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Cinema_management.MessageboxCustom;
+using Cinema_management.MessageboxCustom.Utils;
 namespace Cinema_management
 {
     public partial class AddStaff : UserControl
@@ -62,7 +64,7 @@ namespace Cinema_management
             }
             if(success)
             {
-                MessageBox.Show("Lưu thông tin nhân viên thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Alert.Show("Lưu thông tin nhân viên thành công!",MessagboxCustom.AlertMessagebox.AlertType.Success);
                 if (this.ParentForm != null)
                 {
                     this.ParentForm.Close();
@@ -70,7 +72,7 @@ namespace Cinema_management
             }
             else
             {
-                MessageBox.Show("Lưu thông tin nhân viên thất bại. Vui lòng kiểm tra lại dữ liệu nhập.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lưu thông tin nhân viên thất bại. Vui lòng kiểm tra lại dữ liệu nhập.", MessagboxCustom.AlertMessagebox.AlertType.Error);
             }
         }
 
