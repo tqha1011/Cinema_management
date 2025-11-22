@@ -63,6 +63,19 @@
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageboxCustom\Alert.cs" />
+    <Compile Include="MessageboxCustom\AlertMessagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageboxCustom\AlertMessagebox.Designer.cs">
+      <DependentUpon>AlertMessagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageboxCustom\Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageboxCustom\Warning.Designer.cs">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </Compile>
     <Compile Include="Movie\AddUpdateMovie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +169,12 @@
     <EmbeddedResource Include="AddShowtime.resx">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MessageboxCustom\AlertMessagebox.resx">
+      <DependentUpon>AlertMessagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageboxCustom\Warning.resx">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Movie\AddUpdateMovie.resx">
       <DependentUpon>AddUpdateMovie.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,7 +240,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+    <None Include="Resources\error.png" />
+    <Content Include="Resources\information.png" />
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hugeicons--analytics-03.png" />
   </ItemGroup>
