@@ -303,5 +303,8 @@
   <ItemGroup>
     <None Include="Resources\material-symbols--square-outline-rounded.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Posters\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
