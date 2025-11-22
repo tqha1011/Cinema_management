@@ -64,18 +64,20 @@
             // 
             // lblMessage
             // 
+            this.lblMessage.AutoSize = false;
             this.lblMessage.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.lblMessage.Location = new System.Drawing.Point(94, 41);
+            this.lblMessage.Location = new System.Drawing.Point(94, 30);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(139, 20);
+            this.lblMessage.Size = new System.Drawing.Size(271, 40);
             this.lblMessage.Text = "kryptonWrapLabel1";
+            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AlertMessagebox
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(358, 148);
+            this.ClientSize = new System.Drawing.Size(362, 134);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.ptbIcon);
             this.Controls.Add(this.btnConfirm);
@@ -101,7 +103,6 @@
             this.Load += new System.EventHandler(this.AlertMessagebox_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
