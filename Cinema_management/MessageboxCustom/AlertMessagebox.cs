@@ -40,6 +40,8 @@ namespace Cinema_management.MessagboxCustom
                     this.StateCommon.Header.Back.Color2 = Color.SeaGreen;
                     btnConfirm.StateCommon.Back.Color1 = Color.SeaGreen;
                     btnConfirm.StateCommon.Back.Color2 = Color.SeaGreen;
+                    btnConfirm.OverrideDefault.Back.Color1 = Color.SeaGreen;
+                    btnConfirm.OverrideDefault.Back.Color2 = Color.SeaGreen;
                     break;
                 case AlertType.Error:
                     ptbIcon.Image = Resources.error;
@@ -47,6 +49,8 @@ namespace Cinema_management.MessagboxCustom
                     this.StateCommon.Header.Back.Color2 = Color.DarkRed;
                     btnConfirm.StateCommon.Back.Color1 = Color.DarkRed;
                     btnConfirm.StateCommon.Back.Color2 = Color.DarkRed;
+                    btnConfirm.OverrideDefault.Back.Color1 = Color.DarkRed;
+                    btnConfirm.OverrideDefault.Back.Color2 = Color.DarkRed;
                     break;
                 case AlertType.Info:
                     ptbIcon.Image = Resources.information;
@@ -54,6 +58,8 @@ namespace Cinema_management.MessagboxCustom
                     this.StateCommon.Header.Back.Color2 = Color.RoyalBlue;
                     btnConfirm.StateCommon.Back.Color1 = Color.RoyalBlue;
                     btnConfirm.StateCommon.Back.Color2 = Color.RoyalBlue;
+                    btnConfirm.OverrideDefault.Back.Color1 = Color.RoyalBlue;
+                    btnConfirm.OverrideDefault.Back.Color2 = Color.RoyalBlue;
                     break;
             }
             this.lblMessage.Text = msg;
