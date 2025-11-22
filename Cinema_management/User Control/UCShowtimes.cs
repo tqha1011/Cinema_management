@@ -343,7 +343,7 @@ namespace Cinema_management
         /// <summary>
         /// Xử lý logic cho nút Delete (xóa các hàng đã được tick).
         /// </summary>
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDelete_Click_1(object sender, EventArgs e)
         {
             List<int> idsToDelete = new List<int>();
             foreach (DataGridViewRow row in dgvShows.Rows)
@@ -414,5 +414,6 @@ namespace Cinema_management
 
         private void lvShowtimes_Click(object sender, EventArgs e) { }
         private void lblShowtimes_Click(object sender, EventArgs e) { }
+
     }
 }

@@ -135,18 +135,19 @@
   <metadata name="editBtn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="iconSpec1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAaxJREFUSEvd
-        lUsrRVEYhneZKclMUi4RJROU68AvMFLKZSIGYkAZyMTczMDIrzCjJFMJndwyRm65X0K5PO/erVqts9fe
-        h0x46qm13nPW9+299i34SxRhRTT8fdrxAT9xQkESBdiGnZZl6KMDn/Adr1FNpjCLPJxF/cH1HvW7i4o/
-        o4p3Yyme4xlmMY6m4CauWc6jSytqWz6wRwE04wvuhDOHXXzFpnCWTAua4n0KQOvuUFmXApc33I6Giego
-        H1FnOqAAGtEU71cQhxZsREMvDWiOfFAB1OMt6jqYs4klrYGKq5D+Zxe/wtTiIqmBXXxEAdSiitvXIRFf
-        A1/xC7S3KpW4BmZ/9ZtuY/Gj4kJF1qNhiNkC5ZMKoBr1ICkbUmBRiMXRMB63wRwqmwlnQVCFp6hsWIHD
-        Ch5Gw3i00N6iY9SDl4/laIr7tmUf9drwYp9BDWp+gsuoRpqbixzHHuql58VuMIaaG7ewF5NIbaBH/SAa
-        hhd4CaexUkEOHKHO2Msq6mjNm/E7jKLWLoYzD3Vo7nn3dZ1kBrXmElM/mSW4gObzl4s3qFta3+R/RxB8
-        AfqPmNDJKagPAAAAAElFTkSuQmCC
-</value>
-  </data>
+  <metadata name="Movie.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Type.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Duration.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Showtimes.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="editBtn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
