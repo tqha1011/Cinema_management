@@ -70,10 +70,6 @@ namespace Cinema_management
                     this.ParentForm.Close();
                 }
             }
-            else
-            {
-                Alert.Show("Lưu thông tin nhân viên thất bại. Vui lòng kiểm tra lại dữ liệu nhập.", MessagboxCustom.AlertMessagebox.AlertType.Error);
-            }
         }
 
         private void cbGender_SelectedIndexChanged(object sender, EventArgs e)

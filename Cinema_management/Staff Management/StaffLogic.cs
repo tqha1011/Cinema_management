@@ -1,4 +1,5 @@
 ﻿using System;
+using Cinema_management.MessageboxCustom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
 using System.Text.RegularExpressions;
+using Cinema_management.MessageboxCustom.Utils;
 
 
 namespace Cinema_management.Staff_Management
@@ -68,70 +70,70 @@ namespace Cinema_management.Staff_Management
             // kiem tra ten nhan vien co bi bo trong khong
             if (string.IsNullOrEmpty(newStaff.Name))
             {
-                MessageBox.Show("Staff name cannot be empty.");
+                Alert.Show("Tên không được bỏ trống!",MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra email co hop le khong
             if (!ValidateEmail(newStaff.Email))
             {
-                MessageBox.Show("Invalid email address.");
+                Alert.Show("Email không hợp lệ!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra so dien thoai co hop le khong
             if (string.IsNullOrEmpty(newStaff.PhoneNumber) || newStaff.PhoneNumber.Length < 10)
             {
-                MessageBox.Show("Invalid phone number.");
+                Alert.Show("Số điện thoại không hợp lệ!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra ngay sinh co hop le khong
-            if (newStaff.BirthDate >= DateTime.Now)
+            if (newStaff.BirthDate >= DateTime.Now || newStaff.BirthDate >= newStaff.HireDate)
             {
-                MessageBox.Show("Invalid birth date.");
+                Alert.Show("Ngày sinh không hợp lệ!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra ngay vao lam co hop le khong
             if (newStaff.HireDate > DateTime.Now || newStaff.HireDate <= newStaff.BirthDate)
             {
-                MessageBox.Show("Invalid hire date.");
+                Alert.Show("Ngày vào làm không hợp lệ!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra gioi tinh hop le khong
             if (string.IsNullOrEmpty(newStaff.Gender))
             {
-                MessageBox.Show("Invalid Gender.");
+                Alert.Show("Giới tính không hợp lệ", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra username co bi bo trong khong
             if (string.IsNullOrEmpty(newStaff.AccountUsername))
             {
-                MessageBox.Show("Username cannot be empty.");
+                Alert.Show("Username không được bỏ trống", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra username da ton tai chua
             if (ValidateUserName(newStaff, id))
             {
-                MessageBox.Show("Username already exists. Please choose a different username.");
+                Alert.Show("Username đã tồn tại", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra mat khau co hop le khong
             if (string.IsNullOrEmpty(newStaff.AccountPassword))
             {
-                MessageBox.Show("Password cannot be empty.");
+                Alert.Show("Mật khẩu không được bỏ trống!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
             // kiem tra admin nhap co dung mat khau khong
             if (newStaff.AccountPassword != passAgain)
             {
-                MessageBox.Show("Passwords do not match.");
+                Alert.Show("Mật khẩu nhập lại không khớp", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return false;
             }
 
