@@ -237,6 +237,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCLogin.resx">
       <DependentUpon>UCLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
       <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </EmbeddedResource>
