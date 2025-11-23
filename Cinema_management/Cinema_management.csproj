@@ -148,6 +148,24 @@
     <Compile Include="Log in\UCLogin.Designer.cs">
       <DependentUpon>UCLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ticket Booking\FormChonSuatChieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\FormChonSuatChieu.Designer.cs">
+      <DependentUpon>FormChonSuatChieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\UCMovieCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCMovieCard.Designer.cs">
+      <DependentUpon>UCMovieCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\UCPhimDangChieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCPhimDangChieu.Designer.cs">
+      <DependentUpon>UCPhimDangChieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCMovies1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -241,6 +259,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Log in\UCLogin.resx">
       <DependentUpon>UCLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\FormChonSuatChieu.resx">
+      <DependentUpon>FormChonSuatChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCMovieCard.resx">
+      <DependentUpon>UCMovieCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCPhimDangChieu.resx">
+      <DependentUpon>UCPhimDangChieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
       <DependentUpon>UCMovies1.cs</DependentUpon>

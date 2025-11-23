@@ -9,6 +9,7 @@
 //using System.Windows.Forms;
 using System.Drawing;
 using System.Windows.Forms;
+using Cinema_management.Ticket_Booking;
 using Krypton.Toolkit;
 
 namespace Cinema_management
@@ -70,12 +71,12 @@ namespace Cinema_management
         {
             pnContentforUC.Controls.Clear();
 
-            UCTickets uc = new UCTickets();
+            UCPhimDangChieu uc = new UCPhimDangChieu();
             uc.Dock = DockStyle.Fill;
 
             pnContentforUC.Controls.Add(uc);
-            int MaSuatChieu = 13;
-            uc.LoadSeats(MaSuatChieu);
+            //int MaSuatChieu = 13;
+            //uc.LoadSeats(MaSuatChieu);
         }
 
         private void FormMain_Load(object sender, System.EventArgs e)
