@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cinema_management
 {
-    public partial class UCPasswordRecovery : UserControl
+    public partial class AddStaff : UserControl
     {
-        public UCPasswordRecovery()
+        public AddStaff()
         {
             InitializeComponent();
         }

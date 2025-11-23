@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Cinema_management.DAL;
-using System.Data.SqlClient;
 
 namespace Cinema_management
 {
@@ -17,55 +15,41 @@ namespace Cinema_management
         public UCDashboard()
         {
             InitializeComponent();
-            timerClock.Start();
-            UpdateDateTime();
-            LoadDashboardStats();
         }
 
-        private void UpdateDateTime()
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
-            DateTime now = DateTime.Now;
-            lblTime.Text = now.ToString("HH:mm:ss");
-            lblDate.Text = now.ToString("dddd, dd/MM/yyyy");
+
         }
 
-        private void timerClock_Tick(object sender, EventArgs e)
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            UpdateDateTime();
+
         }
 
-        private void LoadDashboardStats()
+        private void lbCardValue_Click(object sender, EventArgs e)
         {
-            try
-            {
-                grDateTime.Visible = true;
 
-                Database db = new Database();
-
-                string queryMovies = "SELECT COUNT(*) FROM PHIM";
-                DataTable dtMovies = db.ReadData(queryMovies);
-                if (dtMovies != null && dtMovies.Rows.Count > 0)
-                    lbCardValue.Text = dtMovies.Rows[0][0].ToString();
-
-                string queryShows = "SELECT COUNT(*) FROM SUATCHIEU WHERE CAST(THOIGIANCHIEU AS DATE) = CAST(GETDATE() AS DATE)";
-                DataTable dtShows = db.ReadData(queryShows);
-                if (dtShows != null && dtShows.Rows.Count > 0)
-                    kryptonLabel9.Text = dtShows.Rows[0][0].ToString();
-
-                string queryStaff = "SELECT COUNT(*) FROM NHANVIEN";
-                DataTable dtStaff = db.ReadData(queryStaff);
-                if (dtStaff != null && dtStaff.Rows.Count > 0)
-                    kryptonLabel6.Text = dtStaff.Rows[0][0].ToString();
-            }
-            catch (Exception) { }
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e) { }
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e) { }
-        private void lbCardValue_Click(object sender, EventArgs e) { }
-        private void kryptonLabel2_Click(object sender, EventArgs e) { }
-        private void kryptonGroup1_Panel_Paint(object sender, PaintEventArgs e) { }
-        private void kryptonLabel9_Click(object sender, EventArgs e) { }
-        private void kryptonLabel14_Click(object sender, EventArgs e) { }
+        private void kryptonLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonGroup1_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void kryptonLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonLabel14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

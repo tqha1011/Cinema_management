@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cinema_management
 {
-    public partial class UCLogin : UserControl
+    public partial class AddNewMovie : UserControl
     {
-        public UCLogin()
+        public AddNewMovie()
         {
             InitializeComponent();
         }

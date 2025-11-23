@@ -136,9 +136,6 @@
   <data name="material-symbols--delete-outline-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--delete-outline-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mdi--logout (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--logout (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="jam--write (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jam--write (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,38 +163,19 @@
   <data name="material-symbols--add-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--add-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="material-symbols--person-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--person-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tabler--ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabler--ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconoir--eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconoir--eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="radix-icons--people" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\radix-icons--people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mdi--eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mdi--password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mdi--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--mail-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--mail-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jam--write (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--write (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="material-symbols--square-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--square-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jam--write (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--write (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mdi--logout (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--logout (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+<<<<<<< HEAD
   <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -209,5 +187,12 @@
   </data>
   <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="jam--write (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--write (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi--logout (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--logout (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> parent of bd11c70 (Merge branch 'main' into UI)
   </data>
 </root>
