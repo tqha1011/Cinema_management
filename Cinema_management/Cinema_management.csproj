@@ -65,6 +65,32 @@
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageboxCustom\Alert.cs" />
+    <Compile Include="MessageboxCustom\AlertMessagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageboxCustom\AlertMessagebox.Designer.cs">
+      <DependentUpon>AlertMessagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageboxCustom\Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageboxCustom\Warning.Designer.cs">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie\AddUpdateMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie\AddUpdateMovie.Designer.cs">
+      <DependentUpon>AddUpdateMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database_access\Database.cs" />
+    <Compile Include="Form\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +122,38 @@
     </Compile>
     <Compile Include="AddStaff.Designer.cs">
       <DependentUpon>AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Management\AddStaff_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Management\AddStaff_popup.Designer.cs">
+      <DependentUpon>AddStaff_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Management\Staff.cs" />
+    <Compile Include="Staff Management\StaffLogic.cs" />
+    <Compile Include="User Control\UCMovies1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UCMovies1.Designer.cs">
+      <DependentUpon>UCMovies1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UCEmailCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UCEmailCode.Designer.cs">
+      <DependentUpon>UCEmailCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UCPasswordRecovery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UCPasswordRecovery.Designer.cs">
+      <DependentUpon>UCPasswordRecovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UCLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UCLogin.Designer.cs">
+      <DependentUpon>UCLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UCStaffs.cs">
       <SubType>UserControl</SubType>
@@ -169,6 +227,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
+      <DependentUpon>AddStaff_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UCMovies1.resx">
+      <DependentUpon>UCMovies1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UCEmailCode.resx">
+      <DependentUpon>UCEmailCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UCPasswordRecovery.resx">
+      <DependentUpon>UCPasswordRecovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UCLogin.resx">
+      <DependentUpon>UCLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCStaffs.resx">
       <DependentUpon>UCStaffs.cs</DependentUpon>
@@ -263,6 +336,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\material-symbols--square-outline-rounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Posters\" />
+    <None Include="Resources\material-symbols--person-rounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdi--password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdi--eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoir--eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-symbols--mail-rounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdi--logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdi--logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdi--logout %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

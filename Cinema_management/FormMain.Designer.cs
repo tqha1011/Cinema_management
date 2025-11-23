@@ -65,7 +65,7 @@ namespace Cinema_management
             this.pnSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnSidebar.Name = "pnSidebar";
-            this.pnSidebar.Size = new System.Drawing.Size(300, 890);
+            this.pnSidebar.Size = new System.Drawing.Size(267, 600);
             this.pnSidebar.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnSidebar.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnSidebar.TabIndex = 0;
@@ -242,7 +242,7 @@ namespace Cinema_management
             this.pnContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnContent.Location = new System.Drawing.Point(300, 0);
             this.pnContent.Name = "pnContent";
-            this.pnContent.Size = new System.Drawing.Size(1590, 890);
+            this.pnContent.Size = new System.Drawing.Size(1024, 600);
             this.pnContent.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnContent.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnContent.TabIndex = 1;
@@ -254,7 +254,7 @@ namespace Cinema_management
             this.pnContentforUC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnContentforUC.Location = new System.Drawing.Point(0, 50);
             this.pnContentforUC.Name = "pnContentforUC";
-            this.pnContentforUC.Size = new System.Drawing.Size(1590, 840);
+            this.pnContentforUC.Size = new System.Drawing.Size(1024, 560);
             this.pnContentforUC.TabIndex = 1;
             // 
             // pnHeaderTheme
@@ -262,7 +262,7 @@ namespace Cinema_management
             this.pnHeaderTheme.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnHeaderTheme.Location = new System.Drawing.Point(0, 0);
             this.pnHeaderTheme.Name = "pnHeaderTheme";
-            this.pnHeaderTheme.Size = new System.Drawing.Size(1590, 50);
+            this.pnHeaderTheme.Size = new System.Drawing.Size(1024, 40);
             this.pnHeaderTheme.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnHeaderTheme.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnHeaderTheme.TabIndex = 0;
@@ -271,10 +271,11 @@ namespace Cinema_management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1890, 890);
+            this.ClientSize = new System.Drawing.Size(1291, 600);
             this.Controls.Add(this.pnContent);
             this.Controls.Add(this.pnSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
