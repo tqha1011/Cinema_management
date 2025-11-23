@@ -65,12 +65,6 @@
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,24 +96,6 @@
     </Compile>
     <Compile Include="AddStaff.Designer.cs">
       <DependentUpon>AddStaff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Control\UCEmailCode.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UCEmailCode.Designer.cs">
-      <DependentUpon>UCEmailCode.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Control\UCPasswordRecovery.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UCPasswordRecovery.Designer.cs">
-      <DependentUpon>UCPasswordRecovery.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Control\UCLogin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UCLogin.Designer.cs">
-      <DependentUpon>UCLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UCStaffs.cs">
       <SubType>UserControl</SubType>
@@ -175,9 +151,6 @@
     <EmbeddedResource Include="Form\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MovieRowControl.resx">
       <DependentUpon>MovieRowControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,15 +169,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UCEmailCode.resx">
-      <DependentUpon>UCEmailCode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UCPasswordRecovery.resx">
-      <DependentUpon>UCPasswordRecovery.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UCLogin.resx">
-      <DependentUpon>UCLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCStaffs.resx">
       <DependentUpon>UCStaffs.cs</DependentUpon>
@@ -299,30 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\material-symbols--square-outline-rounded.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\material-symbols--person-rounded.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mdi--password.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mdi--eye.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconoir--eye.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\material-symbols--mail-rounded.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mdi--logout.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mdi--logout %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mdi--logout %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

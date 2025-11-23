@@ -93,16 +93,6 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconoir__eye {
-            get {
-                object obj = ResourceManager.GetObject("iconoir--eye", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap jam__movie {
             get {
                 object obj = ResourceManager.GetObject("jam--movie", resourceCulture);
@@ -183,79 +173,9 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap material_symbols__mail_rounded {
-            get {
-                object obj = ResourceManager.GetObject("material-symbols--mail-rounded", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap material_symbols__person_rounded {
-            get {
-                object obj = ResourceManager.GetObject("material-symbols--person-rounded", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap material_symbols__square_outline_rounded {
             get {
                 object obj = ResourceManager.GetObject("material-symbols--square-outline-rounded", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mdi__eye {
-            get {
-                object obj = ResourceManager.GetObject("mdi--eye", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mdi__logout {
-            get {
-                object obj = ResourceManager.GetObject("mdi--logout", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mdi__logout__1_ {
-            get {
-                object obj = ResourceManager.GetObject("mdi--logout (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mdi__logout__2_ {
-            get {
-                object obj = ResourceManager.GetObject("mdi--logout (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mdi__password {
-            get {
-                object obj = ResourceManager.GetObject("mdi--password", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
