@@ -63,10 +63,10 @@
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Log in\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="Log in\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="MessageboxCustom\Alert.cs" />
@@ -130,22 +130,22 @@
     </Compile>
     <Compile Include="Staff Management\Staff.cs" />
     <Compile Include="Staff Management\StaffLogic.cs" />
-    <Compile Include="UCCodeVerify.cs">
+    <Compile Include="Log in\UCCodeVerify.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCCodeVerify.Designer.cs">
+    <Compile Include="Log in\UCCodeVerify.Designer.cs">
       <DependentUpon>UCCodeVerify.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCPasswordRecovery.cs">
+    <Compile Include="Log in\UCPasswordRecovery.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCPasswordRecovery.Designer.cs">
+    <Compile Include="Log in\UCPasswordRecovery.Designer.cs">
       <DependentUpon>UCPasswordRecovery.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCLogin.cs">
+    <Compile Include="Log in\UCLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCLogin.Designer.cs">
+    <Compile Include="Log in\UCLogin.Designer.cs">
       <DependentUpon>UCLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UCMovies1.cs">
@@ -193,7 +193,7 @@
     <EmbeddedResource Include="AddShowtime.resx">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Log in\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MessageboxCustom\AlertMessagebox.resx">
@@ -233,13 +233,13 @@
     <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
       <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCCodeVerify.resx">
+    <EmbeddedResource Include="Log in\UCCodeVerify.resx">
       <DependentUpon>UCCodeVerify.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCPasswordRecovery.resx">
+    <EmbeddedResource Include="Log in\UCPasswordRecovery.resx">
       <DependentUpon>UCPasswordRecovery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCLogin.resx">
+    <EmbeddedResource Include="Log in\UCLogin.resx">
       <DependentUpon>UCLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
