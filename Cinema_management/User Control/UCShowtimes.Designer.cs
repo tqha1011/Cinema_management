@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Krypton.Toolkit.IconSpec iconSpec14 = new Krypton.Toolkit.IconSpec();
+            Krypton.Toolkit.IconSpec iconSpec1 = new Krypton.Toolkit.IconSpec();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDelete = new Krypton.Toolkit.KryptonButton();
             this.btnUpdate = new Krypton.Toolkit.KryptonButton();
@@ -91,6 +91,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1423, 156);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
@@ -258,7 +259,7 @@
             this.btnAdd.StateCommon.Border.Rounding = 10F;
             this.btnAdd.StateCommon.Border.Width = 1;
             this.btnAdd.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAdd.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.StateDisabled.Back.Color1 = System.Drawing.Color.White;
             this.btnAdd.StateDisabled.Back.Color2 = System.Drawing.Color.White;
             this.btnAdd.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
@@ -459,9 +460,9 @@
             // editBtn
             // 
             this.editBtn.HeaderText = "Edit";
-            iconSpec14.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
-            iconSpec14.Icon = null;
-            this.editBtn.IconSpecs.Add(iconSpec14);
+            iconSpec1.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
+            iconSpec1.Icon = null;
+            this.editBtn.IconSpecs.Add(iconSpec1);
             this.editBtn.MinimumWidth = 8;
             this.editBtn.Name = "editBtn";
             this.editBtn.Text = "Edit";
@@ -481,100 +482,330 @@
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(333, 645);
-            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Black;
             this.kryptonPanel1.TabIndex = 1;
             // 
             // kryptonButton6
             // 
-            this.kryptonButton6.Location = new System.Drawing.Point(17, 459);
+            this.kryptonButton6.Location = new System.Drawing.Point(17, 423);
             this.kryptonButton6.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton6.Name = "kryptonButton6";
+            this.kryptonButton6.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton6.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton6.OverrideDefault.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.OverrideDefault.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton6.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton6.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton6.OverrideDefault.Border.Rounding = 10F;
+            this.kryptonButton6.OverrideDefault.Border.Width = 3;
+            this.kryptonButton6.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.OverrideFocus.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton6.OverrideFocus.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton6.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton6.Size = new System.Drawing.Size(295, 56);
             this.kryptonButton6.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton6.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonButton6.StateCommon.Border.Rounding = 10F;
+            this.kryptonButton6.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
             this.kryptonButton6.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton6.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton6.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton6.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton6.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
+            this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateNormal.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.StateNormal.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton6.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton6.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton6.StateNormal.Border.Rounding = 10F;
+            this.kryptonButton6.StateNormal.Border.Width = 3;
+            this.kryptonButton6.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton6.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.StatePressed.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton6.StatePressed.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton6.StatePressed.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.StatePressed.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton6.StatePressed.Border.Rounding = 10F;
+            this.kryptonButton6.StatePressed.Border.Width = 3;
+            this.kryptonButton6.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton6.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton6.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton6.StateTracking.Border.Rounding = 10F;
+            this.kryptonButton6.StateTracking.Border.Width = 3;
+            this.kryptonButton6.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton6.TabIndex = 0;
             this.kryptonButton6.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton6.Values.Text = "Phòng 5 - Vip";
             // 
             // kryptonButton5
             // 
-            this.kryptonButton5.Location = new System.Drawing.Point(17, 374);
+            this.kryptonButton5.Location = new System.Drawing.Point(17, 343);
             this.kryptonButton5.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton5.Name = "kryptonButton5";
+            this.kryptonButton5.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton5.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton5.OverrideDefault.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.OverrideDefault.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton5.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton5.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton5.OverrideDefault.Border.Rounding = 10F;
+            this.kryptonButton5.OverrideDefault.Border.Width = 3;
+            this.kryptonButton5.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton5.OverrideFocus.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton5.OverrideFocus.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton5.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton5.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton5.Size = new System.Drawing.Size(295, 56);
             this.kryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonButton5.StateCommon.Border.Rounding = 10F;
+            this.kryptonButton5.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton5.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
             this.kryptonButton5.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton5.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton5.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton5.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton5.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
+            this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton5.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton5.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton5.StateNormal.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.StateNormal.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton5.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton5.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton5.StateNormal.Border.Rounding = 10F;
+            this.kryptonButton5.StateNormal.Border.Width = 3;
+            this.kryptonButton5.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton5.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton5.StatePressed.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton5.StatePressed.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton5.StatePressed.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.StatePressed.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton5.StatePressed.Border.Rounding = 10F;
+            this.kryptonButton5.StatePressed.Border.Width = 3;
+            this.kryptonButton5.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton5.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton5.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton5.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton5.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton5.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton5.StateTracking.Border.Rounding = 10F;
+            this.kryptonButton5.StateTracking.Border.Width = 3;
+            this.kryptonButton5.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton5.TabIndex = 0;
             this.kryptonButton5.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton5.Values.Text = "Phòng 4 - Vip";
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(17, 291);
+            this.kryptonButton4.Location = new System.Drawing.Point(17, 266);
             this.kryptonButton4.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton4.Name = "kryptonButton4";
+            this.kryptonButton4.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton4.OverrideDefault.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.OverrideDefault.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton4.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton4.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton4.OverrideDefault.Border.Rounding = 10F;
+            this.kryptonButton4.OverrideDefault.Border.Width = 3;
+            this.kryptonButton4.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.OverrideFocus.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton4.OverrideFocus.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton4.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton4.Size = new System.Drawing.Size(295, 56);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonButton4.StateCommon.Border.Rounding = 10F;
+            this.kryptonButton4.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton4.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
             this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton4.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton4.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton4.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton4.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
+            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton4.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton4.StateNormal.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.StateNormal.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton4.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton4.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton4.StateNormal.Border.Rounding = 10F;
+            this.kryptonButton4.StateNormal.Border.Width = 3;
+            this.kryptonButton4.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton4.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.StatePressed.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton4.StatePressed.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton4.StatePressed.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.StatePressed.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton4.StatePressed.Border.Rounding = 10F;
+            this.kryptonButton4.StatePressed.Border.Width = 3;
+            this.kryptonButton4.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton4.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton4.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton4.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton4.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton4.StateTracking.Border.Rounding = 10F;
+            this.kryptonButton4.StateTracking.Border.Width = 3;
+            this.kryptonButton4.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton4.TabIndex = 0;
             this.kryptonButton4.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton4.Values.Text = "Phòng 3 - Vip";
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(17, 206);
+            this.kryptonButton3.Location = new System.Drawing.Point(17, 191);
             this.kryptonButton3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton3.Name = "kryptonButton3";
+            this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton3.OverrideDefault.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.OverrideDefault.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton3.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton3.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton3.OverrideDefault.Border.Rounding = 10F;
+            this.kryptonButton3.OverrideDefault.Border.Width = 3;
+            this.kryptonButton3.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.OverrideFocus.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton3.OverrideFocus.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton3.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton3.Size = new System.Drawing.Size(295, 56);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonButton3.StateCommon.Border.Rounding = 10F;
+            this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton3.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
             this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton3.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
+            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton3.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton3.StateNormal.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.StateNormal.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton3.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton3.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton3.StateNormal.Border.Rounding = 10F;
+            this.kryptonButton3.StateNormal.Border.Width = 3;
+            this.kryptonButton3.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton3.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton3.StatePressed.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton3.StatePressed.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.StatePressed.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton3.StatePressed.Border.Rounding = 10F;
+            this.kryptonButton3.StatePressed.Border.Width = 3;
+            this.kryptonButton3.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton3.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton3.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton3.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton3.StateTracking.Border.Rounding = 10F;
+            this.kryptonButton3.StateTracking.Border.Width = 3;
+            this.kryptonButton3.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton3.TabIndex = 0;
             this.kryptonButton3.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton3.Values.Text = "Phòng 2";
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(17, 122);
+            this.kryptonButton2.Location = new System.Drawing.Point(17, 114);
             this.kryptonButton2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton2.OverrideDefault.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.OverrideDefault.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton2.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton2.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton2.OverrideDefault.Border.Rounding = 10F;
+            this.kryptonButton2.OverrideDefault.Border.Width = 3;
+            this.kryptonButton2.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.OverrideFocus.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton2.OverrideFocus.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton2.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton2.Size = new System.Drawing.Size(295, 56);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonButton2.StateCommon.Border.Rounding = 10F;
+            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
             this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton2.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton2.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
+            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton2.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton2.StateNormal.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StateNormal.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton2.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton2.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton2.StateNormal.Border.Rounding = 10F;
+            this.kryptonButton2.StateNormal.Border.Width = 3;
+            this.kryptonButton2.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton2.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton2.StatePressed.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton2.StatePressed.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StatePressed.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton2.StatePressed.Border.Rounding = 10F;
+            this.kryptonButton2.StatePressed.Border.Width = 3;
+            this.kryptonButton2.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton2.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton2.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton2.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton2.StateTracking.Border.Rounding = 10F;
+            this.kryptonButton2.StateTracking.Border.Width = 3;
+            this.kryptonButton2.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton2.TabIndex = 0;
             this.kryptonButton2.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton2.Values.Text = "Phòng 1";
@@ -584,16 +815,61 @@
             this.kryptonButton1.Location = new System.Drawing.Point(17, 38);
             this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkGreen;
+            this.kryptonButton1.OverrideDefault.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.OverrideDefault.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton1.OverrideDefault.Border.Rounding = 10F;
+            this.kryptonButton1.OverrideDefault.Border.Width = 3;
+            this.kryptonButton1.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.OverrideFocus.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton1.OverrideFocus.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton1.Size = new System.Drawing.Size(295, 56);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonButton1.StateCommon.Border.Rounding = 10F;
+            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
             this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton1.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
-            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton1.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton1.StateNormal.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateNormal.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton1.StateNormal.Border.Rounding = 10F;
+            this.kryptonButton1.StateNormal.Border.Width = 3;
+            this.kryptonButton1.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton1.StatePressed.Back.Color2 = System.Drawing.Color.ForestGreen;
+            this.kryptonButton1.StatePressed.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StatePressed.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StatePressed.Border.Rounding = 10F;
+            this.kryptonButton1.StatePressed.Border.Width = 3;
+            this.kryptonButton1.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton1.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.kryptonButton1.StateTracking.Border.Rounding = 10F;
+            this.kryptonButton1.StateTracking.Border.Width = 3;
+            this.kryptonButton1.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.TabIndex = 0;
             this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton1.Values.Text = "All Showtimes";

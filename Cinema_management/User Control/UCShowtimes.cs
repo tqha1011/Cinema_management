@@ -204,13 +204,13 @@ namespace Cinema_management
             {
                 currentRoomFilter = clickedButton.Text;
 
-                foreach (KryptonButton btn in kryptonPanel1.Controls.OfType<KryptonButton>())
-                {
-                    btn.StateCommon.Back.Color1 = Color.Transparent;
-                    btn.StateCommon.Back.Color2 = Color.Transparent;
-                }
-                clickedButton.StateCommon.Back.Color1 = Color.FromArgb(94, 53, 168);
-                clickedButton.StateCommon.Back.Color2 = Color.FromArgb(94, 53, 168);
+                //foreach (KryptonButton btn in kryptonPanel1.Controls.OfType<KryptonButton>())
+                //{
+                //    btn.StateCommon.Back.Color1 = Color.Transparent;
+                //    btn.StateCommon.Back.Color2 = Color.Transparent;
+                //}
+                //clickedButton.StateCommon.Back.Color1 = Color.FromArgb(94, 53, 168);
+                //clickedButton.StateCommon.Back.Color2 = Color.FromArgb(94, 53, 168);
 
                 LoadShowtimesData();
             }
@@ -414,6 +414,5 @@ namespace Cinema_management
 
         private void lvShowtimes_Click(object sender, EventArgs e) { }
         private void lblShowtimes_Click(object sender, EventArgs e) { }
-
     }
 }
