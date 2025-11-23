@@ -69,7 +69,7 @@ namespace Cinema_management
             this.pnSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnSidebar.Name = "pnSidebar";
             this.pnSidebar.Padding = new System.Windows.Forms.Padding(20);
-            this.pnSidebar.Size = new System.Drawing.Size(300, 660);
+            this.pnSidebar.Size = new System.Drawing.Size(300, 588);
             this.pnSidebar.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnSidebar.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnSidebar.TabIndex = 0;
@@ -89,7 +89,7 @@ namespace Cinema_management
             // kryptonButton5
             // 
             this.kryptonButton5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonButton5.Location = new System.Drawing.Point(20, 594);
+            this.kryptonButton5.Location = new System.Drawing.Point(20, 522);
             this.kryptonButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonButton5.Name = "kryptonButton5";
             this.kryptonButton5.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
@@ -203,7 +203,7 @@ namespace Cinema_management
             this.kryptonButton2.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.kryptonButton2.TabIndex = 1;
             this.kryptonButton2.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.kryptonButton2.Values.Image = global::Cinema_management.Properties.Resources.ic__baseline_tv;
+            this.kryptonButton2.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__person_rounded;
             this.kryptonButton2.Values.Text = "Staffs";
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
@@ -295,7 +295,7 @@ namespace Cinema_management
             this.pnContent.Location = new System.Drawing.Point(300, 0);
             this.pnContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnContent.Name = "pnContent";
-            this.pnContent.Size = new System.Drawing.Size(1172, 660);
+            this.pnContent.Size = new System.Drawing.Size(1188, 588);
             this.pnContent.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnContent.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnContent.TabIndex = 1;
@@ -308,8 +308,9 @@ namespace Cinema_management
             this.pnContentforUC.Location = new System.Drawing.Point(0, 50);
             this.pnContentforUC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnContentforUC.Name = "pnContentforUC";
-            this.pnContentforUC.Size = new System.Drawing.Size(1172, 610);
+            this.pnContentforUC.Size = new System.Drawing.Size(1188, 538);
             this.pnContentforUC.TabIndex = 1;
+            this.pnContentforUC.Resize += new System.EventHandler(this.pnContentforUC_Resize);
             // 
             // pnHeaderTheme
             // 
@@ -317,7 +318,7 @@ namespace Cinema_management
             this.pnHeaderTheme.Location = new System.Drawing.Point(0, 0);
             this.pnHeaderTheme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnHeaderTheme.Name = "pnHeaderTheme";
-            this.pnHeaderTheme.Size = new System.Drawing.Size(1172, 50);
+            this.pnHeaderTheme.Size = new System.Drawing.Size(1188, 50);
             this.pnHeaderTheme.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnHeaderTheme.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnHeaderTheme.TabIndex = 0;
@@ -326,7 +327,7 @@ namespace Cinema_management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1472, 660);
+            this.ClientSize = new System.Drawing.Size(1488, 588);
             this.Controls.Add(this.pnContent);
             this.Controls.Add(this.pnSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

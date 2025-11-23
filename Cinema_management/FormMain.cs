@@ -32,9 +32,10 @@ namespace Cinema_management
             pnContentforUC.Controls.Clear();
             // tạo đt UCDashboard mới
             UCDashboard uc = new UCDashboard();
-            uc.Dock = DockStyle.Fill; // cho nó lấp đầy panel
+            uc.Dock = DockStyle.Fill;
             // thêm dashboard vào panel
             pnContentforUC.Controls.Add(uc);
+            CenterUC();
         }
 
         private void kryptonButton1_Click(object sender, System.EventArgs e)
@@ -91,6 +92,28 @@ namespace Cinema_management
 
         private void kryptonButton5_Click(object sender, System.EventArgs e)
         {
+        }
+
+        private void pnContentforUC_Resize(object sender, System.EventArgs e)
+        {
+            CenterUC();
+        }
+
+        private void CenterUC()
+        {
+            if (pnContentforUC.Controls.Count == 0 || !pnContentforUC.Visible)
+                return;
+
+            // lay uc hien tai
+            Control currentUC = pnContentforUC.Controls[0];
+
+            int newX = (pnContentforUC.Width - currentUC.Width) / 2;
+            int newY = (pnContentforUC.Height - currentUC.Height) / 2;
+
+            if(newX < 0) newX = 0;
+            if(newY < 0) newY = 0;
+
+            currentUC.Location = new Point(newX, newY);
         }
     }
 }
