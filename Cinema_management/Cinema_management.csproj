@@ -65,7 +65,6 @@
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="MessageboxCustom\Alert.cs" />
     <Compile Include="MessageboxCustom\AlertMessagebox.cs">
       <SubType>Form</SubType>
@@ -86,14 +85,12 @@
       <DependentUpon>AddUpdateMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Database_access\Database.cs" />
-=======
     <Compile Include="Form\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
->>>>>>> parent of bd11c70 (Merge branch 'main' into UI)
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,7 +123,6 @@
     <Compile Include="AddStaff.Designer.cs">
       <DependentUpon>AddStaff.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Staff Management\AddStaff_popup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,7 +136,6 @@
     </Compile>
     <Compile Include="User Control\UCMovies1.Designer.cs">
       <DependentUpon>UCMovies1.cs</DependentUpon>
-=======
     <Compile Include="User Control\UCEmailCode.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,7 +153,6 @@
     </Compile>
     <Compile Include="User Control\UCLogin.Designer.cs">
       <DependentUpon>UCLogin.cs</DependentUpon>
->>>>>>> parent of bd11c70 (Merge branch 'main' into UI)
     </Compile>
     <Compile Include="User Control\UCStaffs.cs">
       <SubType>UserControl</SubType>
@@ -233,13 +227,13 @@
     <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
+
     <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
       <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
       <DependentUpon>UCMovies1.cs</DependentUpon>
-=======
+
     <EmbeddedResource Include="User Control\UCEmailCode.resx">
       <DependentUpon>UCEmailCode.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,7 +242,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCLogin.resx">
       <DependentUpon>UCLogin.cs</DependentUpon>
->>>>>>> parent of bd11c70 (Merge branch 'main' into UI)
+
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
+      <DependentUpon>AddStaff_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UCMovies1.resx">
+      <DependentUpon>UCMovies1.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCStaffs.resx">
       <DependentUpon>UCStaffs.cs</DependentUpon>
@@ -345,9 +346,7 @@
     <None Include="Resources\material-symbols--square-outline-rounded.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Folder Include="Posters\" />
-=======
     <None Include="Resources\material-symbols--person-rounded.png" />
   </ItemGroup>
   <ItemGroup>
@@ -370,7 +369,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mdi--logout %282%29.png" />
->>>>>>> parent of bd11c70 (Merge branch 'main' into UI)
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
