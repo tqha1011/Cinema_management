@@ -63,6 +63,12 @@
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="MessageboxCustom\Alert.cs" />
     <Compile Include="MessageboxCustom\AlertMessagebox.cs">
       <SubType>Form</SubType>
@@ -124,6 +130,24 @@
     </Compile>
     <Compile Include="Staff Management\Staff.cs" />
     <Compile Include="Staff Management\StaffLogic.cs" />
+    <Compile Include="UCCodeVerify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCodeVerify.Designer.cs">
+      <DependentUpon>UCCodeVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPasswordRecovery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPasswordRecovery.Designer.cs">
+      <DependentUpon>UCPasswordRecovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLogin.Designer.cs">
+      <DependentUpon>UCLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCMovies1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +193,9 @@
     <EmbeddedResource Include="AddShowtime.resx">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MessageboxCustom\AlertMessagebox.resx">
       <DependentUpon>AlertMessagebox.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +233,15 @@
     <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
       <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCCodeVerify.resx">
+      <DependentUpon>UCCodeVerify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPasswordRecovery.resx">
+      <DependentUpon>UCPasswordRecovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLogin.resx">
+      <DependentUpon>UCLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
       <DependentUpon>UCMovies1.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,8 +277,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\mdi--logout %282%29.png" />
+    <None Include="Resources\mdi--logout.png" />
+    <None Include="Resources\material-symbols--mail-rounded.png" />
+    <None Include="Resources\mdi--password.png" />
+    <None Include="Resources\material-symbols--person-rounded.png" />
     <None Include="Resources\check.png" />
     <None Include="Resources\error.png" />
+    <None Include="Resources\iconoir--eye.png" />
     <Content Include="Resources\information.png" />
     <None Include="Resources\warning.png" />
   </ItemGroup>

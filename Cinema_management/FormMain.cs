@@ -87,5 +87,9 @@ namespace Cinema_management
         {
 
         }
+
+        private void kryptonButton5_Click(object sender, System.EventArgs e)
+        {
+        }
     }
 }
