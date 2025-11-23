@@ -40,7 +40,7 @@ namespace Cinema_management
         {
             pnContentforUC.Controls.Clear();
 
-            UCMovies1 uc = new UCMovies1();
+            UCMovies uc = new UCMovies();
             uc.Dock = DockStyle.Fill;
 
             pnContentforUC.Controls.Add(uc);
@@ -74,8 +74,6 @@ namespace Cinema_management
             uc.Dock = DockStyle.Fill;
 
             pnContentforUC.Controls.Add(uc);
-            int MaSuatChieu = 13;
-            uc.LoadSeats(MaSuatChieu);
         }
 
         private void FormMain_Load(object sender, System.EventArgs e)

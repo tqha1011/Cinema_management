@@ -40,10 +40,6 @@
       <HintPath>packages\Krypton.Toolkit.95.25.10.293\lib\net472\Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Configuration.ConfigurationManager.9.0.10\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewMovie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddNewMovie.Designer.cs">
+      <DependentUpon>AddNewMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddShowtime.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -69,26 +71,6 @@
     <Compile Include="Form\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MessageboxCustom\Alert.cs" />
-    <Compile Include="MessageboxCustom\AlertMessagebox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MessageboxCustom\AlertMessagebox.Designer.cs">
-      <DependentUpon>AlertMessagebox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MessageboxCustom\Warning.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MessageboxCustom\Warning.Designer.cs">
-      <DependentUpon>Warning.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Movie\AddUpdateMovie.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Movie\AddUpdateMovie.Designer.cs">
-      <DependentUpon>AddUpdateMovie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Database_access\Database.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,7 +89,6 @@
     <Compile Include="MovieRowControl.Designer.cs">
       <DependentUpon>MovieRowControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Movie\Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoomCardControl.cs">
@@ -116,10 +97,10 @@
     <Compile Include="RoomCardControl.Designer.cs">
       <DependentUpon>RoomCardControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Staff Management\AddStaff.cs">
+    <Compile Include="AddStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Staff Management\AddStaff.Designer.cs">
+    <Compile Include="AddStaff.Designer.cs">
       <DependentUpon>AddStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UCEmailCode.cs">
@@ -139,19 +120,6 @@
     </Compile>
     <Compile Include="User Control\UCLogin.Designer.cs">
       <DependentUpon>UCLogin.cs</DependentUpon>
-    <Compile Include="Staff Management\AddStaff_popup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Staff Management\AddStaff_popup.Designer.cs">
-      <DependentUpon>AddStaff_popup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Staff Management\Staff.cs" />
-    <Compile Include="Staff Management\StaffLogic.cs" />
-    <Compile Include="User Control\UCMovies1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UCMovies1.Designer.cs">
-      <DependentUpon>UCMovies1.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UCStaffs.cs">
       <SubType>UserControl</SubType>
@@ -171,6 +139,12 @@
     <Compile Include="User Control\UCDashboard.Designer.cs">
       <DependentUpon>UCDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Control\UCMovies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UCMovies.Designer.cs">
+      <DependentUpon>UCMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCRooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -189,17 +163,11 @@
     <Compile Include="User Control\UCTickets1.Designer.cs">
       <DependentUpon>UCTickets1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddNewMovie.resx">
+      <DependentUpon>AddNewMovie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddShowtime.resx">
       <DependentUpon>AddShowtime.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MessageboxCustom\AlertMessagebox.resx">
-      <DependentUpon>AlertMessagebox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MessageboxCustom\Warning.resx">
-      <DependentUpon>Warning.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Movie\AddUpdateMovie.resx">
-      <DependentUpon>AddUpdateMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -226,7 +194,7 @@
     <EmbeddedResource Include="RoomCardControl.resx">
       <DependentUpon>RoomCardControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Staff Management\AddStaff.resx">
+    <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCEmailCode.resx">
@@ -237,11 +205,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCLogin.resx">
       <DependentUpon>UCLogin.cs</DependentUpon>
-    <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
-      <DependentUpon>AddStaff_popup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UCMovies1.resx">
-      <DependentUpon>UCMovies1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCStaffs.resx">
       <DependentUpon>UCStaffs.cs</DependentUpon>
@@ -251,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCDashboard.resx">
       <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UCMovies.resx">
+      <DependentUpon>UCMovies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCRooms.resx">
       <DependentUpon>UCRooms.cs</DependentUpon>
@@ -275,10 +241,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\check.png" />
-    <None Include="Resources\error.png" />
-    <Content Include="Resources\information.png" />
-    <None Include="Resources\warning.png" />
+    <Folder Include="Logic\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hugeicons--analytics-03.png" />
@@ -360,7 +323,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mdi--logout %282%29.png" />
-    <Folder Include="Posters\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

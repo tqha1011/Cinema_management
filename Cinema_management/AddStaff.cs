@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Cinema_management
 {
-    public partial class AddShowtime : UserControl
+    public partial class AddStaff : UserControl
     {
-        public AddShowtime()
+        public AddStaff()
         {
             InitializeComponent();
-        }
-
-        private void kryptonLabel2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
