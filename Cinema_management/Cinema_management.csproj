@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="User Control\UCMovies1.Designer.cs">
       <DependentUpon>UCMovies1.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCEmailCode.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -227,13 +228,12 @@
     <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
       <DependentUpon>AddStaff_popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
       <DependentUpon>UCMovies1.cs</DependentUpon>
-
+    </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCEmailCode.resx">
       <DependentUpon>UCEmailCode.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,14 +242,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCLogin.resx">
       <DependentUpon>UCLogin.cs</DependentUpon>
-
-    </EmbeddedResource>
-    <EmbeddedResource Include="Staff Management\AddStaff_popup.resx">
-      <DependentUpon>AddStaff_popup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UCMovies1.resx">
-      <DependentUpon>UCMovies1.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCStaffs.resx">
       <DependentUpon>UCStaffs.cs</DependentUpon>
