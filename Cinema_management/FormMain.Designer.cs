@@ -43,6 +43,7 @@ namespace Cinema_management
             this.pnContent = new Krypton.Toolkit.KryptonPanel();
             this.pnContentforUC = new Krypton.Toolkit.KryptonPanel();
             this.pnHeaderTheme = new Krypton.Toolkit.KryptonPanel();
+            this.btnLogOut = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pnSidebar)).BeginInit();
             this.pnSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnHeader)).BeginInit();
@@ -55,6 +56,7 @@ namespace Cinema_management
             // 
             // pnSidebar
             // 
+            this.pnSidebar.Controls.Add(this.btnLogOut);
             this.pnSidebar.Controls.Add(this.lbManagement);
             this.pnSidebar.Controls.Add(this.kryptonButton4);
             this.pnSidebar.Controls.Add(this.kryptonButton3);
@@ -66,7 +68,7 @@ namespace Cinema_management
             this.pnSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnSidebar.Name = "pnSidebar";
-            this.pnSidebar.Size = new System.Drawing.Size(267, 600);
+            this.pnSidebar.Size = new System.Drawing.Size(300, 872);
             this.pnSidebar.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnSidebar.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnSidebar.TabIndex = 0;
@@ -252,7 +254,7 @@ namespace Cinema_management
             this.pnContent.Location = new System.Drawing.Point(267, 0);
             this.pnContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnContent.Name = "pnContent";
-            this.pnContent.Size = new System.Drawing.Size(1024, 600);
+            this.pnContent.Size = new System.Drawing.Size(1594, 872);
             this.pnContent.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnContent.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnContent.TabIndex = 1;
@@ -265,7 +267,7 @@ namespace Cinema_management
             this.pnContentforUC.Location = new System.Drawing.Point(0, 40);
             this.pnContentforUC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnContentforUC.Name = "pnContentforUC";
-            this.pnContentforUC.Size = new System.Drawing.Size(1024, 560);
+            this.pnContentforUC.Size = new System.Drawing.Size(1594, 822);
             this.pnContentforUC.TabIndex = 1;
             // 
             // pnHeaderTheme
@@ -274,16 +276,52 @@ namespace Cinema_management
             this.pnHeaderTheme.Location = new System.Drawing.Point(0, 0);
             this.pnHeaderTheme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnHeaderTheme.Name = "pnHeaderTheme";
-            this.pnHeaderTheme.Size = new System.Drawing.Size(1024, 40);
+            this.pnHeaderTheme.Size = new System.Drawing.Size(1594, 50);
             this.pnHeaderTheme.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnHeaderTheme.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnHeaderTheme.TabIndex = 0;
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Location = new System.Drawing.Point(25, 792);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
+            this.btnLogOut.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
+            this.btnLogOut.Size = new System.Drawing.Size(250, 46);
+            this.btnLogOut.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(45)))), ((int)(((byte)(64)))));
+            this.btnLogOut.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(45)))), ((int)(((byte)(64)))));
+            this.btnLogOut.StateCommon.Border.Rounding = 10F;
+            this.btnLogOut.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnLogOut.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnLogOut.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(45)))), ((int)(((byte)(64)))));
+            this.btnLogOut.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(45)))), ((int)(((byte)(64)))));
+            this.btnLogOut.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnLogOut.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnLogOut.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(125)))), ((int)(((byte)(153)))));
+            this.btnLogOut.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.btnLogOut.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.btnLogOut.StatePressed.Border.Rounding = 10F;
+            this.btnLogOut.StatePressed.Border.Width = 1;
+            this.btnLogOut.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnLogOut.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnLogOut.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(47)))), ((int)(((byte)(80)))));
+            this.btnLogOut.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(47)))), ((int)(((byte)(80)))));
+            this.btnLogOut.TabIndex = 3;
+            this.btnLogOut.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnLogOut.Values.Image = global::Cinema_management.Properties.Resources.mdi__logout;
+            this.btnLogOut.Values.ImageStates.ImageCheckedNormal = null;
+            this.btnLogOut.Values.ImageStates.ImageCheckedPressed = null;
+            this.btnLogOut.Values.ImageStates.ImageCheckedTracking = null;
+            this.btnLogOut.Values.ImageStates.ImageNormal = global::Cinema_management.Properties.Resources.mdi__logout__2_;
+            this.btnLogOut.Values.Text = "Log Out";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1291, 600);
+            this.ClientSize = new System.Drawing.Size(1894, 872);
             this.Controls.Add(this.pnContent);
             this.Controls.Add(this.pnSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -326,5 +364,6 @@ namespace Cinema_management
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonPanel pnContentforUC;
+        private Krypton.Toolkit.KryptonButton btnLogOut;
     }
 }
