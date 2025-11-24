@@ -73,7 +73,7 @@ namespace Cinema_management.MessagboxCustom
 
         private void AlertMessagebox_Load(object sender, EventArgs e)
         {
-            this.ClientSize = new Size(366, 170);
+
         }
     }
 }
