@@ -91,7 +91,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(350, 156);
+            this.ClientSize = new System.Drawing.Size(367, 123);
             this.Controls.Add(this.lblmsg);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
