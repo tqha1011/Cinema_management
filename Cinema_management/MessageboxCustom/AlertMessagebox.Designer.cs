@@ -52,7 +52,7 @@
             this.kryptonTableLayoutPanel1.RowCount = 2;
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(326, 112);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(330, 90);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.StateCommon.Color2 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 0;
@@ -61,10 +61,10 @@
             // 
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ptbIcon.BackColor = System.Drawing.Color.Transparent;
-            this.ptbIcon.Location = new System.Drawing.Point(3, 10);
+            this.ptbIcon.Location = new System.Drawing.Point(3, 3);
             this.ptbIcon.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
             this.ptbIcon.Name = "ptbIcon";
-            this.ptbIcon.Size = new System.Drawing.Size(36, 50);
+            this.ptbIcon.Size = new System.Drawing.Size(36, 30);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbIcon.TabIndex = 0;
             this.ptbIcon.TabStop = false;
@@ -73,10 +73,10 @@
             // 
             this.lblMessage.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblMessage.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.lblMessage.Location = new System.Drawing.Point(43, 25);
+            this.lblMessage.Location = new System.Drawing.Point(43, 2);
             this.lblMessage.MaximumSize = new System.Drawing.Size(350, 0);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(139, 20);
+            this.lblMessage.Size = new System.Drawing.Size(221, 32);
             this.lblMessage.StateCommon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMessage.Text = "kryptonWrapLabel1";
             // 
@@ -86,14 +86,14 @@
             this.btnConfirm.AutoSize = true;
             this.kryptonTableLayoutPanel1.SetColumnSpan(this.btnConfirm, 2);
             this.btnConfirm.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnConfirm.Location = new System.Drawing.Point(122, 77);
+            this.btnConfirm.Location = new System.Drawing.Point(102, 42);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.SeaGreen;
             this.btnConfirm.OverrideDefault.Back.Color2 = System.Drawing.Color.SeaGreen;
             this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.Black;
             this.btnConfirm.OverrideDefault.Border.Color2 = System.Drawing.Color.Black;
-            this.btnConfirm.Size = new System.Drawing.Size(82, 32);
+            this.btnConfirm.Size = new System.Drawing.Size(125, 45);
             this.btnConfirm.StateCommon.Back.Color1 = System.Drawing.Color.SeaGreen;
             this.btnConfirm.StateCommon.Back.Color2 = System.Drawing.Color.SeaGreen;
             this.btnConfirm.StateCommon.Border.Rounding = 9F;
@@ -104,16 +104,17 @@
             this.btnConfirm.TabIndex = 2;
             this.btnConfirm.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnConfirm.Values.Text = "Xác nhận";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // AlertMessagebox
             // 
             this.AcceptButton = this.btnConfirm;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(366, 152);
+            this.ClientSize = new System.Drawing.Size(370, 130);
             this.Controls.Add(this.kryptonTableLayoutPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Location = new System.Drawing.Point(0, 0);
