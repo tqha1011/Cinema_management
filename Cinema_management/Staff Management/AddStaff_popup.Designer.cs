@@ -38,26 +38,33 @@
             // 
             this.panelHost.Controls.Add(this.panelChu);
             this.panelHost.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHost.Location = new System.Drawing.Point(10, 10);
+            this.panelHost.Location = new System.Drawing.Point(0, 0);
             this.panelHost.Name = "panelHost";
-            this.panelHost.Size = new System.Drawing.Size(614, 703);
+            this.panelHost.Size = new System.Drawing.Size(693, 754);
             this.panelHost.StateCommon.Color1 = System.Drawing.Color.White;
             this.panelHost.StateCommon.Color2 = System.Drawing.Color.White;
             this.panelHost.TabIndex = 0;
             // 
             // panelChu
             // 
+            this.panelChu.AutoSize = true;
+            this.panelChu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelChu.BackColor = System.Drawing.Color.White;
             this.panelChu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChu.Location = new System.Drawing.Point(0, 0);
+            this.panelChu.Margin = new System.Windows.Forms.Padding(0);
             this.panelChu.Name = "panelChu";
-            this.panelChu.Size = new System.Drawing.Size(614, 703);
+            this.panelChu.Size = new System.Drawing.Size(693, 754);
             this.panelChu.TabIndex = 0;
             // 
             // AddStaff_popup
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(634, 723);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(693, 754);
             this.CloseBox = false;
             this.ControlBox = false;
             this.Controls.Add(this.panelHost);
@@ -65,10 +72,10 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(709, 770);
             this.Name = "AddStaff_popup";
-            this.Padding = new System.Windows.Forms.Padding(10);
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.StateCommon.Border.Rounding = 10F;
@@ -77,6 +84,7 @@
             this.Load += new System.EventHandler(this.AddStaff_popup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelHost)).EndInit();
             this.panelHost.ResumeLayout(false);
+            this.panelHost.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -37,7 +37,7 @@ namespace Cinema_management.MessageboxCustom
 
         private void Warning_Load(object sender, EventArgs e)
         {
-            this.ClientSize = new Size(360, 165);
+
         }
     }
 }

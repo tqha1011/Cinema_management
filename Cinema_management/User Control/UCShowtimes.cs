@@ -1,15 +1,16 @@
-﻿using System;
+﻿using Cinema_management.DAL;
+using Cinema_management.MessageboxCustom.Utils;
+using Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Krypton.Toolkit;
-using Cinema_management.DAL;
-using System.Data.SqlClient;
 
 namespace Cinema_management
 {
@@ -28,7 +29,7 @@ namespace Cinema_management
         /// </summary>
         private void UCShowtimes_Load(object sender, EventArgs e)
         {
-            btnUpdate.Visible = false;
+            //btnUpdate.Visible = false;
             btnDelete.Visible = false;
 
             if (dgvShows.Columns.Contains("Type"))
@@ -73,7 +74,7 @@ namespace Cinema_management
         }
 
         /// <summary>
-        /// --- HÀM MỚI: Tải danh sách phim vào ComboBox lọc ---
+        /// Tải danh sách phim vào ComboBox lọc ---
         /// </summary>
         private void LoadMovieFilterComboBox()
         {
@@ -97,9 +98,10 @@ namespace Cinema_management
                     cbbMovieFilter.SelectedIndex = 0; // Chọn "Tất cả phim" làm mặc định
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi khi tải danh sách phim: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi khi tải danh sách phim", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Lỗi khi tải danh sách phim: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -203,15 +205,6 @@ namespace Cinema_management
             if (clickedButton != null)
             {
                 currentRoomFilter = clickedButton.Text;
-
-                foreach (KryptonButton btn in kryptonPanel1.Controls.OfType<KryptonButton>())
-                {
-                    btn.StateCommon.Back.Color1 = Color.Transparent;
-                    btn.StateCommon.Back.Color2 = Color.Transparent;
-                }
-                clickedButton.StateCommon.Back.Color1 = Color.FromArgb(94, 53, 168);
-                clickedButton.StateCommon.Back.Color2 = Color.FromArgb(94, 53, 168);
-
                 LoadShowtimesData();
             }
         }
@@ -293,9 +286,10 @@ namespace Cinema_management
                 MergeShowtimeCells(tempTable);
                 UpdateDeleteButtonVisibility();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi khi tải dữ liệu suất chiếu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi khi tải dữ liệu suất chiếu", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Lỗi khi tải dữ liệu suất chiếu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -343,7 +337,7 @@ namespace Cinema_management
         /// <summary>
         /// Xử lý logic cho nút Delete (xóa các hàng đã được tick).
         /// </summary>
-        private void btnDelete_Click_1(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             List<int> idsToDelete = new List<int>();
             foreach (DataGridViewRow row in dgvShows.Rows)
@@ -355,14 +349,10 @@ namespace Cinema_management
                 }
             }
 
-            if (idsToDelete.Count == 0)
-            {
-                MessageBox.Show("Vui lòng đánh dấu vào ít nhất một suất chiếu để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             string message = $"Bạn có chắc chắn muốn xóa {idsToDelete.Count} suất chiếu đã chọn không?";
-            DialogResult result = MessageBox.Show(message, "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = Alert.ShowWarning(message);
+
+            //DialogResult result = MessageBox.Show(message, "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
@@ -389,13 +379,17 @@ namespace Cinema_management
                         failCount++;
                     }
                 }
-
-                string successMessage = $"Đã xóa thành công {successCount} suất chiếu.";
                 if (failCount > 0)
                 {
-                    successMessage += $"\nXóa thất bại {failCount} suất chiếu (Có thể do đã có vé được bán).";
+                    string erMessage = $"\nXóa thất bại {failCount} suất chiếu (Có thể do đã có vé được bán).";
+                    Alert.Show(erMessage, MessagboxCustom.AlertMessagebox.AlertType.Error);
                 }
-                MessageBox.Show(successMessage, "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                {
+                    string successMessage = $"Đã xóa thành công {successCount} suất chiếu.";
+                    Alert.Show(successMessage, MessagboxCustom.AlertMessagebox.AlertType.Success);
+                }
+                //MessageBox.Show(successMessage, "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 if (successCount > 0)
                 {
@@ -415,5 +409,6 @@ namespace Cinema_management
         private void lvShowtimes_Click(object sender, EventArgs e) { }
         private void lblShowtimes_Click(object sender, EventArgs e) { }
 
+        
     }
 }
