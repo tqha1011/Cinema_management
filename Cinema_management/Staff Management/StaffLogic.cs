@@ -273,5 +273,47 @@ namespace Cinema_management.Staff_Management
             }
         }
         #endregion
+
+        public bool CheckEmailExists(string email)
+        {
+            try
+            {
+                string query = "SELECT COUNT(*) FROM NHANVIEN WHERE EMAIL = @Email";
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                new SqlParameter("@Email", email)
+                };
+                DataTable resultTable = dtb.ReadData(query, parameters);
+                if (resultTable.Rows != null && resultTable.Rows.Count > 0)
+                {
+                    int count = Convert.ToInt32(resultTable.Rows[0][0]);
+                    return count > 0;
+                }
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return false;
+        }
+
+        public bool UpdatePasswordByEmail(string email, string newPassword)
+        {
+            try
+            {
+                string query = "UPDATE NHANVIEN SET PASSWORD = @NewPassword WHERE EMAIL = @Email";
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                    new SqlParameter("@NewPassword", newPassword),
+                    new SqlParameter("@Email", email)
+                };
+                return dtb.ChangeData(query, parameters);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
     }
 }

@@ -29,68 +29,86 @@
         private void InitializeComponent()
         {
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
+            this.txtUser = new Krypton.Toolkit.KryptonTextBox();
+            this.txtPass = new Krypton.Toolkit.KryptonTextBox();
+            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.llbQuenMK = new Krypton.Toolkit.KryptonLinkLabel();
             this.btnLogin = new Krypton.Toolkit.KryptonButton();
-            this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
+            this.lblInfo = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPictureBox2 = new Krypton.Toolkit.KryptonPictureBox();
             this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
-            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
+            this.cboRole = new Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboRole)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(145, 34);
+            this.kryptonLabel1.Location = new System.Drawing.Point(129, 27);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(260, 47);
+            this.kryptonLabel1.Size = new System.Drawing.Size(218, 40);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Welcome Back";
             // 
-            // kryptonTextBox1
+            // txtUser
             // 
-            this.kryptonTextBox1.CueHint.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.CueHint.CueHintText = "Tên đăng nhập";
-            this.kryptonTextBox1.CueHint.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.Location = new System.Drawing.Point(150, 133);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(287, 31);
-            this.kryptonTextBox1.TabIndex = 1;
+            this.txtUser.CueHint.Color1 = System.Drawing.Color.Gray;
+            this.txtUser.CueHint.CueHintText = "Tên đăng nhập";
+            this.txtUser.CueHint.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(133, 106);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(255, 27);
+            this.txtUser.TabIndex = 1;
             // 
-            // kryptonTextBox2
+            // txtPass
             // 
-            this.kryptonTextBox2.ButtonSpecs.Add(this.buttonSpecAny1);
-            this.kryptonTextBox2.CueHint.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox2.CueHint.CueHintText = "Mật khẩu";
-            this.kryptonTextBox2.CueHint.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.Location = new System.Drawing.Point(150, 186);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(287, 39);
-            this.kryptonTextBox2.TabIndex = 1;
-            this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
+            this.txtPass.ButtonSpecs.Add(this.buttonSpecAny1);
+            this.txtPass.CueHint.Color1 = System.Drawing.Color.Gray;
+            this.txtPass.CueHint.CueHintText = "Mật khẩu";
+            this.txtPass.CueHint.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(133, 149);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '●';
+            this.txtPass.Size = new System.Drawing.Size(255, 33);
+            this.txtPass.TabIndex = 1;
+            this.txtPass.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
+            // 
+            // buttonSpecAny1
+            // 
+            this.buttonSpecAny1.Image = global::Cinema_management.Properties.Resources.iconoir__eye;
+            this.buttonSpecAny1.UniqueName = "3fb880b079f3444cb04ef0f5a6fd933d";
+            this.buttonSpecAny1.Click += new System.EventHandler(this.buttonSpecAny1_Click);
             // 
             // llbQuenMK
             // 
             this.llbQuenMK.LabelStyle = Krypton.Toolkit.LabelStyle.Custom1;
             this.llbQuenMK.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.NeverUnderline;
-            this.llbQuenMK.Location = new System.Drawing.Point(280, 314);
+            this.llbQuenMK.Location = new System.Drawing.Point(250, 266);
+            this.llbQuenMK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.llbQuenMK.Name = "llbQuenMK";
-            this.llbQuenMK.Size = new System.Drawing.Size(195, 34);
+            this.llbQuenMK.Size = new System.Drawing.Size(147, 29);
             this.llbQuenMK.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.llbQuenMK.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbQuenMK.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llbQuenMK.TabIndex = 3;
             this.llbQuenMK.Values.Text = "Quên mật khẩu?";
+            this.llbQuenMK.LinkClicked += new System.EventHandler(this.llbQuenMK_LinkClicked);
+            this.llbQuenMK.Click += new System.EventHandler(this.llbQuenMK_Click);
             // 
             // btnLogin
             // 
             this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogin.Location = new System.Drawing.Point(280, 354);
+            this.btnLogin.Location = new System.Drawing.Point(250, 298);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(195, 54);
+            this.btnLogin.OverrideDefault.Back.Color1 = System.Drawing.Color.Black;
+            this.btnLogin.OverrideDefault.Back.Color2 = System.Drawing.Color.Black;
+            this.btnLogin.Size = new System.Drawing.Size(173, 43);
             this.btnLogin.StateCommon.Border.Rounding = 10F;
             this.btnLogin.StateCommon.Border.Width = 0;
             this.btnLogin.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -103,6 +121,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnLogin.StatePressed.Border.Rounding = 10F;
             this.btnLogin.StatePressed.Border.Width = 0;
+            this.btnLogin.StatePressed.Content.Padding = new System.Windows.Forms.Padding(-1, 2, -1, -1);
             this.btnLogin.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnLogin.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
@@ -117,23 +136,26 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnLogin.Values.Text = "Log In";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // kryptonLabel2
+            // lblInfo
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(113, 242);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(324, 31);
-            this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Firebrick;
-            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel2.TabIndex = 5;
-            this.kryptonLabel2.Values.Text = "Vui lòng điền đầy đủ thông tin!";
+            this.lblInfo.Location = new System.Drawing.Point(100, 237);
+            this.lblInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(254, 27);
+            this.lblInfo.StateCommon.ShortText.Color1 = System.Drawing.Color.Firebrick;
+            this.lblInfo.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.TabIndex = 5;
+            this.lblInfo.Values.Text = "Vui lòng điền đầy đủ thông tin!";
             // 
             // kryptonPictureBox2
             // 
             this.kryptonPictureBox2.Image = global::Cinema_management.Properties.Resources.mdi__password;
-            this.kryptonPictureBox2.Location = new System.Drawing.Point(113, 186);
+            this.kryptonPictureBox2.Location = new System.Drawing.Point(100, 149);
+            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPictureBox2.Name = "kryptonPictureBox2";
-            this.kryptonPictureBox2.Size = new System.Drawing.Size(31, 39);
+            this.kryptonPictureBox2.Size = new System.Drawing.Size(28, 31);
             this.kryptonPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.kryptonPictureBox2.TabIndex = 2;
             this.kryptonPictureBox2.TabStop = false;
@@ -141,35 +163,49 @@
             // kryptonPictureBox1
             // 
             this.kryptonPictureBox1.Image = global::Cinema_management.Properties.Resources.material_symbols__person_rounded;
-            this.kryptonPictureBox1.Location = new System.Drawing.Point(113, 133);
+            this.kryptonPictureBox1.Location = new System.Drawing.Point(100, 106);
+            this.kryptonPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPictureBox1.Name = "kryptonPictureBox1";
-            this.kryptonPictureBox1.Size = new System.Drawing.Size(31, 31);
+            this.kryptonPictureBox1.Size = new System.Drawing.Size(28, 25);
             this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.kryptonPictureBox1.TabIndex = 2;
             this.kryptonPictureBox1.TabStop = false;
             // 
-            // buttonSpecAny1
+            // cboRole
             // 
-            this.buttonSpecAny1.Image = global::Cinema_management.Properties.Resources.iconoir__eye;
-            this.buttonSpecAny1.UniqueName = "3fb880b079f3444cb04ef0f5a6fd933d";
+            this.cboRole.CueHint.Color1 = System.Drawing.Color.LightGray;
+            this.cboRole.CueHint.CueHintText = "Vai trò";
+            this.cboRole.CueHint.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboRole.DropDownWidth = 164;
+            this.cboRole.Items.AddRange(new object[] {
+            "Quản lý",
+            "Nhân viên"});
+            this.cboRole.Location = new System.Drawing.Point(224, 196);
+            this.cboRole.Name = "cboRole";
+            this.cboRole.Size = new System.Drawing.Size(164, 26);
+            this.cboRole.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cboRole.TabIndex = 6;
             // 
             // UCLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.kryptonLabel2);
+            this.Controls.Add(this.cboRole);
+            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.llbQuenMK);
             this.Controls.Add(this.kryptonPictureBox2);
             this.Controls.Add(this.kryptonPictureBox1);
-            this.Controls.Add(this.kryptonTextBox2);
-            this.Controls.Add(this.kryptonTextBox1);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.kryptonLabel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCLogin";
-            this.Size = new System.Drawing.Size(550, 450);
+            this.Size = new System.Drawing.Size(489, 360);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboRole)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,13 +214,14 @@
         #endregion
 
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private Krypton.Toolkit.KryptonTextBox txtUser;
         private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox1;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private Krypton.Toolkit.KryptonTextBox txtPass;
         private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox2;
         private Krypton.Toolkit.KryptonLinkLabel llbQuenMK;
         private Krypton.Toolkit.KryptonButton btnLogin;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private Krypton.Toolkit.KryptonLabel lblInfo;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
+        private Krypton.Toolkit.KryptonComboBox cboRole;
     }
 }
