@@ -62,9 +62,9 @@ namespace Cinema_management
                 newStaff.Id = currentStaffId;
                 success = staffLogic.UpdateStaff(newStaff, passwordConfirm, currentStaffId);
             }
-            if(success)
+            if (success)
             {
-                Alert.Show("Lưu thông tin nhân viên thành công!",MessagboxCustom.AlertMessagebox.AlertType.Success);
+                Alert.Show("Lưu thông tin nhân viên thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
                 if (this.ParentForm != null)
                 {
                     this.ParentForm.Close();
