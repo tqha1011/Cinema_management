@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Krypton.Toolkit.IconSpec iconSpec11 = new Krypton.Toolkit.IconSpec();
+            Krypton.Toolkit.IconSpec iconSpec1 = new Krypton.Toolkit.IconSpec();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonButton7 = new Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -446,9 +446,9 @@
             // editBtn
             // 
             this.editBtn.HeaderText = "Edit";
-            iconSpec11.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
-            iconSpec11.Icon = null;
-            this.editBtn.IconSpecs.Add(iconSpec11);
+            iconSpec1.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Left;
+            iconSpec1.Icon = null;
+            this.editBtn.IconSpecs.Add(iconSpec1);
             this.editBtn.MinimumWidth = 8;
             this.editBtn.Name = "editBtn";
             this.editBtn.Text = "Edit";
@@ -473,6 +473,7 @@
             // 
             // kryptonButton6
             // 
+            this.kryptonButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonButton6.Location = new System.Drawing.Point(17, 423);
             this.kryptonButton6.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton6.Name = "kryptonButton6";
@@ -538,6 +539,7 @@
             // 
             // kryptonButton5
             // 
+            this.kryptonButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonButton5.Location = new System.Drawing.Point(17, 343);
             this.kryptonButton5.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton5.Name = "kryptonButton5";
@@ -603,6 +605,7 @@
             // 
             // kryptonButton4
             // 
+            this.kryptonButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonButton4.Location = new System.Drawing.Point(17, 266);
             this.kryptonButton4.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton4.Name = "kryptonButton4";
@@ -668,6 +671,7 @@
             // 
             // kryptonButton3
             // 
+            this.kryptonButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonButton3.Location = new System.Drawing.Point(17, 191);
             this.kryptonButton3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton3.Name = "kryptonButton3";
@@ -733,6 +737,7 @@
             // 
             // kryptonButton2
             // 
+            this.kryptonButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonButton2.Location = new System.Drawing.Point(17, 114);
             this.kryptonButton2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton2.Name = "kryptonButton2";
@@ -798,6 +803,7 @@
             // 
             // kryptonButton1
             // 
+            this.kryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonButton1.Location = new System.Drawing.Point(17, 38);
             this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton1.Name = "kryptonButton1";
