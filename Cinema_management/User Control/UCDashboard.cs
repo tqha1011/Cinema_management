@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Cinema_management.DAL;
+using Cinema_management.Staff_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Cinema_management.DAL;
-using System.Data.SqlClient;
 
 namespace Cinema_management
 {
@@ -67,5 +68,56 @@ namespace Cinema_management
         private void kryptonGroup1_Panel_Paint(object sender, PaintEventArgs e) { }
         private void kryptonLabel9_Click(object sender, EventArgs e) { }
         private void kryptonLabel14_Click(object sender, EventArgs e) { }
+
+        private void btnAddMovie_Click(object sender, EventArgs e)
+        {
+            AddUpdateMovieForm frm = new AddUpdateMovieForm(null);
+
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                LoadDashboardStats();
+            }
+        }
+
+        private void grQuickActions_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAddStaff_Click(object sender, EventArgs e)
+        {
+            AddStaff_popup addStaffPopup = new AddStaff_popup();
+            addStaffPopup.ShowDialog(this);
+            LoadDashboardStats();
+        }
+        private void OpenShowtimeForm(int? showtimeID)
+        {
+            AddShowtime addShowtime = new AddShowtime();
+
+            if (showtimeID.HasValue)
+            {
+                addShowtime.ShowtimeIDToEdit = showtimeID.Value;
+            }
+
+            Form form = new Form
+            {
+                Text = showtimeID.HasValue ? "Edit Showtime" : "Add Showtime",
+                StartPosition = FormStartPosition.CenterParent,
+                ClientSize = new System.Drawing.Size(1067, 562),
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
+
+            addShowtime.Dock = DockStyle.Fill;
+            form.Controls.Add(addShowtime);
+
+            form.ShowDialog();
+            LoadDashboardStats();
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            OpenShowtimeForm(null);
+        }
     }
 }
