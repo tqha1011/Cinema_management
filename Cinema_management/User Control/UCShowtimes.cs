@@ -29,7 +29,7 @@ namespace Cinema_management
         /// </summary>
         private void UCShowtimes_Load(object sender, EventArgs e)
         {
-            btnUpdate.Visible = false;
+            //btnUpdate.Visible = false;
             btnDelete.Visible = false;
 
             if (dgvShows.Columns.Contains("Type"))
@@ -288,7 +288,7 @@ namespace Cinema_management
             }
             catch (Exception)
             {
-                Alert.Show("Lỗi khi tải dữ liệu suất chiếu: ", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                Alert.Show("Lỗi khi tải dữ liệu suất chiếu", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 //MessageBox.Show("Lỗi khi tải dữ liệu suất chiếu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -337,7 +337,7 @@ namespace Cinema_management
         /// <summary>
         /// Xử lý logic cho nút Delete (xóa các hàng đã được tick).
         /// </summary>
-        private void btnDelete_Click_1(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             List<int> idsToDelete = new List<int>();
             foreach (DataGridViewRow row in dgvShows.Rows)
@@ -351,7 +351,7 @@ namespace Cinema_management
 
             string message = $"Bạn có chắc chắn muốn xóa {idsToDelete.Count} suất chiếu đã chọn không?";
             DialogResult result = Alert.ShowWarning(message);
-            
+
             //DialogResult result = MessageBox.Show(message, "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
@@ -408,5 +408,7 @@ namespace Cinema_management
 
         private void lvShowtimes_Click(object sender, EventArgs e) { }
         private void lblShowtimes_Click(object sender, EventArgs e) { }
+
+        
     }
 }
