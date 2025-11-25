@@ -123,5 +123,63 @@ namespace Cinema_management.DAL
             }
             return success;
         }
+
+        public bool ExecuteTransaction(string[] queries, SqlParameter[][] parameters)
+        {
+            // Đảm bảo số lượng truy vấn và mảng tham số phải khớp nhau
+            if (queries == null || parameters == null || queries.Length != parameters.Length)
+            {
+                throw new ArgumentException("Lỗi cấu hình Transaction: Số lượng truy vấn và mảng tham số không khớp.");
+            }
+
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                return false;
+            }
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                // Bắt đầu một Transaction
+                SqlTransaction transaction = connection.BeginTransaction();
+
+                try
+                {
+                    for (int i = 0; i < queries.Length; i++)
+                    {
+                        // Sử dụng using để đảm bảo đối tượng Command được giải phóng
+                        using (SqlCommand command = new SqlCommand(queries[i], connection, transaction))
+                        {
+                            // Thêm tham số nếu có
+                            if (parameters[i] != null)
+                            {
+                                command.Parameters.AddRange(parameters[i]);
+                            }
+                            command.ExecuteNonQuery();
+                        }
+                    }
+
+                    // Nếu tất cả lệnh đều thành công, Commit (Xác nhận và Lưu) Transaction
+                    transaction.Commit();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    // Nếu có bất kỳ lỗi nào, Rollback (Hủy bỏ) Transaction
+                    // Đảm bảo không có thay đổi nào được lưu vào database.
+                    transaction.Rollback();
+
+                    // Xử lý thông báo lỗi SQL cụ thể (giống như trong ChangeData)
+                    if (ex is SqlException sqlEx)
+                    {
+                        throw new Exception($"Lỗi SQL trong Transaction: {sqlEx.Message}", sqlEx);
+                    }
+                    else
+                    {
+                        throw new Exception($"Lỗi không phải SQL trong Transaction: {ex.Message}", ex);
+                    }
+                }
+            }
+        }
     }
 }

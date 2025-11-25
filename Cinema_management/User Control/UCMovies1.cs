@@ -107,21 +107,38 @@ namespace Cinema_management
                 // --- XỬ LÝ NÚT XÓA (btnDelete) ---
                 else if (colName == "btnDelete")
                 {
-                    if (MessageBox.Show($"Bạn chắc chắn muốn xóa phim này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show($"Bạn chắc chắn muốn xóa phim này? Thao tác này sẽ xóa tất cả suất chiếu liên quan.", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                     {
-                        // Câu lệnh SQL xóa
-                        string query = "DELETE FROM PHIM WHERE MAPHIM = @MaPhim";
+                        // 1. Định nghĩa các truy vấn theo thứ tự xóa: Xóa con (SUATCHIEU) trước, xóa cha (PHIM) sau
+                        string deleteSuatChieuQuery = "DELETE FROM dbo.SUATCHIEU WHERE MAPHIM = @MaPhim";
+                        string deletePhimQuery = "DELETE FROM dbo.PHIM WHERE MAPHIM = @MaPhim";
 
-                        // Tạo tham số
-                        SqlParameter[] parameters = {
-                            new SqlParameter("@MaPhim", maPhim)
-                        };
+                        string[] queries = { deleteSuatChieuQuery, deletePhimQuery };
 
-                        // Gọi hàm ChangeData để xóa
-                        if (db.ChangeData(query, parameters))
+                        // 2. Định nghĩa tham số (@MaPhim) cho từng lệnh SQL
+                        SqlParameter paramSuatChieu = new SqlParameter("@MaPhim", maPhim);
+                        SqlParameter paramPhim = new SqlParameter("@MaPhim", maPhim);
+
+                        // Chuẩn bị mảng tham số cho ExecuteTransaction
+                        SqlParameter[][] allParameters =
                         {
-                            MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            LoadMovies(); // Tải lại danh sách sau khi xóa
+                            new SqlParameter[] { paramSuatChieu }, // Tham số cho DELETE SUATCHIEU
+                            new SqlParameter[] { paramPhim }       // Tham số cho DELETE PHIM
+                        };
+
+                        try
+                        {
+                            // 3. Gọi hàm thực thi Transaction
+                            if (db.ExecuteTransaction(queries, allParameters))
+                            {
+                                MessageBox.Show("Xóa phim và các suất chiếu liên quan thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                LoadMovies();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Bắt lỗi Transaction từ lớp Database. Nếu có lỗi, dữ liệu đã được Rollback.
+                            MessageBox.Show("Xóa thất bại! Dữ liệu không bị thay đổi (Rollback). Lỗi chi tiết: " + ex.Message, "Lỗi Xóa Dữ Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
