@@ -69,7 +69,7 @@ namespace Cinema_management
             {
                 Alert.Show("Lỗi tải dữ liệu!", MessagboxCustom.AlertMessagebox.AlertType.Error);
             }
-           
+
         }
 
         private void btnAddMovie_Click(object sender, EventArgs e)
@@ -132,11 +132,11 @@ namespace Cinema_management
 
                         try
                         {
-                            if (db.ExecuteTransaction(queries, allParameters))
+                            if (db.ExecuteTransaction(queries, allParameters))
                             {
                                 Alert.Show("Xóa phim và các suất chiếu liên quan thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
                                 LoadMovies();
-                            }
+                            }
                         }
                         catch (Exception ex)
                         {

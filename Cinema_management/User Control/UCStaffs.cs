@@ -61,7 +61,7 @@ namespace Cinema_management
                 int id = Convert.ToInt32(dgvMM.CurrentRow.Cells["ID"].Value); // lay MANV cua dong hien tai
                 string name = dgvMM.CurrentRow.Cells["StaffName"].Value.ToString(); // lay ten cua dong hien tai
                 DialogResult result = Alert.ShowWarning("Bạn có chắc chắn muốn xóa nhân viên " + name + " không?");
-                if (result == DialogResult.Yes) // neu xac nhan xoa
+                if (result == DialogResult.OK) // neu xac nhan xoa
                 {
                     if (staffLogic.DeleteStaff(id)) // xoa thanh cong
                     {
@@ -127,6 +127,11 @@ namespace Cinema_management
                 string filter_expression = string.Format("[{0}] LIKE '%{1}%'", column, escaped);
                 staffBindingSource.Filter = filter_expression; // ap dung bieu thuc loc len BindingSource
             }
+        }
+
+        private void btnAddStaff_Click1(object sender, EventArgs e)
+        {
+
         }
     }
 }
