@@ -34,6 +34,9 @@
             this.txtSearchMovie = new Krypton.Toolkit.KryptonTextBox();
             this.dtpSearchDate = new Krypton.Toolkit.KryptonDateTimePicker();
             this.dgvMM = new Krypton.Toolkit.KryptonDataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelMM = new Krypton.Toolkit.KryptonPanel();
+            this.paneldgv = new Krypton.Toolkit.KryptonPanel();
             this.MAPHIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MovieName = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Genre = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
@@ -41,9 +44,6 @@
             this.Duration = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.btnEdit = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.btnDelete = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelMM = new Krypton.Toolkit.KryptonPanel();
-            this.paneldgv = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMM)).BeginInit();
@@ -172,6 +172,43 @@
             this.dgvMM.TabIndex = 7;
             this.dgvMM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMM_CellContentClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cinema_management.Properties.Resources.lucide__search;
+            this.pictureBox1.Location = new System.Drawing.Point(56, 143);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelMM
+            // 
+            this.panelMM.Controls.Add(this.lblMovieManagement);
+            this.panelMM.Controls.Add(this.kryptonLabel2);
+            this.panelMM.Controls.Add(this.btnAdd);
+            this.panelMM.Controls.Add(this.txtSearchMovie);
+            this.panelMM.Controls.Add(this.pictureBox1);
+            this.panelMM.Controls.Add(this.dtpSearchDate);
+            this.panelMM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMM.Location = new System.Drawing.Point(0, 0);
+            this.panelMM.Name = "panelMM";
+            this.panelMM.Padding = new System.Windows.Forms.Padding(20);
+            this.panelMM.Size = new System.Drawing.Size(900, 179);
+            this.panelMM.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.panelMM.TabIndex = 8;
+            // 
+            // paneldgv
+            // 
+            this.paneldgv.Controls.Add(this.dgvMM);
+            this.paneldgv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneldgv.Location = new System.Drawing.Point(0, 179);
+            this.paneldgv.Name = "paneldgv";
+            this.paneldgv.Padding = new System.Windows.Forms.Padding(50, 30, 0, 0);
+            this.paneldgv.Size = new System.Drawing.Size(900, 431);
+            this.paneldgv.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.paneldgv.TabIndex = 9;
+            // 
             // MAPHIM
             // 
             this.MAPHIM.DataPropertyName = "MAPHIM";
@@ -184,13 +221,14 @@
             // 
             // MovieName
             // 
+            this.MovieName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.MovieName.DataPropertyName = "TENPHIM";
             this.MovieName.HeaderText = "Movie Name";
             this.MovieName.MinimumWidth = 8;
             this.MovieName.Name = "MovieName";
             this.MovieName.ReadOnly = true;
             this.MovieName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MovieName.Width = 250;
+            this.MovieName.Width = 197;
             // 
             // Genre
             // 
@@ -241,43 +279,6 @@
             this.btnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.btnDelete.UseColumnTextForButtonValue = true;
             this.btnDelete.Width = 150;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cinema_management.Properties.Resources.lucide__search;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 143);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panelMM
-            // 
-            this.panelMM.Controls.Add(this.lblMovieManagement);
-            this.panelMM.Controls.Add(this.kryptonLabel2);
-            this.panelMM.Controls.Add(this.btnAdd);
-            this.panelMM.Controls.Add(this.txtSearchMovie);
-            this.panelMM.Controls.Add(this.pictureBox1);
-            this.panelMM.Controls.Add(this.dtpSearchDate);
-            this.panelMM.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMM.Location = new System.Drawing.Point(0, 0);
-            this.panelMM.Name = "panelMM";
-            this.panelMM.Padding = new System.Windows.Forms.Padding(20);
-            this.panelMM.Size = new System.Drawing.Size(900, 179);
-            this.panelMM.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.panelMM.TabIndex = 8;
-            // 
-            // paneldgv
-            // 
-            this.paneldgv.Controls.Add(this.dgvMM);
-            this.paneldgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneldgv.Location = new System.Drawing.Point(0, 179);
-            this.paneldgv.Name = "paneldgv";
-            this.paneldgv.Padding = new System.Windows.Forms.Padding(50, 30, 0, 0);
-            this.paneldgv.Size = new System.Drawing.Size(900, 431);
-            this.paneldgv.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.paneldgv.TabIndex = 9;
             // 
             // UCMovies1
             // 

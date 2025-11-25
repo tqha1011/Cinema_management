@@ -132,7 +132,6 @@ namespace Cinema_management
 
                         try
                         {
-                            // 3. Gọi hàm thực thi Transaction
                             if (db.ExecuteTransaction(queries, allParameters))
                             {
                                 Alert.Show("Xóa phim và các suất chiếu liên quan thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
