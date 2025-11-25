@@ -395,26 +395,29 @@
             // 
             // ID
             // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ID.DataPropertyName = "ID";
             this.ID.HeaderText = "ID";
             this.ID.MinimumWidth = 8;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ID.Width = 150;
+            this.ID.Width = 66;
             // 
             // StaffName
             // 
+            this.StaffName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.StaffName.DataPropertyName = "Full Name";
             this.StaffName.HeaderText = "Full Name";
             this.StaffName.MinimumWidth = 8;
             this.StaffName.Name = "StaffName";
             this.StaffName.ReadOnly = true;
             this.StaffName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.StaffName.Width = 200;
+            this.StaffName.Width = 143;
             // 
             // Gender
             // 
+            this.Gender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Gender.DataPropertyName = "Gender";
             this.Gender.HeaderText = "Gender";
             this.Gender.MinimumWidth = 8;
@@ -422,57 +425,62 @@
             this.Gender.ReadOnly = true;
             this.Gender.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Gender.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Gender.Width = 150;
+            this.Gender.Width = 92;
             // 
             // Birthday
             // 
+            this.Birthday.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Birthday.DataPropertyName = "Birthday";
             this.Birthday.HeaderText = "Birthday";
             this.Birthday.MinimumWidth = 8;
             this.Birthday.Name = "Birthday";
             this.Birthday.ReadOnly = true;
             this.Birthday.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Birthday.Width = 150;
+            this.Birthday.Width = 127;
             // 
             // PhoneNumber
             // 
+            this.PhoneNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.PhoneNumber.DataPropertyName = "Phone Number";
             this.PhoneNumber.HeaderText = "Phone Number";
             this.PhoneNumber.MinimumWidth = 8;
             this.PhoneNumber.Name = "PhoneNumber";
             this.PhoneNumber.ReadOnly = true;
             this.PhoneNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.PhoneNumber.Width = 200;
+            this.PhoneNumber.Width = 173;
             // 
             // Email
             // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Email.DataPropertyName = "Email";
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 8;
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
             this.Email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Email.Width = 250;
+            this.Email.Width = 98;
             // 
             // Position
             // 
+            this.Position.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Position.DataPropertyName = "Position";
             this.Position.HeaderText = "Position";
             this.Position.MinimumWidth = 8;
             this.Position.Name = "Position";
             this.Position.ReadOnly = true;
             this.Position.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Position.Width = 150;
+            this.Position.Width = 122;
             // 
             // HireDate
             // 
+            this.HireDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.HireDate.DataPropertyName = "Hire Date";
             this.HireDate.HeaderText = "Hire Date";
             this.HireDate.MinimumWidth = 6;
             this.HireDate.Name = "HireDate";
             this.HireDate.ReadOnly = true;
             this.HireDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.HireDate.Width = 125;
+            this.HireDate.Width = 126;
             // 
             // UCStaffs
             // 
