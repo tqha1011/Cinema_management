@@ -52,7 +52,7 @@
             this.kryptonTableLayoutPanel1.RowCount = 2;
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(330, 90);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(330, 98);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.StateCommon.Color2 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 0;
