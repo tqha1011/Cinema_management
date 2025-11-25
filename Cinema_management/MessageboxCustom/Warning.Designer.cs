@@ -55,7 +55,7 @@
             this.kryptonTableLayoutPanel1.RowCount = 2;
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(314, 102);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(318, 88);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 0;
             // 
@@ -65,7 +65,7 @@
             this.ptbWarning.BackColor = System.Drawing.Color.Transparent;
             this.ptbWarning.Location = new System.Drawing.Point(3, 3);
             this.ptbWarning.Name = "ptbWarning";
-            this.ptbWarning.Size = new System.Drawing.Size(34, 45);
+            this.ptbWarning.Size = new System.Drawing.Size(34, 38);
             this.ptbWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbWarning.TabIndex = 0;
             this.ptbWarning.TabStop = false;
@@ -74,7 +74,7 @@
             // 
             this.lblmsg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblmsg.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.lblmsg.Location = new System.Drawing.Point(43, 15);
+            this.lblmsg.Location = new System.Drawing.Point(43, 12);
             this.lblmsg.MaximumSize = new System.Drawing.Size(320, 0);
             this.lblmsg.Name = "lblmsg";
             this.lblmsg.Size = new System.Drawing.Size(139, 20);
@@ -88,10 +88,10 @@
             this.kryptonTableLayoutPanel1.SetColumnSpan(this.flowLayoutPanel1, 2);
             this.flowLayoutPanel1.Controls.Add(this.btnOk);
             this.flowLayoutPanel1.Controls.Add(this.btnCancel);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(57, 71);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(59, 64);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(199, 28);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(199, 21);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // btnOk
@@ -116,6 +116,7 @@
             this.btnOk.TabIndex = 0;
             this.btnOk.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnOk.Values.Text = "Đồng ý";
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click_1);
             // 
             // btnCancel
             // 
@@ -146,7 +147,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(354, 142);
+            this.ClientSize = new System.Drawing.Size(358, 128);
             this.Controls.Add(this.kryptonTableLayoutPanel1);
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;

@@ -96,7 +96,9 @@ namespace Cinema_management
             DialogResult result = Alert.ShowWarning("Bạn có muốn đăng xuất?");
             if(result == DialogResult.OK)
             {
+                this.DialogResult = DialogResult.OK;
                 this.Close();
+
             }
         }
 

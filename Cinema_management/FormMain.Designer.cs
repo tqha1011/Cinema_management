@@ -69,7 +69,7 @@ namespace Cinema_management
             this.pnSidebar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.pnSidebar.Name = "pnSidebar";
             this.pnSidebar.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
-            this.pnSidebar.Size = new System.Drawing.Size(267, 437);
+            this.pnSidebar.Size = new System.Drawing.Size(267, 409);
             this.pnSidebar.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnSidebar.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnSidebar.TabIndex = 0;
@@ -89,7 +89,7 @@ namespace Cinema_management
             // btnLogout
             // 
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogout.Location = new System.Drawing.Point(18, 384);
+            this.btnLogout.Location = new System.Drawing.Point(18, 356);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
@@ -295,7 +295,7 @@ namespace Cinema_management
             this.pnContent.Location = new System.Drawing.Point(267, 0);
             this.pnContent.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.pnContent.Name = "pnContent";
-            this.pnContent.Size = new System.Drawing.Size(1020, 437);
+            this.pnContent.Size = new System.Drawing.Size(1028, 409);
             this.pnContent.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnContent.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnContent.TabIndex = 1;
@@ -308,7 +308,7 @@ namespace Cinema_management
             this.pnContentforUC.Location = new System.Drawing.Point(0, 40);
             this.pnContentforUC.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.pnContentforUC.Name = "pnContentforUC";
-            this.pnContentforUC.Size = new System.Drawing.Size(1020, 397);
+            this.pnContentforUC.Size = new System.Drawing.Size(1028, 369);
             this.pnContentforUC.TabIndex = 1;
             this.pnContentforUC.Resize += new System.EventHandler(this.pnContentforUC_Resize);
             // 
@@ -318,7 +318,7 @@ namespace Cinema_management
             this.pnHeaderTheme.Location = new System.Drawing.Point(0, 0);
             this.pnHeaderTheme.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.pnHeaderTheme.Name = "pnHeaderTheme";
-            this.pnHeaderTheme.Size = new System.Drawing.Size(1020, 40);
+            this.pnHeaderTheme.Size = new System.Drawing.Size(1028, 40);
             this.pnHeaderTheme.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnHeaderTheme.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnHeaderTheme.TabIndex = 0;
@@ -327,7 +327,7 @@ namespace Cinema_management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1287, 437);
+            this.ClientSize = new System.Drawing.Size(1295, 409);
             this.Controls.Add(this.pnContent);
             this.Controls.Add(this.pnSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -336,6 +336,7 @@ namespace Cinema_management
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnSidebar)).EndInit();
             this.pnSidebar.ResumeLayout(false);
