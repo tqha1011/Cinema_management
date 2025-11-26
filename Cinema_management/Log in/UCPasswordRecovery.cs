@@ -27,8 +27,8 @@ namespace Cinema_management
             lblCheck.Visible = false;
             ptbLock.Visible = false;
             staffLogic = new StaffLogic();
-            btnConfirm.Visible = false;
-            btnConfirm.Enabled = false;
+            btnConfirm1.Visible = false;
+            btnConfirm1.Enabled = false;
             txtVerified.Visible = false;
         }
 
@@ -43,11 +43,11 @@ namespace Cinema_management
                 serverOTP = new Random().Next(100000, 999999).ToString(); // tạo mã OTP ngẫu nhiên
                 string header = "Mã xác nhận đặt lại mật khẩu";
                 string body = $"<p>Mã xác nhận của bạn là: <b>{serverOTP}</b></p>";
-                btnSendCode.Enabled = false;
+                btnSendCode1.Enabled = false;
                 this.Cursor = Cursors.WaitCursor;
                 bool sent = await EmailServices.SendEmailAsync(emailRecover, header, body); // gửi email bất đồng bộ
                 this.Cursor = Cursors.Default;
-                btnSendCode.Enabled = true;
+                btnSendCode1.Enabled = true;
                 if(sent)
                 {
                     lblCheck.Visible = true;
@@ -55,8 +55,8 @@ namespace Cinema_management
                     txtPassNew.Visible = true;
                     txtVerified.Visible = true;
                     txtVerified.Focus();
-                    btnConfirm.Visible = true;
-                    btnConfirm.Enabled = true;
+                    btnConfirm1.Visible = true;
+                    btnConfirm1.Enabled = true;
                     Alert.Show("Mã xác nhận đã được gửi đến email của bạn.", MessagboxCustom.AlertMessagebox.AlertType.Success);
                 }
                 else
