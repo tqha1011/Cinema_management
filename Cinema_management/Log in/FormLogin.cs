@@ -20,7 +20,7 @@ namespace Cinema_management
         public FormLogin()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.CenterToScreen();
             ShowUserControl(new UCLogin());
             SetSlidePoster();
         }
