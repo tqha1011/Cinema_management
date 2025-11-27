@@ -25,19 +25,24 @@ namespace Cinema_management.MessageboxCustom
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Yes;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.No;
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
         private void Warning_Load(object sender, EventArgs e)
         {
-            this.ClientSize = new Size(360, 165);
+
+        }
+
+        private void btnOk_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

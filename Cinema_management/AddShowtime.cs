@@ -1,15 +1,16 @@
-﻿using System;
+﻿using Cinema_management.DAL;
+using Cinema_management.MessageboxCustom.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Cinema_management.DAL;
-using System.Data.SqlClient;
-using System.Globalization;
 
 namespace Cinema_management
 {
@@ -23,8 +24,8 @@ namespace Cinema_management
             InitializeComponent();
             db = new Database();
             this.Load += new System.EventHandler(this.AddShowtime_Load);
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            //this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            //this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             this.cbbGenre.SelectedIndexChanged += new System.EventHandler(this.cbbGenre_SelectedIndexChanged);
         }
 
@@ -92,9 +93,10 @@ namespace Cinema_management
                     UpdateTicketPrice();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi khi tải dữ liệu suất chiếu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi khi tải dữ liệu suất chiếu", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Lỗi khi tải dữ liệu suất chiếu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -115,9 +117,10 @@ namespace Cinema_management
                     cbbMovieName.DropDownStyle = ComboBoxStyle.DropDownList;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi khi tải danh sách phim: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi khi tải danh sách phim", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Lỗi khi tải danh sách phim: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -138,9 +141,10 @@ namespace Cinema_management
                     cbbGenre.DropDownStyle = ComboBoxStyle.DropDownList;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi khi tải danh sách phòng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi khi tải danh sách phòng", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Lỗi khi tải danh sách phòng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -177,9 +181,10 @@ namespace Cinema_management
                 }
                 else { kryptonTextBox1.Text = "0 đ"; }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi khi lấy giá vé: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi khi lấy giá vé", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Lỗi khi lấy giá vé: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 kryptonTextBox1.Text = "Lỗi";
             }
         }
@@ -197,7 +202,8 @@ namespace Cinema_management
 
                 if (dtDuration == null || dtDuration.Rows.Count == 0)
                 {
-                    MessageBox.Show("Không tìm thấy thời lượng cho phim đã chọn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Alert.Show("Không tìm thấy thời lượng cho phim đã chọn", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                    //MessageBox.Show("Không tìm thấy thời lượng cho phim đã chọn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return true;
                 }
                 int newDuration = Convert.ToInt32(dtDuration.Rows[0]["THOILUONGPHIM"]);
@@ -228,9 +234,10 @@ namespace Cinema_management
 
                 return conflictCount > 0;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi khi kiểm tra trùng lặp: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi khi kiểm tra trùng lặp", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Lỗi khi kiểm tra trùng lặp: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return true;
             }
         }
@@ -270,7 +277,8 @@ namespace Cinema_management
 
                 if (IsShowtimeOverlapping(maPhong, newFullShowtime, maPhim, maSuatChieu))
                 {
-                    MessageBox.Show("Lỗi: Suất chiếu này bị trùng lịch với một suất chiếu khác trong phòng!", "Không thể cập nhật", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Alert.Show("Suất chiếu này bị trùng lịch với một suất chiếu khác trong phòng!", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                    //MessageBox.Show("Lỗi: Suất chiếu này bị trùng lịch với một suất chiếu khác trong phòng!", "Không thể cập nhật", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -287,17 +295,20 @@ namespace Cinema_management
 
                 if (db.ChangeData(query, parameters))
                 {
-                    MessageBox.Show("Cập nhật suất chiếu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Alert.Show("Cập nhật thành công", MessagboxCustom.AlertMessagebox.AlertType.Success);
+                    //MessageBox.Show("Cập nhật suất chiếu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     if (this.ParentForm != null) this.ParentForm.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Cập nhật thất bại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Alert.Show("Cập nhật thất bại!", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                    //MessageBox.Show("Cập nhật thất bại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi khi cập nhật: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi khi cập nhật", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Lỗi khi cập nhật: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -310,7 +321,8 @@ namespace Cinema_management
             {
                 if (cbbMovieName.SelectedValue == null || cbbGenre.SelectedValue == null)
                 {
-                    MessageBox.Show("Vui lòng chọn đầy đủ phim và phòng.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Alert.Show("Vui lòng chọn đầy đủ phim và phòng", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                    //MessageBox.Show("Vui lòng chọn đầy đủ phim và phòng.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -325,7 +337,8 @@ namespace Cinema_management
 
                 if (endDate < startDate)
                 {
-                    MessageBox.Show("Ngày kết thúc không thể nhỏ hơn ngày bắt đầu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Alert.Show("Ngày kết thúc không thể nhỏ hơn ngày bắt đầu", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                    //MessageBox.Show("Ngày kết thúc không thể nhỏ hơn ngày bắt đầu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -375,9 +388,10 @@ namespace Cinema_management
                     this.ParentForm.Close();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Đã xảy ra lỗi nghiêm trọng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Alert.Show("Lỗi nghiêm trọng", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                //MessageBox.Show("Đã xảy ra lỗi nghiêm trọng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

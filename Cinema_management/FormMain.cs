@@ -9,6 +9,7 @@
 //using System.Windows.Forms;
 using System.Drawing;
 using System.Windows.Forms;
+using Cinema_management.MessageboxCustom.Utils;
 using Cinema_management.Ticket_Booking;
 using Krypton.Toolkit;
 
@@ -92,6 +93,13 @@ namespace Cinema_management
 
         private void kryptonButton5_Click(object sender, System.EventArgs e)
         {
+            DialogResult result = Alert.ShowWarning("Bạn có muốn đăng xuất?");
+            if(result == DialogResult.OK)
+            {
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+
+            }
         }
 
         private void pnContentforUC_Resize(object sender, System.EventArgs e)

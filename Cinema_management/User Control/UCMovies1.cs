@@ -3,6 +3,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using Cinema_management.DAL;
+using Cinema_management.MessageboxCustom.Utils;
+using Cinema_management.MessageboxCustom;
 
 namespace Cinema_management
 {
@@ -28,7 +30,13 @@ namespace Cinema_management
         {
             try
             {
-                string query = "SELECT MAPHIM, TENPHIM, THELOAIPHIM, GIOIHANTUOI, THOILUONGPHIM FROM PHIM WHERE 1=1"; // Thêm WHERE 1=1 để dễ nối chuỗi
+                string query;
+                if (ckbShowDeleted.Checked)
+                {
+                    query = "SELECT MAPHIM, TENPHIM, THELOAIPHIM, GIOIHANTUOI, THOILUONGPHIM, TRANGTHAI FROM PHIM WHERE TRANGTHAI = 0";
+                }
+                else
+                    query = "SELECT MAPHIM, TENPHIM, THELOAIPHIM, GIOIHANTUOI, THOILUONGPHIM, TRANGTHAI FROM PHIM WHERE TRANGTHAI = 1";
 
                 // Lọc theo tên
                 if (!string.IsNullOrWhiteSpace(txtSearchMovie.Text))
@@ -61,12 +69,13 @@ namespace Cinema_management
                     dgvMM.Columns["btnDelete"].DisplayIndex = dgvMM.Columns.Count - 1;
 
                 // Ẩn cột MAPHIM 
-                if (dgvMM.Columns.Contains("MAPHIM")) dgvMM.Columns["MAPHIM"].Visible = false;
+                if (dgvMM.Columns.Contains("MAPHIM")) dgvMM.Columns["MAPHIM"].DisplayIndex = 0;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi tải dữ liệu: " + ex.Message);
+                Alert.Show("Lỗi tải dữ liệu!", MessagboxCustom.AlertMessagebox.AlertType.Error);
             }
+
         }
 
         private void btnAddMovie_Click(object sender, EventArgs e)
@@ -107,21 +116,22 @@ namespace Cinema_management
                 // --- XỬ LÝ NÚT XÓA (btnDelete) ---
                 else if (colName == "btnDelete")
                 {
-                    if (MessageBox.Show($"Bạn chắc chắn muốn xóa phim này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    DialogResult result = Alert.ShowWarning($"Bạn chắc chắn muốn ngừng chiếu phim này?");
+                    if (result == DialogResult.OK)
                     {
-                        // Câu lệnh SQL xóa
-                        string query = "DELETE FROM PHIM WHERE MAPHIM = @MaPhim";
-
-                        // Tạo tham số
-                        SqlParameter[] parameters = {
+                        string query = "UPDATE PHIM SET TRANGTHAI = 0 WHERE MAPHIM = @MaPhim";
+                        SqlParameter[] parameters =
+                        {
                             new SqlParameter("@MaPhim", maPhim)
                         };
-
-                        // Gọi hàm ChangeData để xóa
                         if (db.ChangeData(query, parameters))
                         {
-                            MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            LoadMovies(); // Tải lại danh sách sau khi xóa
+                            Alert.Show("Đã ngừng chiếu phim và các suất chiếu liên quan thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
+                            LoadMovies();
+                        }
+                        else
+                        {
+                            Alert.Show("Xóa thất bại! Dữ liệu không bị thay đổi!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                         }
                     }
                 }
@@ -135,6 +145,11 @@ namespace Cinema_management
         }
 
         private void txtSearchMovie_TextChanged(object sender, EventArgs e)
+        {
+            LoadMovies();
+        }
+
+        private void ckbShowDeleted_CheckedChanged(object sender, EventArgs e)
         {
             LoadMovies();
         }

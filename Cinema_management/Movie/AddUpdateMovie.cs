@@ -5,6 +5,8 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using Cinema_management.DAL;
+using Cinema_management.MessageboxCustom.Utils;
+using Cinema_management.MessageboxCustom;
 
 namespace Cinema_management
 {
@@ -146,14 +148,14 @@ namespace Cinema_management
             // 1. Kiểm tra nhập liệu
             if (string.IsNullOrWhiteSpace(txtMovieName.Text))
             {
-                MessageBox.Show("Vui lòng nhập tên phim!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Alert.Show("Vui lòng nhập tên phim!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 txtMovieName.Focus();
                 return;
             }
 
             if (!int.TryParse(txtDuration.Text, out int thoiLuong))
             {
-                MessageBox.Show("Thời lượng phim phải là số phút!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Alert.Show("Thời lượng phim phải là số phút!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return;
             }
 
@@ -168,9 +170,10 @@ namespace Cinema_management
                 {
                     File.Copy(sourceFile, destFile, true); // Copy và ghi đè nếu cần
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show("Lỗi lưu ảnh: " + ex.Message);
+
+                    Alert.Show("Lỗi lưu ảnh!", MessagboxCustom.AlertMessagebox.AlertType.Error);
                     return; // Dừng lại nếu lỗi file
                 }
             }
@@ -227,7 +230,8 @@ namespace Cinema_management
 
             if (db.ChangeData(query, parameters))
             {
-                MessageBox.Show("Lưu dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Alert.Show("Lưu dữ liệu phim thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
+                
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
