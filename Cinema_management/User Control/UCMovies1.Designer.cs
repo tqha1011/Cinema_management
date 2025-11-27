@@ -33,17 +33,19 @@
             this.txtSearchMovie = new Krypton.Toolkit.KryptonTextBox();
             this.dtpSearchDate = new Krypton.Toolkit.KryptonDateTimePicker();
             this.dgvMM = new Krypton.Toolkit.KryptonDataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelMM = new Krypton.Toolkit.KryptonPanel();
+            this.btnAdd = new Krypton.Toolkit.KryptonButton();
+            this.paneldgv = new Krypton.Toolkit.KryptonPanel();
+            this.ckbShowDeleted = new Krypton.Toolkit.KryptonCheckBox();
             this.MAPHIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MovieName = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Genre = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.AgeRating = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Duration = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.TRANGTHAI = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnEdit = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.btnDelete = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelMM = new Krypton.Toolkit.KryptonPanel();
-            this.paneldgv = new Krypton.Toolkit.KryptonPanel();
-            this.btnAdd = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMM)).BeginInit();
@@ -54,10 +56,9 @@
             // 
             // lblMovieManagement
             // 
-            this.lblMovieManagement.Location = new System.Drawing.Point(91, 68);
-            this.lblMovieManagement.Margin = new System.Windows.Forms.Padding(4);
+            this.lblMovieManagement.Location = new System.Drawing.Point(68, 54);
             this.lblMovieManagement.Name = "lblMovieManagement";
-            this.lblMovieManagement.Size = new System.Drawing.Size(409, 55);
+            this.lblMovieManagement.Size = new System.Drawing.Size(308, 42);
             this.lblMovieManagement.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblMovieManagement.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMovieManagement.TabIndex = 1;
@@ -66,10 +67,9 @@
             // kryptonLabel2
             // 
             this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
-            this.kryptonLabel2.Location = new System.Drawing.Point(91, 128);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel2.Location = new System.Drawing.Point(68, 102);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(599, 45);
+            this.kryptonLabel2.Size = new System.Drawing.Size(454, 35);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 2;
@@ -80,10 +80,10 @@
             this.txtSearchMovie.CueHint.Color1 = System.Drawing.Color.Gray;
             this.txtSearchMovie.CueHint.CueHintText = "Search movie...";
             this.txtSearchMovie.CueHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchMovie.Location = new System.Drawing.Point(115, 179);
-            this.txtSearchMovie.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchMovie.Location = new System.Drawing.Point(86, 154);
+            this.txtSearchMovie.Multiline = true;
             this.txtSearchMovie.Name = "txtSearchMovie";
-            this.txtSearchMovie.Size = new System.Drawing.Size(400, 44);
+            this.txtSearchMovie.Size = new System.Drawing.Size(313, 43);
             this.txtSearchMovie.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
             this.txtSearchMovie.StateCommon.Border.Rounding = 10F;
             this.txtSearchMovie.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,11 +96,10 @@
             this.dtpSearchDate.CalendarTodayDate = new System.DateTime(2025, 10, 28, 0, 0, 0, 0);
             this.dtpSearchDate.CustomFormat = "dd/MM/yyyy";
             this.dtpSearchDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpSearchDate.Location = new System.Drawing.Point(603, 179);
-            this.dtpSearchDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpSearchDate.Location = new System.Drawing.Point(452, 155);
             this.dtpSearchDate.Name = "dtpSearchDate";
             this.dtpSearchDate.ShowCheckBox = true;
-            this.dtpSearchDate.Size = new System.Drawing.Size(255, 43);
+            this.dtpSearchDate.Size = new System.Drawing.Size(191, 36);
             this.dtpSearchDate.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
             this.dtpSearchDate.StateCommon.Border.Rounding = 10F;
             this.dtpSearchDate.TabIndex = 6;
@@ -117,11 +116,11 @@
             this.Genre,
             this.AgeRating,
             this.Duration,
+            this.TRANGTHAI,
             this.btnEdit,
             this.btnDelete});
             this.dgvMM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvMM.Location = new System.Drawing.Point(67, 38);
-            this.dgvMM.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvMM.Location = new System.Drawing.Point(50, 30);
             this.dgvMM.Name = "dgvMM";
             this.dgvMM.ReadOnly = true;
             this.dgvMM.RowHeadersVisible = false;
@@ -129,7 +128,7 @@
             this.dgvMM.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvMM.RowTemplate.Height = 40;
             this.dgvMM.RowTemplate.ReadOnly = true;
-            this.dgvMM.Size = new System.Drawing.Size(1133, 500);
+            this.dgvMM.Size = new System.Drawing.Size(850, 377);
             this.dgvMM.StateCommon.Background.Color1 = System.Drawing.Color.White;
             this.dgvMM.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dgvMM.StateCommon.DataCell.Back.Color1 = System.Drawing.Color.White;
@@ -142,94 +141,19 @@
             this.dgvMM.TabIndex = 7;
             this.dgvMM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMM_CellContentClick);
             // 
-            // MAPHIM
-            // 
-            this.MAPHIM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.MAPHIM.DataPropertyName = "MAPHIM";
-            this.MAPHIM.HeaderText = "MaPhim";
-            this.MAPHIM.MinimumWidth = 8;
-            this.MAPHIM.Name = "MAPHIM";
-            this.MAPHIM.ReadOnly = true;
-            this.MAPHIM.Visible = false;
-            this.MAPHIM.Width = 112;
-            // 
-            // MovieName
-            // 
-            this.MovieName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.MovieName.DataPropertyName = "TENPHIM";
-            this.MovieName.HeaderText = "Movie Name";
-            this.MovieName.MinimumWidth = 8;
-            this.MovieName.Name = "MovieName";
-            this.MovieName.ReadOnly = true;
-            this.MovieName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MovieName.Width = 236;
-            // 
-            // Genre
-            // 
-            this.Genre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Genre.DataPropertyName = "THELOAIPHIM";
-            this.Genre.HeaderText = "Genre";
-            this.Genre.MinimumWidth = 8;
-            this.Genre.Name = "Genre";
-            this.Genre.ReadOnly = true;
-            this.Genre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Genre.Width = 155;
-            // 
-            // AgeRating
-            // 
-            this.AgeRating.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.AgeRating.DataPropertyName = "GIOIHANTUOI";
-            this.AgeRating.HeaderText = "Age Rating";
-            this.AgeRating.MinimumWidth = 8;
-            this.AgeRating.Name = "AgeRating";
-            this.AgeRating.ReadOnly = true;
-            this.AgeRating.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.AgeRating.Width = 214;
-            // 
-            // Duration
-            // 
-            this.Duration.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Duration.DataPropertyName = "THOILUONGPHIM";
-            this.Duration.HeaderText = "Duration (min)";
-            this.Duration.MinimumWidth = 8;
-            this.Duration.Name = "Duration";
-            this.Duration.ReadOnly = true;
-            this.Duration.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Duration.Width = 265;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.HeaderText = "Edit";
-            this.btnEdit.MinimumWidth = 8;
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.ReadOnly = true;
-            this.btnEdit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.btnEdit.UseColumnTextForButtonValue = true;
-            this.btnEdit.Width = 150;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.HeaderText = "Delete";
-            this.btnDelete.MinimumWidth = 8;
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.ReadOnly = true;
-            this.btnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.btnDelete.UseColumnTextForButtonValue = true;
-            this.btnDelete.Width = 150;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cinema_management.Properties.Resources.lucide__search;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 179);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 154);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 45);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // panelMM
             // 
+            this.panelMM.Controls.Add(this.ckbShowDeleted);
             this.panelMM.Controls.Add(this.btnAdd);
             this.panelMM.Controls.Add(this.lblMovieManagement);
             this.panelMM.Controls.Add(this.kryptonLabel2);
@@ -238,31 +162,17 @@
             this.panelMM.Controls.Add(this.dtpSearchDate);
             this.panelMM.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMM.Location = new System.Drawing.Point(0, 0);
-            this.panelMM.Margin = new System.Windows.Forms.Padding(4);
             this.panelMM.Name = "panelMM";
-            this.panelMM.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.panelMM.Size = new System.Drawing.Size(1200, 224);
+            this.panelMM.Padding = new System.Windows.Forms.Padding(20);
+            this.panelMM.Size = new System.Drawing.Size(900, 203);
             this.panelMM.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.panelMM.TabIndex = 8;
-            // 
-            // paneldgv
-            // 
-            this.paneldgv.Controls.Add(this.dgvMM);
-            this.paneldgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneldgv.Location = new System.Drawing.Point(0, 224);
-            this.paneldgv.Margin = new System.Windows.Forms.Padding(4);
-            this.paneldgv.Name = "paneldgv";
-            this.paneldgv.Padding = new System.Windows.Forms.Padding(67, 38, 0, 0);
-            this.paneldgv.Size = new System.Drawing.Size(1200, 538);
-            this.paneldgv.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.paneldgv.TabIndex = 9;
             // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(828, 68);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(621, 54);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnAdd.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -289,7 +199,7 @@
             this.btnAdd.OverrideFocus.Border.Rounding = 10F;
             this.btnAdd.OverrideFocus.Border.Width = 1;
             this.btnAdd.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAdd.Size = new System.Drawing.Size(324, 68);
+            this.btnAdd.Size = new System.Drawing.Size(243, 54);
             this.btnAdd.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnAdd.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.btnAdd.StateCommon.Back.ColorAngle = 45F;
@@ -351,16 +261,121 @@
             this.btnAdd.Values.Text = "Add New Movie";
             this.btnAdd.Click += new System.EventHandler(this.btnAddMovie_Click);
             // 
+            // paneldgv
+            // 
+            this.paneldgv.Controls.Add(this.dgvMM);
+            this.paneldgv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneldgv.Location = new System.Drawing.Point(0, 203);
+            this.paneldgv.Name = "paneldgv";
+            this.paneldgv.Padding = new System.Windows.Forms.Padding(50, 30, 0, 0);
+            this.paneldgv.Size = new System.Drawing.Size(900, 407);
+            this.paneldgv.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.paneldgv.TabIndex = 9;
+            // 
+            // ckbShowDeleted
+            // 
+            this.ckbShowDeleted.Location = new System.Drawing.Point(700, 158);
+            this.ckbShowDeleted.Name = "ckbShowDeleted";
+            this.ckbShowDeleted.Size = new System.Drawing.Size(231, 33);
+            this.ckbShowDeleted.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.ckbShowDeleted.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbShowDeleted.TabIndex = 8;
+            this.ckbShowDeleted.Values.Text = "Phim ngừng chiếu";
+            this.ckbShowDeleted.CheckedChanged += new System.EventHandler(this.ckbShowDeleted_CheckedChanged);
+            // 
+            // MAPHIM
+            // 
+            this.MAPHIM.DataPropertyName = "MAPHIM";
+            this.MAPHIM.HeaderText = "MaPhim";
+            this.MAPHIM.MinimumWidth = 8;
+            this.MAPHIM.Name = "MAPHIM";
+            this.MAPHIM.ReadOnly = true;
+            this.MAPHIM.Width = 146;
+            // 
+            // MovieName
+            // 
+            this.MovieName.DataPropertyName = "TENPHIM";
+            this.MovieName.HeaderText = "Movie Name";
+            this.MovieName.MinimumWidth = 8;
+            this.MovieName.Name = "MovieName";
+            this.MovieName.ReadOnly = true;
+            this.MovieName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.MovieName.Width = 197;
+            // 
+            // Genre
+            // 
+            this.Genre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Genre.DataPropertyName = "THELOAIPHIM";
+            this.Genre.HeaderText = "Genre";
+            this.Genre.MinimumWidth = 8;
+            this.Genre.Name = "Genre";
+            this.Genre.ReadOnly = true;
+            this.Genre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Genre.Width = 119;
+            // 
+            // AgeRating
+            // 
+            this.AgeRating.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.AgeRating.DataPropertyName = "GIOIHANTUOI";
+            this.AgeRating.HeaderText = "Age Rating";
+            this.AgeRating.MinimumWidth = 8;
+            this.AgeRating.Name = "AgeRating";
+            this.AgeRating.ReadOnly = true;
+            this.AgeRating.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.AgeRating.Width = 178;
+            // 
+            // Duration
+            // 
+            this.Duration.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Duration.DataPropertyName = "THOILUONGPHIM";
+            this.Duration.HeaderText = "Duration (min)";
+            this.Duration.MinimumWidth = 8;
+            this.Duration.Name = "Duration";
+            this.Duration.ReadOnly = true;
+            this.Duration.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Duration.Width = 218;
+            // 
+            // TRANGTHAI
+            // 
+            this.TRANGTHAI.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.TRANGTHAI.DataPropertyName = "TRANGTHAI";
+            this.TRANGTHAI.HeaderText = "Is Active";
+            this.TRANGTHAI.MinimumWidth = 8;
+            this.TRANGTHAI.Name = "TRANGTHAI";
+            this.TRANGTHAI.ReadOnly = true;
+            this.TRANGTHAI.Width = 118;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.HeaderText = "Edit";
+            this.btnEdit.MinimumWidth = 8;
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.ReadOnly = true;
+            this.btnEdit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseColumnTextForButtonValue = true;
+            this.btnEdit.Width = 150;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.HeaderText = "Delete";
+            this.btnDelete.MinimumWidth = 8;
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.ReadOnly = true;
+            this.btnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseColumnTextForButtonValue = true;
+            this.btnDelete.Width = 150;
+            // 
             // UCMovies1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.paneldgv);
             this.Controls.Add(this.panelMM);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCMovies1";
-            this.Size = new System.Drawing.Size(1200, 762);
+            this.Size = new System.Drawing.Size(900, 610);
             this.Load += new System.EventHandler(this.UCMovies1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -383,13 +398,15 @@
         private Krypton.Toolkit.KryptonDataGridView dgvMM;
         private Krypton.Toolkit.KryptonPanel panelMM;
         private Krypton.Toolkit.KryptonPanel paneldgv;
+        private Krypton.Toolkit.KryptonButton btnAdd;
+        private Krypton.Toolkit.KryptonCheckBox ckbShowDeleted;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAPHIM;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn MovieName;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Genre;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn AgeRating;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Duration;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn TRANGTHAI;
         private Krypton.Toolkit.KryptonDataGridViewButtonColumn btnEdit;
         private Krypton.Toolkit.KryptonDataGridViewButtonColumn btnDelete;
-        private Krypton.Toolkit.KryptonButton btnAdd;
     }
 }
