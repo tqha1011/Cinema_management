@@ -119,19 +119,30 @@ namespace Cinema_management
                     DialogResult result = Alert.ShowWarning($"Bạn chắc chắn muốn ngừng chiếu phim này?");
                     if (result == DialogResult.OK)
                     {
-                        string query = "UPDATE PHIM SET TRANGTHAI = 0 WHERE MAPHIM = @MaPhim";
-                        SqlParameter[] parameters =
+                        string updatePhim = "UPDATE PHIM SET TRANGTHAI = 0 WHERE MAPHIM = @MaPhim";
+                        string deleteSC = "DELETE FROM SUATCHIEU WHERE MAPHIM = @MaPhim AND THOIGIANCHIEU > GETDATE()";
+                        string[] queries = {updatePhim, deleteSC};
+                        SqlParameter[][] allParameters =
                         {
-                            new SqlParameter("@MaPhim", maPhim)
+                            new SqlParameter[] { new SqlParameter("@MaPhim", maPhim) },
+                            new SqlParameter[] { new SqlParameter("@MaPhim", maPhim) }
                         };
-                        if (db.ChangeData(query, parameters))
+                        try
                         {
-                            Alert.Show("Đã ngừng chiếu phim và các suất chiếu liên quan thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
-                            LoadMovies();
+                            if (db.ExecuteTransaction(queries, allParameters))
+                            {
+                                Alert.Show("Đã ngừng chiếu phim và hủy các suất chiếu tương lai thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
+                                LoadMovies();
+                            }
+                            else
+                            {
+                                // Hàm ExecuteTransaction của bạn có thể ném Exception. Nếu nó trả về FALSE mà không ném Exception
+                                Alert.Show("Ngừng chiếu thất bại! Không có dữ liệu nào được thay đổi hoặc lỗi chưa được xử lý.", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                            }
                         }
-                        else
+                        catch (Exception ex)
                         {
-                            Alert.Show("Xóa thất bại! Dữ liệu không bị thay đổi!", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                            Alert.Show("Lỗi thực thi Transaction: " + ex.Message, MessagboxCustom.AlertMessagebox.AlertType.Error);
                         }
                     }
                 }
