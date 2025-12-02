@@ -19,6 +19,11 @@ namespace Cinema_management
         public UCLogin()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.UserPaint |
+                  ControlStyles.AllPaintingInWmPaint |
+                  ControlStyles.OptimizedDoubleBuffer, true);
+            this.UpdateStyles();
             lblInfo.Visible = false;
             authLogic = new AuthLogic();
         }
@@ -91,7 +96,7 @@ namespace Cinema_management
             FormLogin parentForm = this.FindForm() as FormLogin;
             if (parentForm != null)
             {
-                parentForm.ShowUserControl(new UCPasswordRecovery());
+                parentForm.ShowUserControl(new UCPasswordRecovery(),true);
 
             }
         }
