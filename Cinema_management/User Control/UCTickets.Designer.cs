@@ -59,6 +59,7 @@
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.panelScreen = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.btnBack = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelTopInfo)).BeginInit();
             this.panelTopInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelSidebar)).BeginInit();
@@ -78,12 +79,13 @@
             // 
             // panelTopInfo
             // 
+            this.panelTopInfo.Controls.Add(this.btnBack);
             this.panelTopInfo.Controls.Add(this.lblTGianChieu);
             this.panelTopInfo.Controls.Add(this.lblSeatsCount);
             this.panelTopInfo.Controls.Add(this.lblRoomName);
             this.panelTopInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopInfo.Location = new System.Drawing.Point(3, 2);
-            this.panelTopInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTopInfo.Margin = new System.Windows.Forms.Padding(4);
             this.panelTopInfo.Name = "panelTopInfo";
             this.panelTopInfo.Size = new System.Drawing.Size(1471, 100);
             this.panelTopInfo.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
@@ -91,8 +93,8 @@
             // 
             // lblTGianChieu
             // 
-            this.lblTGianChieu.Location = new System.Drawing.Point(539, 29);
-            this.lblTGianChieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTGianChieu.Location = new System.Drawing.Point(796, 34);
+            this.lblTGianChieu.Margin = new System.Windows.Forms.Padding(4);
             this.lblTGianChieu.Name = "lblTGianChieu";
             this.lblTGianChieu.Size = new System.Drawing.Size(506, 40);
             this.lblTGianChieu.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -102,8 +104,8 @@
             // 
             // lblSeatsCount
             // 
-            this.lblSeatsCount.Location = new System.Drawing.Point(232, 29);
-            this.lblSeatsCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblSeatsCount.Location = new System.Drawing.Point(489, 34);
+            this.lblSeatsCount.Margin = new System.Windows.Forms.Padding(4);
             this.lblSeatsCount.Name = "lblSeatsCount";
             this.lblSeatsCount.Size = new System.Drawing.Size(242, 40);
             this.lblSeatsCount.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -113,8 +115,8 @@
             // 
             // lblRoomName
             // 
-            this.lblRoomName.Location = new System.Drawing.Point(40, 29);
-            this.lblRoomName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblRoomName.Location = new System.Drawing.Point(297, 34);
+            this.lblRoomName.Margin = new System.Windows.Forms.Padding(4);
             this.lblRoomName.Name = "lblRoomName";
             this.lblRoomName.Size = new System.Drawing.Size(141, 40);
             this.lblRoomName.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -141,7 +143,7 @@
             this.panelSidebar.Controls.Add(this.pictureMovie);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelSidebar.Location = new System.Drawing.Point(987, 102);
-            this.panelSidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSidebar.Margin = new System.Windows.Forms.Padding(4);
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(487, 756);
             this.panelSidebar.StateCommon.Color1 = System.Drawing.Color.White;
@@ -154,7 +156,7 @@
             this.btnContinue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnContinue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnContinue.Location = new System.Drawing.Point(159, 679);
-            this.btnContinue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(4);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnContinue.Size = new System.Drawing.Size(187, 56);
@@ -177,7 +179,7 @@
             // bdeLine
             // 
             this.bdeLine.Location = new System.Drawing.Point(23, 610);
-            this.bdeLine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bdeLine.Margin = new System.Windows.Forms.Padding(4);
             this.bdeLine.Name = "bdeLine";
             this.bdeLine.Size = new System.Drawing.Size(427, 1);
             this.bdeLine.StateCommon.Color1 = System.Drawing.Color.Black;
@@ -186,7 +188,7 @@
             // kryptonLabel5
             // 
             this.kryptonLabel5.Location = new System.Drawing.Point(29, 626);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(89, 40);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -197,7 +199,7 @@
             // lblPrice
             // 
             this.lblPrice.Location = new System.Drawing.Point(29, 561);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(4);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(103, 40);
             this.lblPrice.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -208,7 +210,7 @@
             // lblSeat
             // 
             this.lblSeat.Location = new System.Drawing.Point(29, 501);
-            this.lblSeat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblSeat.Margin = new System.Windows.Forms.Padding(4);
             this.lblSeat.Name = "lblSeat";
             this.lblSeat.Size = new System.Drawing.Size(76, 40);
             this.lblSeat.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -219,7 +221,7 @@
             // lblTextRoom
             // 
             this.lblTextRoom.Location = new System.Drawing.Point(29, 446);
-            this.lblTextRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTextRoom.Margin = new System.Windows.Forms.Padding(4);
             this.lblTextRoom.Name = "lblTextRoom";
             this.lblTextRoom.Size = new System.Drawing.Size(188, 40);
             this.lblTextRoom.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -230,7 +232,7 @@
             // lblTextShowtime
             // 
             this.lblTextShowtime.Location = new System.Drawing.Point(29, 385);
-            this.lblTextShowtime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTextShowtime.Margin = new System.Windows.Forms.Padding(4);
             this.lblTextShowtime.Name = "lblTextShowtime";
             this.lblTextShowtime.Size = new System.Drawing.Size(162, 40);
             this.lblTextShowtime.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -241,7 +243,7 @@
             // lblTongTien
             // 
             this.lblTongTien.Location = new System.Drawing.Point(312, 626);
-            this.lblTongTien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTongTien.Margin = new System.Windows.Forms.Padding(4);
             this.lblTongTien.Name = "lblTongTien";
             this.lblTongTien.Size = new System.Drawing.Size(128, 40);
             this.lblTongTien.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -252,7 +254,7 @@
             // lblGiaVe
             // 
             this.lblGiaVe.Location = new System.Drawing.Point(312, 561);
-            this.lblGiaVe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblGiaVe.Margin = new System.Windows.Forms.Padding(4);
             this.lblGiaVe.Name = "lblGiaVe";
             this.lblGiaVe.Size = new System.Drawing.Size(128, 40);
             this.lblGiaVe.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -264,7 +266,7 @@
             // lblGheChon
             // 
             this.lblGheChon.Location = new System.Drawing.Point(340, 501);
-            this.lblGheChon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblGheChon.Margin = new System.Windows.Forms.Padding(4);
             this.lblGheChon.Name = "lblGheChon";
             this.lblGheChon.Size = new System.Drawing.Size(101, 40);
             this.lblGheChon.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -275,7 +277,7 @@
             // lblRoom
             // 
             this.lblRoom.Location = new System.Drawing.Point(312, 446);
-            this.lblRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblRoom.Margin = new System.Windows.Forms.Padding(4);
             this.lblRoom.Name = "lblRoom";
             this.lblRoom.Size = new System.Drawing.Size(141, 40);
             this.lblRoom.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -286,7 +288,7 @@
             // lblShowTime
             // 
             this.lblShowTime.Location = new System.Drawing.Point(268, 385);
-            this.lblShowTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblShowTime.Margin = new System.Windows.Forms.Padding(4);
             this.lblShowTime.Name = "lblShowTime";
             this.lblShowTime.Size = new System.Drawing.Size(186, 40);
             this.lblShowTime.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -297,7 +299,7 @@
             // lblMvName
             // 
             this.lblMvName.Location = new System.Drawing.Point(299, 326);
-            this.lblMvName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblMvName.Margin = new System.Windows.Forms.Padding(4);
             this.lblMvName.Name = "lblMvName";
             this.lblMvName.Size = new System.Drawing.Size(155, 40);
             this.lblMvName.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -308,7 +310,7 @@
             // lblMovieName
             // 
             this.lblMovieName.Location = new System.Drawing.Point(29, 326);
-            this.lblMovieName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblMovieName.Margin = new System.Windows.Forms.Padding(4);
             this.lblMovieName.Name = "lblMovieName";
             this.lblMovieName.Size = new System.Drawing.Size(89, 40);
             this.lblMovieName.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -320,7 +322,7 @@
             // 
             this.pictureMovie.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureMovie.Location = new System.Drawing.Point(124, 29);
-            this.pictureMovie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureMovie.Margin = new System.Windows.Forms.Padding(4);
             this.pictureMovie.Name = "pictureMovie";
             this.pictureMovie.Size = new System.Drawing.Size(267, 282);
             this.pictureMovie.TabIndex = 0;
@@ -333,7 +335,7 @@
             this.panelMain.Controls.Add(this.panelScreen);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(3, 102);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(984, 756);
             this.panelMain.StateCommon.Color1 = System.Drawing.Color.White;
@@ -344,7 +346,7 @@
             this.pnlSeats.AutoScroll = true;
             this.pnlSeats.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSeats.Location = new System.Drawing.Point(0, 50);
-            this.pnlSeats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlSeats.Margin = new System.Windows.Forms.Padding(4);
             this.pnlSeats.Name = "pnlSeats";
             this.pnlSeats.Size = new System.Drawing.Size(984, 615);
             this.pnlSeats.StateCommon.Color1 = System.Drawing.Color.White;
@@ -362,7 +364,7 @@
             this.panelLegend.Controls.Add(this.kryptonLabel2);
             this.panelLegend.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelLegend.Location = new System.Drawing.Point(0, 665);
-            this.panelLegend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLegend.Margin = new System.Windows.Forms.Padding(4);
             this.panelLegend.Name = "panelLegend";
             this.panelLegend.Size = new System.Drawing.Size(984, 91);
             this.panelLegend.StateCommon.Color1 = System.Drawing.Color.White;
@@ -373,7 +375,7 @@
             // 
             this.pictureBox1.Image = global::Cinema_management.Properties.Resources.material_symbols__square_outline_rounded;
             this.pictureBox1.Location = new System.Drawing.Point(477, 36);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -383,7 +385,7 @@
             // kryptonPanel1
             // 
             this.kryptonPanel1.Location = new System.Drawing.Point(761, 39);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(27, 25);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(42)))), ((int)(((byte)(43)))));
@@ -393,7 +395,7 @@
             // squareGreen
             // 
             this.squareGreen.Location = new System.Drawing.Point(232, 39);
-            this.squareGreen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.squareGreen.Margin = new System.Windows.Forms.Padding(4);
             this.squareGreen.Name = "squareGreen";
             this.squareGreen.Size = new System.Drawing.Size(27, 25);
             this.squareGreen.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(128)))), ((int)(((byte)(3)))));
@@ -403,7 +405,7 @@
             // kryptonLabel8
             // 
             this.kryptonLabel8.Location = new System.Drawing.Point(264, 32);
-            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel8.Name = "kryptonLabel8";
             this.kryptonLabel8.Size = new System.Drawing.Size(159, 40);
             this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -414,7 +416,7 @@
             // kryptonLabel9
             // 
             this.kryptonLabel9.Location = new System.Drawing.Point(796, 32);
-            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(109, 40);
             this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -425,7 +427,7 @@
             // kryptonLabel2
             // 
             this.kryptonLabel2.Location = new System.Drawing.Point(511, 32);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(150, 40);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -438,7 +440,7 @@
             this.panelScreen.Controls.Add(this.kryptonLabel1);
             this.panelScreen.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelScreen.Location = new System.Drawing.Point(0, 0);
-            this.panelScreen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelScreen.Margin = new System.Windows.Forms.Padding(4);
             this.panelScreen.Name = "panelScreen";
             this.panelScreen.Size = new System.Drawing.Size(984, 50);
             this.panelScreen.StateCommon.Color1 = System.Drawing.Color.Gainsboro;
@@ -448,13 +450,38 @@
             // 
             this.kryptonLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kryptonLabel1.Location = new System.Drawing.Point(392, 4);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(175, 47);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Màn hình";
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Location = new System.Drawing.Point(22, 18);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnBack.Size = new System.Drawing.Size(140, 56);
+            this.btnBack.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateCommon.Border.Rounding = 10F;
+            this.btnBack.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnBack.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnBack.Values.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // UCTickets
             // 
@@ -464,7 +491,7 @@
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.panelTopInfo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCTickets";
             this.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Size = new System.Drawing.Size(1477, 860);
@@ -524,5 +551,6 @@
         private Krypton.Toolkit.KryptonLabel lblSeatsCount;
         private Krypton.Toolkit.KryptonLabel lblRoomName;
         private Krypton.Toolkit.KryptonLabel lblTGianChieu;
+        private Krypton.Toolkit.KryptonButton btnBack;
     }
 }

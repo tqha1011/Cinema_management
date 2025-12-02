@@ -66,20 +66,20 @@ namespace Cinema_management
             this.pnSidebar.Controls.Add(this.pnHeader);
             this.pnSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnSidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnSidebar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.pnSidebar.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnSidebar.Name = "pnSidebar";
-            this.pnSidebar.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
-            this.pnSidebar.Size = new System.Drawing.Size(267, 409);
+            this.pnSidebar.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
+            this.pnSidebar.Size = new System.Drawing.Size(400, 551);
             this.pnSidebar.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnSidebar.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnSidebar.TabIndex = 0;
             // 
             // lbManagement
             // 
-            this.lbManagement.Location = new System.Drawing.Point(40, 71);
-            this.lbManagement.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.lbManagement.Location = new System.Drawing.Point(60, 111);
+            this.lbManagement.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.lbManagement.Name = "lbManagement";
-            this.lbManagement.Size = new System.Drawing.Size(174, 30);
+            this.lbManagement.Size = new System.Drawing.Size(274, 47);
             this.lbManagement.StateCommon.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.lbManagement.StateCommon.ShortText.Color2 = System.Drawing.Color.DimGray;
             this.lbManagement.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -89,12 +89,12 @@ namespace Cinema_management
             // btnLogout
             // 
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogout.Location = new System.Drawing.Point(18, 356);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnLogout.Location = new System.Drawing.Point(27, 468);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnLogout.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
-            this.btnLogout.Size = new System.Drawing.Size(231, 37);
+            this.btnLogout.Size = new System.Drawing.Size(346, 58);
             this.btnLogout.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(45)))), ((int)(((byte)(64)))));
             this.btnLogout.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(45)))), ((int)(((byte)(64)))));
             this.btnLogout.StateCommon.Border.Rounding = 10F;
@@ -128,12 +128,12 @@ namespace Cinema_management
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(22, 339);
-            this.kryptonButton4.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.kryptonButton4.Location = new System.Drawing.Point(33, 530);
+            this.kryptonButton4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton4.Size = new System.Drawing.Size(222, 37);
+            this.kryptonButton4.Size = new System.Drawing.Size(333, 58);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton4.StateCommon.Border.Rounding = 10F;
@@ -155,12 +155,12 @@ namespace Cinema_management
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(22, 282);
-            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.kryptonButton3.Location = new System.Drawing.Point(33, 441);
+            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton3.Size = new System.Drawing.Size(222, 37);
+            this.kryptonButton3.Size = new System.Drawing.Size(333, 58);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton3.StateCommon.Border.Rounding = 10F;
@@ -182,12 +182,12 @@ namespace Cinema_management
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(22, 223);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.kryptonButton2.Location = new System.Drawing.Point(33, 348);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.Size = new System.Drawing.Size(222, 37);
+            this.kryptonButton2.Size = new System.Drawing.Size(333, 58);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton2.StateCommon.Border.Rounding = 10F;
@@ -209,12 +209,12 @@ namespace Cinema_management
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(22, 161);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.kryptonButton1.Location = new System.Drawing.Point(33, 252);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.Size = new System.Drawing.Size(222, 37);
+            this.kryptonButton1.Size = new System.Drawing.Size(333, 58);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Border.Rounding = 10F;
@@ -236,12 +236,12 @@ namespace Cinema_management
             // 
             // btnDashboard
             // 
-            this.btnDashboard.Location = new System.Drawing.Point(22, 105);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnDashboard.Location = new System.Drawing.Point(33, 164);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnDashboard.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
-            this.btnDashboard.Size = new System.Drawing.Size(222, 37);
+            this.btnDashboard.Size = new System.Drawing.Size(333, 58);
             this.btnDashboard.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.btnDashboard.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.btnDashboard.StateCommon.Border.Rounding = 10F;
@@ -265,10 +265,10 @@ namespace Cinema_management
             // 
             this.pnHeader.Controls.Add(this.kryptonLabel1);
             this.pnHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnHeader.Location = new System.Drawing.Point(18, 16);
-            this.pnHeader.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.pnHeader.Location = new System.Drawing.Point(27, 25);
+            this.pnHeader.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnHeader.Name = "pnHeader";
-            this.pnHeader.Size = new System.Drawing.Size(231, 40);
+            this.pnHeader.Size = new System.Drawing.Size(346, 62);
             this.pnHeader.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnHeader.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnHeader.TabIndex = 0;
@@ -276,10 +276,10 @@ namespace Cinema_management
             // kryptonLabel1
             // 
             this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel1.Location = new System.Drawing.Point(11, 10);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.kryptonLabel1.Location = new System.Drawing.Point(16, 16);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(222, 34);
+            this.kryptonLabel1.Size = new System.Drawing.Size(332, 47);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -292,10 +292,10 @@ namespace Cinema_management
             this.pnContent.Controls.Add(this.pnContentforUC);
             this.pnContent.Controls.Add(this.pnHeaderTheme);
             this.pnContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnContent.Location = new System.Drawing.Point(267, 0);
-            this.pnContent.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.pnContent.Location = new System.Drawing.Point(400, 0);
+            this.pnContent.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnContent.Name = "pnContent";
-            this.pnContent.Size = new System.Drawing.Size(1028, 409);
+            this.pnContent.Size = new System.Drawing.Size(1558, 551);
             this.pnContent.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnContent.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnContent.TabIndex = 1;
@@ -305,10 +305,10 @@ namespace Cinema_management
             // 
             this.pnContentforUC.AutoScroll = true;
             this.pnContentforUC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnContentforUC.Location = new System.Drawing.Point(0, 40);
-            this.pnContentforUC.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.pnContentforUC.Location = new System.Drawing.Point(0, 62);
+            this.pnContentforUC.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnContentforUC.Name = "pnContentforUC";
-            this.pnContentforUC.Size = new System.Drawing.Size(1028, 369);
+            this.pnContentforUC.Size = new System.Drawing.Size(1558, 489);
             this.pnContentforUC.TabIndex = 1;
             this.pnContentforUC.Resize += new System.EventHandler(this.pnContentforUC_Resize);
             // 
@@ -316,23 +316,23 @@ namespace Cinema_management
             // 
             this.pnHeaderTheme.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnHeaderTheme.Location = new System.Drawing.Point(0, 0);
-            this.pnHeaderTheme.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.pnHeaderTheme.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnHeaderTheme.Name = "pnHeaderTheme";
-            this.pnHeaderTheme.Size = new System.Drawing.Size(1028, 40);
+            this.pnHeaderTheme.Size = new System.Drawing.Size(1558, 62);
             this.pnHeaderTheme.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnHeaderTheme.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnHeaderTheme.TabIndex = 0;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1295, 409);
+            this.ClientSize = new System.Drawing.Size(1958, 551);
             this.Controls.Add(this.pnContent);
             this.Controls.Add(this.pnSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Location = new System.Drawing.Point(0, 0);
-            this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";

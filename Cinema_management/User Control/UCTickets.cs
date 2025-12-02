@@ -13,8 +13,11 @@ using System.Configuration;
 
 namespace Cinema_management
 {
+
     public partial class UCTickets : UserControl
     {
+        public event EventHandler OnBack;
+
         string connectionString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
 
         private struct SuatChieuInfo
@@ -354,6 +357,11 @@ namespace Cinema_management
 
             //////////////////////////// Hiện form thanh toan ở đây //////////////////////
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            OnBack?.Invoke(this, EventArgs.Empty);
         }
     }
 }
