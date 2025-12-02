@@ -33,14 +33,16 @@
             this.lblEmailExist = new Krypton.Toolkit.KryptonLabel();
             this.lblCheck = new Krypton.Toolkit.KryptonLabel();
             this.btnSendCode = new Krypton.Toolkit.KryptonButton();
-            this.kryptonPictureBox2 = new Krypton.Toolkit.KryptonPictureBox();
-            this.ptbLock = new Krypton.Toolkit.KryptonPictureBox();
             this.txtPassNew = new Krypton.Toolkit.KryptonTextBox();
-            this.btnShowHide = new Krypton.Toolkit.ButtonSpecAny();
             this.txtVerified = new Krypton.Toolkit.KryptonTextBox();
             this.btnConfirm = new Krypton.Toolkit.KryptonButton();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).BeginInit();
+            this.ptbLock = new Krypton.Toolkit.KryptonPictureBox();
+            this.btnShowHide = new Krypton.Toolkit.ButtonSpecAny();
+            this.kryptonPictureBox2 = new Krypton.Toolkit.KryptonPictureBox();
+            this.ptbIconBack = new Krypton.Toolkit.KryptonPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbIconBack)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabel1
@@ -123,28 +125,6 @@
             this.btnSendCode.Values.Text = "Send Code";
             this.btnSendCode.Click += new System.EventHandler(this.btnSendCode_Click);
             // 
-            // kryptonPictureBox2
-            // 
-            this.kryptonPictureBox2.Image = global::Cinema_management.Properties.Resources.material_symbols__mail_rounded;
-            this.kryptonPictureBox2.Location = new System.Drawing.Point(85, 98);
-            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonPictureBox2.Name = "kryptonPictureBox2";
-            this.kryptonPictureBox2.Size = new System.Drawing.Size(28, 25);
-            this.kryptonPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.kryptonPictureBox2.TabIndex = 4;
-            this.kryptonPictureBox2.TabStop = false;
-            // 
-            // ptbLock
-            // 
-            this.ptbLock.Image = global::Cinema_management.Properties.Resources.mdi__password;
-            this.ptbLock.Location = new System.Drawing.Point(85, 188);
-            this.ptbLock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbLock.Name = "ptbLock";
-            this.ptbLock.Size = new System.Drawing.Size(28, 31);
-            this.ptbLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbLock.TabIndex = 10;
-            this.ptbLock.TabStop = false;
-            // 
             // txtPassNew
             // 
             this.txtPassNew.ButtonSpecs.Add(this.btnShowHide);
@@ -156,12 +136,6 @@
             this.txtPassNew.Name = "txtPassNew";
             this.txtPassNew.Size = new System.Drawing.Size(286, 33);
             this.txtPassNew.TabIndex = 9;
-            // 
-            // btnShowHide
-            // 
-            this.btnShowHide.Image = global::Cinema_management.Properties.Resources.iconoir__eye;
-            this.btnShowHide.UniqueName = "3fb880b079f3444cb04ef0f5a6fd933d";
-            this.btnShowHide.Click += new System.EventHandler(this.btnShowHide_Click);
             // 
             // txtVerified
             // 
@@ -209,11 +183,51 @@
             this.btnConfirm.Values.Text = "Confirm";
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
+            // ptbLock
+            // 
+            this.ptbLock.Image = global::Cinema_management.Properties.Resources.mdi__password;
+            this.ptbLock.Location = new System.Drawing.Point(85, 188);
+            this.ptbLock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbLock.Name = "ptbLock";
+            this.ptbLock.Size = new System.Drawing.Size(28, 31);
+            this.ptbLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbLock.TabIndex = 10;
+            this.ptbLock.TabStop = false;
+            // 
+            // btnShowHide
+            // 
+            this.btnShowHide.Image = global::Cinema_management.Properties.Resources.iconoir__eye;
+            this.btnShowHide.UniqueName = "3fb880b079f3444cb04ef0f5a6fd933d";
+            this.btnShowHide.Click += new System.EventHandler(this.btnShowHide_Click);
+            // 
+            // kryptonPictureBox2
+            // 
+            this.kryptonPictureBox2.Image = global::Cinema_management.Properties.Resources.material_symbols__mail_rounded;
+            this.kryptonPictureBox2.Location = new System.Drawing.Point(85, 98);
+            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonPictureBox2.Name = "kryptonPictureBox2";
+            this.kryptonPictureBox2.Size = new System.Drawing.Size(28, 25);
+            this.kryptonPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.kryptonPictureBox2.TabIndex = 4;
+            this.kryptonPictureBox2.TabStop = false;
+            // 
+            // ptbIconBack
+            // 
+            this.ptbIconBack.Image = global::Cinema_management.Properties.Resources.iconbackarrow;
+            this.ptbIconBack.Location = new System.Drawing.Point(18, 13);
+            this.ptbIconBack.Name = "ptbIconBack";
+            this.ptbIconBack.Size = new System.Drawing.Size(38, 27);
+            this.ptbIconBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbIconBack.TabIndex = 13;
+            this.ptbIconBack.TabStop = false;
+            this.ptbIconBack.Click += new System.EventHandler(this.ptbIconBack_Click);
+            // 
             // UCPasswordRecovery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.ptbIconBack);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.txtVerified);
             this.Controls.Add(this.ptbLock);
@@ -224,11 +238,13 @@
             this.Controls.Add(this.kryptonPictureBox2);
             this.Controls.Add(this.txtEmailConfirm);
             this.Controls.Add(this.kryptonLabel1);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCPasswordRecovery";
             this.Size = new System.Drawing.Size(489, 360);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbIconBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +263,6 @@
         private Krypton.Toolkit.ButtonSpecAny btnShowHide;
         private Krypton.Toolkit.KryptonTextBox txtVerified;
         private Krypton.Toolkit.KryptonButton btnConfirm;
+        private Krypton.Toolkit.KryptonPictureBox ptbIconBack;
     }
 }
