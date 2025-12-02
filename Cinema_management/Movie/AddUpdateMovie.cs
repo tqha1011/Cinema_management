@@ -170,7 +170,7 @@ namespace Cinema_management
                 {
                     File.Copy(sourceFile, destFile, true); // Copy và ghi đè nếu cần
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
 
                     Alert.Show("Lỗi lưu ảnh!", MessagboxCustom.AlertMessagebox.AlertType.Error);

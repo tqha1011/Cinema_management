@@ -47,10 +47,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(94, 27);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel1.Location = new System.Drawing.Point(141, 42);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(283, 40);
+            this.kryptonLabel1.Size = new System.Drawing.Size(448, 62);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 1;
@@ -61,18 +61,18 @@
             this.txtEmailConfirm.CueHint.Color1 = System.Drawing.Color.Gray;
             this.txtEmailConfirm.CueHint.CueHintText = "Email";
             this.txtEmailConfirm.CueHint.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailConfirm.Location = new System.Drawing.Point(118, 98);
-            this.txtEmailConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmailConfirm.Location = new System.Drawing.Point(177, 153);
+            this.txtEmailConfirm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtEmailConfirm.Name = "txtEmailConfirm";
-            this.txtEmailConfirm.Size = new System.Drawing.Size(286, 27);
+            this.txtEmailConfirm.Size = new System.Drawing.Size(429, 39);
             this.txtEmailConfirm.TabIndex = 3;
             // 
             // lblEmailExist
             // 
-            this.lblEmailExist.Location = new System.Drawing.Point(160, 223);
-            this.lblEmailExist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblEmailExist.Location = new System.Drawing.Point(240, 348);
+            this.lblEmailExist.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.lblEmailExist.Name = "lblEmailExist";
-            this.lblEmailExist.Size = new System.Drawing.Size(173, 27);
+            this.lblEmailExist.Size = new System.Drawing.Size(273, 41);
             this.lblEmailExist.StateCommon.ShortText.Color1 = System.Drawing.Color.Firebrick;
             this.lblEmailExist.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailExist.TabIndex = 6;
@@ -81,10 +81,10 @@
             // lblCheck
             // 
             this.lblCheck.AutoSize = false;
-            this.lblCheck.Location = new System.Drawing.Point(147, 254);
-            this.lblCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblCheck.Location = new System.Drawing.Point(220, 397);
+            this.lblCheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.lblCheck.Name = "lblCheck";
-            this.lblCheck.Size = new System.Drawing.Size(207, 25);
+            this.lblCheck.Size = new System.Drawing.Size(310, 39);
             this.lblCheck.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.lblCheck.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCheck.TabIndex = 7;
@@ -131,10 +131,10 @@
             this.txtPassNew.CueHint.Color1 = System.Drawing.Color.Gray;
             this.txtPassNew.CueHint.CueHintText = "Mật khẩu mới";
             this.txtPassNew.CueHint.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassNew.Location = new System.Drawing.Point(118, 186);
-            this.txtPassNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPassNew.Location = new System.Drawing.Point(177, 291);
+            this.txtPassNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPassNew.Name = "txtPassNew";
-            this.txtPassNew.Size = new System.Drawing.Size(286, 33);
+            this.txtPassNew.Size = new System.Drawing.Size(429, 50);
             this.txtPassNew.TabIndex = 9;
             // 
             // txtVerified
@@ -142,43 +142,101 @@
             this.txtVerified.CueHint.Color1 = System.Drawing.Color.Gray;
             this.txtVerified.CueHint.CueHintText = "Nhập mã xác nhận";
             this.txtVerified.CueHint.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVerified.Location = new System.Drawing.Point(118, 143);
-            this.txtVerified.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtVerified.Location = new System.Drawing.Point(177, 223);
+            this.txtVerified.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtVerified.Name = "txtVerified";
-            this.txtVerified.Size = new System.Drawing.Size(286, 27);
+            this.txtVerified.Size = new System.Drawing.Size(429, 39);
             this.txtVerified.TabIndex = 11;
             // 
             // btnConfirm
             // 
             this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfirm.Location = new System.Drawing.Point(58, 294);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.Location = new System.Drawing.Point(87, 459);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(173, 43);
+            this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.OverrideDefault.Back.ColorAngle = 45F;
+            this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.OverrideDefault.Border.ColorAngle = 45F;
+            this.btnConfirm.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.OverrideDefault.Border.Rounding = 10F;
+            this.btnConfirm.OverrideDefault.Border.Width = 1;
+            this.btnConfirm.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.OverrideFocus.Back.ColorAngle = 45F;
+            this.btnConfirm.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.OverrideFocus.Border.ColorAngle = 45F;
+            this.btnConfirm.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.OverrideFocus.Border.Rounding = 10F;
+            this.btnConfirm.OverrideFocus.Border.Width = 1;
+            this.btnConfirm.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnConfirm.Size = new System.Drawing.Size(260, 67);
+            this.btnConfirm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.StateCommon.Back.ColorAngle = 45F;
+            this.btnConfirm.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.StateCommon.Border.ColorAngle = 45F;
+            this.btnConfirm.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnConfirm.StateCommon.Border.Rounding = 10F;
-            this.btnConfirm.StateCommon.Border.Width = 0;
+            this.btnConfirm.StateCommon.Border.Width = 1;
             this.btnConfirm.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnConfirm.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnConfirm.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnConfirm.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.btnConfirm.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnConfirm.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.StateNormal.Back.ColorAngle = 45F;
+            this.btnConfirm.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.StateNormal.Border.ColorAngle = 45F;
+            this.btnConfirm.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.StateNormal.Border.Rounding = 10F;
+            this.btnConfirm.StateNormal.Border.Width = 1;
+            this.btnConfirm.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnConfirm.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnConfirm.StatePressed.Back.ColorAngle = 135F;
+            this.btnConfirm.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnConfirm.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnConfirm.StatePressed.Border.ColorAngle = 135F;
             this.btnConfirm.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnConfirm.StatePressed.Border.Rounding = 10F;
-            this.btnConfirm.StatePressed.Border.Width = 0;
+            this.btnConfirm.StatePressed.Border.Width = 1;
             this.btnConfirm.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnConfirm.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.btnConfirm.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.btnConfirm.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.StateTracking.Back.ColorAngle = 45F;
+            this.btnConfirm.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnConfirm.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnConfirm.StateTracking.Border.ColorAngle = 45F;
             this.btnConfirm.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnConfirm.StateTracking.Border.Rounding = 10F;
-            this.btnConfirm.StateTracking.Border.Width = 0;
+            this.btnConfirm.StateTracking.Border.Width = 1;
             this.btnConfirm.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.TabIndex = 12;
+            this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.TabIndex = 13;
             this.btnConfirm.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnConfirm.Values.Text = "Confirm";
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
@@ -224,7 +282,7 @@
             // 
             // UCPasswordRecovery
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.ptbIconBack);
@@ -232,7 +290,6 @@
             this.Controls.Add(this.txtVerified);
             this.Controls.Add(this.ptbLock);
             this.Controls.Add(this.txtPassNew);
-            this.Controls.Add(this.btnSendCode);
             this.Controls.Add(this.lblCheck);
             this.Controls.Add(this.lblEmailExist);
             this.Controls.Add(this.kryptonPictureBox2);
@@ -257,7 +314,6 @@
         private Krypton.Toolkit.KryptonTextBox txtEmailConfirm;
         private Krypton.Toolkit.KryptonLabel lblEmailExist;
         private Krypton.Toolkit.KryptonLabel lblCheck;
-        private Krypton.Toolkit.KryptonButton btnSendCode;
         private Krypton.Toolkit.KryptonPictureBox ptbLock;
         private Krypton.Toolkit.KryptonTextBox txtPassNew;
         private Krypton.Toolkit.ButtonSpecAny btnShowHide;

@@ -354,7 +354,7 @@ namespace Cinema_management
 
             //DialogResult result = MessageBox.Show(message, "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (result == DialogResult.Yes)
+            if (result == DialogResult.OK)
             {
                 Database db = new Database();
                 int successCount = 0;
