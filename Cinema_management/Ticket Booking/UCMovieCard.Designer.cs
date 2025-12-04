@@ -29,48 +29,52 @@
         private void InitializeComponent()
         {
             this.lbTitle = new Krypton.Toolkit.KryptonLabel();
-            this.panelPoster = new Krypton.Toolkit.KryptonPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.panelPoster)).BeginInit();
+            this.picPoster = new Krypton.Toolkit.KryptonPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picPoster)).BeginInit();
             this.SuspendLayout();
             // 
             // lbTitle
             // 
             this.lbTitle.AutoSize = false;
-            this.lbTitle.Location = new System.Drawing.Point(13, 268);
+            this.lbTitle.Location = new System.Drawing.Point(17, 335);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(215, 39);
+            this.lbTitle.Size = new System.Drawing.Size(287, 49);
             this.lbTitle.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lbTitle.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.lbTitle.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Values.Text = "Tên phim";
+            this.lbTitle.Click += new System.EventHandler(this.UCMovieCard_Click);
             // 
-            // panelPoster
+            // picPoster
             // 
-            this.panelPoster.Location = new System.Drawing.Point(0, 0);
-            this.panelPoster.Name = "panelPoster";
-            this.panelPoster.Size = new System.Drawing.Size(230, 262);
-            this.panelPoster.TabIndex = 2;
+            this.picPoster.Location = new System.Drawing.Point(0, 0);
+            this.picPoster.Name = "picPoster";
+            this.picPoster.Size = new System.Drawing.Size(307, 328);
+            this.picPoster.TabIndex = 0;
+            this.picPoster.TabStop = false;
             // 
             // UCMovieCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panelPoster);
+            this.Controls.Add(this.picPoster);
             this.Controls.Add(this.lbTitle);
-            this.Margin = new System.Windows.Forms.Padding(10);
+            this.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.Name = "UCMovieCard";
-            this.Padding = new System.Windows.Forms.Padding(10);
-            this.Size = new System.Drawing.Size(230, 340);
-            ((System.ComponentModel.ISupportInitialize)(this.panelPoster)).EndInit();
+            this.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.Size = new System.Drawing.Size(307, 425);
+            this.Load += new System.EventHandler(this.UCMovieCard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picPoster)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Krypton.Toolkit.KryptonLabel lbTitle;
-        private Krypton.Toolkit.KryptonPanel panelPoster;
+        private Krypton.Toolkit.KryptonPictureBox picPoster;
     }
 }

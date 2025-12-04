@@ -77,8 +77,30 @@ namespace Cinema_management
             uc.Dock = DockStyle.Fill;
 
             pnContentforUC.Controls.Add(uc);
+
+            uc.OnSuatChieuSelected += ChuyenSangScreenChonGhe;
+
             //int MaSuatChieu = 13;
             //uc.LoadSeats(MaSuatChieu);
+        }
+
+        private void ChuyenSangScreenChonGhe(int maSuatChieu)
+        {
+            pnContentforUC.Controls.Clear();
+
+            // Khởi tạo UC Chọn Ghế
+            UCTickets ucGhe = new UCTickets();
+            ucGhe.Dock = DockStyle.Fill;
+
+            // Gọi hàm LoadSeats,truyền mã suất chiếu vào
+            ucGhe.LoadSeats(maSuatChieu);
+
+            // Đăng ký sự kiện Back
+            // Khi nút Back được nhấn, ta gọi lại hàm load danh sách phim
+            // Hàm này chính là hàm sự kiện click của nút "Phim đang chiếu"
+            ucGhe.OnBack += (s, ev) => kryptonButton4_Click(null, null);
+
+            pnContentforUC.Controls.Add(ucGhe);
         }
 
         private void FormMain_Load(object sender, System.EventArgs e)

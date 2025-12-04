@@ -256,7 +256,8 @@
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.kryptonLabel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCLogin";
             this.Size = new System.Drawing.Size(734, 562);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).EndInit();

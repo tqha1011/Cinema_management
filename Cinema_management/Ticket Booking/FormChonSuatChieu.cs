@@ -1,20 +1,173 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Krypton.Toolkit;
+using Cinema_management.MessageboxCustom.Utils;
 
 namespace Cinema_management.Ticket_Booking
 {
     public partial class FormChonSuatChieu : Form
     {
-        public FormChonSuatChieu()
+        private int maPhim;
+        private DateTime ngayChieu;
+
+        public int SelectedMaSuatChieu { get; set; } //biến trả về kết quả
+        string connectionString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
+
+
+        public FormChonSuatChieu(int maPhim, DateTime ngayChieu) //constructor
         {
             InitializeComponent();
+            this.maPhim = maPhim;
+            this.ngayChieu = ngayChieu;
+        }
+
+        private void FormChonSuatChieu_Load(object sender, EventArgs e)
+        {
+            lblNgayChieu.Text = ngayChieu.ToString("dd/MM/yyyy");
+            LoadMovieInfo(); // load thông tin phim
+            LoadShowTimes(); //load danh sách giờ chiếu
+        }
+
+        private void LoadMovieInfo()
+        {
+            string query = @"SELECT TENPHIM, ANHPHIM FROM PHIM
+                             WHERE MAPHIM = @MaPhim";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaPhim", maPhim);
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        lblTenPhim.Text = reader["TENPHIM"].ToString();
+
+                        //xử lý ảnh
+                        string imagePath = reader["ANHPHIM"] != DBNull.Value ? reader["ANHPHIM"].ToString() : "";
+
+                        //kiem tra file co ton tai khong
+                        if (!string.IsNullOrEmpty(imagePath))
+                        {
+                            // Tạo đường dẫn tuyệt đối giống bên trên
+                            string fullPath = System.IO.Path.Combine(Application.StartupPath, imagePath);
+
+                            if (System.IO.File.Exists(fullPath))
+                            {
+                                picPoster.Image = Image.FromFile(fullPath);
+                                picPoster.SizeMode = PictureBoxSizeMode.StretchImage;
+                            }
+                            else
+                            {
+                                // File không tồn tại -> Bỏ qua, không load ảnh
+                                picPoster.Image = null;
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Alert.Show("Lỗi khi tải thông tin phim!", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                }
+            }
+        }
+
+        private void LoadShowTimes()
+        {
+            flowPanelSuatChieu.Controls.Clear();
+
+            //CHỈ LẤY SUẤT CHIẾU CHƯA DIỄN RA
+            string query = @"SELECT S.MASUATCHIEU, S.THOIGIANCHIEU, P.TENPHONG
+                            FROM SUATCHIEU S
+                            JOIN PHONGCHIEU P ON S.MAPHONG = P.MAPHONG
+                            WHERE S.MAPHIM = @MaPhim
+                            AND CAST(S.THOIGIANCHIEU AS DATE) = @NgayChieu
+                            AND S.THOIGIANCHIEU > @ThoiGianHienTai
+                            ORDER BY S.THOIGIANCHIEU";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaPhim", maPhim);
+                    cmd.Parameters.AddWithValue("@NgayChieu", ngayChieu.Date);
+
+                    cmd.Parameters.AddWithValue("@ThoiGianHienTai", DateTime.Now);
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    //NẾU KHÔNG CÒN SUẤT CHIẾU NÀO
+                    if (!reader.HasRows)
+                    {
+                        Label lblThongBao = new Label();
+                        lblThongBao.Text = "Hết suất chiếu trong hôm nay.";
+                        lblThongBao.AutoSize = true;
+                        lblThongBao.ForeColor = Color.Red;
+                        flowPanelSuatChieu.Controls.Add(lblThongBao);
+                        return;
+                    }
+                    
+                    while (reader.Read())
+                    {
+                        int maSuatChieu = Convert.ToInt32(reader["MASUATCHIEU"]);
+                        DateTime thoiGian = Convert.ToDateTime(reader["THOIGIANCHIEU"]);
+                        String tenPhong = reader["TENPHONG"].ToString();
+
+                        KryptonButton btnTime = new KryptonButton();
+                        btnTime.Text = thoiGian.ToString("HH:mm");
+
+                        // Lưu Mã suất chiếu vào Tag để dùng sau này
+                        btnTime.Tag = maSuatChieu;
+
+                        btnTime.Size = new Size(100, 45);
+                        btnTime.StateCommon.Back.Color1 = Color.FromArgb(138, 43, 226); // Màu tím (BlueViolet)
+                        btnTime.StateCommon.Back.Color2 = Color.FromArgb(138, 43, 226);
+                        btnTime.StateCommon.Content.ShortText.Color1 = Color.White;
+                        btnTime.StateCommon.Content.ShortText.Font = new Font("Arial", 12, FontStyle.Bold);
+                        btnTime.Values.ExtraText = tenPhong; // Hiện nhỏ tên phòng ở dưới (nếu muốn)
+
+                        btnTime.Click += BtnTime_Click;
+                        flowPanelSuatChieu.Controls.Add(btnTime);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi tải suất chiếu: " + ex.Message);
+                }
+            }
+            
+        }
+
+        private void BtnTime_Click(object sender, EventArgs e)
+        {
+            KryptonButton btn = sender as KryptonButton;
+            if (btn != null)
+            {
+                // Lấy mã suất chiếu từ Tag
+                this.SelectedMaSuatChieu = (int)btn.Tag;
+
+                // Báo kết quả OK về form cha
+                this.DialogResult = DialogResult.OK;
+
+                // Đóng form này lại
+                this.Close();
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

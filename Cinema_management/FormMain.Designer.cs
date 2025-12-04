@@ -61,7 +61,7 @@ namespace Cinema_management
             this.pnSidebar.Controls.Add(this.btnDashboard);
             this.pnSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnSidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnSidebar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.pnSidebar.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnSidebar.Name = "pnSidebar";
             this.pnSidebar.Padding = new System.Windows.Forms.Padding(20);
             this.pnSidebar.Size = new System.Drawing.Size(439, 779);
@@ -432,7 +432,7 @@ namespace Cinema_management
             this.Controls.Add(this.pnSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Location = new System.Drawing.Point(0, 0);
-            this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
