@@ -326,6 +326,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\line-md--logout %281%29.png" />
+    <None Include="Resources\line-md--logout.png" />
+    <None Include="Resources\mingcute--ticket-fill.png" />
+    <None Include="Resources\tdesign--time-filled.png" />
+    <None Include="Resources\material-symbols--person-rounded %281%29.png" />
+    <None Include="Resources\jam--movie %282%29.png" />
+    <None Include="Resources\jam--movie %281%29.png" />
+    <None Include="Resources\ri--dashboard-fill %281%29.png" />
+    <None Include="Resources\ri--dashboard-fill %282%29.png" />
+    <None Include="Resources\ri--dashboard-fill.png" />
     <None Include="Resources\mdi--logout %282%29.png" />
     <None Include="Resources\mdi--logout.png" />
     <None Include="Resources\material-symbols--mail-rounded.png" />
@@ -346,6 +356,8 @@
     <Content Include="Posters\your-name.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\icon-park-solid--movie.png" />
+    <None Include="Resources\icon-park-solid--movie %281%29.png" />
     <Content Include="Resources\information.png" />
     <None Include="Resources\warning.png" />
   </ItemGroup>

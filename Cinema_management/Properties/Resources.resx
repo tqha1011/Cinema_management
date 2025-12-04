@@ -121,11 +121,20 @@
   <data name="tabler--ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabler--ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tdesign--time-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tdesign--time-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="material-symbols--add-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--add-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ri--dashboard-fill (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ri--dashboard-fill (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="jam--write (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jam--write (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wallpaper_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="uil--setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uil--setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +145,11 @@
   <data name="iconamoon--eye-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconamoon--eye-light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-park-solid--movie (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-park-solid--movie (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="material-symbols--person-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--person-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,11 +160,17 @@
   <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mingcute--ticket-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mingcute--ticket-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="jam--write (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jam--write (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="material-symbols--delete-outline-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--delete-outline-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi--logout (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--logout (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic--baseline-tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic--baseline-tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +184,11 @@
   <data name="radix-icons--people1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\radix-icons--people1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mdi--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ri--dashboard-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ri--dashboard-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--person-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--person-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,6 +199,9 @@
   <data name="lucide--search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lucide--search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="jam--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jam--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -187,11 +211,17 @@
   <data name="uil--clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uil--clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="jam--movie (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--movie (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="material-symbols--delete-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--delete-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wallpaper_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpaper_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="line-md--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line-md--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-park-solid--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-park-solid--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabler--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabler--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,10 +229,16 @@
   <data name="jam--write" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jam--write.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="jam--movie (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--movie (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mdi--logout (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--logout (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ri--dashboard-fill (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ri--dashboard-fill (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="line-md--logout (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line-md--logout (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

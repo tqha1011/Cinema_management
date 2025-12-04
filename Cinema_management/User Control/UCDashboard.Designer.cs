@@ -37,23 +37,23 @@
             this.lblTime = new Krypton.Toolkit.KryptonLabel();
             this.lblDate = new Krypton.Toolkit.KryptonLabel();
             this.grTodayShows = new Krypton.Toolkit.KryptonGroup();
+            this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel8 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel10 = new Krypton.Toolkit.KryptonLabel();
             this.grScreenRooms = new Krypton.Toolkit.KryptonGroup();
+            this.btnAddStaff = new Krypton.Toolkit.KryptonButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.grTTMovies = new Krypton.Toolkit.KryptonGroup();
+            this.btnAddMovie = new Krypton.Toolkit.KryptonButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.lbCardValue = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
-            this.btnAddMovie = new Krypton.Toolkit.KryptonButton();
-            this.btnAddStaff = new Krypton.Toolkit.KryptonButton();
-            this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.tlpCards.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grDateTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grDateTime.Panel)).BeginInit();
@@ -84,10 +84,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(108, 70);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(13, 12, 13, 6);
+            this.kryptonLabel1.Location = new System.Drawing.Point(81, 56);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 5);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(230, 55);
+            this.kryptonLabel1.Size = new System.Drawing.Size(174, 42);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,10 +96,10 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(108, 131);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(13, 0, 13, 25);
+            this.kryptonLabel2.Location = new System.Drawing.Point(81, 105);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 20);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(625, 43);
+            this.kryptonLabel2.Size = new System.Drawing.Size(470, 33);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.kryptonLabel2.StateCommon.ShortText.Color2 = System.Drawing.Color.Gray;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -119,28 +119,27 @@
             this.tlpCards.Controls.Add(this.grTodayShows, 2, 0);
             this.tlpCards.Controls.Add(this.grScreenRooms, 1, 0);
             this.tlpCards.Controls.Add(this.grTTMovies, 0, 0);
-            this.tlpCards.Location = new System.Drawing.Point(108, 198);
-            this.tlpCards.Margin = new System.Windows.Forms.Padding(4);
+            this.tlpCards.Location = new System.Drawing.Point(81, 158);
             this.tlpCards.Name = "tlpCards";
             this.tlpCards.RowCount = 2;
             this.tlpCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tlpCards.Size = new System.Drawing.Size(1525, 316);
+            this.tlpCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpCards.Size = new System.Drawing.Size(1144, 253);
             this.tlpCards.TabIndex = 2;
             this.tlpCards.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // grDateTime
             // 
             this.grDateTime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grDateTime.Location = new System.Drawing.Point(1186, 12);
-            this.grDateTime.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.grDateTime.Location = new System.Drawing.Point(889, 10);
+            this.grDateTime.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             // 
             // grDateTime.Panel
             // 
             this.grDateTime.Panel.Controls.Add(this.lblTime);
             this.grDateTime.Panel.Controls.Add(this.lblDate);
-            this.grDateTime.Panel.Margin = new System.Windows.Forms.Padding(4);
-            this.grDateTime.Size = new System.Drawing.Size(326, 267);
+            this.grDateTime.Panel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.grDateTime.Size = new System.Drawing.Size(245, 213);
             this.grDateTime.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.grDateTime.StateCommon.Border.Color1 = System.Drawing.Color.LightGray;
             this.grDateTime.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -153,9 +152,8 @@
             // 
             this.lblTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTime.Location = new System.Drawing.Point(0, 0);
-            this.lblTime.Margin = new System.Windows.Forms.Padding(4);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(318, 219);
+            this.lblTime.Size = new System.Drawing.Size(237, 175);
             this.lblTime.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblTime.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -166,10 +164,9 @@
             // lblDate
             // 
             this.lblDate.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblDate.Location = new System.Drawing.Point(0, 219);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(4);
+            this.lblDate.Location = new System.Drawing.Point(0, 175);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(318, 40);
+            this.lblDate.Size = new System.Drawing.Size(237, 30);
             this.lblDate.StateCommon.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.lblDate.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -179,8 +176,8 @@
             // grTodayShows
             // 
             this.grTodayShows.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grTodayShows.Location = new System.Drawing.Point(798, 12);
-            this.grTodayShows.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.grTodayShows.Location = new System.Drawing.Point(598, 10);
+            this.grTodayShows.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             // 
             // grTodayShows.Panel
             // 
@@ -189,8 +186,8 @@
             this.grTodayShows.Panel.Controls.Add(this.kryptonLabel8);
             this.grTodayShows.Panel.Controls.Add(this.kryptonLabel9);
             this.grTodayShows.Panel.Controls.Add(this.kryptonLabel10);
-            this.grTodayShows.Panel.Margin = new System.Windows.Forms.Padding(4);
-            this.grTodayShows.Size = new System.Drawing.Size(362, 267);
+            this.grTodayShows.Panel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.grTodayShows.Size = new System.Drawing.Size(271, 213);
             this.grTodayShows.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.grTodayShows.StateCommon.Border.Color1 = System.Drawing.Color.LightGray;
             this.grTodayShows.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -199,387 +196,11 @@
             this.grTodayShows.StateCommon.Border.Rounding = 10F;
             this.grTodayShows.TabIndex = 2;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::Cinema_management.Properties.Resources.uil__clock;
-            this.pictureBox3.Location = new System.Drawing.Point(233, 18);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(67, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // kryptonLabel8
-            // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(20, 114);
-            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(259, 36);
-            this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel8.TabIndex = 2;
-            this.kryptonLabel8.Values.Text = "Scheduled for today";
-            // 
-            // kryptonLabel9
-            // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(20, 74);
-            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(58, 47);
-            this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel9.TabIndex = 1;
-            this.kryptonLabel9.Values.Text = "12";
-            this.kryptonLabel9.Click += new System.EventHandler(this.kryptonLabel9_Click);
-            // 
-            // kryptonLabel10
-            // 
-            this.kryptonLabel10.Location = new System.Drawing.Point(20, 18);
-            this.kryptonLabel10.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(220, 39);
-            this.kryptonLabel10.StateCommon.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel10.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
-            this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel10.TabIndex = 0;
-            this.kryptonLabel10.Values.Text = "Today\'s Shows";
-            // 
-            // grScreenRooms
-            // 
-            this.grScreenRooms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grScreenRooms.Location = new System.Drawing.Point(405, 12);
-            this.grScreenRooms.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            // 
-            // grScreenRooms.Panel
-            // 
-            this.grScreenRooms.Panel.Controls.Add(this.btnAddStaff);
-            this.grScreenRooms.Panel.Controls.Add(this.pictureBox2);
-            this.grScreenRooms.Panel.Controls.Add(this.kryptonLabel5);
-            this.grScreenRooms.Panel.Controls.Add(this.kryptonLabel6);
-            this.grScreenRooms.Panel.Controls.Add(this.kryptonLabel7);
-            this.grScreenRooms.Panel.Margin = new System.Windows.Forms.Padding(4);
-            this.grScreenRooms.Size = new System.Drawing.Size(367, 267);
-            this.grScreenRooms.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.grScreenRooms.StateCommon.Border.Color1 = System.Drawing.Color.LightGray;
-            this.grScreenRooms.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.grScreenRooms.StateCommon.Border.Rounding = 10F;
-            this.grScreenRooms.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::Cinema_management.Properties.Resources.radix_icons__people;
-            this.pictureBox2.Location = new System.Drawing.Point(233, 18);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // kryptonLabel5
-            // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(20, 114);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(231, 36);
-            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel5.TabIndex = 2;
-            this.kryptonLabel5.Values.Text = "Active employees";
-            // 
-            // kryptonLabel6
-            // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(20, 74);
-            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(37, 47);
-            this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel6.TabIndex = 1;
-            this.kryptonLabel6.Values.Text = "4";
-            // 
-            // kryptonLabel7
-            // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(20, 18);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(154, 39);
-            this.kryptonLabel7.StateCommon.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel7.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
-            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel7.TabIndex = 0;
-            this.kryptonLabel7.Values.Text = "Total Staff";
-            // 
-            // grTTMovies
-            // 
-            this.grTTMovies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grTTMovies.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlAlternate;
-            this.grTTMovies.Location = new System.Drawing.Point(13, 12);
-            this.grTTMovies.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            // 
-            // grTTMovies.Panel
-            // 
-            this.grTTMovies.Panel.Controls.Add(this.btnAddMovie);
-            this.grTTMovies.Panel.Controls.Add(this.pictureBox1);
-            this.grTTMovies.Panel.Controls.Add(this.kryptonLabel4);
-            this.grTTMovies.Panel.Controls.Add(this.lbCardValue);
-            this.grTTMovies.Panel.Controls.Add(this.kryptonLabel3);
-            this.grTTMovies.Panel.Margin = new System.Windows.Forms.Padding(4);
-            this.grTTMovies.Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonGroup1_Panel_Paint);
-            this.grTTMovies.Size = new System.Drawing.Size(366, 267);
-            this.grTTMovies.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.grTTMovies.StateCommon.Border.Color1 = System.Drawing.Color.LightGray;
-            this.grTTMovies.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.grTTMovies.StateCommon.Border.Rounding = 10F;
-            this.grTTMovies.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::Cinema_management.Properties.Resources.jam__movie;
-            this.pictureBox1.Location = new System.Drawing.Point(233, 18);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // kryptonLabel4
-            // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(20, 114);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(294, 36);
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel4.TabIndex = 2;
-            this.kryptonLabel4.Values.Text = "Active movie in system";
-            // 
-            // lbCardValue
-            // 
-            this.lbCardValue.Location = new System.Drawing.Point(20, 74);
-            this.lbCardValue.Margin = new System.Windows.Forms.Padding(4);
-            this.lbCardValue.Name = "lbCardValue";
-            this.lbCardValue.Size = new System.Drawing.Size(37, 47);
-            this.lbCardValue.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lbCardValue.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCardValue.TabIndex = 1;
-            this.lbCardValue.Values.Text = "4";
-            this.lbCardValue.Click += new System.EventHandler(this.lbCardValue_Click);
-            // 
-            // kryptonLabel3
-            // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(20, 18);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(188, 39);
-            this.kryptonLabel3.StateCommon.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel3.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
-            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel3.TabIndex = 0;
-            this.kryptonLabel3.Values.Text = "Total Movies";
-            // 
-            // btnAddMovie
-            // 
-            this.btnAddMovie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddMovie.Location = new System.Drawing.Point(6, 162);
-            this.btnAddMovie.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddMovie.Name = "btnAddMovie";
-            this.btnAddMovie.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnAddMovie.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnAddMovie.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddMovie.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddMovie.OverrideDefault.Border.Rounding = 10F;
-            this.btnAddMovie.OverrideDefault.Border.Width = 1;
-            this.btnAddMovie.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.OverrideFocus.Back.ColorAngle = 45F;
-            this.btnAddMovie.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.OverrideFocus.Border.ColorAngle = 45F;
-            this.btnAddMovie.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddMovie.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddMovie.OverrideFocus.Border.Rounding = 10F;
-            this.btnAddMovie.OverrideFocus.Border.Width = 1;
-            this.btnAddMovie.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAddMovie.Size = new System.Drawing.Size(345, 72);
-            this.btnAddMovie.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.StateCommon.Back.ColorAngle = 45F;
-            this.btnAddMovie.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.StateCommon.Border.ColorAngle = 45F;
-            this.btnAddMovie.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddMovie.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddMovie.StateCommon.Border.Rounding = 10F;
-            this.btnAddMovie.StateCommon.Border.Width = 1;
-            this.btnAddMovie.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAddMovie.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMovie.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.btnAddMovie.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.btnAddMovie.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.StateNormal.Back.ColorAngle = 45F;
-            this.btnAddMovie.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.StateNormal.Border.ColorAngle = 45F;
-            this.btnAddMovie.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddMovie.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddMovie.StateNormal.Border.Rounding = 10F;
-            this.btnAddMovie.StateNormal.Border.Width = 1;
-            this.btnAddMovie.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
-            this.btnAddMovie.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
-            this.btnAddMovie.StatePressed.Back.ColorAngle = 135F;
-            this.btnAddMovie.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
-            this.btnAddMovie.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
-            this.btnAddMovie.StatePressed.Border.ColorAngle = 135F;
-            this.btnAddMovie.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddMovie.StatePressed.Border.Rounding = 10F;
-            this.btnAddMovie.StatePressed.Border.Width = 1;
-            this.btnAddMovie.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAddMovie.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMovie.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.StateTracking.Back.ColorAngle = 45F;
-            this.btnAddMovie.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddMovie.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddMovie.StateTracking.Border.ColorAngle = 45F;
-            this.btnAddMovie.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddMovie.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddMovie.StateTracking.Border.Rounding = 10F;
-            this.btnAddMovie.StateTracking.Border.Width = 1;
-            this.btnAddMovie.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAddMovie.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMovie.TabIndex = 4;
-            this.btnAddMovie.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnAddMovie.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__add_rounded;
-            this.btnAddMovie.Values.Text = "Add New Movie";
-            this.btnAddMovie.Click += new System.EventHandler(this.btnAddMovie_Click);
-            // 
-            // btnAddStaff
-            // 
-            this.btnAddStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddStaff.Location = new System.Drawing.Point(6, 162);
-            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddStaff.Name = "btnAddStaff";
-            this.btnAddStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnAddStaff.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnAddStaff.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddStaff.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddStaff.OverrideDefault.Border.Rounding = 10F;
-            this.btnAddStaff.OverrideDefault.Border.Width = 1;
-            this.btnAddStaff.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.OverrideFocus.Back.ColorAngle = 45F;
-            this.btnAddStaff.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.OverrideFocus.Border.ColorAngle = 45F;
-            this.btnAddStaff.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddStaff.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddStaff.OverrideFocus.Border.Rounding = 10F;
-            this.btnAddStaff.OverrideFocus.Border.Width = 1;
-            this.btnAddStaff.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAddStaff.Size = new System.Drawing.Size(345, 72);
-            this.btnAddStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.StateCommon.Back.ColorAngle = 45F;
-            this.btnAddStaff.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.StateCommon.Border.ColorAngle = 45F;
-            this.btnAddStaff.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddStaff.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddStaff.StateCommon.Border.Rounding = 10F;
-            this.btnAddStaff.StateCommon.Border.Width = 1;
-            this.btnAddStaff.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAddStaff.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddStaff.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.btnAddStaff.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.btnAddStaff.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.StateNormal.Back.ColorAngle = 45F;
-            this.btnAddStaff.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.StateNormal.Border.ColorAngle = 45F;
-            this.btnAddStaff.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddStaff.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddStaff.StateNormal.Border.Rounding = 10F;
-            this.btnAddStaff.StateNormal.Border.Width = 1;
-            this.btnAddStaff.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
-            this.btnAddStaff.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
-            this.btnAddStaff.StatePressed.Back.ColorAngle = 135F;
-            this.btnAddStaff.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
-            this.btnAddStaff.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
-            this.btnAddStaff.StatePressed.Border.ColorAngle = 135F;
-            this.btnAddStaff.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddStaff.StatePressed.Border.Rounding = 10F;
-            this.btnAddStaff.StatePressed.Border.Width = 1;
-            this.btnAddStaff.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAddStaff.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddStaff.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.StateTracking.Back.ColorAngle = 45F;
-            this.btnAddStaff.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAddStaff.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAddStaff.StateTracking.Border.ColorAngle = 45F;
-            this.btnAddStaff.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddStaff.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAddStaff.StateTracking.Border.Rounding = 10F;
-            this.btnAddStaff.StateTracking.Border.Width = 1;
-            this.btnAddStaff.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAddStaff.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddStaff.TabIndex = 5;
-            this.btnAddStaff.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnAddStaff.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__add_rounded;
-            this.btnAddStaff.Values.Text = "Add New Staff";
-            this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
-            // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(5, 162);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(1, 130);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnAdd.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -606,7 +227,7 @@
             this.btnAdd.OverrideFocus.Border.Rounding = 10F;
             this.btnAdd.OverrideFocus.Border.Width = 1;
             this.btnAdd.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAdd.Size = new System.Drawing.Size(345, 72);
+            this.btnAdd.Size = new System.Drawing.Size(259, 58);
             this.btnAdd.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnAdd.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.btnAdd.StateCommon.Back.ColorAngle = 45F;
@@ -668,19 +289,380 @@
             this.btnAdd.Values.Text = "Add New Schedule";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = global::Cinema_management.Properties.Resources.uil__clock;
+            this.pictureBox3.Location = new System.Drawing.Point(175, 14);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 29);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // kryptonLabel8
+            // 
+            this.kryptonLabel8.Location = new System.Drawing.Point(15, 91);
+            this.kryptonLabel8.Name = "kryptonLabel8";
+            this.kryptonLabel8.Size = new System.Drawing.Size(196, 28);
+            this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel8.TabIndex = 2;
+            this.kryptonLabel8.Values.Text = "Scheduled for today";
+            // 
+            // kryptonLabel9
+            // 
+            this.kryptonLabel9.Location = new System.Drawing.Point(15, 59);
+            this.kryptonLabel9.Name = "kryptonLabel9";
+            this.kryptonLabel9.Size = new System.Drawing.Size(45, 36);
+            this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel9.TabIndex = 1;
+            this.kryptonLabel9.Values.Text = "12";
+            this.kryptonLabel9.Click += new System.EventHandler(this.kryptonLabel9_Click);
+            // 
+            // kryptonLabel10
+            // 
+            this.kryptonLabel10.Location = new System.Drawing.Point(15, 14);
+            this.kryptonLabel10.Name = "kryptonLabel10";
+            this.kryptonLabel10.Size = new System.Drawing.Size(167, 30);
+            this.kryptonLabel10.StateCommon.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel10.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
+            this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel10.TabIndex = 0;
+            this.kryptonLabel10.Values.Text = "Today\'s Shows";
+            // 
+            // grScreenRooms
+            // 
+            this.grScreenRooms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grScreenRooms.Location = new System.Drawing.Point(304, 10);
+            this.grScreenRooms.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            // 
+            // grScreenRooms.Panel
+            // 
+            this.grScreenRooms.Panel.Controls.Add(this.btnAddStaff);
+            this.grScreenRooms.Panel.Controls.Add(this.pictureBox2);
+            this.grScreenRooms.Panel.Controls.Add(this.kryptonLabel5);
+            this.grScreenRooms.Panel.Controls.Add(this.kryptonLabel6);
+            this.grScreenRooms.Panel.Controls.Add(this.kryptonLabel7);
+            this.grScreenRooms.Panel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.grScreenRooms.Size = new System.Drawing.Size(274, 213);
+            this.grScreenRooms.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.grScreenRooms.StateCommon.Border.Color1 = System.Drawing.Color.LightGray;
+            this.grScreenRooms.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.grScreenRooms.StateCommon.Border.Rounding = 10F;
+            this.grScreenRooms.TabIndex = 1;
+            // 
+            // btnAddStaff
+            // 
+            this.btnAddStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddStaff.Location = new System.Drawing.Point(1, 130);
+            this.btnAddStaff.Name = "btnAddStaff";
+            this.btnAddStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.OverrideDefault.Back.ColorAngle = 45F;
+            this.btnAddStaff.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.OverrideDefault.Border.ColorAngle = 45F;
+            this.btnAddStaff.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.OverrideDefault.Border.Rounding = 10F;
+            this.btnAddStaff.OverrideDefault.Border.Width = 1;
+            this.btnAddStaff.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.OverrideFocus.Back.ColorAngle = 45F;
+            this.btnAddStaff.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.OverrideFocus.Border.ColorAngle = 45F;
+            this.btnAddStaff.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.OverrideFocus.Border.Rounding = 10F;
+            this.btnAddStaff.OverrideFocus.Border.Width = 1;
+            this.btnAddStaff.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnAddStaff.Size = new System.Drawing.Size(259, 58);
+            this.btnAddStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.StateCommon.Back.ColorAngle = 45F;
+            this.btnAddStaff.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.StateCommon.Border.ColorAngle = 45F;
+            this.btnAddStaff.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.StateCommon.Border.Rounding = 10F;
+            this.btnAddStaff.StateCommon.Border.Width = 1;
+            this.btnAddStaff.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStaff.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnAddStaff.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.StateNormal.Back.ColorAngle = 45F;
+            this.btnAddStaff.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.StateNormal.Border.ColorAngle = 45F;
+            this.btnAddStaff.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.StateNormal.Border.Rounding = 10F;
+            this.btnAddStaff.StateNormal.Border.Width = 1;
+            this.btnAddStaff.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnAddStaff.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnAddStaff.StatePressed.Back.ColorAngle = 135F;
+            this.btnAddStaff.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnAddStaff.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnAddStaff.StatePressed.Border.ColorAngle = 135F;
+            this.btnAddStaff.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.StatePressed.Border.Rounding = 10F;
+            this.btnAddStaff.StatePressed.Border.Width = 1;
+            this.btnAddStaff.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStaff.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.StateTracking.Back.ColorAngle = 45F;
+            this.btnAddStaff.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.StateTracking.Border.ColorAngle = 45F;
+            this.btnAddStaff.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.StateTracking.Border.Rounding = 10F;
+            this.btnAddStaff.StateTracking.Border.Width = 1;
+            this.btnAddStaff.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStaff.TabIndex = 5;
+            this.btnAddStaff.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnAddStaff.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__add_rounded;
+            this.btnAddStaff.Values.Text = "Add New Staff";
+            this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::Cinema_management.Properties.Resources.radix_icons__people;
+            this.pictureBox2.Location = new System.Drawing.Point(175, 14);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // kryptonLabel5
+            // 
+            this.kryptonLabel5.Location = new System.Drawing.Point(15, 91);
+            this.kryptonLabel5.Name = "kryptonLabel5";
+            this.kryptonLabel5.Size = new System.Drawing.Size(175, 28);
+            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel5.TabIndex = 2;
+            this.kryptonLabel5.Values.Text = "Active employees";
+            // 
+            // kryptonLabel6
+            // 
+            this.kryptonLabel6.Location = new System.Drawing.Point(15, 59);
+            this.kryptonLabel6.Name = "kryptonLabel6";
+            this.kryptonLabel6.Size = new System.Drawing.Size(30, 36);
+            this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel6.TabIndex = 1;
+            this.kryptonLabel6.Values.Text = "4";
+            // 
+            // kryptonLabel7
+            // 
+            this.kryptonLabel7.Location = new System.Drawing.Point(15, 14);
+            this.kryptonLabel7.Name = "kryptonLabel7";
+            this.kryptonLabel7.Size = new System.Drawing.Size(117, 30);
+            this.kryptonLabel7.StateCommon.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel7.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
+            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel7.TabIndex = 0;
+            this.kryptonLabel7.Values.Text = "Total Staff";
+            // 
+            // grTTMovies
+            // 
+            this.grTTMovies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grTTMovies.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlAlternate;
+            this.grTTMovies.Location = new System.Drawing.Point(10, 10);
+            this.grTTMovies.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            // 
+            // grTTMovies.Panel
+            // 
+            this.grTTMovies.Panel.Controls.Add(this.btnAddMovie);
+            this.grTTMovies.Panel.Controls.Add(this.pictureBox1);
+            this.grTTMovies.Panel.Controls.Add(this.kryptonLabel4);
+            this.grTTMovies.Panel.Controls.Add(this.lbCardValue);
+            this.grTTMovies.Panel.Controls.Add(this.kryptonLabel3);
+            this.grTTMovies.Panel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.grTTMovies.Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonGroup1_Panel_Paint);
+            this.grTTMovies.Size = new System.Drawing.Size(274, 213);
+            this.grTTMovies.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.grTTMovies.StateCommon.Border.Color1 = System.Drawing.Color.LightGray;
+            this.grTTMovies.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.grTTMovies.StateCommon.Border.Rounding = 10F;
+            this.grTTMovies.TabIndex = 0;
+            // 
+            // btnAddMovie
+            // 
+            this.btnAddMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddMovie.Location = new System.Drawing.Point(4, 130);
+            this.btnAddMovie.Name = "btnAddMovie";
+            this.btnAddMovie.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.OverrideDefault.Back.ColorAngle = 45F;
+            this.btnAddMovie.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.OverrideDefault.Border.ColorAngle = 45F;
+            this.btnAddMovie.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddMovie.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddMovie.OverrideDefault.Border.Rounding = 10F;
+            this.btnAddMovie.OverrideDefault.Border.Width = 1;
+            this.btnAddMovie.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.OverrideFocus.Back.ColorAngle = 45F;
+            this.btnAddMovie.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.OverrideFocus.Border.ColorAngle = 45F;
+            this.btnAddMovie.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddMovie.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddMovie.OverrideFocus.Border.Rounding = 10F;
+            this.btnAddMovie.OverrideFocus.Border.Width = 1;
+            this.btnAddMovie.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnAddMovie.Size = new System.Drawing.Size(259, 58);
+            this.btnAddMovie.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.StateCommon.Back.ColorAngle = 45F;
+            this.btnAddMovie.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.StateCommon.Border.ColorAngle = 45F;
+            this.btnAddMovie.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddMovie.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddMovie.StateCommon.Border.Rounding = 10F;
+            this.btnAddMovie.StateCommon.Border.Width = 1;
+            this.btnAddMovie.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddMovie.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMovie.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnAddMovie.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnAddMovie.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.StateNormal.Back.ColorAngle = 45F;
+            this.btnAddMovie.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.StateNormal.Border.ColorAngle = 45F;
+            this.btnAddMovie.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddMovie.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddMovie.StateNormal.Border.Rounding = 10F;
+            this.btnAddMovie.StateNormal.Border.Width = 1;
+            this.btnAddMovie.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnAddMovie.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnAddMovie.StatePressed.Back.ColorAngle = 135F;
+            this.btnAddMovie.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnAddMovie.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnAddMovie.StatePressed.Border.ColorAngle = 135F;
+            this.btnAddMovie.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddMovie.StatePressed.Border.Rounding = 10F;
+            this.btnAddMovie.StatePressed.Border.Width = 1;
+            this.btnAddMovie.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddMovie.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMovie.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.StateTracking.Back.ColorAngle = 45F;
+            this.btnAddMovie.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddMovie.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddMovie.StateTracking.Border.ColorAngle = 45F;
+            this.btnAddMovie.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddMovie.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddMovie.StateTracking.Border.Rounding = 10F;
+            this.btnAddMovie.StateTracking.Border.Width = 1;
+            this.btnAddMovie.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddMovie.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMovie.TabIndex = 4;
+            this.btnAddMovie.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnAddMovie.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__add_rounded;
+            this.btnAddMovie.Values.Text = "Add New Movie";
+            this.btnAddMovie.Click += new System.EventHandler(this.btnAddMovie_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::Cinema_management.Properties.Resources.jam__movie;
+            this.pictureBox1.Location = new System.Drawing.Point(175, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // kryptonLabel4
+            // 
+            this.kryptonLabel4.Location = new System.Drawing.Point(15, 91);
+            this.kryptonLabel4.Name = "kryptonLabel4";
+            this.kryptonLabel4.Size = new System.Drawing.Size(222, 28);
+            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel4.TabIndex = 2;
+            this.kryptonLabel4.Values.Text = "Active movie in system";
+            // 
+            // lbCardValue
+            // 
+            this.lbCardValue.Location = new System.Drawing.Point(15, 59);
+            this.lbCardValue.Name = "lbCardValue";
+            this.lbCardValue.Size = new System.Drawing.Size(30, 36);
+            this.lbCardValue.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lbCardValue.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCardValue.TabIndex = 1;
+            this.lbCardValue.Values.Text = "4";
+            this.lbCardValue.Click += new System.EventHandler(this.lbCardValue_Click);
+            // 
+            // kryptonLabel3
+            // 
+            this.kryptonLabel3.Location = new System.Drawing.Point(15, 14);
+            this.kryptonLabel3.Name = "kryptonLabel3";
+            this.kryptonLabel3.Size = new System.Drawing.Size(142, 30);
+            this.kryptonLabel3.StateCommon.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel3.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
+            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel3.TabIndex = 0;
+            this.kryptonLabel3.Values.Text = "Total Movies";
+            // 
             // UCDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.tlpCards);
-            this.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.Name = "UCDashboard";
-            this.Padding = new System.Windows.Forms.Padding(33, 31, 33, 31);
-            this.Size = new System.Drawing.Size(1692, 895);
+            this.Padding = new System.Windows.Forms.Padding(25, 25, 25, 25);
+            this.Size = new System.Drawing.Size(1269, 716);
             this.tlpCards.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grDateTime.Panel)).EndInit();
             this.grDateTime.Panel.ResumeLayout(false);
