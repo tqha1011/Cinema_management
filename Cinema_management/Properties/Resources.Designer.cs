@@ -153,9 +153,49 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconemail {
+            get {
+                object obj = ResourceManager.GetObject("iconemail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconeyeclose_resize {
+            get {
+                object obj = ResourceManager.GetObject("iconeyeclose_resize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconoir__eye {
             get {
                 object obj = ResourceManager.GetObject("iconoir--eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconpass {
+            get {
+                object obj = ResourceManager.GetObject("iconpass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconuser {
+            get {
+                object obj = ResourceManager.GetObject("iconuser", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
