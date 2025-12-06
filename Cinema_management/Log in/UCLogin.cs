@@ -38,10 +38,12 @@ namespace Cinema_management
             if(txtPass.PasswordChar == '\0')
             {
                 txtPass.PasswordChar = '●';
+                buttonSpecAny1.Image = Properties.Resources.iconoir__eye;
             }
             else
             {
                 txtPass.PasswordChar = '\0';
+                buttonSpecAny1.Image = Properties.Resources.iconeyeclose_resize;
             }
         }
 

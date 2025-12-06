@@ -118,10 +118,12 @@ namespace Cinema_management
             if(txtPassNew.PasswordChar == '●')
             {
                 txtPassNew.PasswordChar = '\0';
+                btnShowHide.Image = Properties.Resources.iconeyeclose_resize;
             }
             else
             {
                 txtPassNew.PasswordChar = '●';
+                btnShowHide.Image = Properties.Resources.iconoir__eye;
             }
         }
 
