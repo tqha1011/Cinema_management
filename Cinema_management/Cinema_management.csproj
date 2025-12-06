@@ -359,6 +359,15 @@
     <None Include="Resources\icon-park-solid--movie %281%29.png" />
     <None Include="Resources\icon-park-solid--movie.png" />
     <None Include="Resources\clarity--analytics-solid.png" />
+    <Content Include="Resources\iconbackarrow.png" />
+    <Content Include="Resources\iconemail.png" />
+    <Content Include="Resources\iconeye.png" />
+    <Content Include="Resources\iconeyeclose_resize.png" />
+    <Content Include="Resources\iconeyecrossed.png" />
+    <Content Include="Resources\iconeyecrossed_resize.png" />
+    <Content Include="Resources\iconeye_resize.png" />
+    <Content Include="Resources\iconpass.png" />
+    <Content Include="Resources\iconuser.png" />
     <Content Include="Resources\information.png" />
     <None Include="Resources\warning.png" />
   </ItemGroup>
