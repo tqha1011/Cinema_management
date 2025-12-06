@@ -213,6 +213,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image {
+            get {
+                object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap information {
             get {
                 object obj = ResourceManager.GetObject("information", resourceCulture);
@@ -296,6 +306,16 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap line_md__logout__1_1 {
             get {
                 object obj = ResourceManager.GetObject("line-md--logout (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lucide__popcorn {
+            get {
+                object obj = ResourceManager.GetObject("lucide--popcorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

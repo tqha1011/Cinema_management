@@ -155,5 +155,13 @@ namespace Cinema_management
 
             pnContentforUC.Controls.Add(uc);
         }
+
+        private void kryptonButton6_Click(object sender, System.EventArgs e)
+        {
+            pnContentforUC.Controls.Clear();
+            UCQuanLyDoAn uc = new UCQuanLyDoAn();
+            uc.Dock = DockStyle.Fill;
+            pnContentforUC.Controls.Add(uc);
+        }
     }
 }
