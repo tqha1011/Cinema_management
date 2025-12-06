@@ -145,5 +145,15 @@ namespace Cinema_management
 
             currentUC.Location = new Point(newX, newY);
         }
+
+        private void kryptonButton5_Click_1(object sender, System.EventArgs e)
+        {
+            pnContentforUC.Controls.Clear();
+
+            UCThongKeMain uc = new UCThongKeMain();
+            uc.Dock = DockStyle.Fill;
+
+            pnContentforUC.Controls.Add(uc);
+        }
     }
 }
