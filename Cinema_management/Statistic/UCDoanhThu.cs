@@ -82,6 +82,7 @@ namespace Cinema_management
             {
                 chartRevenue.Titles[0].Text = titleStr;
                 chartRevenue.Titles[0].ForeColor = barColor; // Tiêu đề biểu đồ đổi màu theo cột
+                chartRevenue.Titles[0].Font = new Font("Microsoft Sans Serif", 14, FontStyle.Bold);
             }
             else
             {
