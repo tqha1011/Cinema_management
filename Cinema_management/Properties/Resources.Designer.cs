@@ -83,6 +83,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doanh_thu {
+            get {
+                object obj = ResourceManager.GetObject("doanh thu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap error {
             get {
                 object obj = ResourceManager.GetObject("error", resourceCulture);
@@ -156,6 +166,16 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap iconoir__eye {
             get {
                 object obj = ResourceManager.GetObject("iconoir--eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image {
+            get {
+                object obj = ResourceManager.GetObject("image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,6 +403,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nrk__arrow_dropdown {
+            get {
+                object obj = ResourceManager.GetObject("nrk--arrow-dropdown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap radix_icons__people {
             get {
                 object obj = ResourceManager.GetObject("radix-icons--people", resourceCulture);
@@ -486,6 +516,36 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap warning {
             get {
                 object obj = ResourceManager.GetObject("warning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Work_and_Employment_filmmaking__clapperboard__camera__director__cinema_1 {
+            get {
+                object obj = ResourceManager.GetObject("Work and Employment_filmmaking, clapperboard, camera, director, cinema 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Work_and_Employment_laptop__analytics__professional__office__productivity {
+            get {
+                object obj = ResourceManager.GetObject("Work and Employment_laptop, analytics, professional, office, productivity", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Work_and_Employment_laptop__analytics__professional__office__productivity_1 {
+            get {
+                object obj = ResourceManager.GetObject("Work and Employment_laptop, analytics, professional, office, productivity 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

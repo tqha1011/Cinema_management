@@ -188,6 +188,24 @@
     <Compile Include="Ticket Booking\UCPhimDangChieu.Designer.cs">
       <DependentUpon>UCPhimDangChieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statistic\UCThongKeMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistic\UCThongKeMain.Designer.cs">
+      <DependentUpon>UCThongKeMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\UCDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistic\UCDoanhThu.Designer.cs">
+      <DependentUpon>UCDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\UCTongQuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistic\UCTongQuan.Designer.cs">
+      <DependentUpon>UCTongQuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCMovies1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -282,6 +300,9 @@
     <EmbeddedResource Include="Log in\UCLogin.resx">
       <DependentUpon>UCLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\UCThongKeMain.resx">
+      <DependentUpon>UCThongKeMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ticket Booking\FormChonSuatChieu.resx">
       <DependentUpon>FormChonSuatChieu.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +311,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ticket Booking\UCPhimDangChieu.resx">
       <DependentUpon>UCPhimDangChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\UCDoanhThu.resx">
+      <DependentUpon>UCDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\UCTongQuan.resx">
+      <DependentUpon>UCTongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
       <DependentUpon>UCMovies1.cs</DependentUpon>
@@ -326,6 +353,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />
+    <None Include="Resources\Work and Employment_laptop, analytics, professional, office, productivity 1.png" />
+    <None Include="Resources\Work and Employment_laptop, analytics, professional, office, productivity.png" />
+    <None Include="Resources\nrk--arrow-dropdown.png" />
     <None Include="Resources\line-md--logout %281%291.png" />
     <None Include="Resources\line-md--logout.png" />
     <None Include="Resources\line-md--logout %281%29.png" />
@@ -359,6 +390,8 @@
     <None Include="Resources\icon-park-solid--movie %281%29.png" />
     <None Include="Resources\icon-park-solid--movie.png" />
     <None Include="Resources\clarity--analytics-solid.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\doanh thu.png" />
     <Content Include="Resources\information.png" />
     <None Include="Resources\warning.png" />
   </ItemGroup>
