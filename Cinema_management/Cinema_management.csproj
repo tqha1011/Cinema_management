@@ -77,6 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Food and Beverage\AddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Food and Beverage\AddFood.Designer.cs">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddShowtime.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -206,6 +212,18 @@
     <Compile Include="Statistic\UCTongQuan.Designer.cs">
       <DependentUpon>UCTongQuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Food and Beverage\UCQuanLyDoAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food and Beverage\UCQuanLyDoAn.Designer.cs">
+      <DependentUpon>UCQuanLyDoAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food and Beverage\UCFoodCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food and Beverage\UCFoodCard.Designer.cs">
+      <DependentUpon>UCFoodCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCMovies1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -250,6 +268,9 @@
     </Compile>
     <EmbeddedResource Include="AddShowtime.resx">
       <DependentUpon>AddShowtime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food and Beverage\AddFood.resx">
+      <DependentUpon>AddFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log in\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -318,6 +339,12 @@
     <EmbeddedResource Include="Statistic\UCTongQuan.resx">
       <DependentUpon>UCTongQuan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Food and Beverage\UCQuanLyDoAn.resx">
+      <DependentUpon>UCQuanLyDoAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food and Beverage\UCFoodCard.resx">
+      <DependentUpon>UCFoodCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
       <DependentUpon>UCMovies1.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,6 +380,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\lucide--popcorn.png" />
     <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />
     <None Include="Resources\Work and Employment_laptop, analytics, professional, office, productivity 1.png" />
     <None Include="Resources\Work and Employment_laptop, analytics, professional, office, productivity.png" />
