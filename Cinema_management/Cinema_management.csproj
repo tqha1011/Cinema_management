@@ -89,6 +89,8 @@
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </Compile>
+    <Compile Include="Food and Beverage\Food.cs" />
+    <Compile Include="Food and Beverage\FoodLogic.cs" />
     <Compile Include="Log in\AuthLogic.cs" />
     <Compile Include="Log in\EmailServices.cs" />
     <Compile Include="Log in\FormLogin.cs">
