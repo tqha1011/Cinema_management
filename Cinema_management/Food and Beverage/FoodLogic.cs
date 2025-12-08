@@ -54,14 +54,13 @@ namespace Cinema_management.Food_and_Beverage
         #region Add Food
         public bool AddFood(Food newFood,int ID = 0)
         {
-            bool success = false;
             if (ValidateInformation(newFood))
             {
                 string query = "INSERT INTO DOAN(TENDOAN,GIADOAN,MOTADOAN,MALOAIDOAN,ANHDOAN)" +
                                "VALUES(@Name,@Price,@Description,@Type,@Image); " +
                                "DECLARE @NewID INT = SCOPE_IDENTITY(); " +
                                
-                               "INSRT INTO KHODOAN(MADOAN,SOLUONG) " +
+                               "INSERT INTO KHODOAN(MADOAN,SOLUONG) " +
                                "VALUES(@NewID, @Quantity)";
                 SqlParameter[] sqlParameter = new SqlParameter[]
                 {
@@ -88,15 +87,19 @@ namespace Cinema_management.Food_and_Beverage
             if (ValidateInformation(updateFood))
             {
                 string query = "UPDATE DOAN " +
-                               "SET TENDOAN = @Ten,GIADOAN = @Price,MOTADOAN = @Desciption," +
-                               "MALOAIDOAN = @Type, ANHDOAN = @Img" +
-                               "WHERE MADOAN = @Id";
+                               "SET TENDOAN = @Ten,GIADOAN = @Price, " +
+                               "MALOAIDOAN = @Type, ANHDOAN = @Img " +
+                               "WHERE MADOAN = @Id; " +
+                               
+                               "UPDATE KHODOAN " +
+                               "SET SOLUONG = @Quantity " + 
+                               "WHERE MADOAN = @Id;";
                 // khoi tao tham so
                 SqlParameter[] sqlParameters = new SqlParameter[]
                 {
                         new SqlParameter("@Ten", updateFood.Name),
                         new SqlParameter("@Price", updateFood.Money),
-                        new SqlParameter("@Description", (object)updateFood.Description ?? DBNull.Value),
+                        new SqlParameter("@Quantity", updateFood.Quantity),
                         new SqlParameter("@Type", updateFood.Type),
                         new SqlParameter("@Img", updateFood.imgFood),
                         new SqlParameter("@Id", ID)
@@ -114,8 +117,8 @@ namespace Cinema_management.Food_and_Beverage
         public Food GetDetails(int ID)
         {
             string query = "SELECT d.*, k.SOLUONG " +
-                           "FROM DOAN d JOIN LOAIDOAN l ON d.MADOAN = l.MADOAN " +
-                           "WHERE MADOAN = @Id";
+                           "FROM DOAN d LEFT JOIN KHODOAN k ON d.MADOAN = k.MADOAN " +
+                           "WHERE d.MADOAN = @Id";
             SqlParameter[] sqlParameter = new SqlParameter[]
             {
                 new SqlParameter("@Id",ID)
@@ -186,6 +189,55 @@ namespace Cinema_management.Food_and_Beverage
             else
             {
                 return table;
+            }
+        }
+        #endregion
+
+        #region Get All Food
+        public List<Food> GetFoodList()
+        {
+            List<Food> foodList = new List<Food>();
+            string query = "SELECT d.*, k.SOLUONG " +
+                           "FROM DOAN d LEFT JOIN KHODOAN k ON d.MADOAN = k.MADOAN " +
+                           "WHERE d.SELLING = 1";
+            DataTable table = dtb.ReadData(query, null);
+            if (table == null || table.Rows.Count == 0)
+            {
+                return foodList; // tra ve danh sach rong neu khong co do an
+            }
+            else
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    Food food = new Food();
+                    food.Id = Convert.ToInt32(row["MADOAN"]);
+                    food.Name = row["TENDOAN"].ToString();
+                    // kiem tra du lieu
+                    if (row["GIADOAN"] != DBNull.Value)
+                    {
+                        food.Money = Convert.ToDecimal(row["GIADOAN"]);
+                    }
+
+                    food.Description = row["MOTADOAN"].ToString();
+                    // kiem tra du lieu
+                    if (row["MALOAIDOAN"] != DBNull.Value)
+                    {
+                        food.Type = Convert.ToInt32(row["MALOAIDOAN"]);
+                    }
+
+                    food.imgFood = row["ANHDOAN"].ToString();
+
+                    if (table.Columns.Contains("SOLUONG") && row["SOLUONG"] != DBNull.Value)
+                    {
+                        food.Quantity = Convert.ToInt32(row["SOLUONG"]);
+                    }
+                    else
+                    {
+                        food.Quantity = 0;
+                    }
+                    foodList.Add(food);
+                }
+                return foodList;
             }
         }
         #endregion

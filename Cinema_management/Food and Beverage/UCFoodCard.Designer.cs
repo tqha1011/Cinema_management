@@ -32,14 +32,14 @@
             this.kryptonTableLayoutPanel1 = new Krypton.Toolkit.KryptonTableLayoutPanel();
             this.lblSoLuong = new Krypton.Toolkit.KryptonLabel();
             this.lblGia = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
-            this.kryptonWrapLabel1 = new Krypton.Toolkit.KryptonWrapLabel();
+            this.lblTenMon = new Krypton.Toolkit.KryptonWrapLabel();
+            this.ptbMonAn = new Krypton.Toolkit.KryptonPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
             this.kryptonGroup1.SuspendLayout();
             this.kryptonTableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbMonAn)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonGroup1
@@ -51,7 +51,7 @@
             // kryptonGroup1.Panel
             // 
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonTableLayoutPanel1);
-            this.kryptonGroup1.Panel.Controls.Add(this.kryptonPictureBox1);
+            this.kryptonGroup1.Panel.Controls.Add(this.ptbMonAn);
             this.kryptonGroup1.Panel.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
             this.kryptonGroup1.Size = new System.Drawing.Size(255, 305);
             this.kryptonGroup1.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -70,7 +70,7 @@
             this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblSoLuong, 0, 1);
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblGia, 1, 1);
-            this.kryptonTableLayoutPanel1.Controls.Add(this.kryptonWrapLabel1, 0, 0);
+            this.kryptonTableLayoutPanel1.Controls.Add(this.lblTenMon, 0, 0);
             this.kryptonTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(18, 174);
             this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
@@ -104,31 +104,31 @@
             this.lblGia.Values.Image = global::Cinema_management.Properties.Resources.iconmoney_resize;
             this.lblGia.Values.Text = "1đ";
             // 
-            // kryptonPictureBox1
+            // lblTenMon
             // 
-            this.kryptonPictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPictureBox1.Location = new System.Drawing.Point(18, 16);
-            this.kryptonPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonPictureBox1.Name = "kryptonPictureBox1";
-            this.kryptonPictureBox1.Size = new System.Drawing.Size(197, 158);
-            this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.kryptonPictureBox1.TabIndex = 0;
-            this.kryptonPictureBox1.TabStop = false;
+            this.lblTenMon.AutoEllipsis = true;
+            this.lblTenMon.AutoSize = false;
+            this.kryptonTableLayoutPanel1.SetColumnSpan(this.lblTenMon, 2);
+            this.lblTenMon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTenMon.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
+            this.lblTenMon.Location = new System.Drawing.Point(3, 0);
+            this.lblTenMon.Name = "lblTenMon";
+            this.lblTenMon.Size = new System.Drawing.Size(191, 46);
+            this.lblTenMon.StateCommon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenMon.StateCommon.TextColor = System.Drawing.Color.Black;
+            this.lblTenMon.Text = "Combo bắp vị phô mai + nước";
+            this.lblTenMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // kryptonWrapLabel1
+            // ptbMonAn
             // 
-            this.kryptonWrapLabel1.AutoEllipsis = true;
-            this.kryptonWrapLabel1.AutoSize = false;
-            this.kryptonTableLayoutPanel1.SetColumnSpan(this.kryptonWrapLabel1, 2);
-            this.kryptonWrapLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonWrapLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.kryptonWrapLabel1.Location = new System.Drawing.Point(3, 0);
-            this.kryptonWrapLabel1.Name = "kryptonWrapLabel1";
-            this.kryptonWrapLabel1.Size = new System.Drawing.Size(191, 46);
-            this.kryptonWrapLabel1.StateCommon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonWrapLabel1.StateCommon.TextColor = System.Drawing.Color.Black;
-            this.kryptonWrapLabel1.Text = "Combo bắp vị phô mai + nước";
-            this.kryptonWrapLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ptbMonAn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ptbMonAn.Location = new System.Drawing.Point(18, 16);
+            this.ptbMonAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbMonAn.Name = "ptbMonAn";
+            this.ptbMonAn.Size = new System.Drawing.Size(197, 158);
+            this.ptbMonAn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbMonAn.TabIndex = 0;
+            this.ptbMonAn.TabStop = false;
             // 
             // UCFoodCard
             // 
@@ -146,7 +146,7 @@
             this.kryptonGroup1.ResumeLayout(false);
             this.kryptonTableLayoutPanel1.ResumeLayout(false);
             this.kryptonTableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbMonAn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,10 +154,10 @@
         #endregion
 
         private Krypton.Toolkit.KryptonGroup kryptonGroup1;
-        private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox1;
+        private Krypton.Toolkit.KryptonPictureBox ptbMonAn;
         private Krypton.Toolkit.KryptonTableLayoutPanel kryptonTableLayoutPanel1;
         private Krypton.Toolkit.KryptonLabel lblSoLuong;
         private Krypton.Toolkit.KryptonLabel lblGia;
-        private Krypton.Toolkit.KryptonWrapLabel kryptonWrapLabel1;
+        private Krypton.Toolkit.KryptonWrapLabel lblTenMon;
     }
 }

@@ -150,10 +150,6 @@
             this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.DropDownWidth = 239;
             this.cboType.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
-            this.cboType.Items.AddRange(new object[] {
-            "Món ăn",
-            "Món uống",
-            "Combo"});
             this.cboType.LocalCustomPalette = this.kryptonCustomPaletteBase1;
             this.cboType.Location = new System.Drawing.Point(554, 264);
             this.cboType.Name = "cboType";
@@ -205,6 +201,7 @@
             this.btnSave.TabIndex = 1;
             this.btnSave.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnSave.Values.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
@@ -266,7 +263,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(868, 453);
+            this.ClientSize = new System.Drawing.Size(888, 437);
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.cboType);
             this.Controls.Add(this.txtAmount);
@@ -297,6 +294,7 @@
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.White;
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
             this.TransparencyKey = System.Drawing.Color.Purple;
+            this.Load += new System.EventHandler(this.AddFood_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cboType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDoAn)).EndInit();
             this.ResumeLayout(false);
