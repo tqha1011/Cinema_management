@@ -175,6 +175,7 @@
             this.cbbLoc.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.cbbLoc.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbLoc.TabIndex = 3;
+            this.cbbLoc.SelectedIndexChanged += new System.EventHandler(this.cbbLoc_SelectedIndexChanged);
             // 
             // kryptonCustomPaletteBase1
             // 
@@ -208,6 +209,7 @@
             // 
             // flowpanelFood
             // 
+            this.flowpanelFood.AutoScroll = true;
             this.flowpanelFood.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowpanelFood.Controls.Add(this.ucFoodCard3);
             this.flowpanelFood.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -220,6 +222,7 @@
             // ucFoodCard3
             // 
             this.ucFoodCard3.BackColor = System.Drawing.Color.White;
+            this.ucFoodCard3.IsSelected = false;
             this.ucFoodCard3.Location = new System.Drawing.Point(27, 24);
             this.ucFoodCard3.Margin = new System.Windows.Forms.Padding(27, 24, 27, 24);
             this.ucFoodCard3.MinimumSize = new System.Drawing.Size(246, 294);
@@ -237,6 +240,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCQuanLyDoAn";
             this.Size = new System.Drawing.Size(984, 510);
+            this.Load += new System.EventHandler(this.UCQuanLyDoAn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();

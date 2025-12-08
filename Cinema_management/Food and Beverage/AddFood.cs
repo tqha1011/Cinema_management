@@ -35,51 +35,78 @@ namespace Cinema_management
         // su kien nut delete
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Food deleteFood = foodLogic.GetDetails(foodID);
             if(foodLogic.DeleteFood(foodID))
             {
-                Alert.Show($"Xóa món {deleteFood.Name} thành công",MessagboxCustom.AlertMessagebox.AlertType.Success);
+                Alert.Show("Xóa món thành công",MessagboxCustom.AlertMessagebox.AlertType.Success);
                 this.Close();
             }
             else
             {
-                Alert.Show($"Xóa món {deleteFood.Name} thất bại", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                Alert.Show("Xóa món thất bại", MessagboxCustom.AlertMessagebox.AlertType.Error);
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             string finalFileName = currentImageFileName;
-            if(!string.IsNullOrEmpty(selectedImagePath))
+            string desFolder = Path.Combine(Application.StartupPath, "Poster");
+            if (!string.IsNullOrEmpty(selectedImagePath))
             {
+                string folderChuaFile = Path.GetDirectoryName(selectedImagePath);
                 // Luu anh vao thu muc Images/FoodImages
-                string namePath = Path.GetFileName(selectedImagePath);
+                if (folderChuaFile == desFolder)
+                {
+                    finalFileName = Path.GetFileName(selectedImagePath);
 
-                // luu anh voi dinh dang them ngay thang nam vao ten de tranh trung lap
-                // vi du : bapcai.jpg -> bapcai_20230915123045.jpg
-                string nameFilePicture = $"{Path.GetFileNameWithoutExtension(namePath)}_{DateTime.Now.Ticks}{Path.GetExtension(namePath)}";
-                string desFolder = Path.Combine(Application.StartupPath, "Poster");
-                if (!System.IO.Directory.Exists(desFolder))
-                {
-                    System.IO.Directory.CreateDirectory(desFolder);
                 }
-                string savePath = Path.Combine(desFolder, nameFilePicture);
-                try
+                else
                 {
-                    File.Copy(selectedImagePath, savePath, true);
-                    finalFileName = nameFilePicture;
-                }
-                catch(Exception ex)
-                {
-                    Alert.Show("Lưu ảnh thất bại: " + ex.Message, MessagboxCustom.AlertMessagebox.AlertType.Error);
-                    return;
+                    string namePath = Path.GetFileName(selectedImagePath);
+
+                    // luu anh voi dinh dang them ngay thang nam vao ten de tranh trung lap
+                    // vi du : bapcai.jpg -> bapcai_20230915123045.jpg
+                    string nameFilePicture = $"{Path.GetFileNameWithoutExtension(namePath)}_{DateTime.Now.Ticks}{Path.GetExtension(namePath)}";
+                    if (!System.IO.Directory.Exists(desFolder))
+                    {
+                        System.IO.Directory.CreateDirectory(desFolder);
+                    }
+                    string savePath = Path.Combine(desFolder, nameFilePicture);
+                    try
+                    {
+                        File.Copy(selectedImagePath, savePath, true);
+                        finalFileName = nameFilePicture;
+                    }
+                    catch (Exception ex)
+                    {
+                        Alert.Show("Lưu ảnh thất bại: " + ex.Message, MessagboxCustom.AlertMessagebox.AlertType.Error);
+                        return;
+                    }
                 }
             }
             bool success = false;
             Food newFood = new Food();
             newFood.Name = txtNameFood.Text;
-            newFood.Money = decimal.Parse(txtPrice.Text);
-            newFood.Quantity = int.Parse(txtAmount.Text);
+            
+            // tranh loi money bi nhap sai
+            if(decimal.TryParse(txtPrice.Text, out decimal price))
+            {
+                newFood.Money = price;
+            }
+            else
+            {
+                newFood.Money = 0;
+            }
+
+            // tranh loi quantity bi nhap sai
+            if (int.TryParse(txtAmount.Text, out int quantity))
+            {
+                newFood.Quantity = quantity;
+            }
+            else
+            {
+                newFood.Quantity = 0;
+            }
+
             newFood.Type = (int)cboType.SelectedValue;
             newFood.imgFood = finalFileName;
             // Them moi
@@ -108,8 +135,8 @@ namespace Cinema_management
         private void AddFood_Load(object sender, EventArgs e)
         {
             // Load loai do an vao combobox
-            cboType.DisplayMember = "TENLOAIDOAN";
             cboType.ValueMember = "MALOAIDOAN";
+            cboType.DisplayMember = "TENLOAIDOAN";
             cboType.DataSource = foodLogic.GetFoodTypes();
             // Neu la cap nhat thi load thong tin do an len form
             if (foodID != 0)
@@ -118,9 +145,10 @@ namespace Cinema_management
                 if (existingFood != null)
                 {
                     txtNameFood.Text = existingFood.Name;
-                    txtPrice.Text = existingFood.Money.ToString();
+                    txtPrice.Text = existingFood.Money.ToString("#,##0.###");
                     txtAmount.Text = existingFood.Quantity.ToString();
                     cboType.SelectedValue = existingFood.Type;
+                    currentImageFileName = existingFood.imgFood;
                     // Load anh
                     if (!string.IsNullOrEmpty(existingFood.imgFood))
                     {

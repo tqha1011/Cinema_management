@@ -405,6 +405,10 @@
     <None Include="Resources\check.png" />
     <None Include="Resources\error.png" />
     <None Include="Resources\iconoir--eye.png" />
+    <Content Include="Image\bap_phomaiver2-removebg-preview.png" />
+    <Content Include="Image\bap_rangcaramel-removebg-preview.png" />
+    <Content Include="Image\bap_socola-removebg-preview.png" />
+    <Content Include="Image\nuoc_uong-removebg-preview.png" />
     <Content Include="Posters\conan.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
