@@ -32,7 +32,7 @@ This project is for **IT008-Lập trình trực quan** subject in UIT-VNUHCM
 - Showtime Management (CRUD)
 - Ticket booking
 - Statistic
-- Food && Beverage Managment
+- Food && Beverage Management
 ## 🗃️ Database schema
 ![erd Database (1)](https://github.com/user-attachments/assets/9a47715c-899c-4868-92c2-02216f85fe93)
 
