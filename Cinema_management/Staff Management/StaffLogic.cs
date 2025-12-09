@@ -211,7 +211,8 @@ namespace Cinema_management.Staff_Management
         public DataTable ShowListStaff()
         {
             string query = "SELECT MANV AS 'ID', HOTEN AS 'Full Name', GIOITINH AS 'Gender', NGAYSINH AS 'Birthday', " +
-                           "SODIENTHOAI AS 'Phone Number', EMAIL AS 'Email' , VAITRO AS 'Position', NGAYVAOLAM AS 'Hire Date' FROM NHANVIEN";
+                           "SODIENTHOAI AS 'Phone Number', EMAIL AS 'Email' , VAITRO AS 'Position', NGAYVAOLAM AS 'Hire Date' FROM NHANVIEN " + 
+                           "WHERE WORKING = 1";
             return dtb.ReadData(query);
 
         }
@@ -234,7 +235,7 @@ namespace Cinema_management.Staff_Management
         #region delete staff
         public bool DeleteStaff(int ID)
         {
-            string query = "DELETE FROM NHANVIEN WHERE MANV = @ID";
+            string query = "UPDATE NHANVIEN SET WORKING = 0 WHERE MANV = @ID";
             SqlParameter[] sqlParameters = new SqlParameter[]
             {
                 new SqlParameter("@ID", ID)
