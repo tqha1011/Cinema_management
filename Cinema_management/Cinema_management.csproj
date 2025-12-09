@@ -140,6 +140,11 @@
     <Compile Include="Movie\Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RoomCardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -226,6 +231,24 @@
     <Compile Include="Food and Beverage\UCFoodCard.Designer.cs">
       <DependentUpon>UCFoodCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ticket Booking\UCChonDoAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCChonDoAn.Designer.cs">
+      <DependentUpon>UCChonDoAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\UCOrderFoodCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCOrderFoodCard.Designer.cs">
+      <DependentUpon>UCOrderFoodCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\UCThanhToanFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCThanhToanFood.Designer.cs">
+      <DependentUpon>UCThanhToanFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UCMovies1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -297,14 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="RoomCardControl.resx">
       <DependentUpon>RoomCardControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,6 +347,9 @@
     <EmbeddedResource Include="Ticket Booking\FormChonSuatChieu.resx">
       <DependentUpon>FormChonSuatChieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCChonDoAn.resx">
+      <DependentUpon>UCChonDoAn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ticket Booking\UCMovieCard.resx">
       <DependentUpon>UCMovieCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,6 +367,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Food and Beverage\UCFoodCard.resx">
       <DependentUpon>UCFoodCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCOrderFoodCard.resx">
+      <DependentUpon>UCOrderFoodCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCThanhToanFood.resx">
+      <DependentUpon>UCThanhToanFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
       <DependentUpon>UCMovies1.cs</DependentUpon>
@@ -427,6 +454,14 @@
     <None Include="Resources\clarity--analytics-solid.png" />
     <None Include="Resources\image.png" />
     <None Include="Resources\doanh thu.png" />
+    <None Include="Resources\combo.png" />
+    <None Include="Resources\gg--add.png" />
+    <None Include="Resources\fluent--subtract-circle-12-regular.png" />
+    <None Include="Resources\backgr popcorn.png" />
+    <None Include="Resources\backgr-drink.png" />
+    <None Include="Resources\fluent--subtract-circle-24-regular.png" />
+    <None Include="Resources\carbon--add-filled.png" />
+    <None Include="Resources\fluent--subtract-circle-16-filled.png" />
     <Content Include="Resources\information.png" />
     <None Include="Resources\warning.png" />
   </ItemGroup>
