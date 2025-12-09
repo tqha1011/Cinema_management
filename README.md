@@ -30,7 +30,9 @@ This project is for **IT008-Lập trình trực quan** subject in UIT-VNUHCM
 - Movie Management (CRUD)
 - Staff Management (CRUD)
 - Showtime Management (CRUD)
-- Ticket
+- Ticket booking
+- Statistic
+- Food && Beverage Managment
 ## 🗃️ Database schema
 ![erd Database (1)](https://github.com/user-attachments/assets/9a47715c-899c-4868-92c2-02216f85fe93)
 
