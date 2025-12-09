@@ -473,6 +473,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap popcorn_drink_logo_resize {
+            get {
+                object obj = ResourceManager.GetObject("popcorn_drink_logo_resize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap radix_icons__people {
             get {
                 object obj = ResourceManager.GetObject("radix-icons--people", resourceCulture);

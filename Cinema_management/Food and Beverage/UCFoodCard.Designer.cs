@@ -75,8 +75,8 @@
             this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(18, 174);
             this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             this.kryptonTableLayoutPanel1.RowCount = 2;
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(197, 93);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 1;
@@ -84,10 +84,11 @@
             // lblSoLuong
             // 
             this.lblSoLuong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSoLuong.Location = new System.Drawing.Point(3, 49);
+            this.lblSoLuong.Location = new System.Drawing.Point(3, 59);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(64, 41);
+            this.lblSoLuong.Size = new System.Drawing.Size(75, 31);
             this.lblSoLuong.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblSoLuong.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.lblSoLuong.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.lblSoLuong.TabIndex = 1;
@@ -96,25 +97,24 @@
             // lblGia
             // 
             this.lblGia.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblGia.Location = new System.Drawing.Point(142, 57);
+            this.lblGia.Location = new System.Drawing.Point(135, 59);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(52, 24);
+            this.lblGia.Size = new System.Drawing.Size(59, 31);
             this.lblGia.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblGia.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGia.TabIndex = 2;
             this.lblGia.Values.Image = global::Cinema_management.Properties.Resources.iconmoney_resize;
             this.lblGia.Values.Text = "1đ";
             // 
             // lblTenMon
             // 
-            this.lblTenMon.AutoEllipsis = true;
-            this.lblTenMon.AutoSize = false;
             this.kryptonTableLayoutPanel1.SetColumnSpan(this.lblTenMon, 2);
             this.lblTenMon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTenMon.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
             this.lblTenMon.Location = new System.Drawing.Point(3, 0);
             this.lblTenMon.Name = "lblTenMon";
-            this.lblTenMon.Size = new System.Drawing.Size(191, 46);
-            this.lblTenMon.StateCommon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenMon.Size = new System.Drawing.Size(191, 56);
+            this.lblTenMon.StateCommon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenMon.StateCommon.TextColor = System.Drawing.Color.Black;
             this.lblTenMon.Text = "Combo bắp vị phô mai + nước";
             this.lblTenMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

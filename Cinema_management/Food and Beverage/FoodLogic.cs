@@ -241,5 +241,55 @@ namespace Cinema_management.Food_and_Beverage
             }
         }
         #endregion
+
+        #region Get Food by Type
+        public List<Food> GetFoodByType(int typeID)
+        {
+            List<Food> foodList = new List<Food>();
+            string query = "SELECT d.*, k.SOLUONG " +
+                           "FROM DOAN d LEFT JOIN KHODOAN k ON d.MADOAN = k.MADOAN " +
+                           "WHERE d.SELLING = 1 AND d.MALOAIDOAN = @TypeId";
+            SqlParameter[] sqlParameters = new SqlParameter[]
+            {
+                new SqlParameter("@TypeId",typeID)
+            };
+            DataTable table = dtb.ReadData(query, sqlParameters);
+            if (table == null || table.Rows.Count == 0)
+            {
+                return foodList; // tra ve danh sach rong neu khong co do an
+            }
+            else
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    Food food = new Food();
+                    food.Id = Convert.ToInt32(row["MADOAN"]);
+                    food.Name = row["TENDOAN"].ToString();
+                    // kiem tra du lieu
+                    if (row["GIADOAN"] != DBNull.Value)
+                    {
+                        food.Money = Convert.ToDecimal(row["GIADOAN"]);
+                    }
+                    food.Description = row["MOTADOAN"].ToString();
+                    // kiem tra du lieu
+                    if (row["MALOAIDOAN"] != DBNull.Value)
+                    {
+                        food.Type = Convert.ToInt32(row["MALOAIDOAN"]);
+                    }
+                    food.imgFood = row["ANHDOAN"].ToString();
+                    if (table.Columns.Contains("SOLUONG") && row["SOLUONG"] != DBNull.Value)
+                    {
+                        food.Quantity = Convert.ToInt32(row["SOLUONG"]);
+                    }
+                    else
+                    {
+                        food.Quantity = 0;
+                    }
+                    foodList.Add(food);
+                }
+                return foodList;
+            }
+        }
+        #endregion
     }
 }

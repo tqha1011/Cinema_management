@@ -1,14 +1,16 @@
-﻿using System;
+﻿using Cinema_management.Food_and_Beverage;
+using Cinema_management.MessageboxCustom.Utils;
+using Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Krypton.Toolkit;
-using Cinema_management.Food_and_Beverage;
 
 namespace Cinema_management
 {
@@ -17,7 +19,7 @@ namespace Cinema_management
         public Food foodData;
         public event EventHandler CardClick;
         private bool isSelected = false;
-
+        private static Dictionary<string, Image> _imageCache = new Dictionary<string, Image>(); // cache anh
         public bool IsSelected
         {
             get { return isSelected; }
@@ -76,11 +78,11 @@ namespace Cinema_management
             this.foodData = food;
             lblTenMon.Text = food.Name;
             lblGia.Text = food.Money.ToString("N0") + "đ";
-            if(food.Quantity <= 0)
+            if (food.Quantity <= 0)
             {
                 lblSoLuong.Text = "Hết hàng";
                 lblSoLuong.ForeColor = Color.Red;
-                this.Enabled = false; // lam mo card neu het hang   
+                this.Enabled = false; // lam mo card neu het hang   
             }
             else
             {
@@ -93,9 +95,9 @@ namespace Cinema_management
 
         private void LoadImage(string fileName)
         {
-            if(ptbMonAn != null)
+            if (ptbMonAn != null)
             {
-                if(ptbMonAn.Image != null)
+                if (ptbMonAn.Image != null)
                 {
                     ptbMonAn.Image.Dispose();
                 }
@@ -104,7 +106,7 @@ namespace Cinema_management
             if (string.IsNullOrEmpty(fileName)) return;
 
             string imagePath = System.IO.Path.Combine(Application.StartupPath, "Poster", fileName);
-            if(System.IO.File.Exists(imagePath))
+            if (System.IO.File.Exists(imagePath))
             {
                 using (Image img = Image.FromFile(imagePath))
                 {

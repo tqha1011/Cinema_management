@@ -382,6 +382,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\popcorn_drink_logo_resize.jpg" />
     <None Include="Resources\lucide--popcorn.png" />
     <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />
     <None Include="Resources\Work and Employment_laptop, analytics, professional, office, productivity 1.png" />
