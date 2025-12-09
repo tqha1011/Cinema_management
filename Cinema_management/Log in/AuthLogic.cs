@@ -25,12 +25,12 @@ namespace Cinema_management.Log_in
         {
             try
             {
-                string query = "SELECT COUNT(*) FROM NHANVIEN WHERE USERNAME = @username AND PASSWORD = @password AND VAITRO = @role";
+                string query = "SELECT COUNT(*) FROM NHANVIEN WHERE USERNAME = @username AND PASSWORD = @password AND VAITRO = @role AND WORKING = 1";
                 SqlParameter[] parameters = new SqlParameter[]
                 {
-                new SqlParameter("@username", username),
-                new SqlParameter("@password", password),
-                new SqlParameter("@role", role)
+                    new SqlParameter("@username", username),
+                    new SqlParameter("@password", password),
+                    new SqlParameter("@role", role)
                 };
                 var resultTable = dtb.ReadData(query, parameters);
                 if (resultTable.Rows != null && resultTable.Rows.Count > 0)
