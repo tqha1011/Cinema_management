@@ -263,7 +263,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(888, 437);
+            this.ClientSize = new System.Drawing.Size(898, 433);
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.cboType);
             this.Controls.Add(this.txtAmount);
@@ -277,6 +277,7 @@
             this.Controls.Add(this.btnChooseImage);
             this.Controls.Add(this.ptbDoAn);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

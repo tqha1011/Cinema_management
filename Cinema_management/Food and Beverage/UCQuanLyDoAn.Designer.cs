@@ -38,14 +38,12 @@
             this.lbFnB = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             this.flowpanelFood = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucFoodCard3 = new Cinema_management.UCFoodCard();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbbLoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
-            this.flowpanelFood.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -136,6 +134,7 @@
             this.txtSearch.StateCommon.Border.Width = 4;
             this.txtSearch.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.TabIndex = 6;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // pictureBox1
             // 
@@ -189,10 +188,11 @@
             this.lbFnB.Location = new System.Drawing.Point(51, 37);
             this.lbFnB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbFnB.Name = "lbFnB";
-            this.lbFnB.Size = new System.Drawing.Size(538, 44);
+            this.lbFnB.Size = new System.Drawing.Size(603, 66);
             this.lbFnB.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lbFnB.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFnB.TabIndex = 2;
+            this.lbFnB.Values.Image = global::Cinema_management.Properties.Resources.popcorn_drink_logo_resize;
             this.lbFnB.Values.Text = "Food And Beverage Management";
             // 
             // kryptonPanel2
@@ -211,24 +211,12 @@
             // 
             this.flowpanelFood.AutoScroll = true;
             this.flowpanelFood.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowpanelFood.Controls.Add(this.ucFoodCard3);
             this.flowpanelFood.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowpanelFood.Location = new System.Drawing.Point(44, 16);
             this.flowpanelFood.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.flowpanelFood.Name = "flowpanelFood";
             this.flowpanelFood.Size = new System.Drawing.Size(896, 284);
             this.flowpanelFood.TabIndex = 0;
-            // 
-            // ucFoodCard3
-            // 
-            this.ucFoodCard3.BackColor = System.Drawing.Color.White;
-            this.ucFoodCard3.IsSelected = false;
-            this.ucFoodCard3.Location = new System.Drawing.Point(27, 24);
-            this.ucFoodCard3.Margin = new System.Windows.Forms.Padding(27, 24, 27, 24);
-            this.ucFoodCard3.MinimumSize = new System.Drawing.Size(246, 294);
-            this.ucFoodCard3.Name = "ucFoodCard3";
-            this.ucFoodCard3.Size = new System.Drawing.Size(246, 294);
-            this.ucFoodCard3.TabIndex = 1;
             // 
             // UCQuanLyDoAn
             // 
@@ -248,7 +236,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbbLoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
-            this.flowpanelFood.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -264,6 +251,5 @@
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowpanelFood;
-        private UCFoodCard ucFoodCard3;
     }
 }
