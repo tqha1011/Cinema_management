@@ -34,13 +34,11 @@
             this.txtSoLuong = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.btnDelete = new Krypton.Toolkit.KryptonButton();
-            this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbTenMon
             // 
-            this.lbTenMon.Location = new System.Drawing.Point(168, 13);
+            this.lbTenMon.Location = new System.Drawing.Point(25, 12);
             this.lbTenMon.Name = "lbTenMon";
             this.lbTenMon.Size = new System.Drawing.Size(189, 44);
             this.lbTenMon.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -50,7 +48,7 @@
             // 
             // lbGia
             // 
-            this.lbGia.Location = new System.Drawing.Point(173, 63);
+            this.lbGia.Location = new System.Drawing.Point(30, 62);
             this.lbGia.Name = "lbGia";
             this.lbGia.Size = new System.Drawing.Size(131, 38);
             this.lbGia.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
@@ -60,7 +58,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(170, 104);
+            this.kryptonButton2.Location = new System.Drawing.Point(27, 103);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
@@ -91,7 +89,7 @@
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(223, 107);
+            this.txtSoLuong.Location = new System.Drawing.Point(80, 106);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(67, 38);
             this.txtSoLuong.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
@@ -106,7 +104,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(293, 104);
+            this.kryptonButton1.Location = new System.Drawing.Point(150, 103);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
@@ -138,7 +136,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(416, 13);
+            this.btnDelete.Location = new System.Drawing.Point(273, 12);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnDelete.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
@@ -167,15 +165,6 @@
             this.btnDelete.Values.ImageStates.ImageTracking = global::Cinema_management.Properties.Resources.streamline_ultimate__bin_1_bold;
             this.btnDelete.Values.Text = "";
             // 
-            // kryptonPictureBox1
-            // 
-            this.kryptonPictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.kryptonPictureBox1.Name = "kryptonPictureBox1";
-            this.kryptonPictureBox1.Size = new System.Drawing.Size(141, 132);
-            this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.kryptonPictureBox1.TabIndex = 0;
-            this.kryptonPictureBox1.TabStop = false;
-            // 
             // UCThanhToanFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -187,20 +176,16 @@
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.lbGia);
             this.Controls.Add(this.lbTenMon);
-            this.Controls.Add(this.kryptonPictureBox1);
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.MinimumSize = new System.Drawing.Size(480, 159);
+            this.MinimumSize = new System.Drawing.Size(348, 159);
             this.Name = "UCThanhToanFood";
-            this.Size = new System.Drawing.Size(480, 159);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(348, 159);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox1;
         private Krypton.Toolkit.KryptonLabel lbTenMon;
         private Krypton.Toolkit.KryptonLabel lbGia;
         private Krypton.Toolkit.KryptonButton kryptonButton2;
