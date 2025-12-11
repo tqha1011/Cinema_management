@@ -19,7 +19,7 @@ namespace Cinema_management.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -136,6 +136,56 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap error {
             get {
                 object obj = ResourceManager.GetObject("error", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluent__maximize_20_filled {
+            get {
+                object obj = ResourceManager.GetObject("fluent--maximize-20-filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluent__person_32_filled {
+            get {
+                object obj = ResourceManager.GetObject("fluent--person-32-filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluent__person_48_filled {
+            get {
+                object obj = ResourceManager.GetObject("fluent--person-48-filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluent__person_48_filled__1_ {
+            get {
+                object obj = ResourceManager.GetObject("fluent--person-48-filled (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluent__person_48_filled__2_ {
+            get {
+                object obj = ResourceManager.GetObject("fluent--person-48-filled (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,6 +383,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ion__close {
+            get {
+                object obj = ResourceManager.GetObject("ion--close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jam__movie {
             get {
                 object obj = ResourceManager.GetObject("jam--movie", resourceCulture);
@@ -376,6 +436,16 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap jam__write__1_1 {
             get {
                 object obj = ResourceManager.GetObject("jam--write (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lets_icons__arrow_drop_down {
+            get {
+                object obj = ResourceManager.GetObject("lets-icons--arrow-drop-down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,6 +593,36 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mdi__logout__3_ {
+            get {
+                object obj = ResourceManager.GetObject("mdi--logout (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mdi__logout__4_ {
+            get {
+                object obj = ResourceManager.GetObject("mdi--logout (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mdi__logout__5_ {
+            get {
+                object obj = ResourceManager.GetObject("mdi--logout (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mdi__password {
             get {
                 object obj = ResourceManager.GetObject("mdi--password", resourceCulture);
@@ -556,6 +656,16 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap nrk__arrow_dropdown {
             get {
                 object obj = ResourceManager.GetObject("nrk--arrow-dropdown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pajamas__close {
+            get {
+                object obj = ResourceManager.GetObject("pajamas--close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -726,6 +836,16 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap Work_and_Employment_laptop__analytics__professional__office__productivity_1 {
             get {
                 object obj = ResourceManager.GetObject("Work and Employment_laptop, analytics, professional, office, productivity 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zondicons__close_solid {
+            get {
+                object obj = ResourceManager.GetObject("zondicons--close-solid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

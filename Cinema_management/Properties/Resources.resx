@@ -118,205 +118,241 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabler--ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabler--ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nrk--arrow-dropdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nrk--arrow-dropdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon-park-solid--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-park-solid--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tdesign--time-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tdesign--time-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gg--add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gg--add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--add-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--add-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ri--dashboard-fill (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ri--dashboard-fill (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jam--write (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--write (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wallpaper_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpaper_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconuser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconuser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="uil--setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\uil--setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mdi--password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fluent--subtract-circle-16-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent--subtract-circle-16-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Work and Employment_filmmaking, clapperboard, camera, director, cinema 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconamoon--eye-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconamoon--eye-light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon-park-solid--movie (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-park-solid--movie (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mdi--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="iconeyeclose_resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconeyeclose_resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--person-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--person-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--square-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--square-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconpass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconpass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-ultimate--bin-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline-ultimate--bin-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mingcute--ticket-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mingcute--ticket-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jam--write (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--write (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fluent--subtract-circle-12-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent--subtract-circle-12-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="uil--clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\uil--clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--delete-outline-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--delete-outline-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mdi--logout (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi--logout (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic--baseline-tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic--baseline-tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconbackarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconbackarrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backgr-drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgr-drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hugeicons--analytics-03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hugeicons--analytics-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="radix-icons--people1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\radix-icons--people1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lucide--search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lucide--search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lucide--popcorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lucide--popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--person-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--person-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fluent--subtract-circle-24-regular1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent--subtract-circle-24-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backgr popcorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgr popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconoir--eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconoir--eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Work and Employment_laptop, analytics, professional, office, productivity" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Work and Employment_laptop, analytics, professional, office, productivity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="line-md--logout (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\line-md--logout (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carbon--add-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carbon--add-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluent--subtract-circle-24-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent--subtract-circle-24-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jam--write (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--write (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jam--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--mail-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--mail-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="line-md--logout (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\line-md--logout (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jam--write" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--write.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="combo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\combo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="material-symbols--delete-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--delete-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="line-md--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\line-md--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="radix-icons--people" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\radix-icons--people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clarity--analytics-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clarity--analytics-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mingcute--ticket-fill1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mingcute--ticket-fill1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Work and Employment_laptop, analytics, professional, office, productivity 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Work and Employment_laptop, analytics, professional, office, productivity 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconemail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconemail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="doanh thu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\doanh thu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jam--movie (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jam--movie (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pajamas--close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pajamas--close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabler--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabler--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jam--write (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--write (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ri--dashboard-fill (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ri--dashboard-fill (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mdi--logout (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--logout (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucide--search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucide--search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Work and Employment_laptop, analytics, professional, office, productivity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Work and Employment_laptop, analytics, professional, office, productivity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--subtract-circle-16-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--subtract-circle-16-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="streamline-ultimate--bin-1-bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\streamline-ultimate--bin-1-bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hugeicons--analytics-03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hugeicons--analytics-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gg--add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gg--add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uil--setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uil--setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--add-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--add-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Work and Employment_laptop, analytics, professional, office, productivity 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Work and Employment_laptop, analytics, professional, office, productivity 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoir--eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoir--eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconmoney_resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconmoney_resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="streamline-ultimate--bin-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline-ultimate--bin-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jam--write" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--write.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uil--clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uil--clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi--logout (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--logout (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconamoon--eye-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconamoon--eye-light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mingcute--ticket-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mingcute--ticket-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconpass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconpass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carbon--add-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carbon--add-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jam--movie (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--movie (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconemail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconemail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mingcute--ticket-fill1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mingcute--ticket-fill1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="line-md--logout (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line-md--logout (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-park-solid--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-park-solid--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--person-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--person-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doanh thu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doanh thu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="combo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\combo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgr-drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgr-drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Work and Employment_filmmaking, clapperboard, camera, director, cinema 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgr popcorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgr popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="popcorn_drink_logo_resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\popcorn_drink_logo_resize.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--person-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--person-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucide--popcorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucide--popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jam--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="line-md--logout (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line-md--logout (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconbackarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconbackarrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--subtract-circle-12-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--subtract-circle-12-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--person-48-filled (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--person-48-filled (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri--dashboard-fill (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ri--dashboard-fill (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri--dashboard-fill (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ri--dashboard-fill (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radix-icons--people1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radix-icons--people1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--delete-outline-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--delete-outline-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zondicons--close-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zondicons--close-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi--password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clarity--analytics-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clarity--analytics-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-park-solid--movie (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-park-solid--movie (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--person-48-filled (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--person-48-filled (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nrk--arrow-dropdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nrk--arrow-dropdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--mail-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--mail-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ion--close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ion--close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--subtract-circle-24-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--subtract-circle-24-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic--baseline-tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic--baseline-tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--subtract-circle-24-regular1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--subtract-circle-24-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="line-md--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line-md--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabler--ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabler--ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wallpaper_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--maximize-20-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--maximize-20-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tdesign--time-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tdesign--time-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lets-icons--arrow-drop-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lets-icons--arrow-drop-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radix-icons--people" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radix-icons--people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--person-48-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--person-48-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi--logout (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--logout (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconuser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconuser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--delete-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--delete-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi--logout (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi--logout (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--square-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--square-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--person-32-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--person-32-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
