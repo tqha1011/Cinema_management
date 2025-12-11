@@ -91,6 +91,12 @@
     </Compile>
     <Compile Include="Food and Beverage\Food.cs" />
     <Compile Include="Food and Beverage\FoodLogic.cs" />
+    <Compile Include="FormNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNV.Designer.cs">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log in\AuthLogic.cs" />
     <Compile Include="Log in\EmailServices.cs" />
     <Compile Include="Log in\FormLogin.cs">
@@ -309,6 +315,9 @@
     <EmbeddedResource Include="Food and Beverage\AddFood.resx">
       <DependentUpon>AddFood.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormNV.resx">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Log in\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -427,6 +436,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\zondicons--close-solid.png" />
+    <None Include="Resources\pajamas--close.png" />
+    <None Include="Resources\ion--close.png" />
+    <None Include="Resources\fluent--maximize-20-filled.png" />
+    <None Include="Resources\fluent--person-48-filled.png" />
+    <None Include="Resources\fluent--person-48-filled %281%29.png" />
+    <None Include="Resources\lets-icons--arrow-drop-down.png" />
+    <None Include="Resources\fluent--person-48-filled %282%29.png" />
+    <None Include="Resources\mdi--logout %283%29.png" />
+    <None Include="Resources\mdi--logout %284%29.png" />
+    <None Include="Resources\mdi--logout %285%29.png" />
+    <None Include="Resources\fluent--person-32-filled.png" />
     <Content Include="Resources\popcorn_drink_logo_resize.jpg" />
     <None Include="Resources\lucide--popcorn.png" />
     <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />
