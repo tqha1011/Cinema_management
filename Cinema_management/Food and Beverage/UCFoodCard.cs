@@ -105,7 +105,7 @@ namespace Cinema_management
             }
             if (string.IsNullOrEmpty(fileName)) return;
 
-            string imagePath = System.IO.Path.Combine(Application.StartupPath, "Poster", fileName);
+            string imagePath = System.IO.Path.Combine(Application.StartupPath, "Image", fileName);
             if (System.IO.File.Exists(imagePath))
             {
                 using (Image img = Image.FromFile(imagePath))
