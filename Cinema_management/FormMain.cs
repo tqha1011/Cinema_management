@@ -47,6 +47,9 @@ namespace Cinema_management
             uc.Dock = DockStyle.Fill;
 
             pnContentforUC.Controls.Add(uc);
+            //UCChonDoAn uc = new UCChonDoAn();
+            //uc.Dock = DockStyle.Fill;
+            //pnContentforUC.Controls.Add(uc);
         }
 
         private void kryptonButton2_Click(object sender, System.EventArgs e)
@@ -153,6 +156,14 @@ namespace Cinema_management
             UCThongKeMain uc = new UCThongKeMain();
             uc.Dock = DockStyle.Fill;
 
+            pnContentforUC.Controls.Add(uc);
+        }
+
+        private void kryptonButton6_Click(object sender, System.EventArgs e)
+        {
+            pnContentforUC.Controls.Clear();
+            UCQuanLyDoAn uc = new UCQuanLyDoAn();
+            uc.Dock = DockStyle.Fill;
             pnContentforUC.Controls.Add(uc);
         }
     }

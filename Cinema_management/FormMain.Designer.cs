@@ -31,9 +31,11 @@ namespace Cinema_management
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnSidebar = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.btnLogout = new Krypton.Toolkit.KryptonButton();
+            this.kryptonButton6 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton5 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton4 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new Krypton.Toolkit.KryptonButton();
@@ -42,6 +44,7 @@ namespace Cinema_management
             this.btnDashboard = new Krypton.Toolkit.KryptonButton();
             this.pnContent = new Krypton.Toolkit.KryptonPanel();
             this.pnContentforUC = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pnSidebar)).BeginInit();
             this.pnSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnContent)).BeginInit();
@@ -53,6 +56,7 @@ namespace Cinema_management
             // 
             this.pnSidebar.Controls.Add(this.kryptonLabel1);
             this.pnSidebar.Controls.Add(this.btnLogout);
+            this.pnSidebar.Controls.Add(this.kryptonButton6);
             this.pnSidebar.Controls.Add(this.kryptonButton5);
             this.pnSidebar.Controls.Add(this.kryptonButton4);
             this.pnSidebar.Controls.Add(this.kryptonButton3);
@@ -63,8 +67,8 @@ namespace Cinema_management
             this.pnSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnSidebar.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnSidebar.Name = "pnSidebar";
-            this.pnSidebar.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.pnSidebar.Size = new System.Drawing.Size(585, 936);
+            this.pnSidebar.Padding = new System.Windows.Forms.Padding(20);
+            this.pnSidebar.Size = new System.Drawing.Size(439, 867);
             this.pnSidebar.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pnSidebar.TabIndex = 0;
             // 
@@ -84,8 +88,8 @@ namespace Cinema_management
             // btnLogout
             // 
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogout.Location = new System.Drawing.Point(27, 823);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btnLogout.Location = new System.Drawing.Point(20, 777);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnLogout.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -130,6 +134,58 @@ namespace Cinema_management
             this.btnLogout.Values.ImageStates.ImageTracking = global::Cinema_management.Properties.Resources.line_md__logout__1_;
             this.btnLogout.Values.Text = "Log Out";
             this.btnLogout.Click += new System.EventHandler(this.kryptonButton5_Click);
+            // 
+            // kryptonButton6
+            // 
+            this.kryptonButton6.Location = new System.Drawing.Point(41, 757);
+            this.kryptonButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton6.Name = "kryptonButton6";
+            this.kryptonButton6.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.kryptonButton6.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
+            this.kryptonButton6.OverrideDefault.Back.ColorAngle = 45F;
+            this.kryptonButton6.OverrideDefault.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton6.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton6.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
+            this.kryptonButton6.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.kryptonButton6.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.Size = new System.Drawing.Size(350, 70);
+            this.kryptonButton6.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonButton6.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton6.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton6.StateCommon.Border.Rounding = 25F;
+            this.kryptonButton6.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
+            this.kryptonButton6.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
+            this.kryptonButton6.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
+            this.kryptonButton6.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
+            this.kryptonButton6.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton6.StatePressed.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton6.StatePressed.Border.Rounding = 25F;
+            this.kryptonButton6.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton6.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton6.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
+            this.kryptonButton6.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.kryptonButton6.StateTracking.Back.ColorAngle = 45F;
+            this.kryptonButton6.StateTracking.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.kryptonButton6.TabIndex = 1;
+            this.kryptonButton6.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.kryptonButton6.Values.Image = global::Cinema_management.Properties.Resources.lucide__popcorn;
+            this.kryptonButton6.Values.Text = "Food n Beverage";
+            this.kryptonButton6.Click += new System.EventHandler(this.kryptonButton6_Click);
             // 
             // kryptonButton5
             // 
@@ -448,7 +504,7 @@ namespace Cinema_management
             this.pnContent.Location = new System.Drawing.Point(585, 0);
             this.pnContent.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnContent.Name = "pnContent";
-            this.pnContent.Size = new System.Drawing.Size(1712, 936);
+            this.pnContent.Size = new System.Drawing.Size(1293, 867);
             this.pnContent.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnContent.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnContent.TabIndex = 1;
@@ -461,23 +517,38 @@ namespace Cinema_management
             this.pnContentforUC.Location = new System.Drawing.Point(0, 0);
             this.pnContentforUC.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnContentforUC.Name = "pnContentforUC";
-            this.pnContentforUC.Size = new System.Drawing.Size(1712, 936);
+            this.pnContentforUC.Size = new System.Drawing.Size(1293, 867);
             this.pnContentforUC.TabIndex = 1;
             this.pnContentforUC.Resize += new System.EventHandler(this.pnContentforUC_Resize);
+            // 
+            // kryptonCustomPaletteBase1
+            // 
+            this.kryptonCustomPaletteBase1.ButtonSpecs.FormClose.Image = global::Cinema_management.Properties.Resources.ion__close;
+            this.kryptonCustomPaletteBase1.ButtonSpecs.FormClose.ImageStates.ImagePressed = global::Cinema_management.Properties.Resources.zondicons__close_solid;
+            this.kryptonCustomPaletteBase1.ButtonSpecs.FormClose.ImageStates.ImageTracking = global::Cinema_management.Properties.Resources.zondicons__close_solid;
+            this.kryptonCustomPaletteBase1.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.True;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2297, 936);
+            this.ClientSize = new System.Drawing.Size(1732, 867);
             this.Controls.Add(this.pnContent);
             this.Controls.Add(this.pnSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.LocalCustomPalette = this.kryptonCustomPaletteBase1;
             this.Location = new System.Drawing.Point(0, 0);
-            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMain";
+            this.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormMain";
+            this.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
+            this.StateCommon.Border.Rounding = 25F;
+            this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(11)))), ((int)(((byte)(20)))));
+            this.StateCommon.Header.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnSidebar)).EndInit();
@@ -508,5 +579,7 @@ namespace Cinema_management
         private Krypton.Toolkit.KryptonButton btnLogout;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonButton kryptonButton5;
+        private Krypton.Toolkit.KryptonButton kryptonButton6;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonCustomPaletteBase1;
     }
 }
