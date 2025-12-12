@@ -49,7 +49,7 @@ namespace Cinema_management
         private void btnSave_Click(object sender, EventArgs e)
         {
             string finalFileName = currentImageFileName;
-            string desFolder = Path.Combine(Application.StartupPath, "Poster");
+            string desFolder = Path.Combine(Application.StartupPath, "Image");
             if (!string.IsNullOrEmpty(selectedImagePath))
             {
                 string folderChuaFile = Path.GetDirectoryName(selectedImagePath);
@@ -152,7 +152,7 @@ namespace Cinema_management
                     // Load anh
                     if (!string.IsNullOrEmpty(existingFood.imgFood))
                     {
-                        string imagePath = Path.Combine(Application.StartupPath, "Poster", existingFood.imgFood);
+                        string imagePath = Path.Combine(Application.StartupPath, "Image", existingFood.imgFood);
                         if (File.Exists(imagePath))
                         {
                             using(Image img = Image.FromFile(imagePath))
