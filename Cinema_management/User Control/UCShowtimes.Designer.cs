@@ -218,6 +218,40 @@ namespace Cinema_management
             this.btnAdd.Values.Text = "+Add Showtime";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // lblDateRange
+            // 
+            this.lblDateRange.Location = new System.Drawing.Point(900, 35);
+            this.lblDateRange.Margin = new System.Windows.Forms.Padding(6);
+            this.lblDateRange.Name = "lblDateRange";
+            this.lblDateRange.Size = new System.Drawing.Size(323, 49);
+            this.lblDateRange.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateRange.TabIndex = 3;
+            this.lblDateRange.Values.Text = "Tuần: 20/10 - 27/10";
+            // 
+            // btnNextWeek
+            // 
+            this.btnNextWeek.Location = new System.Drawing.Point(1236, 23);
+            this.btnNextWeek.Margin = new System.Windows.Forms.Padding(6);
+            this.btnNextWeek.Name = "btnNextWeek";
+            this.btnNextWeek.Size = new System.Drawing.Size(80, 69);
+            this.btnNextWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextWeek.TabIndex = 2;
+            this.btnNextWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnNextWeek.Values.Text = ">";
+            this.btnNextWeek.Click += new System.EventHandler(this.btnNextWeek_Click);
+            // 
+            // btnPrevWeek
+            // 
+            this.btnPrevWeek.Location = new System.Drawing.Point(808, 23);
+            this.btnPrevWeek.Margin = new System.Windows.Forms.Padding(6);
+            this.btnPrevWeek.Name = "btnPrevWeek";
+            this.btnPrevWeek.Size = new System.Drawing.Size(80, 69);
+            this.btnPrevWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevWeek.TabIndex = 1;
+            this.btnPrevWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnPrevWeek.Values.Text = "<";
+            this.btnPrevWeek.Click += new System.EventHandler(this.btnPrevWeek_Click);
+            // 
             // cbbRoom
             // 
             this.cbbRoom.DropDownWidth = 464;

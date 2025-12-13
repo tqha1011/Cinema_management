@@ -28,6 +28,9 @@ namespace Cinema_management
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
@@ -37,11 +40,9 @@ namespace Cinema_management
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonWrapLabel1 = new Krypton.Toolkit.KryptonWrapLabel();
             this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
-            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonWrapLabel3 = new Krypton.Toolkit.KryptonWrapLabel();
-            this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonWrapLabel4 = new Krypton.Toolkit.KryptonWrapLabel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.chartTopMovies = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lbHotFilm = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2)).BeginInit();
@@ -54,12 +55,8 @@ namespace Cinema_management
             this.kryptonGroup1.Panel.SuspendLayout();
             this.kryptonGroup1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
-            this.kryptonPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
-            this.kryptonPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
-            this.kryptonPanel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTopMovies)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -68,18 +65,18 @@ namespace Cinema_management
             this.kryptonPanel1.Controls.Add(this.kryptonGroup1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(27, 25);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.kryptonPanel1.Size = new System.Drawing.Size(1615, 314);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1610, 314);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kryptonGroup2
             // 
             this.kryptonGroup2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.kryptonGroup2.Location = new System.Drawing.Point(826, 12);
-            this.kryptonGroup2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonGroup2.Location = new System.Drawing.Point(821, 12);
+            this.kryptonGroup2.Margin = new System.Windows.Forms.Padding(4);
             // 
             // kryptonGroup2.Panel
             // 
@@ -98,7 +95,7 @@ namespace Cinema_management
             // kryptonLabel2
             // 
             this.kryptonLabel2.Location = new System.Drawing.Point(323, 128);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(293, 58);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -110,7 +107,7 @@ namespace Cinema_management
             // 
             this.kryptonPictureBox2.Image = global::Cinema_management.Properties.Resources.Work_and_Employment_filmmaking__clapperboard__camera__director__cinema_1;
             this.kryptonPictureBox2.Location = new System.Drawing.Point(36, 4);
-            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPictureBox2.Name = "kryptonPictureBox2";
             this.kryptonPictureBox2.Size = new System.Drawing.Size(279, 251);
             this.kryptonPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -133,7 +130,7 @@ namespace Cinema_management
             // 
             this.kryptonGroup1.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonGroup1.Location = new System.Drawing.Point(13, 12);
-            this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(4);
             // 
             // kryptonGroup1.Panel
             // 
@@ -152,7 +149,7 @@ namespace Cinema_management
             // kryptonLabel1
             // 
             this.kryptonLabel1.Location = new System.Drawing.Point(336, 128);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(265, 66);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -176,78 +173,70 @@ namespace Cinema_management
             // 
             this.kryptonPictureBox1.Image = global::Cinema_management.Properties.Resources.Work_and_Employment_laptop__analytics__professional__office__productivity_1;
             this.kryptonPictureBox1.Location = new System.Drawing.Point(31, 4);
-            this.kryptonPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPictureBox1.Name = "kryptonPictureBox1";
             this.kryptonPictureBox1.Size = new System.Drawing.Size(297, 251);
             this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.kryptonPictureBox1.TabIndex = 0;
             this.kryptonPictureBox1.TabStop = false;
             // 
-            // kryptonPanel2
+            // tableLayoutPanel1
             // 
-            this.kryptonPanel2.Controls.Add(this.kryptonPanel4);
-            this.kryptonPanel2.Controls.Add(this.kryptonPanel3);
-            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel2.Location = new System.Drawing.Point(27, 339);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(1615, 328);
-            this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonPanel2.TabIndex = 1;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.chartTopMovies, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbHotFilm, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(27, 339);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.41748F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.58253F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1610, 328);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // kryptonPanel4
+            // chartTopMovies
             // 
-            this.kryptonPanel4.Controls.Add(this.kryptonWrapLabel3);
-            this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.kryptonPanel4.Location = new System.Drawing.Point(854, 0);
-            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(761, 328);
-            this.kryptonPanel4.TabIndex = 1;
+            chartArea1.Name = "ChartArea1";
+            this.chartTopMovies.ChartAreas.Add(chartArea1);
+            this.chartTopMovies.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Font = new System.Drawing.Font("Nunito", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            legend1.IsTextAutoFit = false;
+            legend1.Name = "Legend1";
+            this.chartTopMovies.Legends.Add(legend1);
+            this.chartTopMovies.Location = new System.Drawing.Point(808, 66);
+            this.chartTopMovies.Name = "chartTopMovies";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartTopMovies.Series.Add(series1);
+            this.chartTopMovies.Size = new System.Drawing.Size(799, 259);
+            this.chartTopMovies.TabIndex = 0;
+            this.chartTopMovies.Text = "chart1";
             // 
-            // kryptonWrapLabel3
+            // lbHotFilm
             // 
-            this.kryptonWrapLabel3.AutoSize = false;
-            this.kryptonWrapLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.kryptonWrapLabel3.Location = new System.Drawing.Point(87, 39);
-            this.kryptonWrapLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.kryptonWrapLabel3.Name = "kryptonWrapLabel3";
-            this.kryptonWrapLabel3.Size = new System.Drawing.Size(567, 95);
-            this.kryptonWrapLabel3.StateCommon.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonWrapLabel3.StateCommon.TextColor = System.Drawing.Color.White;
-            this.kryptonWrapLabel3.Text = "Top 5 phim hot nhất tháng";
-            // 
-            // kryptonPanel3
-            // 
-            this.kryptonPanel3.Controls.Add(this.kryptonWrapLabel4);
-            this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.kryptonPanel3.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(849, 328);
-            this.kryptonPanel3.TabIndex = 0;
-            this.kryptonPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel3_Paint);
-            // 
-            // kryptonWrapLabel4
-            // 
-            this.kryptonWrapLabel4.AutoSize = false;
-            this.kryptonWrapLabel4.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.kryptonWrapLabel4.Location = new System.Drawing.Point(113, 39);
-            this.kryptonWrapLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.kryptonWrapLabel4.Name = "kryptonWrapLabel4";
-            this.kryptonWrapLabel4.Size = new System.Drawing.Size(567, 95);
-            this.kryptonWrapLabel4.StateCommon.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonWrapLabel4.StateCommon.TextColor = System.Drawing.Color.White;
-            this.kryptonWrapLabel4.Text = "Số lượng loại FnB được bán ra";
+            this.lbHotFilm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbHotFilm.Location = new System.Drawing.Point(808, 3);
+            this.lbHotFilm.Name = "lbHotFilm";
+            this.lbHotFilm.Size = new System.Drawing.Size(799, 57);
+            this.lbHotFilm.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(45)))), ((int)(((byte)(64)))));
+            this.lbHotFilm.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbHotFilm.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.lbHotFilm.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.lbHotFilm.TabIndex = 1;
+            this.lbHotFilm.Values.Text = "Top 5 phim hot nhất tháng";
             // 
             // UCTongQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.kryptonPanel2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.kryptonPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCTongQuan";
             this.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
             this.Size = new System.Drawing.Size(1664, 692);
@@ -265,12 +254,9 @@ namespace Cinema_management
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
             this.kryptonGroup1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
-            this.kryptonPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
-            this.kryptonPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
-            this.kryptonPanel3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTopMovies)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -286,10 +272,8 @@ namespace Cinema_management
         private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox2;
         private Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private Krypton.Toolkit.KryptonWrapLabel kryptonWrapLabel2;
-        private Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        private Krypton.Toolkit.KryptonPanel kryptonPanel3;
-        private Krypton.Toolkit.KryptonPanel kryptonPanel4;
-        private Krypton.Toolkit.KryptonWrapLabel kryptonWrapLabel3;
-        private Krypton.Toolkit.KryptonWrapLabel kryptonWrapLabel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTopMovies;
+        private Krypton.Toolkit.KryptonLabel lbHotFilm;
     }
 }

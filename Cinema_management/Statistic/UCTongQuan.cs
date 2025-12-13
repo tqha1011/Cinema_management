@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Globalization;
 using Krypton.Toolkit;
 using System.Windows.Forms.DataVisualization.Charting;
+using Cinema_management.DAL;
 
 namespace Cinema_management
 {
@@ -24,6 +25,52 @@ namespace Cinema_management
         {
             LoadRevenueComparison();
             LoadBestStaff();
+            LoadTop5MoviesChart();
+        }
+        private void LoadTop5MoviesChart()
+        {
+            // 1. Câu lệnh SQL lấy Top 5 phim bán được nhiều vé nhất
+            // Logic: Đếm số lượng vé trong bảng VE, Group theo Tên Phim, Sắp xếp giảm dần
+            string query = @"
+                SELECT TOP 5 p.TENPHIM, COUNT(v.MAVE) as SoVe
+                FROM VE v
+                JOIN SUATCHIEU s ON v.MASUATCHIEU = s.MASUATCHIEU
+                JOIN PHIM p ON s.MAPHIM = p.MAPHIM
+                GROUP BY p.TENPHIM
+                ORDER BY COUNT(v.MAVE) DESC";
+
+            try
+            {
+                DataTable dt = db.ReadData(query);
+
+                // 2. Xóa dữ liệu mẫu mặc định của Chart (nếu có)
+                chartTopMovies.Series[0].Points.Clear();
+
+                // 3. Đổ dữ liệu từ DataTable vào Chart
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    // Đặt tên cho Series (nếu chưa đặt trong Properties)
+                    chartTopMovies.Series[0].Name = "Phim";
+                    chartTopMovies.Series[0]["PieLabelStyle"] = "Disabled";
+                    // Duyệt từng dòng dữ liệu
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        string tenPhim = row["TENPHIM"].ToString();
+                        int soVe = Convert.ToInt32(row["SoVe"]);
+
+                        // Thêm điểm vào biểu đồ
+                        DataPoint point = new DataPoint();
+                        point.SetValueXY(tenPhim, soVe);
+                        point.Label = "";
+
+                        chartTopMovies.Series[0].Points.Add(point);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // MessageBox.Show("Lỗi tải biểu đồ: " + ex.Message);
+            }
         }
         //So sánh doanh thu tháng này với tháng trước
         private void LoadRevenueComparison()
