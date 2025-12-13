@@ -165,7 +165,7 @@ namespace Cinema_management
             // 
             // lblDateRange
             // 
-            this.lblDateRange.Location = new System.Drawing.Point(124, 6);
+            this.lblDateRange.Location = new System.Drawing.Point(900, 35);
             this.lblDateRange.Margin = new System.Windows.Forms.Padding(6);
             this.lblDateRange.Name = "lblDateRange";
             this.lblDateRange.Size = new System.Drawing.Size(323, 49);
@@ -175,7 +175,7 @@ namespace Cinema_management
             // 
             // btnNextWeek
             // 
-            this.btnNextWeek.Location = new System.Drawing.Point(459, 6);
+            this.btnNextWeek.Location = new System.Drawing.Point(1236, 23);
             this.btnNextWeek.Margin = new System.Windows.Forms.Padding(6);
             this.btnNextWeek.Name = "btnNextWeek";
             this.btnNextWeek.Size = new System.Drawing.Size(80, 69);
@@ -187,7 +187,7 @@ namespace Cinema_management
             // 
             // btnPrevWeek
             // 
-            this.btnPrevWeek.Location = new System.Drawing.Point(6, 6);
+            this.btnPrevWeek.Location = new System.Drawing.Point(808, 23);
             this.btnPrevWeek.Margin = new System.Windows.Forms.Padding(6);
             this.btnPrevWeek.Name = "btnPrevWeek";
             this.btnPrevWeek.Size = new System.Drawing.Size(80, 69);
