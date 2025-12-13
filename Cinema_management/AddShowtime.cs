@@ -1,4 +1,4 @@
-﻿using Cinema_management.DAL;
+using Cinema_management.DAL;
 using Cinema_management.MessageboxCustom.Utils;
 using System;
 using System.Collections.Generic;
@@ -24,16 +24,10 @@ namespace Cinema_management
             InitializeComponent();
             db = new Database();
             this.Load += new System.EventHandler(this.AddShowtime_Load);
-            //this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            //this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             this.cbbGenre.SelectedIndexChanged += new System.EventHandler(this.cbbGenre_SelectedIndexChanged);
         }
 
         private void kryptonLabel2_Click(object sender, EventArgs e) { }
-
-        /// <summary>
-        /// Chạy khi UserControl được tải: Cài đặt giao diện và tải ComboBoxes.
-        /// </summary>
         private void AddShowtime_Load(object sender, EventArgs e)
         {
             LoadMovieComboBox();
@@ -54,6 +48,7 @@ namespace Cinema_management
                 kryptonDateTimePicker1.Enabled = false;
                 kryptonDateTimePicker3.Enabled = false;
                 cbbMovieName.Enabled = false;
+                btnCancel.Text = "Xóa suất chiếu";
                 LoadShowtimeForEditing(ShowtimeIDToEdit.Value);
             }
             else
@@ -65,9 +60,6 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Tải dữ liệu của một suất chiếu cụ thể lên form khi ở chế độ "Edit".
-        /// </summary>
         private void LoadShowtimeForEditing(int maSuatChieu)
         {
             try
@@ -100,9 +92,6 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Tải danh sách phim (TENPHIM, MAPHIM) từ CSDL vào ComboBox.
-        /// </summary>
         private void LoadMovieComboBox()
         {
             try
@@ -124,9 +113,6 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Tải danh sách phòng (TENPHONG) đang hoạt động từ CSDL vào ComboBox.
-        /// </summary>
         private void LoadRoomComboBox()
         {
             try
@@ -148,17 +134,11 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Kích hoạt khi thay đổi phòng, gọi hàm UpdateTicketPrice.
-        /// </summary>
         private void cbbGenre_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateTicketPrice();
         }
 
-        /// <summary>
-        /// Tự động truy vấn và điền giá vé cơ bản vào TextBox khi phòng được chọn.
-        /// </summary>
         private void UpdateTicketPrice()
         {
             try
@@ -189,9 +169,6 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Kiểm tra xem một suất chiếu có bị trùng lịch trong phòng hay không.
-        /// </summary>
         private bool IsShowtimeOverlapping(int maPhong, DateTime newStartTime, int newMovieID, int? showtimeIDToExclude)
         {
             try
@@ -242,9 +219,6 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Nút "Save/Update" chính, quyết định gọi ExecuteUpdate hoặc ExecuteInsert.
-        /// </summary>
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (ShowtimeIDToEdit.HasValue)
@@ -257,9 +231,6 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Logic Cập nhật (Update) một suất chiếu (chế độ Edit).
-        /// </summary>
         private void ExecuteUpdate(int maSuatChieu)
         {
             try
@@ -312,9 +283,6 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Logic Thêm mới (Insert) một hoặc nhiều suất chiếu (chế độ Add).
-        /// </summary>
         private void ExecuteInsert()
         {
             try
@@ -395,14 +363,64 @@ namespace Cinema_management
             }
         }
 
-        /// <summary>
-        /// Đóng form popup.
-        /// </summary>
+        private void ExecuteDelete(int maSuatChieu)
+        {
+            try
+            {
+                string checkQuery = "SELECT COUNT(*) FROM VE WHERE MASUATCHIEU = @MaSuatChieu";
+                SqlParameter[] checkParams = { new SqlParameter("@MaSuatChieu", maSuatChieu) };
+
+                DataTable dt = db.ReadData(checkQuery, checkParams);
+                int ticketCount = 0;
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    ticketCount = Convert.ToInt32(dt.Rows[0][0]);
+                }
+
+                if (ticketCount > 0)
+                {
+                    Alert.Show($"Không thể xóa! Đã có {ticketCount} vé được bán cho suất chiếu này.", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                    return;
+                }
+
+                string deleteQuery = "DELETE FROM SUATCHIEU WHERE MASUATCHIEU = @MaSuatChieu";
+                SqlParameter[] deleteParams = { new SqlParameter("@MaSuatChieu", maSuatChieu) };
+
+                if (db.ChangeData(deleteQuery, deleteParams))
+                {
+                    Alert.Show("Xóa suất chiếu thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
+                    if (this.ParentForm != null)
+                    {
+                        this.ParentForm.Close();
+                    }
+                }
+                else
+                {
+                    Alert.Show("Xóa thất bại! Vui lòng thử lại.", MessagboxCustom.AlertMessagebox.AlertType.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                Alert.Show("Lỗi khi xóa dữ liệu: " + ex.Message, MessagboxCustom.AlertMessagebox.AlertType.Error);
+            }
+        }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            if (this.ParentForm != null)
+            if (ShowtimeIDToEdit.HasValue)
             {
-                this.ParentForm.Close();
+                DialogResult r = Alert.ShowWarning("Bạn có chắc chắn muốn xóa suất chiếu này không?\nHành động này không thể hoàn tác.");
+
+                if (r == DialogResult.OK)
+                {
+                    ExecuteDelete(ShowtimeIDToEdit.Value);
+                }
+            }
+            else
+            {
+                if (this.ParentForm != null)
+                {
+                    this.ParentForm.Close();
+                }
             }
         }
     }
