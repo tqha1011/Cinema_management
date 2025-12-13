@@ -42,39 +42,6 @@ namespace Cinema_management.Ticket_Booking
             this.MaPhim = maPhim;
             lbTitle.Text = tenPhim;
 
-            //xử lý đường dẫn ảnh
-            //try
-            //{
-            //    if (!string.IsNullOrEmpty(pathAnh))
-            //    {
-            //        // Nếu đường dẫn là tương đối, ghép nó với thư mục chạy của phần mềm
-            //        // Ví dụ CSDL lưu "images/abc.jpg" -> ghép thành "C:/.../bin/Debug/images/abc.jpg"
-            //        string projectPath = Application.StartupPath;
-            //        string fullPath = System.IO.Path.Combine(projectPath, pathAnh);
-
-            //        if (System.IO.File.Exists(fullPath))
-            //        {
-            //            picPoster.Image = Image.FromFile(fullPath);
-            //            picPoster.SizeMode = PictureBoxSizeMode.StretchImage; // Co giãn ảnh cho vừa khung
-            //        }
-            //        else
-            //        {
-            //            // Nếu không tìm thấy file, có thể load ảnh mặc định hoặc để trống
-            //            // picPoster.Image = Properties.Resources.NoImage; 
-            //            picPoster.Image = null;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        picPoster.Image = null;
-            //    }
-            //}
-            //catch
-            //{
-            //    // Nếu file ảnh bị lỗi định dạng, bỏ qua, không crash app
-            //    picPoster.Image = null;
-            //}
-
             // --- LOAD ẢNH ---
             string fileName = pathAnh;
             if (!string.IsNullOrEmpty(fileName))
