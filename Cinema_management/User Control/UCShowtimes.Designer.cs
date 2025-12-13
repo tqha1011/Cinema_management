@@ -29,10 +29,11 @@ namespace Cinema_management
         private void InitializeComponent()
         {
             this.panelTop = new Krypton.Toolkit.KryptonPanel();
-            this.btnAdd = new Krypton.Toolkit.KryptonButton();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPrevWeek = new Krypton.Toolkit.KryptonButton();
             this.lblDateRange = new Krypton.Toolkit.KryptonLabel();
             this.btnNextWeek = new Krypton.Toolkit.KryptonButton();
-            this.btnPrevWeek = new Krypton.Toolkit.KryptonButton();
+            this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.cbbRoom = new Krypton.Toolkit.KryptonComboBox();
             this.tlpCalendar = new System.Windows.Forms.TableLayoutPanel();
             this.lblHeaderSun = new System.Windows.Forms.Label();
@@ -49,12 +50,11 @@ namespace Cinema_management
             this.flpSat = new System.Windows.Forms.FlowLayoutPanel();
             this.flpSun = new System.Windows.Forms.FlowLayoutPanel();
             this.lblHeaderMon = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.panelTop)).BeginInit();
             this.panelTop.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbbRoom)).BeginInit();
             this.tlpCalendar.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop
@@ -69,6 +69,61 @@ namespace Cinema_management
             this.panelTop.Size = new System.Drawing.Size(2400, 115);
             this.panelTop.StateCommon.Color1 = System.Drawing.Color.White;
             this.panelTop.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.89117F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.10883F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.Controls.Add(this.btnPrevWeek, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnNextWeek, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblDateRange, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(883, 23);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(579, 81);
+            this.tableLayoutPanel1.TabIndex = 22;
+            // 
+            // btnPrevWeek
+            // 
+            this.btnPrevWeek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPrevWeek.Location = new System.Drawing.Point(6, 6);
+            this.btnPrevWeek.Margin = new System.Windows.Forms.Padding(6);
+            this.btnPrevWeek.Name = "btnPrevWeek";
+            this.btnPrevWeek.Size = new System.Drawing.Size(80, 69);
+            this.btnPrevWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevWeek.TabIndex = 1;
+            this.btnPrevWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnPrevWeek.Values.Text = "<";
+            this.btnPrevWeek.Click += new System.EventHandler(this.btnPrevWeek_Click);
+            // 
+            // lblDateRange
+            // 
+            this.lblDateRange.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDateRange.Location = new System.Drawing.Point(98, 6);
+            this.lblDateRange.Margin = new System.Windows.Forms.Padding(6);
+            this.lblDateRange.Name = "lblDateRange";
+            this.lblDateRange.Size = new System.Drawing.Size(383, 69);
+            this.lblDateRange.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblDateRange.TabIndex = 3;
+            this.lblDateRange.Values.Text = "Tuần: 20/10 - 27/10";
+            // 
+            // btnNextWeek
+            // 
+            this.btnNextWeek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnNextWeek.Location = new System.Drawing.Point(493, 6);
+            this.btnNextWeek.Margin = new System.Windows.Forms.Padding(6);
+            this.btnNextWeek.Name = "btnNextWeek";
+            this.btnNextWeek.Size = new System.Drawing.Size(80, 69);
+            this.btnNextWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextWeek.TabIndex = 2;
+            this.btnNextWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnNextWeek.Values.Text = ">";
+            this.btnNextWeek.Click += new System.EventHandler(this.btnNextWeek_Click);
             // 
             // btnAdd
             // 
@@ -162,40 +217,6 @@ namespace Cinema_management
             this.btnAdd.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnAdd.Values.Text = "+Add Showtime";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // lblDateRange
-            // 
-            this.lblDateRange.Location = new System.Drawing.Point(124, 6);
-            this.lblDateRange.Margin = new System.Windows.Forms.Padding(6);
-            this.lblDateRange.Name = "lblDateRange";
-            this.lblDateRange.Size = new System.Drawing.Size(323, 49);
-            this.lblDateRange.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateRange.TabIndex = 3;
-            this.lblDateRange.Values.Text = "Tuần: 20/10 - 27/10";
-            // 
-            // btnNextWeek
-            // 
-            this.btnNextWeek.Location = new System.Drawing.Point(459, 6);
-            this.btnNextWeek.Margin = new System.Windows.Forms.Padding(6);
-            this.btnNextWeek.Name = "btnNextWeek";
-            this.btnNextWeek.Size = new System.Drawing.Size(80, 69);
-            this.btnNextWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextWeek.TabIndex = 2;
-            this.btnNextWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnNextWeek.Values.Text = ">";
-            this.btnNextWeek.Click += new System.EventHandler(this.btnNextWeek_Click);
-            // 
-            // btnPrevWeek
-            // 
-            this.btnPrevWeek.Location = new System.Drawing.Point(6, 6);
-            this.btnPrevWeek.Margin = new System.Windows.Forms.Padding(6);
-            this.btnPrevWeek.Name = "btnPrevWeek";
-            this.btnPrevWeek.Size = new System.Drawing.Size(80, 69);
-            this.btnPrevWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevWeek.TabIndex = 1;
-            this.btnPrevWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnPrevWeek.Values.Text = "<";
-            this.btnPrevWeek.Click += new System.EventHandler(this.btnPrevWeek_Click);
             // 
             // cbbRoom
             // 
@@ -420,24 +441,6 @@ namespace Cinema_management
             this.lblHeaderMon.Text = "Mon";
             this.lblHeaderMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.0101F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.9899F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
-            this.tableLayoutPanel1.Controls.Add(this.btnPrevWeek, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblDateRange, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnNextWeek, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(823, 23);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(545, 81);
-            this.tableLayoutPanel1.TabIndex = 22;
-            // 
             // UCShowtimes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -452,11 +455,11 @@ namespace Cinema_management
             ((System.ComponentModel.ISupportInitialize)(this.panelTop)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbbRoom)).EndInit();
             this.tlpCalendar.ResumeLayout(false);
             this.tlpCalendar.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
