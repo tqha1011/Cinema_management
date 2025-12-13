@@ -49,18 +49,18 @@ namespace Cinema_management
             this.flpSat = new System.Windows.Forms.FlowLayoutPanel();
             this.flpSun = new System.Windows.Forms.FlowLayoutPanel();
             this.lblHeaderMon = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.panelTop)).BeginInit();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbbRoom)).BeginInit();
             this.tlpCalendar.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.tableLayoutPanel1);
             this.panelTop.Controls.Add(this.btnAdd);
-            this.panelTop.Controls.Add(this.lblDateRange);
-            this.panelTop.Controls.Add(this.btnNextWeek);
-            this.panelTop.Controls.Add(this.btnPrevWeek);
             this.panelTop.Controls.Add(this.cbbRoom);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
@@ -165,17 +165,17 @@ namespace Cinema_management
             // 
             // lblDateRange
             // 
-            this.lblDateRange.Location = new System.Drawing.Point(894, 23);
+            this.lblDateRange.Location = new System.Drawing.Point(124, 6);
             this.lblDateRange.Margin = new System.Windows.Forms.Padding(6);
             this.lblDateRange.Name = "lblDateRange";
-            this.lblDateRange.Size = new System.Drawing.Size(324, 49);
+            this.lblDateRange.Size = new System.Drawing.Size(323, 49);
             this.lblDateRange.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateRange.TabIndex = 3;
             this.lblDateRange.Values.Text = "Tuần: 20/10 - 27/10";
             // 
             // btnNextWeek
             // 
-            this.btnNextWeek.Location = new System.Drawing.Point(1326, 15);
+            this.btnNextWeek.Location = new System.Drawing.Point(459, 6);
             this.btnNextWeek.Margin = new System.Windows.Forms.Padding(6);
             this.btnNextWeek.Name = "btnNextWeek";
             this.btnNextWeek.Size = new System.Drawing.Size(80, 69);
@@ -187,7 +187,7 @@ namespace Cinema_management
             // 
             // btnPrevWeek
             // 
-            this.btnPrevWeek.Location = new System.Drawing.Point(737, 15);
+            this.btnPrevWeek.Location = new System.Drawing.Point(6, 6);
             this.btnPrevWeek.Margin = new System.Windows.Forms.Padding(6);
             this.btnPrevWeek.Name = "btnPrevWeek";
             this.btnPrevWeek.Size = new System.Drawing.Size(80, 69);
@@ -420,6 +420,24 @@ namespace Cinema_management
             this.lblHeaderMon.Text = "Mon";
             this.lblHeaderMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.0101F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.9899F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel1.Controls.Add(this.btnPrevWeek, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblDateRange, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnNextWeek, 2, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(823, 23);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(545, 81);
+            this.tableLayoutPanel1.TabIndex = 22;
+            // 
             // UCShowtimes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -437,6 +455,8 @@ namespace Cinema_management
             ((System.ComponentModel.ISupportInitialize)(this.cbbRoom)).EndInit();
             this.tlpCalendar.ResumeLayout(false);
             this.tlpCalendar.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -464,5 +484,6 @@ namespace Cinema_management
         private System.Windows.Forms.FlowLayoutPanel flpSat;
         private System.Windows.Forms.FlowLayoutPanel flpSun;
         private Krypton.Toolkit.KryptonButton btnAdd;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
