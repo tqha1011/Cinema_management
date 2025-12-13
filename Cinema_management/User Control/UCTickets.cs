@@ -10,13 +10,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using Cinema_management.Ticket_Booking;
+using Cinema_management.MessageboxCustom.Utils;
 
 namespace Cinema_management
 {
-
     public partial class UCTickets : UserControl
     {
         public event EventHandler OnBack;
+        public event Action<BookingInfo> OnContinueToFood;
+
+        public int maSuatChieu;
+        private DateTime _thoiGianChieu;
 
         string connectionString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
 
@@ -25,7 +30,7 @@ namespace Cinema_management
             public string TenPhim;
             public string TenPhong;
             public DateTime ThoiGianChieu;
-            public int ThoiLuongPhim; // Đơn vị: phút
+            public int ThoiLuongPhim; //phút
             public decimal GiaVe;
         }
 
@@ -54,7 +59,6 @@ namespace Cinema_management
         {
             List<string> dsGheDaBan = new List<string>();
 
-            // Câu query dựa trên ERD của bạn
             // Lấy TENGHE từ bảng GHE, qua bảng VE, lọc theo MASUATCHIEU
             string query = @"SELECT T.TENGHE 
                      FROM GHE AS T
@@ -87,16 +91,13 @@ namespace Cinema_management
             return dsGheDaBan;
         }
 
-        /// <summary>
         /// Lấy tất cả thông tin chi tiết của một suất chiếu từ CSDL.
-        /// </summary>
-        /// <param name="maSuatChieu">Mã của suất chiếu</param>
         /// <returns>Một struct SuatChieuInfo chứa tất cả dữ liệu</returns>
         private SuatChieuInfo LayThongTinSuatChieu(int maSuatChieu)
         {
             SuatChieuInfo info = new SuatChieuInfo();
 
-            // Query này JOIN 4 bảng để lấy tất cả thông tin cần thiết
+            // Query JOIN 4 bảng để lấy tất cả thông tin cần thiết
             string query = @"SELECT 
                         P.TENPHIM, 
                         PC.TENPHONG, 
@@ -137,12 +138,12 @@ namespace Cinema_management
             return info;
         }
 
-        /// <summary>
-        /// Tạo và hiển thị sơ đồ ghế cho một suất chiếu.
-        /// </summary>
+        //// Tạo và hiển thị sơ đồ ghế cho một suất chiếu.
         /// <param name="maSuatChieu">Mã suất chiếu cần hiển thị</param>
         public void LoadSeats(int maSuatChieu)
         {
+            this.maSuatChieu = maSuatChieu;
+
             //Xóa các ghế cũ và danh sách đang chọn
             pnlSeats.Controls.Clear();
             DSGheDangChon.Clear();
@@ -150,6 +151,7 @@ namespace Cinema_management
             //Lấy giá vé từ CSDL
             SuatChieuInfo info = LayThongTinSuatChieu(maSuatChieu);
             this.GiaVe = info.GiaVe;
+            this._thoiGianChieu = info.ThoiGianChieu;
 
             // Cập nhật thông tin UI
             DateTime thoiGianBatDau = info.ThoiGianChieu;
@@ -167,8 +169,8 @@ namespace Cinema_management
             //Layout sơ đồ ghế
             int Row = 8;
             int Col = 14;
-            int btnWidth = 90;
-            int btnHeight = 90;
+            int btnWidth = 100;
+            int btnHeight = 100;
             int spacing = 20;
             int startX = 60;
             int startY = 40;
@@ -193,11 +195,11 @@ namespace Cinema_management
                     btnGhe.Location = new Point(startX + (j * (btnWidth + spacing)),
                                                 startY + (i * (btnHeight + spacing)));
 
-                    // Thiết lập_Style chung cho KryptonButton
+                    // Thiết lập Style chung cho Button
                     btnGhe.PaletteMode = PaletteMode.ProfessionalSystem;
                     btnGhe.StateCommon.Border.DrawBorders = (PaletteDrawBorders.All);
                     btnGhe.StateCommon.Border.Width = 1;
-                    btnGhe.StateCommon.Border.Rounding = 5; // Bo góc nhẹ
+                    btnGhe.StateCommon.Border.Rounding = 5; // Bo góc 
 
                     // Kiểm tra trạng thái ghế
                     if (dsGheDaBan.Contains(tenGhe))
@@ -230,9 +232,7 @@ namespace Cinema_management
             CapNhatThongTinVe();
         }
 
-        /// <summary>
-        /// Được gọi khi người dùng click vào một ghế CÒN TRỐNG.
-        /// </summary>
+        //// Được gọi khi người dùng click vào một ghế CÒN TRỐNG.
         private void BtnGhe_Click(object sender, EventArgs e)
         {
             KryptonButton btnGheDaChon = sender as KryptonButton;
@@ -268,13 +268,9 @@ namespace Cinema_management
                 CapNhatThongTinVe();
         }
 
-        /// <summary>
-        /// Cập nhật các Label hiển thị ghế đã chọn và tổng tiền.
-        /// </summary>
+        //// Cập nhật các Label hiển thị ghế đã chọn và tổng tiền.
         private void CapNhatThongTinVe()
         {
-            //decimal giaVe = 45000;
-
             var tenCacGhe = DSGheDangChon.Select(btn => btn.Tag.ToString())
                                             .OrderBy(ten => ten.Length)
                                             .ThenBy(ten => ten);
@@ -318,45 +314,33 @@ namespace Cinema_management
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
-            // 1. Kiểm tra xem có_ghế nào được chọn không
+            // Kiểm tra xem có_ghế nào được chọn không
             if (DSGheDangChon.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn ít nhất một ghế để tiếp tục.",
-                                "Thông báo",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
+                Alert.Show("Vui lòng chọn ít nhất một ghế để tiếp tục.", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 return;
             }
 
-            // 2. Cập nhật lại_số_ghế đã bán 
+            // Cập nhật lại_số_ghế đã bán 
             this.CountGheDaBan += DSGheDangChon.Count;
             CapNhatSoGhe(); // Cập nhật label đếm số ghế
 
-            // 3. Đổi trạng thái các ghế đang chọn thành "Đã bán"
-            foreach (KryptonButton btnGhe in DSGheDangChon)
+            //// TẠO GIỎ HÀNG
+            BookingInfo curBooking = new BookingInfo();
+            curBooking.TenPhim = lblMvName.Text;
+            curBooking.TenPhong = lblRoomName.Text;
+            curBooking.ThoiGianChieu = this._thoiGianChieu;
+            curBooking.MaSuatChieu = this.maSuatChieu;
+            curBooking.GiaVe = this.GiaVe;
+            curBooking.MaNhanVien = 1; //////////////////// ID NV đang đăng nhập
+
+            foreach(var btn in DSGheDangChon)
             {
-                // Đổi màu nền
-                btnGhe.StateCommon.Back.Color1 = colorGheDaDat;
-                btnGhe.StateCommon.Back.Color2 = colorGheDaDat;
-                btnGhe.StateCommon.Border.Color1 = colorGheDaDat;
-                // Đổi màu chữ
-                btnGhe.StateCommon.Content.ShortText.Color1 = chuGheDaDat;
-
-                // Vô hiệu hóa nút
-                btnGhe.Enabled = false;
-
-                // Gỡ sự kiện Click
-                btnGhe.Click -= BtnGhe_Click;
+                curBooking.DanhSachGhe.Add(btn.Tag.ToString());
             }
 
-            // 4. Xóa danh sách ghế đang chọn
-            DSGheDangChon.Clear();
-
-            // 5. Cập nhật lại thông tin vé 
-            CapNhatThongTinVe();
-
-            //////////////////////////// Hiện form thanh toan ở đây //////////////////////
-
+            ////// Hiện form đồ ăn /////
+            OnContinueToFood?.Invoke(curBooking);
         }
 
         private void btnBack_Click(object sender, EventArgs e)

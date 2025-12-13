@@ -34,7 +34,7 @@
             this.panelMM = new Krypton.Toolkit.KryptonPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowPanelMovies = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucMovieCard1 = new Cinema_management.Ticket_Booking.UCMovieCard();
+            //this.ucMovieCard1 = new Cinema_management.Ticket_Booking.UCMovieCard();
             ((System.ComponentModel.ISupportInitialize)(this.panelMM)).BeginInit();
             this.panelMM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,7 +111,7 @@
             // flowPanelMovies
             // 
             this.flowPanelMovies.AutoScroll = true;
-            this.flowPanelMovies.Controls.Add(this.ucMovieCard1);
+            //this.flowPanelMovies.Controls.Add(this.ucMovieCard1);
             this.flowPanelMovies.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowPanelMovies.Location = new System.Drawing.Point(0, 224);
             this.flowPanelMovies.Margin = new System.Windows.Forms.Padding(4);
@@ -122,14 +122,14 @@
             // 
             // ucMovieCard1
             // 
-            this.ucMovieCard1.BackColor = System.Drawing.Color.White;
-            this.ucMovieCard1.Location = new System.Drawing.Point(80, 62);
-            this.ucMovieCard1.MaPhim = 0;
-            this.ucMovieCard1.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.ucMovieCard1.Name = "ucMovieCard1";
-            this.ucMovieCard1.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.ucMovieCard1.Size = new System.Drawing.Size(307, 425);
-            this.ucMovieCard1.TabIndex = 0;
+            //this.ucMovieCard1.BackColor = System.Drawing.Color.White;
+            //this.ucMovieCard1.Location = new System.Drawing.Point(80, 62);
+            //this.ucMovieCard1.MaPhim = 0;
+            //this.ucMovieCard1.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            //this.ucMovieCard1.Name = "ucMovieCard1";
+            //this.ucMovieCard1.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            //this.ucMovieCard1.Size = new System.Drawing.Size(307, 425);
+            //this.ucMovieCard1.TabIndex = 0;
             // 
             // UCPhimDangChieu
             // 
@@ -158,6 +158,6 @@
         private Krypton.Toolkit.KryptonDateTimePicker dtpSearchDate;
         private Krypton.Toolkit.KryptonPanel panelMM;
         private System.Windows.Forms.FlowLayoutPanel flowPanelMovies;
-        private UCMovieCard ucMovieCard1;
+        //private UCMovieCard ucMovieCard1;
     }
 }

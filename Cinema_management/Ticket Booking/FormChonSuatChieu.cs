@@ -24,6 +24,9 @@ namespace Cinema_management.Ticket_Booking
         public int SelectedMaSuatChieu { get; set; } //biến trả về kết quả
         string connectionString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
 
+        // Đường dẫn thư mục chứa ảnh (Ngang hàng với file .csproj và Form1.cs)
+        // Lưu ý: Dùng Path.GetFullPath để chuẩn hóa đường dẫn
+        private string _posterFolderPath = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\Posters"));
 
         public FormChonSuatChieu(int maPhim, DateTime ngayChieu) //constructor
         {
@@ -59,22 +62,14 @@ namespace Cinema_management.Ticket_Booking
 
                         //xử lý ảnh
                         string imagePath = reader["ANHPHIM"] != DBNull.Value ? reader["ANHPHIM"].ToString() : "";
-
-                        //kiem tra file co ton tai khong
-                        if (!string.IsNullOrEmpty(imagePath))
+                        string fileName = imagePath;
+                        if (!string.IsNullOrEmpty(fileName))
                         {
-                            // Tạo đường dẫn tuyệt đối giống bên trên
-                            string fullPath = System.IO.Path.Combine(Application.StartupPath, imagePath);
-
-                            if (System.IO.File.Exists(fullPath))
+                            string fullPath = Path.Combine(_posterFolderPath, fileName);
+                            if (File.Exists(fullPath))
                             {
                                 picPoster.Image = Image.FromFile(fullPath);
-                                picPoster.SizeMode = PictureBoxSizeMode.StretchImage;
-                            }
-                            else
-                            {
-                                // File không tồn tại -> Bỏ qua, không load ảnh
-                                picPoster.Image = null;
+                                picPoster.SizeMode = PictureBoxSizeMode.Zoom;
                             }
                         }
                     }
@@ -135,12 +130,13 @@ namespace Cinema_management.Ticket_Booking
                         // Lưu Mã suất chiếu vào Tag để dùng sau này
                         btnTime.Tag = maSuatChieu;
 
-                        btnTime.Size = new Size(100, 45);
+                        btnTime.Size = new Size(180, 60);
                         btnTime.StateCommon.Back.Color1 = Color.FromArgb(138, 43, 226); // Màu tím (BlueViolet)
                         btnTime.StateCommon.Back.Color2 = Color.FromArgb(138, 43, 226);
                         btnTime.StateCommon.Content.ShortText.Color1 = Color.White;
-                        btnTime.StateCommon.Content.ShortText.Font = new Font("Arial", 12, FontStyle.Bold);
-                        btnTime.Values.ExtraText = tenPhong; // Hiện nhỏ tên phòng ở dưới (nếu muốn)
+                        btnTime.StateCommon.Content.ShortText.Font = new Font("Nunito", 14, FontStyle.Bold);
+                        btnTime.OverrideDefault.Back.Color1 = Color.FromArgb(138, 43, 226);
+                        btnTime.OverrideDefault.Back.Color2 = Color.FromArgb(138, 43, 226);
 
                         btnTime.Click += BtnTime_Click;
                         flowPanelSuatChieu.Controls.Add(btnTime);
@@ -174,5 +170,6 @@ namespace Cinema_management.Ticket_Booking
         {
 
         }
+
     }
 }

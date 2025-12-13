@@ -16,5 +16,12 @@ namespace Cinema_management.Ticket_Booking
         {
             InitializeComponent();
         }
+
+        public void SetData (string name, int quantity, decimal price)
+        {
+            lblTenMon.Text = name;
+            lblSoLuong.Text = "SL: " + quantity;
+            lblGia.Text = (price).ToString("N0") + " VNĐ";
+        }
     }
 }

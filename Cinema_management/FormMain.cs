@@ -103,7 +103,48 @@ namespace Cinema_management
             // Hàm này chính là hàm sự kiện click của nút "Phim đang chiếu"
             ucGhe.OnBack += (s, ev) => kryptonButton4_Click(null, null);
 
+            // Khi UCTickets báo ra sự kiện OnContinueToFood -> gọi ChuyenSangManHnhFod
+            ucGhe.OnContinueToFood += ChuyenSangManHinhFood;
+
             pnContentforUC.Controls.Add(ucGhe);
+        }
+
+        private void ChuyenSangManHinhFood(BookingInfo curBooking)
+        {
+            pnContentforUC.Controls.Clear();
+
+            //Khởi tạo UC chọn đồ ăn
+            UCChonDoAn ucFood = new UCChonDoAn();
+            ucFood.Dock = DockStyle.Fill;
+
+            //truyền dữ liệu giỏ hàng vào
+            ucFood.SetBookingData(curBooking);
+
+            //nút back
+            ucFood.OnBack += (s, e) => ChuyenSangScreenChonGhe(curBooking.MaSuatChieu);
+
+            ucFood.OnContinueToCheckout += ChuyenSangManHinhCheckOut;
+
+            pnContentforUC.Controls.Add(ucFood);
+        }
+
+        private void ChuyenSangManHinhCheckOut(BookingInfo curBooking)
+        {
+            pnContentforUC.Controls.Clear();
+
+            //khởi tạo UC Thanh Toán
+            UCThanhToanHoaDon ucCheckout = new UCThanhToanHoaDon();
+            ucCheckout.Dock = DockStyle.Fill;
+
+            ucCheckout.SetBookingData(curBooking);
+
+            // nút back
+            ucCheckout.OnBack += (s, e) => ChuyenSangManHinhFood(curBooking);
+
+            //Khi thanh toán thành công -> quay về màn hình danh sách phim ban đầu
+            ucCheckout.OnPayMentSuccess += (s, e) => kryptonButton4_Click(null, null);
+
+            pnContentforUC.Controls.Add(ucCheckout);
         }
 
         private void FormMain_Load(object sender, System.EventArgs e)
