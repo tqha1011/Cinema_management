@@ -21,6 +21,11 @@ namespace Cinema_management
         public UCPasswordRecovery()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.UserPaint |
+                  ControlStyles.AllPaintingInWmPaint |
+                  ControlStyles.OptimizedDoubleBuffer, true);
+            this.UpdateStyles();
             txtPassNew.PasswordChar = '●';
             txtPassNew.Visible = false;
             lblEmailExist.Visible = false;
@@ -98,7 +103,7 @@ namespace Cinema_management
                     if(this.ParentForm is FormLogin parent)
                     {
                         serverOTP = "";
-                        parent.ShowUserControl(new UCLogin());
+                        parent.ShowUserControl(new UCLogin(),true);
                     }
                 }
                 else
@@ -113,10 +118,20 @@ namespace Cinema_management
             if(txtPassNew.PasswordChar == '●')
             {
                 txtPassNew.PasswordChar = '\0';
+                btnShowHide.Image = Properties.Resources.iconeyeclose_resize;
             }
             else
             {
                 txtPassNew.PasswordChar = '●';
+                btnShowHide.Image = Properties.Resources.iconoir__eye;
+            }
+        }
+
+        private void ptbIconBack_Click(object sender, EventArgs e)
+        {
+            if (this.ParentForm is FormLogin parent)
+            {
+                parent.ShowUserControl(new UCLogin());
             }
         }
     }
