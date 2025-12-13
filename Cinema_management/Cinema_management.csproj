@@ -77,11 +77,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Food and Beverage\AddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Food and Beverage\AddFood.Designer.cs">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddShowtime.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AddShowtime.Designer.cs">
       <DependentUpon>AddShowtime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food and Beverage\Food.cs" />
+    <Compile Include="Food and Beverage\FoodLogic.cs" />
+    <Compile Include="FormNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNV.Designer.cs">
+      <DependentUpon>FormNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Log in\AuthLogic.cs" />
     <Compile Include="Log in\EmailServices.cs" />
@@ -132,6 +146,11 @@
     <Compile Include="Movie\Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RoomCardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -170,11 +189,19 @@
     <Compile Include="Log in\UCLogin.Designer.cs">
       <DependentUpon>UCLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ticket Booking\BookingInfo.cs" />
     <Compile Include="Ticket Booking\FormChonSuatChieu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ticket Booking\FormChonSuatChieu.Designer.cs">
       <DependentUpon>FormChonSuatChieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\TicketService.cs" />
+    <Compile Include="Ticket Booking\UCHoaDonFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCHoaDonFood.Designer.cs">
+      <DependentUpon>UCHoaDonFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Ticket Booking\UCMovieCard.cs">
       <SubType>UserControl</SubType>
@@ -187,6 +214,60 @@
     </Compile>
     <Compile Include="Ticket Booking\UCPhimDangChieu.Designer.cs">
       <DependentUpon>UCPhimDangChieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\UCThongKeMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistic\UCThongKeMain.Designer.cs">
+      <DependentUpon>UCThongKeMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\UCDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistic\UCDoanhThu.Designer.cs">
+      <DependentUpon>UCDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\UCTongQuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistic\UCTongQuan.Designer.cs">
+      <DependentUpon>UCTongQuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food and Beverage\UCQuanLyDoAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food and Beverage\UCQuanLyDoAn.Designer.cs">
+      <DependentUpon>UCQuanLyDoAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food and Beverage\UCFoodCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food and Beverage\UCFoodCard.Designer.cs">
+      <DependentUpon>UCFoodCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\UCChonDoAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCChonDoAn.Designer.cs">
+      <DependentUpon>UCChonDoAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\UCOrderFoodCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCOrderFoodCard.Designer.cs">
+      <DependentUpon>UCOrderFoodCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\UCThanhToanFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCThanhToanFood.Designer.cs">
+      <DependentUpon>UCThanhToanFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Booking\UCThanhToanHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ticket Booking\UCThanhToanHoaDon.Designer.cs">
+      <DependentUpon>UCThanhToanHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UCMovies1.cs">
       <SubType>UserControl</SubType>
@@ -233,6 +314,12 @@
     <EmbeddedResource Include="AddShowtime.resx">
       <DependentUpon>AddShowtime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Food and Beverage\AddFood.resx">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNV.resx">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Log in\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +343,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -282,14 +370,44 @@
     <EmbeddedResource Include="Log in\UCLogin.resx">
       <DependentUpon>UCLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\UCThongKeMain.resx">
+      <DependentUpon>UCThongKeMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ticket Booking\FormChonSuatChieu.resx">
       <DependentUpon>FormChonSuatChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCChonDoAn.resx">
+      <DependentUpon>UCChonDoAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCHoaDonFood.resx">
+      <DependentUpon>UCHoaDonFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ticket Booking\UCMovieCard.resx">
       <DependentUpon>UCMovieCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ticket Booking\UCPhimDangChieu.resx">
       <DependentUpon>UCPhimDangChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\UCDoanhThu.resx">
+      <DependentUpon>UCDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\UCTongQuan.resx">
+      <DependentUpon>UCTongQuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food and Beverage\UCQuanLyDoAn.resx">
+      <DependentUpon>UCQuanLyDoAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food and Beverage\UCFoodCard.resx">
+      <DependentUpon>UCFoodCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCOrderFoodCard.resx">
+      <DependentUpon>UCOrderFoodCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCThanhToanFood.resx">
+      <DependentUpon>UCThanhToanFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Booking\UCThanhToanHoaDon.resx">
+      <DependentUpon>UCThanhToanHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UCMovies1.resx">
       <DependentUpon>UCMovies1.cs</DependentUpon>
@@ -326,6 +444,34 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\zondicons--close-solid.png" />
+    <None Include="Resources\pajamas--close.png" />
+    <None Include="Resources\ion--close.png" />
+    <None Include="Resources\fluent--maximize-20-filled.png" />
+    <None Include="Resources\fluent--person-48-filled.png" />
+    <None Include="Resources\fluent--person-48-filled %281%29.png" />
+    <None Include="Resources\lets-icons--arrow-drop-down.png" />
+    <None Include="Resources\fluent--person-48-filled %282%29.png" />
+    <None Include="Resources\mdi--logout %283%29.png" />
+    <None Include="Resources\mdi--logout %284%29.png" />
+    <None Include="Resources\mdi--logout %285%29.png" />
+    <None Include="Resources\fluent--person-32-filled.png" />
+    <Content Include="Resources\popcorn_drink_logo_resize.jpg" />
+    <None Include="Resources\lucide--popcorn.png" />
+    <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />
+    <None Include="Resources\Work and Employment_laptop, analytics, professional, office, productivity 1.png" />
+    <None Include="Resources\Work and Employment_laptop, analytics, professional, office, productivity.png" />
+    <None Include="Resources\nrk--arrow-dropdown.png" />
+    <None Include="Resources\line-md--logout %281%291.png" />
+    <None Include="Resources\line-md--logout.png" />
+    <None Include="Resources\line-md--logout %281%29.png" />
+    <None Include="Resources\mingcute--ticket-fill1.png" />
+    <None Include="Resources\tdesign--time-filled.png" />
+    <None Include="Resources\mingcute--ticket-fill.png" />
+    <None Include="Resources\material-symbols--person-rounded %281%29.png" />
+    <None Include="Resources\jam--movie %282%29.png" />
+    <None Include="Resources\ri--dashboard-fill %281%29.png" />
+    <None Include="Resources\ri--dashboard-fill %282%29.png" />
     <None Include="Resources\mdi--logout %282%29.png" />
     <None Include="Resources\mdi--logout.png" />
     <None Include="Resources\material-symbols--mail-rounded.png" />
@@ -334,6 +480,10 @@
     <None Include="Resources\check.png" />
     <None Include="Resources\error.png" />
     <None Include="Resources\iconoir--eye.png" />
+    <Content Include="Image\bap_phomaiver2-removebg-preview.png" />
+    <Content Include="Image\bap_rangcaramel-removebg-preview.png" />
+    <Content Include="Image\bap_socola-removebg-preview.png" />
+    <Content Include="Image\nuoc_uong-removebg-preview.png" />
     <Content Include="Posters\conan.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -346,6 +496,19 @@
     <Content Include="Posters\your-name.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\icon-park-solid--movie %281%29.png" />
+    <None Include="Resources\icon-park-solid--movie.png" />
+    <None Include="Resources\clarity--analytics-solid.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\doanh thu.png" />
+    <None Include="Resources\combo.png" />
+    <None Include="Resources\gg--add.png" />
+    <None Include="Resources\fluent--subtract-circle-12-regular.png" />
+    <None Include="Resources\backgr popcorn.png" />
+    <None Include="Resources\backgr-drink.png" />
+    <None Include="Resources\fluent--subtract-circle-24-regular.png" />
+    <None Include="Resources\carbon--add-filled.png" />
+    <None Include="Resources\fluent--subtract-circle-16-filled.png" />
     <Content Include="Resources\information.png" />
     <None Include="Resources\warning.png" />
   </ItemGroup>
