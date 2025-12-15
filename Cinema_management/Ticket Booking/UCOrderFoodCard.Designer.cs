@@ -43,15 +43,14 @@
             // 
             this.kryptonGroup1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonGroup1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             // 
             // kryptonGroup1.Panel
             // 
             this.kryptonGroup1.Panel.Controls.Add(this.lblGia);
             this.kryptonGroup1.Panel.Controls.Add(this.lblTenMon);
             this.kryptonGroup1.Panel.Controls.Add(this.picPoster);
-            this.kryptonGroup1.Panel.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.kryptonGroup1.Size = new System.Drawing.Size(373, 504);
+            this.kryptonGroup1.Panel.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
+            this.kryptonGroup1.Size = new System.Drawing.Size(249, 323);
             this.kryptonGroup1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonGroup1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(141)))));
             this.kryptonGroup1.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
@@ -65,10 +64,9 @@
             // 
             // lblGia
             // 
-            this.lblGia.Location = new System.Drawing.Point(71, 339);
-            this.lblGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblGia.Location = new System.Drawing.Point(47, 217);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(200, 58);
+            this.lblGia.Size = new System.Drawing.Size(128, 37);
             this.lblGia.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblGia.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGia.TabIndex = 3;
@@ -76,10 +74,9 @@
             // 
             // lblTenMon
             // 
-            this.lblTenMon.Location = new System.Drawing.Point(84, 280);
-            this.lblTenMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTenMon.Location = new System.Drawing.Point(56, 179);
             this.lblTenMon.Name = "lblTenMon";
-            this.lblTenMon.Size = new System.Drawing.Size(175, 58);
+            this.lblTenMon.Size = new System.Drawing.Size(112, 37);
             this.lblTenMon.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblTenMon.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenMon.TabIndex = 2;
@@ -88,23 +85,23 @@
             // picPoster
             // 
             this.picPoster.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picPoster.Location = new System.Drawing.Point(27, 25);
-            this.picPoster.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picPoster.Location = new System.Drawing.Point(18, 16);
             this.picPoster.Name = "picPoster";
-            this.picPoster.Size = new System.Drawing.Size(297, 248);
+            this.picPoster.Size = new System.Drawing.Size(191, 159);
+            this.picPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPoster.TabIndex = 1;
             this.picPoster.TabStop = false;
             // 
             // UCOrderFoodCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.kryptonGroup1);
-            this.Margin = new System.Windows.Forms.Padding(40, 38, 40, 38);
-            this.MinimumSize = new System.Drawing.Size(373, 504);
+            this.Margin = new System.Windows.Forms.Padding(27, 24, 27, 24);
+            this.MinimumSize = new System.Drawing.Size(249, 323);
             this.Name = "UCOrderFoodCard";
-            this.Size = new System.Drawing.Size(373, 504);
+            this.Size = new System.Drawing.Size(249, 323);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             this.kryptonGroup1.Panel.PerformLayout();
