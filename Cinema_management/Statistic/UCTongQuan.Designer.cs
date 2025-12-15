@@ -28,9 +28,9 @@ namespace Cinema_management
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
@@ -75,7 +75,7 @@ namespace Cinema_management
             // kryptonGroup2
             // 
             this.kryptonGroup2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.kryptonGroup2.Location = new System.Drawing.Point(821, 12);
+            this.kryptonGroup2.Location = new System.Drawing.Point(808, 12);
             this.kryptonGroup2.Margin = new System.Windows.Forms.Padding(4);
             // 
             // kryptonGroup2.Panel
@@ -83,7 +83,8 @@ namespace Cinema_management
             this.kryptonGroup2.Panel.Controls.Add(this.kryptonLabel2);
             this.kryptonGroup2.Panel.Controls.Add(this.kryptonPictureBox2);
             this.kryptonGroup2.Panel.Controls.Add(this.kryptonWrapLabel2);
-            this.kryptonGroup2.Size = new System.Drawing.Size(776, 290);
+            this.kryptonGroup2.Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonGroup2_Panel_Paint);
+            this.kryptonGroup2.Size = new System.Drawing.Size(789, 290);
             this.kryptonGroup2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.kryptonGroup2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(153)))));
             this.kryptonGroup2.StateCommon.Back.ColorAngle = 45F;
@@ -137,7 +138,7 @@ namespace Cinema_management
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonLabel1);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonWrapLabel1);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonPictureBox1);
-            this.kryptonGroup1.Size = new System.Drawing.Size(776, 290);
+            this.kryptonGroup1.Size = new System.Drawing.Size(795, 290);
             this.kryptonGroup1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(99)))), ((int)(((byte)(215)))));
             this.kryptonGroup1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
             this.kryptonGroup1.StateCommon.Back.ColorAngle = 45F;
@@ -148,7 +149,7 @@ namespace Cinema_management
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(336, 128);
+            this.kryptonLabel1.Location = new System.Drawing.Point(362, 155);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(265, 66);
@@ -159,15 +160,15 @@ namespace Cinema_management
             // 
             // kryptonWrapLabel1
             // 
-            this.kryptonWrapLabel1.AutoSize = false;
             this.kryptonWrapLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.kryptonWrapLabel1.Location = new System.Drawing.Point(336, 29);
+            this.kryptonWrapLabel1.Location = new System.Drawing.Point(362, 29);
             this.kryptonWrapLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.kryptonWrapLabel1.Name = "kryptonWrapLabel1";
-            this.kryptonWrapLabel1.Size = new System.Drawing.Size(387, 95);
+            this.kryptonWrapLabel1.Size = new System.Drawing.Size(330, 104);
             this.kryptonWrapLabel1.StateCommon.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonWrapLabel1.StateCommon.TextColor = System.Drawing.Color.White;
-            this.kryptonWrapLabel1.Text = "Doanh thu so với tháng trước:";
+            this.kryptonWrapLabel1.Text = "Doanh thu so với \r\ntháng trước:";
+            this.kryptonWrapLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // kryptonPictureBox1
             // 
@@ -198,20 +199,20 @@ namespace Cinema_management
             // 
             // chartTopMovies
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartTopMovies.ChartAreas.Add(chartArea1);
+            chartArea4.Name = "ChartArea1";
+            this.chartTopMovies.ChartAreas.Add(chartArea4);
             this.chartTopMovies.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Font = new System.Drawing.Font("Nunito", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Legend1";
-            this.chartTopMovies.Legends.Add(legend1);
+            legend4.Font = new System.Drawing.Font("Nunito", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            legend4.IsTextAutoFit = false;
+            legend4.Name = "Legend1";
+            this.chartTopMovies.Legends.Add(legend4);
             this.chartTopMovies.Location = new System.Drawing.Point(808, 66);
             this.chartTopMovies.Name = "chartTopMovies";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartTopMovies.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chartTopMovies.Series.Add(series4);
             this.chartTopMovies.Size = new System.Drawing.Size(799, 259);
             this.chartTopMovies.TabIndex = 0;
             this.chartTopMovies.Text = "chart1";

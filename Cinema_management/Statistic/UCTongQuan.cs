@@ -118,5 +118,10 @@ namespace Cinema_management
 
 
         private void kryptonPanel3_Paint(object sender, PaintEventArgs e) { }
+
+        private void kryptonGroup2_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
