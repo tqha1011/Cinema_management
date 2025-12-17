@@ -15,8 +15,8 @@ namespace Cinema_management
         public UCThongKeMain()
         {
             InitializeComponent();
+            btnTongQuan_Click(this, EventArgs.Empty);
         }
-
         private void btnDoanhThu_Click(object sender, EventArgs e)
         {
             grUC.Panel.Controls.Clear();
@@ -35,6 +35,11 @@ namespace Cinema_management
             uc.Dock = DockStyle.Fill;
 
             grUC.Panel.Controls.Add(uc);
+        }
+
+        private void kryptonGroup1_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
