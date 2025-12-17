@@ -48,7 +48,8 @@
             // 
             // btnChooseImage
             // 
-            this.btnChooseImage.Location = new System.Drawing.Point(79, 23);
+            this.btnChooseImage.Location = new System.Drawing.Point(89, 29);
+            this.btnChooseImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnChooseImage.Name = "btnChooseImage";
             this.btnChooseImage.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnChooseImage.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
@@ -62,13 +63,13 @@
             this.btnChooseImage.OverrideFocus.Back.ColorAngle = 45F;
             this.btnChooseImage.OverrideFocus.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
             this.btnChooseImage.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnChooseImage.Size = new System.Drawing.Size(198, 64);
+            this.btnChooseImage.Size = new System.Drawing.Size(223, 80);
             this.btnChooseImage.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnChooseImage.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnChooseImage.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
             this.btnChooseImage.StateCommon.Border.Rounding = 20F;
             this.btnChooseImage.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnChooseImage.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChooseImage.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChooseImage.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnChooseImage.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnChooseImage.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,9 +84,10 @@
             // 
             // txtNameFood
             // 
-            this.txtNameFood.Location = new System.Drawing.Point(538, 23);
+            this.txtNameFood.Location = new System.Drawing.Point(605, 29);
+            this.txtNameFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNameFood.Name = "txtNameFood";
-            this.txtNameFood.Size = new System.Drawing.Size(253, 36);
+            this.txtNameFood.Size = new System.Drawing.Size(285, 41);
             this.txtNameFood.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.txtNameFood.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtNameFood.StateCommon.Border.Width = 4;
@@ -94,19 +96,21 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(323, 27);
+            this.kryptonLabel2.Location = new System.Drawing.Point(363, 34);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(179, 32);
+            this.kryptonLabel2.Size = new System.Drawing.Size(211, 44);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 2;
             this.kryptonLabel2.Values.Text = "Tên sản phẩm:";
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(538, 101);
+            this.txtPrice.Location = new System.Drawing.Point(605, 126);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(253, 36);
+            this.txtPrice.Size = new System.Drawing.Size(285, 41);
             this.txtPrice.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.txtPrice.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtPrice.StateCommon.Border.Width = 4;
@@ -115,19 +119,21 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(327, 105);
+            this.kryptonLabel3.Location = new System.Drawing.Point(368, 131);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(175, 32);
+            this.kryptonLabel3.Size = new System.Drawing.Size(205, 44);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 2;
             this.kryptonLabel3.Values.Text = "Giá sản phẩm:";
             // 
             // txtAmount
             // 
-            this.txtAmount.Location = new System.Drawing.Point(538, 181);
+            this.txtAmount.Location = new System.Drawing.Point(605, 226);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(253, 36);
+            this.txtAmount.Size = new System.Drawing.Size(285, 41);
             this.txtAmount.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.txtAmount.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtAmount.StateCommon.Border.Width = 4;
@@ -136,11 +142,12 @@
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(327, 185);
+            this.kryptonLabel4.Location = new System.Drawing.Point(368, 231);
+            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(119, 32);
+            this.kryptonLabel4.Size = new System.Drawing.Size(142, 44);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.TabIndex = 2;
             this.kryptonLabel4.Values.Text = "Số lượng:";
             // 
@@ -151,10 +158,11 @@
             this.cboType.DropDownWidth = 239;
             this.cboType.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
             this.cboType.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cboType.Location = new System.Drawing.Point(554, 264);
+            this.cboType.Location = new System.Drawing.Point(623, 330);
+            this.cboType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboType.Name = "cboType";
             this.cboType.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.cboType.Size = new System.Drawing.Size(237, 35);
+            this.cboType.Size = new System.Drawing.Size(267, 40);
             this.cboType.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.cboType.StateCommon.ComboBox.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.cboType.StateCommon.ComboBox.Border.Width = 4;
@@ -176,7 +184,8 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(621, 356);
+            this.btnSave.Location = new System.Drawing.Point(699, 445);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnSave.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
@@ -184,13 +193,13 @@
             this.btnSave.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnSave.OverrideFocus.Back.ColorAngle = 45F;
             this.btnSave.OverrideFocus.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnSave.Size = new System.Drawing.Size(170, 64);
+            this.btnSave.Size = new System.Drawing.Size(191, 80);
             this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnSave.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnSave.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
             this.btnSave.StateCommon.Border.Rounding = 20F;
             this.btnSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnSave.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnSave.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -205,7 +214,8 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(421, 356);
+            this.btnDelete.Location = new System.Drawing.Point(474, 445);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnDelete.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -216,14 +226,14 @@
             this.btnDelete.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnDelete.OverrideFocus.Back.ColorAngle = 45F;
             this.btnDelete.OverrideFocus.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.btnDelete.Size = new System.Drawing.Size(170, 64);
+            this.btnDelete.Size = new System.Drawing.Size(191, 80);
             this.btnDelete.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.btnDelete.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.btnDelete.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnDelete.StateCommon.Border.Rounding = 20F;
             this.btnDelete.StateCommon.Border.Width = 3;
             this.btnDelete.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
-            this.btnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnDelete.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnDelete.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -241,29 +251,31 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(327, 267);
+            this.kryptonLabel1.Location = new System.Drawing.Point(368, 334);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(184, 32);
+            this.kryptonLabel1.Size = new System.Drawing.Size(217, 44);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 5;
             this.kryptonLabel1.Values.Text = "Loại sản phẩm:";
             // 
             // ptbDoAn
             // 
-            this.ptbDoAn.Location = new System.Drawing.Point(59, 103);
+            this.ptbDoAn.Location = new System.Drawing.Point(66, 129);
+            this.ptbDoAn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ptbDoAn.Name = "ptbDoAn";
-            this.ptbDoAn.Size = new System.Drawing.Size(237, 244);
+            this.ptbDoAn.Size = new System.Drawing.Size(267, 305);
             this.ptbDoAn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbDoAn.TabIndex = 0;
             this.ptbDoAn.TabStop = false;
             // 
             // AddFood
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(898, 433);
+            this.ClientSize = new System.Drawing.Size(1034, 543);
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.cboType);
             this.Controls.Add(this.txtAmount);
@@ -279,10 +291,11 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Location = new System.Drawing.Point(0, 0);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddFood";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(22, 25, 22, 25);
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
