@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelTopInfo = new Krypton.Toolkit.KryptonPanel();
+            this.btnBack = new Krypton.Toolkit.KryptonButton();
             this.lblTGianChieu = new Krypton.Toolkit.KryptonLabel();
             this.lblSeatsCount = new Krypton.Toolkit.KryptonLabel();
             this.lblRoomName = new Krypton.Toolkit.KryptonLabel();
@@ -49,7 +50,6 @@
             this.lblMovieName = new Krypton.Toolkit.KryptonLabel();
             this.pictureMovie = new System.Windows.Forms.PictureBox();
             this.panelMain = new Krypton.Toolkit.KryptonPanel();
-            this.pnlSeats = new Krypton.Toolkit.KryptonPanel();
             this.panelLegend = new Krypton.Toolkit.KryptonPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
@@ -59,7 +59,8 @@
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.panelScreen = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            this.btnBack = new Krypton.Toolkit.KryptonButton();
+            this.flowPanelSeats = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlSeats = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.panelTopInfo)).BeginInit();
             this.panelTopInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelSidebar)).BeginInit();
@@ -67,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureMovie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).BeginInit();
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlSeats)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelLegend)).BeginInit();
             this.panelLegend.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,6 +75,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.squareGreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelScreen)).BeginInit();
             this.panelScreen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlSeats)).BeginInit();
+            this.pnlSeats.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTopInfo
@@ -90,6 +92,31 @@
             this.panelTopInfo.Size = new System.Drawing.Size(1471, 100);
             this.panelTopInfo.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.panelTopInfo.TabIndex = 0;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Location = new System.Drawing.Point(22, 18);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnBack.Size = new System.Drawing.Size(140, 56);
+            this.btnBack.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateCommon.Border.Rounding = 10F;
+            this.btnBack.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnBack.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnBack.Values.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // lblTGianChieu
             // 
@@ -149,7 +176,6 @@
             this.panelSidebar.StateCommon.Color1 = System.Drawing.Color.White;
             this.panelSidebar.StateNormal.Color1 = System.Drawing.Color.White;
             this.panelSidebar.TabIndex = 1;
-            this.panelSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSidebar_Paint);
             // 
             // btnContinue
             // 
@@ -261,7 +287,6 @@
             this.lblGiaVe.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiaVe.TabIndex = 1;
             this.lblGiaVe.Values.Text = "45,000 đ";
-            this.lblGiaVe.Click += new System.EventHandler(this.kryptonLabel6_Click);
             // 
             // lblGheChon
             // 
@@ -340,19 +365,6 @@
             this.panelMain.Size = new System.Drawing.Size(984, 756);
             this.panelMain.StateCommon.Color1 = System.Drawing.Color.White;
             this.panelMain.TabIndex = 2;
-            // 
-            // pnlSeats
-            // 
-            this.pnlSeats.AutoScroll = true;
-            this.pnlSeats.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSeats.Location = new System.Drawing.Point(0, 50);
-            this.pnlSeats.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlSeats.Name = "pnlSeats";
-            this.pnlSeats.Size = new System.Drawing.Size(984, 615);
-            this.pnlSeats.StateCommon.Color1 = System.Drawing.Color.White;
-            this.pnlSeats.StateNormal.Color1 = System.Drawing.Color.White;
-            this.pnlSeats.TabIndex = 2;
-            this.pnlSeats.Paint += new System.Windows.Forms.PaintEventHandler(this.seatMapContainer_Paint);
             // 
             // panelLegend
             // 
@@ -458,30 +470,29 @@
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Màn hình";
             // 
-            // btnBack
+            // flowPanelSeats
             // 
-            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(22, 18);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnBack.Size = new System.Drawing.Size(140, 56);
-            this.btnBack.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.btnBack.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.btnBack.StateCommon.Border.Rounding = 10F;
-            this.btnBack.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnBack.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.btnBack.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.btnBack.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.btnBack.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.btnBack.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.btnBack.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
-            this.btnBack.TabIndex = 5;
-            this.btnBack.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnBack.Values.Text = "Back";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.flowPanelSeats.BackColor = System.Drawing.Color.White;
+            this.flowPanelSeats.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowPanelSeats.Location = new System.Drawing.Point(0, 0);
+            this.flowPanelSeats.Name = "flowPanelSeats";
+            this.flowPanelSeats.Padding = new System.Windows.Forms.Padding(100, 100, 100, 0);
+            this.flowPanelSeats.Size = new System.Drawing.Size(984, 615);
+            this.flowPanelSeats.TabIndex = 0;
+            this.flowPanelSeats.Paint += new System.Windows.Forms.PaintEventHandler(this.flowPanelSeats_Paint);
+            // 
+            // pnlSeats
+            // 
+            this.pnlSeats.AutoScroll = true;
+            this.pnlSeats.Controls.Add(this.flowPanelSeats);
+            this.pnlSeats.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSeats.Location = new System.Drawing.Point(0, 50);
+            this.pnlSeats.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlSeats.Name = "pnlSeats";
+            this.pnlSeats.Size = new System.Drawing.Size(984, 615);
+            this.pnlSeats.StateCommon.Color1 = System.Drawing.Color.White;
+            this.pnlSeats.StateNormal.Color1 = System.Drawing.Color.White;
+            this.pnlSeats.TabIndex = 2;
             // 
             // UCTickets
             // 
@@ -504,7 +515,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureMovie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).EndInit();
             this.panelMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pnlSeats)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelLegend)).EndInit();
             this.panelLegend.ResumeLayout(false);
             this.panelLegend.PerformLayout();
@@ -514,6 +524,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelScreen)).EndInit();
             this.panelScreen.ResumeLayout(false);
             this.panelScreen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlSeats)).EndInit();
+            this.pnlSeats.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -526,7 +538,6 @@
         private Krypton.Toolkit.KryptonPanel panelScreen;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private System.Windows.Forms.PictureBox pictureMovie;
-        private Krypton.Toolkit.KryptonPanel pnlSeats;
         private Krypton.Toolkit.KryptonPanel panelLegend;
         private Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private Krypton.Toolkit.KryptonLabel lblPrice;
@@ -552,5 +563,7 @@
         private Krypton.Toolkit.KryptonLabel lblRoomName;
         private Krypton.Toolkit.KryptonLabel lblTGianChieu;
         private Krypton.Toolkit.KryptonButton btnBack;
+        private Krypton.Toolkit.KryptonPanel pnlSeats;
+        private System.Windows.Forms.FlowLayoutPanel flowPanelSeats;
     }
 }
