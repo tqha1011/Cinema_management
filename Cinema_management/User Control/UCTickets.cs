@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Reflection;
 using Cinema_management.Ticket_Booking;
 using Cinema_management.MessageboxCustom.Utils;
 
@@ -35,6 +36,9 @@ namespace Cinema_management
         }
 
         List < KryptonButton> DSGheDangChon = new List<KryptonButton>();
+        // List backup để add vào panel 
+        private List<Control> _tempSeatControls = new List<Control>();
+
         decimal GiaVe;
         int CountGheDaBan = 0;
         int CountTongGhe = 0;
@@ -49,11 +53,157 @@ namespace Cinema_management
         public UCTickets()
         {
             InitializeComponent();
+            SetDoubleBuffered(flowPanelSeats);
         }
 
-        /// <summary>
-        /// Lấy danh sách tên các ghế đã được bán từ CSDL cho một suất chiếu cụ thể.
-        /// </summary>
+        public static void SetDoubleBuffered(Control control)
+        {
+            typeof(Control).InvokeMember("DoubleBuffered",
+                BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+                null, control, new object[] { true });
+        }
+
+        public void LoadSeats(int maSuatChieu)
+        {
+            this.maSuatChieu = maSuatChieu;
+            LoadSeatsAsync();
+        }
+
+        public async void LoadSeatsAsync()
+        {
+            try
+            {
+                // Chay query dưới background thread
+                var data = await Task.Run(() =>
+                {
+                    var tempInfo = LayThongTinSuatChieu(this.maSuatChieu);
+                    var bookedSeats = LayDanhSachGheDaDat(this.maSuatChieu);
+                    return new { Info = tempInfo, BookedSeats = bookedSeats };
+                });
+
+                // Cập nhật du liệu
+                SuatChieuInfo info = data.Info;
+                List<string> dsGheDaBan = data.BookedSeats;
+
+                this.GiaVe = info.GiaVe;
+                this._thoiGianChieu = info.ThoiGianChieu;
+
+                UpdateLabels(info);
+                RenderSeatMap(dsGheDaBan);
+            }
+            catch (Exception ex)
+            {
+                Alert.Show("Lỗi tải sơ đồ ghế: " + ex.Message, MessagboxCustom.AlertMessagebox.AlertType.Error);
+            }
+        }
+
+        private void UpdateLabels(SuatChieuInfo info)
+        {
+            DateTime thoiGianBatDau = info.ThoiGianChieu;
+            DateTime thoiGianKetThuc = thoiGianBatDau.AddMinutes(info.ThoiLuongPhim);
+
+            lblTGianChieu.Text = $"{thoiGianBatDau: dd/MM/yyyy HH:mm} - {thoiGianKetThuc: dd/MM/yyyy HH:mm}";
+            lblMvName.Text = info.TenPhim;
+            lblRoom.Text = lblRoomName.Text = info.TenPhong;
+            lblShowTime.Text = $"{thoiGianBatDau: HH:mm} - {thoiGianKetThuc: HH:mm}";
+        }
+
+        public void RenderSeatMap(List<string> dsGheDaBan)
+        {
+            flowPanelSeats.Visible = false;
+            flowPanelSeats.SuspendLayout();
+
+            foreach (Control c in flowPanelSeats.Controls)
+                c.Dispose();
+            flowPanelSeats.Controls.Clear();
+            _tempSeatControls.Clear();
+
+            int Row = 8;
+            int Col = 14;
+            //int btnSize = 100;
+            int spacing = 20;
+
+            ///// layout
+            int panelWidth = flowPanelSeats.ClientSize.Width - 100 - 100; // chiều rộng thực tế của panel
+            int totalSpacingW = (Col + 1) * spacing; // Tổng khoảng trắng
+            int dynamicSize = (panelWidth - totalSpacingW) / Col;
+            // Giới hạn max size 
+            if (dynamicSize > 200) dynamicSize = 200;
+            // Giới hạn min size 
+            if (dynamicSize < 40) dynamicSize = 40;
+            int btnSize = dynamicSize;
+
+            CountTongGhe = Row * Col;
+            CountGheDaBan = dsGheDaBan.Count;
+            CapNhatSoGhe();
+
+            for (int i = 0; i < Row; i++)
+            {
+                for (int j = 0; j < Col; j++)
+                {
+                    KryptonButton btnGhe = new KryptonButton();
+                    string tenGhe = $"{(char)('A' + i)}{j + 1}";
+
+                    btnGhe.Text = tenGhe;
+                    btnGhe.Tag = tenGhe;
+
+                    btnGhe.Size = new Size(btnSize, btnSize);
+                    btnGhe.Margin = new Padding(spacing/2);
+
+                    //Style
+                    btnGhe.PaletteMode = PaletteMode.ProfessionalSystem;
+                    btnGhe.StateCommon.Border.DrawBorders = (PaletteDrawBorders.All);
+                    btnGhe.StateCommon.Border.Rounding = 12;
+                    btnGhe.StateCommon.Border.Width = 5;
+                    btnGhe.StateCommon.Content.ShortText.Font = new Font("Nunito", 10, FontStyle.Bold);
+
+                    //logic mau
+                    if (dsGheDaBan.Contains(tenGhe))
+                    {
+                        btnGhe.Enabled = false;
+                        SetButtonStyle(btnGhe, colorGheDaDat, chuGheDaDat);
+                        btnGhe.StateCommon.Border.Color1 = colorGheDaDat;
+                        btnGhe.StateCommon.Border.Color2 = colorGheDaDat;
+                    }
+                    else
+                    {
+                        btnGhe.Enabled = true;
+                        SetButtonStyle(btnGhe, colorGheTrong, chuGheTrong);
+                        btnGhe.StateCommon.Border.Color1 = Color.FromArgb(4, 128, 3);
+                        btnGhe.StateCommon.Border.Width = 4;
+                        btnGhe.Cursor = Cursors.Hand;
+                        // Gán sự kiện click cho ghế trống
+                        btnGhe.Click += BtnGhe_Click;
+                    }
+                    _tempSeatControls.Add(btnGhe);
+                }
+
+                if (_tempSeatControls.Count > 0)
+                {
+                    flowPanelSeats.SetFlowBreak(_tempSeatControls.Last(), true);
+                }
+            }
+
+            flowPanelSeats.Controls.AddRange(_tempSeatControls.ToArray());
+
+            flowPanelSeats.ResumeLayout();
+            flowPanelSeats.Visible = true;
+
+            // cập nhật UI
+            CapNhatThongTinVe();
+        }
+
+        // hàm set màu ghế
+        public void SetButtonStyle(KryptonButton btn, Color backColor, Color textColor)
+        {
+            btn.StateCommon.Back.Color1 = backColor;
+            btn.StateCommon.Back.Color2 = backColor;
+            btn.StateCommon.Content.ShortText.Color1 = textColor;
+            btn.OverrideDefault.Back.Color1 = backColor;
+            btn.OverrideDefault.Back.Color2 = backColor;
+        }
+
+                //Lấy danh sách tên các ghế đã được bán từ CSDL cho một suất chiếu cụ thể.
         /// <param name="maSuatChieu">Mã của suất chiếu</param>
         private List<string> LayDanhSachGheDaDat(int maSuatChieu)
         {
@@ -138,100 +288,6 @@ namespace Cinema_management
             return info;
         }
 
-        //// Tạo và hiển thị sơ đồ ghế cho một suất chiếu.
-        /// <param name="maSuatChieu">Mã suất chiếu cần hiển thị</param>
-        public void LoadSeats(int maSuatChieu)
-        {
-            this.maSuatChieu = maSuatChieu;
-
-            //Xóa các ghế cũ và danh sách đang chọn
-            pnlSeats.Controls.Clear();
-            DSGheDangChon.Clear();
-
-            //Lấy giá vé từ CSDL
-            SuatChieuInfo info = LayThongTinSuatChieu(maSuatChieu);
-            this.GiaVe = info.GiaVe;
-            this._thoiGianChieu = info.ThoiGianChieu;
-
-            // Cập nhật thông tin UI
-            DateTime thoiGianBatDau = info.ThoiGianChieu;
-            DateTime thoiGianKetThuc = thoiGianBatDau.AddMinutes(info.ThoiLuongPhim);
-
-            lblTGianChieu.Text = $"{thoiGianBatDau:dd/MM/yyyy HH:mm} - {thoiGianKetThuc:dd/MM/yyyy HH:mm}";
-            lblMvName.Text = info.TenPhim;
-            lblRoom.Text = lblRoomName.Text = info.TenPhong;
-            lblShowTime.Text = $"{thoiGianBatDau:HH:mm} - {thoiGianKetThuc:HH:mm}";
-
-
-            //Lấy danh sách ghế đã bán từ CSDL
-            List<string> dsGheDaBan = LayDanhSachGheDaDat(maSuatChieu);
-
-            //Layout sơ đồ ghế
-            int Row = 8;
-            int Col = 14;
-            int btnWidth = 100;
-            int btnHeight = 100;
-            int spacing = 20;
-            int startX = 60;
-            int startY = 40;
-
-            // Cập nhật số ghế
-            CountTongGhe = Row * Col; // 8 * 14 = 112
-            CountGheDaBan = dsGheDaBan.Count;
-            CapNhatSoGhe();
-
-            //Tạo các nút ghế
-            for (int i=0; i<Row; i++)
-            {
-                for (int j = 0; j < Col; j++)
-                {
-                    KryptonButton btnGhe = new KryptonButton();
-
-                    string tenGhe = $"{(char)('A' + i)}{j + 1}";
-
-                    btnGhe.Text = tenGhe;
-                    btnGhe.Tag = tenGhe;
-                    btnGhe.Size = new Size(btnWidth, btnHeight);
-                    btnGhe.Location = new Point(startX + (j * (btnWidth + spacing)),
-                                                startY + (i * (btnHeight + spacing)));
-
-                    // Thiết lập Style chung cho Button
-                    btnGhe.PaletteMode = PaletteMode.ProfessionalSystem;
-                    btnGhe.StateCommon.Border.DrawBorders = (PaletteDrawBorders.All);
-                    btnGhe.StateCommon.Border.Width = 1;
-                    btnGhe.StateCommon.Border.Rounding = 5; // Bo góc 
-
-                    // Kiểm tra trạng thái ghế
-                    if (dsGheDaBan.Contains(tenGhe))
-                    {
-                        btnGhe.Enabled = false;
-                        btnGhe.StateCommon.Back.Color1 = colorGheDaDat;
-                        btnGhe.StateCommon.Back.Color2 = colorGheDaDat;
-                        btnGhe.StateCommon.Content.ShortText.Color1 = chuGheDaDat;
-                        btnGhe.OverrideDefault.Border.Color1 = colorGheDaDat;
-                        btnGhe.OverrideDefault.Border.Color2 = colorGheDaDat;
-                    }
-                    else
-                    {
-                        btnGhe.Enabled = true;
-                        btnGhe.StateCommon.Back.Color1 = colorGheTrong;
-                        btnGhe.StateCommon.Back.Color2 = colorGheTrong;
-                        btnGhe.StateCommon.Content.ShortText.Color1 = chuGheTrong;
-                        btnGhe.StateCommon.Border.Color1 = Color.FromArgb(4, 128, 3);
-                        btnGhe.StateCommon.Border.Width = 4;
-                        btnGhe.Cursor = Cursors.Hand;
-
-                        // Gán sự kiện click cho ghế trống
-                        btnGhe.Click += BtnGhe_Click;
-                    }
-                    // Thêm ghế vào panel
-                    pnlSeats.Controls.Add(btnGhe);
-                }
-            }
-            // Cập nhật UI
-            CapNhatThongTinVe();
-        }
-
         //// Được gọi khi người dùng click vào một ghế CÒN TRỐNG.
         private void BtnGhe_Click(object sender, EventArgs e)
         {
@@ -243,11 +299,7 @@ namespace Cinema_management
             if(btnGheDaChon.StateCommon.Back.Color1 == colorGheTrong)
             {
                 // Đổi màu
-                btnGheDaChon.StateCommon.Back.Color1 = colorGheDangChon;
-                btnGheDaChon.StateCommon.Back.Color2 = colorGheDangChon;
-                btnGheDaChon.StateCommon.Content.ShortText.Color1 = chuGheDangChon;
-                btnGheDaChon.OverrideDefault.Back.Color1 = colorGheDangChon;
-                btnGheDaChon.OverrideDefault.Back.Color2 = colorGheDangChon;
+                SetButtonStyle(btnGheDaChon, colorGheDangChon, chuGheDangChon);
                 // Thêm vào danh sách ghế đang chọn
                 DSGheDangChon.Add(btnGheDaChon);
             }
@@ -255,16 +307,11 @@ namespace Cinema_management
             else if(btnGheDaChon.StateCommon.Back.Color1 == colorGheDangChon)
             {
                 // Đổi màu
-                btnGheDaChon.StateCommon.Back.Color1 = colorGheTrong;
-                btnGheDaChon.StateCommon.Back.Color2 = colorGheTrong;
-                btnGheDaChon.StateCommon.Content.ShortText.Color1 = chuGheTrong;
-                btnGheDaChon.OverrideDefault.Back.Color1 = colorGheTrong;
-                btnGheDaChon.OverrideDefault.Back.Color2 = colorGheTrong;
+               SetButtonStyle(btnGheDaChon, colorGheTrong, chuGheTrong);
                 // Xóa khỏi danh sách ghế đang chọn
                 DSGheDangChon.Remove(btnGheDaChon);
             }
           
-
                 CapNhatThongTinVe();
         }
 
@@ -279,7 +326,7 @@ namespace Cinema_management
 
             if (DSGheDangChon.Count > 0)
             {
-                lblGiaVe.Text = GiaVe.ToString("N0") + " VND";
+                lblGiaVe.Text = GiaVe.ToString("N0") + " đ";
             }
             else
             {
@@ -288,28 +335,13 @@ namespace Cinema_management
             }
 
             decimal Sum = DSGheDangChon.Count * GiaVe;
-            lblTongTien.Text = Sum.ToString("N0") + " VND";
+            lblTongTien.Text = Sum.ToString("N0") + " đ";
         }
 
         private void CapNhatSoGhe()
         {
             int countGheTrong = this.CountTongGhe - this.CountGheDaBan;
             lblSeatsCount.Text = $"Số ghế ({countGheTrong}/{CountTongGhe})";
-        }
-
-        private void kryptonLabel6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void seatMapContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelSidebar_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnContinue_Click(object sender, EventArgs e)
@@ -346,6 +378,11 @@ namespace Cinema_management
         private void btnBack_Click(object sender, EventArgs e)
         {
             OnBack?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void flowPanelSeats_Paint(object sender, PaintEventArgs e)
+        {
+                        
         }
     }
 }

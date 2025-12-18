@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace Cinema_management
 {
@@ -30,53 +31,98 @@ namespace Cinema_management
         {
             InitializeComponent();
             flowPanelCart.Controls.Clear();
+
+            SetDoubleBuffered(flowPanelMenu);
+            SetDoubleBuffered(flowPanelCart);
+        }
+
+        public void UCChonDoAn_Load(object sender, EventArgs e)
+        {
+            //Background.Image = Properties.Resources.combo;
+            btnTatCa.PerformClick();
+        }
+
+        public static void SetDoubleBuffered(Control control)
+        {
+            typeof(Control).InvokeMember("DoubleBuffered",
+                BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+                null, control, new object[] { true });
         }
 
         public void SetBookingData(BookingInfo info)
         {
             this.bookingInfo = info;
 
-            LoadListFood();
+            //LoadListFood();
             lblMovieInfo.Text = $"{bookingInfo.TenPhim} - {bookingInfo.ThoiGianChieu:dd/MM/yyyy HH:mm} - {bookingInfo.TenPhong}";
+
+            // Gọi hàm load async
+            LoadListFoodAsync();
         }
 
-        private void LoadListFood()
+        private async void LoadListFoodAsync()
         {
-            flowPanelMenu.Controls.Clear();
-            _allFoodCards.Clear();
+            // Chạy việc lấy dữ liệu dưới background thread để không đơ UI
+            DataTable dt = await Task.Run(() => GetFoodDataFromDB());
 
-            string query = "SELECT * FROM DOAN";
+            // Sau khi có dữ liệu, vẽ giao diện trên UI Thread
+            RenderFoodList(dt);
+        }
 
+        private DataTable GetFoodDataFromDB()
+        {
+            DataTable dt = new DataTable();
+            string query = "SELECT * FROM DOAN WHERE SELLING = 1";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+            }
+            return dt;
+        }
 
-                while (reader.Read())
-                {
-                    UCOrderFoodCard card = new UCOrderFoodCard();
+        private void RenderFoodList(DataTable dt)
+        {
+            flowPanelMenu.Visible = false;
+            flowPanelMenu.SuspendLayout();
 
-                    /////////////////////////////// xử lý ảnh ////////////////
-                    Image img = null;
-                    string imagePath = reader["ANHDOAN"] != DBNull.Value ? reader["ANHDOAN"].ToString() : "";
-                    if (!string.IsNullOrEmpty(imagePath) && File.Exists(Path.Combine(Application.StartupPath, @"..\..\image", imagePath)))
-                        img = Image.FromFile(Path.Combine(Application.StartupPath, @"..\..\image", imagePath));
+            foreach (Control c in flowPanelMenu.Controls) c.Dispose();
+            flowPanelMenu.Controls.Clear();
+            _allFoodCards.Clear();
 
-                    card.SetData(
-                            Convert.ToInt32(reader["MADOAN"]),
-                            reader["TENDOAN"].ToString(),
-                            Convert.ToDecimal(reader["GIADOAN"]),
-                            img,
-                            Convert.ToInt32(reader["MALOAIDOAN"]) );
+            foreach (DataRow row in dt.Rows)
+            {
+                UCOrderFoodCard card = new UCOrderFoodCard();
 
-                    // dky sự kiện khi click -> thêm vào giỏ
-                    card.OnSelect += Card_OnSelect;
+                // Xử lý ảnh
+                Image img = null;
+                string imagePath = row["ANHDOAN"] != DBNull.Value ? row["ANHDOAN"].ToString() : "";
+                string fullPath = Path.Combine(Application.StartupPath, @"..\..\image", imagePath);
 
-                    _allFoodCards.Add(card); //lưu vào list tạm
-                    flowPanelMenu.Controls.Add(card); 
-                }
-           }
+                if (!string.IsNullOrEmpty(imagePath) && File.Exists(fullPath))
+                    img = Image.FromFile(fullPath);
+
+                card.SetData(
+                    Convert.ToInt32(row["MADOAN"]),
+                    row["TENDOAN"].ToString(),
+                    Convert.ToDecimal(row["GIADOAN"]),
+                    img,
+                    Convert.ToInt32(row["MALOAIDOAN"])
+                );
+
+                card.OnSelect += Card_OnSelect;
+                card.Margin = new Padding(30); 
+
+                _allFoodCards.Add(card);
+            }
+
+            flowPanelMenu.Controls.AddRange(_allFoodCards.ToArray());
+
+            flowPanelMenu.ResumeLayout();
+            flowPanelMenu.Visible = true;
+
             UpdateTotalMoney();
         }
 
@@ -105,13 +151,27 @@ namespace Cinema_management
 
         private void FilterFood(int type)
         {
-            flowPanelMenu.Controls.Clear();
+            flowPanelMenu.SuspendLayout();
+            int count = 0;
+
             foreach (var card in _allFoodCards)
             {
-                // type 0 thi hien tat ca
-                if (type == 0 || card.LoaiDoan == type)
-                    flowPanelMenu.Controls.Add(card);
+                // type 0 là tất cả, hoặc trùng loại
+                bool isMatch = (type == 0 || card.LoaiDoan == type);
+
+                if (isMatch)
+                {
+                    if (!card.Visible) card.Visible = true;
+                    // Sắp xếp lại vị trí để không bị khoảng trắng
+                    flowPanelMenu.Controls.SetChildIndex(card, count);
+                    count++;
+                }
+                else
+                {
+                    if (card.Visible) card.Visible = false;
+                }
             }
+            flowPanelMenu.ResumeLayout();
         }
 
         ////// XỬ LÝ THÊM VÀO GIỎ HÀNG BÊN PHẢI
