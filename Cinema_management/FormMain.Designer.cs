@@ -68,7 +68,7 @@ namespace Cinema_management
             this.pnSidebar.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnSidebar.Name = "pnSidebar";
             this.pnSidebar.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.pnSidebar.Size = new System.Drawing.Size(585, 1076);
+            this.pnSidebar.Size = new System.Drawing.Size(585, 1066);
             this.pnSidebar.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pnSidebar.TabIndex = 0;
             // 
@@ -88,7 +88,7 @@ namespace Cinema_management
             // btnLogout
             // 
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogout.Location = new System.Drawing.Point(27, 963);
+            this.btnLogout.Location = new System.Drawing.Point(27, 953);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
@@ -108,7 +108,7 @@ namespace Cinema_management
             this.btnLogout.StateCommon.Border.Rounding = 25F;
             this.btnLogout.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.btnLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.btnLogout.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.btnLogout.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -165,7 +165,7 @@ namespace Cinema_management
             this.kryptonButton6.StateCommon.Border.Rounding = 25F;
             this.kryptonButton6.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton6.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton6.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton6.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton6.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
@@ -217,7 +217,7 @@ namespace Cinema_management
             this.kryptonButton5.StateCommon.Border.Rounding = 25F;
             this.kryptonButton5.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton5.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton5.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton5.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton5.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
@@ -269,7 +269,7 @@ namespace Cinema_management
             this.kryptonButton4.StateCommon.Border.Rounding = 25F;
             this.kryptonButton4.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton4.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton4.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton4.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
@@ -320,7 +320,7 @@ namespace Cinema_management
             this.kryptonButton3.StateCommon.Border.Rounding = 25F;
             this.kryptonButton3.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton3.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton3.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
@@ -372,7 +372,7 @@ namespace Cinema_management
             this.kryptonButton2.StateCommon.Border.Rounding = 25F;
             this.kryptonButton2.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton2.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton2.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
@@ -424,7 +424,7 @@ namespace Cinema_management
             this.kryptonButton1.StateCommon.Border.Rounding = 25F;
             this.kryptonButton1.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton1.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.kryptonButton1.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
@@ -475,7 +475,7 @@ namespace Cinema_management
             this.btnDashboard.StateCommon.Border.Rounding = 25F;
             this.btnDashboard.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnDashboard.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.btnDashboard.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
             this.btnDashboard.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(0)))), ((int)(((byte)(13)))));
@@ -504,7 +504,7 @@ namespace Cinema_management
             this.pnContent.Location = new System.Drawing.Point(585, 0);
             this.pnContent.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnContent.Name = "pnContent";
-            this.pnContent.Size = new System.Drawing.Size(1808, 1076);
+            this.pnContent.Size = new System.Drawing.Size(1836, 1066);
             this.pnContent.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnContent.StateCommon.Color2 = System.Drawing.Color.White;
             this.pnContent.TabIndex = 1;
@@ -517,7 +517,7 @@ namespace Cinema_management
             this.pnContentforUC.Location = new System.Drawing.Point(0, 0);
             this.pnContentforUC.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnContentforUC.Name = "pnContentforUC";
-            this.pnContentforUC.Size = new System.Drawing.Size(1808, 1076);
+            this.pnContentforUC.Size = new System.Drawing.Size(1836, 1066);
             this.pnContentforUC.TabIndex = 1;
             this.pnContentforUC.Resize += new System.EventHandler(this.pnContentforUC_Resize);
             // 
@@ -532,7 +532,7 @@ namespace Cinema_management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2393, 1076);
+            this.ClientSize = new System.Drawing.Size(2421, 1066);
             this.Controls.Add(this.pnContent);
             this.Controls.Add(this.pnSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
