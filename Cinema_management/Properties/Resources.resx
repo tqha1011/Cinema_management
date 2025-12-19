@@ -145,6 +145,9 @@
   <data name="Work and Employment_laptop, analytics, professional, office, productivity" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Work and Employment_laptop, analytics, professional, office, productivity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="jam--movie (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jam--movie (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fluent--subtract-circle-16-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent--subtract-circle-16-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -223,6 +226,9 @@
   <data name="icon-park-solid--movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-park-solid--movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="material-symbols--add-rounded (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--add-rounded (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="material-symbols--person-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--person-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,6 +274,9 @@
   <data name="ri--dashboard-fill (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ri--dashboard-fill (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fluent--people-20-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--people-20-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ri--dashboard-fill (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ri--dashboard-fill (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -304,6 +313,9 @@
   <data name="fluent--subtract-circle-24-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent--subtract-circle-24-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="material-symbols--delete-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--delete-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ic--baseline-tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic--baseline-tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -312,6 +324,15 @@
   </data>
   <data name="line-md--logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\line-md--logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent--person-32-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent--person-32-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--add-rounded (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--add-rounded (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="material-symbols--add-rounded (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--add-rounded (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabler--ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabler--ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,6 +349,9 @@
   <data name="tdesign--time-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tdesign--time-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="material-symbols--add-rounded (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--add-rounded (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lets-icons--arrow-drop-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lets-icons--arrow-drop-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -343,8 +367,8 @@
   <data name="iconuser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconuser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="material-symbols--delete-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols--delete-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="material-symbols--add-rounded (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols--add-rounded (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mdi--logout (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mdi--logout (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,7 +376,7 @@
   <data name="material-symbols--square-outline-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\material-symbols--square-outline-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluent--person-32-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent--person-32-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="uil--clock (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uil--clock (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

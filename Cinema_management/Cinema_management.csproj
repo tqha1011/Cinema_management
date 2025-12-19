@@ -459,6 +459,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\uil--clock %282%29.png" />
     <None Include="Resources\zondicons--close-solid.png" />
     <None Include="Resources\pajamas--close.png" />
     <None Include="Resources\ion--close.png" />
@@ -519,6 +520,13 @@
     <Content Include="Image\sprite-removebg-preview_639011711555176176.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\material-symbols--add-rounded %281%29.png" />
+    <None Include="Resources\material-symbols--add-rounded %282%29.png" />
+    <None Include="Resources\material-symbols--add-rounded %283%29.png" />
+    <None Include="Resources\material-symbols--add-rounded %284%29.png" />
+    <None Include="Resources\material-symbols--add-rounded %285%29.png" />
+    <None Include="Resources\jam--movie %283%29.png" />
+    <None Include="Resources\fluent--people-20-filled.png" />
     <Content Include="Resources\popcorn_drink_logo_resize.jpg" />
     <None Include="Resources\lucide--popcorn.png" />
     <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />

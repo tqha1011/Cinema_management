@@ -153,6 +153,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fluent__people_20_filled {
+            get {
+                object obj = ResourceManager.GetObject("fluent--people-20-filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fluent__person_32_filled {
             get {
                 object obj = ResourceManager.GetObject("fluent--person-32-filled", resourceCulture);
@@ -413,6 +423,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap jam__movie__3_ {
+            get {
+                object obj = ResourceManager.GetObject("jam--movie (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jam__write {
             get {
                 object obj = ResourceManager.GetObject("jam--write", resourceCulture);
@@ -506,6 +526,56 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap material_symbols__add_rounded {
             get {
                 object obj = ResourceManager.GetObject("material-symbols--add-rounded", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap material_symbols__add_rounded__1_ {
+            get {
+                object obj = ResourceManager.GetObject("material-symbols--add-rounded (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap material_symbols__add_rounded__2_ {
+            get {
+                object obj = ResourceManager.GetObject("material-symbols--add-rounded (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap material_symbols__add_rounded__3_ {
+            get {
+                object obj = ResourceManager.GetObject("material-symbols--add-rounded (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap material_symbols__add_rounded__4_ {
+            get {
+                object obj = ResourceManager.GetObject("material-symbols--add-rounded (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap material_symbols__add_rounded__5_ {
+            get {
+                object obj = ResourceManager.GetObject("material-symbols--add-rounded (5)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -776,6 +846,16 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap uil__clock {
             get {
                 object obj = ResourceManager.GetObject("uil--clock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap uil__clock__2_ {
+            get {
+                object obj = ResourceManager.GetObject("uil--clock (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
