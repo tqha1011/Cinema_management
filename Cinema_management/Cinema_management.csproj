@@ -145,6 +145,12 @@
       <DependentUpon>MovieRowControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Movie\Movie.cs" />
+    <Compile Include="Personal Info\UCThongTinCaNhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Personal Info\UCThongTinCaNhan.Designer.cs">
+      <DependentUpon>UCThongTinCaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -347,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MovieRowControl.resx">
       <DependentUpon>MovieRowControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal Info\UCThongTinCaNhan.resx">
+      <DependentUpon>UCThongTinCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

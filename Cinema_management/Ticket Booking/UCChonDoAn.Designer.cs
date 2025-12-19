@@ -30,9 +30,11 @@
         {
             this.lbFnB = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.btnBack = new Krypton.Toolkit.KryptonButton();
             this.pnThanhToan = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
             this.flowPanelCart = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucThanhToanFood1 = new Cinema_management.Ticket_Booking.UCThanhToanFood();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.btnThanhToan = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel5 = new Krypton.Toolkit.KryptonPanel();
@@ -42,6 +44,7 @@
             this.lblMovieInfo = new Krypton.Toolkit.KryptonLabel();
             this.pnOrder = new Krypton.Toolkit.KryptonPanel();
             this.flowPanelMenu = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucOrderFoodCard1 = new Cinema_management.UCOrderFoodCard();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             this.Background = new Krypton.Toolkit.KryptonPictureBox();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
@@ -49,9 +52,6 @@
             this.btnMonUong = new Krypton.Toolkit.KryptonButton();
             this.btnMonAn = new Krypton.Toolkit.KryptonButton();
             this.btnTatCa = new Krypton.Toolkit.KryptonButton();
-            this.ucOrderFoodCard1 = new Cinema_management.UCOrderFoodCard();
-            this.ucThanhToanFood1 = new Cinema_management.Ticket_Booking.UCThanhToanFood();
-            this.btnBack = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnThanhToan)).BeginInit();
@@ -101,6 +101,31 @@
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel1.TabIndex = 4;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(1459, 58);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.btnBack.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.btnBack.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnBack.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Size = new System.Drawing.Size(159, 69);
+            this.btnBack.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.btnBack.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.btnBack.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnBack.StateCommon.Border.Rounding = 20F;
+            this.btnBack.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnBack.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
+            this.btnBack.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
+            this.btnBack.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnBack.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnBack.TabIndex = 2;
+            this.btnBack.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnBack.Values.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // pnThanhToan
             // 
             this.pnThanhToan.Controls.Add(this.kryptonGroup2);
@@ -144,6 +169,24 @@
             this.flowPanelCart.Name = "flowPanelCart";
             this.flowPanelCart.Size = new System.Drawing.Size(511, 374);
             this.flowPanelCart.TabIndex = 1;
+            // 
+            // ucThanhToanFood1
+            // 
+            this.ucThanhToanFood1.BackColor = System.Drawing.Color.White;
+            this.ucThanhToanFood1.GiaTien = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ucThanhToanFood1.Location = new System.Drawing.Point(7, 6);
+            this.ucThanhToanFood1.MaDoan = 0;
+            this.ucThanhToanFood1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.ucThanhToanFood1.MinimumSize = new System.Drawing.Size(464, 199);
+            this.ucThanhToanFood1.Name = "ucThanhToanFood1";
+            this.ucThanhToanFood1.Size = new System.Drawing.Size(464, 199);
+            this.ucThanhToanFood1.SoLuong = 1;
+            this.ucThanhToanFood1.TabIndex = 0;
+            this.ucThanhToanFood1.TenDoan = null;
             // 
             // kryptonPanel4
             // 
@@ -262,6 +305,24 @@
             this.flowPanelMenu.Name = "flowPanelMenu";
             this.flowPanelMenu.Size = new System.Drawing.Size(964, 336);
             this.flowPanelMenu.TabIndex = 2;
+            // 
+            // ucOrderFoodCard1
+            // 
+            this.ucOrderFoodCard1.BackColor = System.Drawing.Color.White;
+            this.ucOrderFoodCard1.GiaTien = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ucOrderFoodCard1.LoaiDoan = 0;
+            this.ucOrderFoodCard1.Location = new System.Drawing.Point(40, 38);
+            this.ucOrderFoodCard1.MaDoan = 0;
+            this.ucOrderFoodCard1.Margin = new System.Windows.Forms.Padding(40, 38, 40, 38);
+            this.ucOrderFoodCard1.MinimumSize = new System.Drawing.Size(373, 504);
+            this.ucOrderFoodCard1.Name = "ucOrderFoodCard1";
+            this.ucOrderFoodCard1.Size = new System.Drawing.Size(373, 504);
+            this.ucOrderFoodCard1.TabIndex = 0;
+            this.ucOrderFoodCard1.TenDoan = null;
             // 
             // kryptonPanel2
             // 
@@ -480,67 +541,6 @@
             this.btnTatCa.Values.Text = "Tất cả";
             this.btnTatCa.Click += new System.EventHandler(this.btnTatCa_Click);
             // 
-            // ucOrderFoodCard1
-            // 
-            this.ucOrderFoodCard1.BackColor = System.Drawing.Color.White;
-            this.ucOrderFoodCard1.GiaTien = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ucOrderFoodCard1.LoaiDoan = 0;
-            this.ucOrderFoodCard1.Location = new System.Drawing.Point(40, 38);
-            this.ucOrderFoodCard1.MaDoan = 0;
-            this.ucOrderFoodCard1.Margin = new System.Windows.Forms.Padding(40, 38, 40, 38);
-            this.ucOrderFoodCard1.MinimumSize = new System.Drawing.Size(373, 504);
-            this.ucOrderFoodCard1.Name = "ucOrderFoodCard1";
-            this.ucOrderFoodCard1.Size = new System.Drawing.Size(373, 504);
-            this.ucOrderFoodCard1.TabIndex = 0;
-            this.ucOrderFoodCard1.TenDoan = null;
-            // 
-            // ucThanhToanFood1
-            // 
-            this.ucThanhToanFood1.BackColor = System.Drawing.Color.White;
-            this.ucThanhToanFood1.GiaTien = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ucThanhToanFood1.Location = new System.Drawing.Point(7, 6);
-            this.ucThanhToanFood1.MaDoan = 0;
-            this.ucThanhToanFood1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.ucThanhToanFood1.MinimumSize = new System.Drawing.Size(464, 199);
-            this.ucThanhToanFood1.Name = "ucThanhToanFood1";
-            this.ucThanhToanFood1.Size = new System.Drawing.Size(464, 199);
-            this.ucThanhToanFood1.SoLuong = 1;
-            this.ucThanhToanFood1.TabIndex = 0;
-            this.ucThanhToanFood1.TenDoan = null;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(1459, 58);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
-            this.btnBack.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
-            this.btnBack.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnBack.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Size = new System.Drawing.Size(159, 69);
-            this.btnBack.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
-            this.btnBack.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
-            this.btnBack.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnBack.StateCommon.Border.Rounding = 20F;
-            this.btnBack.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnBack.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
-            this.btnBack.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
-            this.btnBack.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.btnBack.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.btnBack.TabIndex = 2;
-            this.btnBack.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnBack.Values.Text = "Back";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // UCChonDoAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -553,6 +553,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCChonDoAn";
             this.Size = new System.Drawing.Size(1645, 914);
+            this.Load += new System.EventHandler(this.UCChonDoAn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pnThanhToan)).EndInit();

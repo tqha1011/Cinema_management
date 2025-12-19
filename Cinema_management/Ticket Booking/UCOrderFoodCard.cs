@@ -36,9 +36,13 @@ namespace Cinema_management
             LoaiDoan = loai;
 
             lblTenMon.Text = name;
-            lblGia.Text = price.ToString("N0") + " VND";
+            lblGia.Text = price.ToString("N0") + " đ";
             if (img != null)
+            {
                 picPoster.Image = img;
-        }
+                picPoster.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+
+            }
     }
 }

@@ -29,7 +29,6 @@ namespace Cinema_management.Ticket_Booking
             this.Click += UCMovieCard_Click;
             picPoster.Click += UCMovieCard_Click;
             lbTitle.Click += UCMovieCard_Click;
-
             // Tạo thư mục nếu chưa có (để tránh lỗi)
             if (!Directory.Exists(_posterFolderPath))
             {

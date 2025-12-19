@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Cinema_management.Personal_Info;
 using Krypton.Toolkit;
 
 namespace Cinema_management
@@ -18,5 +19,16 @@ namespace Cinema_management
             InitializeComponent();
         }
 
+        private void FormNV_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void btnTTCN_Click(object sender, EventArgs e)
+        {
+            pnforUC.Controls.Clear();
+            UCThongTinCaNhan uc = new UCThongTinCaNhan();
+            uc.Dock = DockStyle.Fill;
+            pnforUC.Controls.Add(uc);
+        }
     }
 }
