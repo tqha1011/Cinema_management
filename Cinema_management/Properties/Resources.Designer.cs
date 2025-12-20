@@ -63,6 +63,36 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap akar_icons__edit {
+            get {
+                object obj = ResourceManager.GetObject("akar-icons--edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap akar_icons__edit__1_ {
+            get {
+                object obj = ResourceManager.GetObject("akar-icons--edit (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap akar_icons__edit__2_ {
+            get {
+                object obj = ResourceManager.GetObject("akar-icons--edit (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap backgr_drink {
             get {
                 object obj = ResourceManager.GetObject("backgr-drink", resourceCulture);
@@ -703,6 +733,26 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mi__delete {
+            get {
+                object obj = ResourceManager.GetObject("mi--delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mi__delete__1_ {
+            get {
+                object obj = ResourceManager.GetObject("mi--delete (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mingcute__ticket_fill {
             get {
                 object obj = ResourceManager.GetObject("mingcute--ticket-fill", resourceCulture);
@@ -786,6 +836,36 @@ namespace Cinema_management.Properties {
         internal static System.Drawing.Bitmap ri__dashboard_fill__2_ {
             get {
                 object obj = ResourceManager.GetObject("ri--dashboard-fill (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ri__toggle_fill {
+            get {
+                object obj = ResourceManager.GetObject("ri--toggle-fill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ri__toggle_line {
+            get {
+                object obj = ResourceManager.GetObject("ri--toggle-line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ri__toggle_line__1_ {
+            get {
+                object obj = ResourceManager.GetObject("ri--toggle-line (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
