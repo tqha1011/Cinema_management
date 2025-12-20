@@ -96,7 +96,9 @@ namespace Cinema_management
         {
             try
             {
-                string query = "SELECT MAPHIM, TENPHIM FROM PHIM ORDER BY TENPHIM";
+                // Chỉ chọn phim có TRANGTHAI = 1 (Đang chiếu)
+                string query = "SELECT MAPHIM, TENPHIM FROM PHIM WHERE TRANGTHAI = 1 ORDER BY TENPHIM";
+
                 DataTable dt = db.ReadData(query);
                 if (dt != null)
                 {
@@ -109,7 +111,6 @@ namespace Cinema_management
             catch (Exception)
             {
                 Alert.Show("Lỗi khi tải danh sách phim", MessagboxCustom.AlertMessagebox.AlertType.Error);
-                //MessageBox.Show("Lỗi khi tải danh sách phim: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
