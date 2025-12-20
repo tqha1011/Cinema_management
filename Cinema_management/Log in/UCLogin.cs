@@ -71,18 +71,37 @@ namespace Cinema_management
                     if (parentForm != null)
                     {
                         parentForm.Hide();
-                        FormMain mainForm = new FormMain();
-                        DialogResult result = mainForm.ShowDialog();
-                        if (result == DialogResult.OK)
+                        if(role == "Quản lý")
                         {
-                            parentForm.Show();
-                            txtPass.Text = "";
-                            txtUser.Text = username;
-                            txtPass.Focus();
+                            FormMain mainForm = new FormMain();
+                            DialogResult result = mainForm.ShowDialog();
+                            if (result == DialogResult.OK)
+                            {
+                                parentForm.Show();
+                                txtPass.Text = "";
+                                txtUser.Text = username;
+                                txtPass.Focus();
+                            }
+                            else
+                            {
+                                parentForm.Close();
+                            }
                         }
                         else
                         {
-                            parentForm.Close();
+                            FormNV nvForm = new FormNV();
+                            DialogResult nvResult = nvForm.ShowDialog();
+                            if(nvResult == DialogResult.OK)
+                            {
+                                parentForm.Show();
+                                txtPass.Text = "";
+                                txtUser.Text = username;
+                                txtPass.Focus();
+                            }
+                            else
+                            {
+                                parentForm.Close();
+                            }
                         }
                     }
                 }
