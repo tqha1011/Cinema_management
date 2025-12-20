@@ -34,13 +34,6 @@
             this.dtpSearchDate = new Krypton.Toolkit.KryptonDateTimePicker();
             this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.dgvMM = new Krypton.Toolkit.KryptonDataGridView();
-            this.panelMM = new Krypton.Toolkit.KryptonPanel();
-            this.ckbShowDeleted = new Krypton.Toolkit.KryptonCheckBox();
-            this.btnXoa = new Krypton.Toolkit.KryptonButton();
-            this.btnSua = new Krypton.Toolkit.KryptonButton();
-            this.btnAdd = new Krypton.Toolkit.KryptonButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.paneldgv = new Krypton.Toolkit.KryptonPanel();
             this.MAPHIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MovieName = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Genre = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
@@ -48,6 +41,13 @@
             this.Duration = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.TRANGTHAI = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.NPH = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.panelMM = new Krypton.Toolkit.KryptonPanel();
+            this.ckbShowDeleted = new Krypton.Toolkit.KryptonCheckBox();
+            this.btnXoa = new Krypton.Toolkit.KryptonButton();
+            this.btnSua = new Krypton.Toolkit.KryptonButton();
+            this.btnAdd = new Krypton.Toolkit.KryptonButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.paneldgv = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMM)).BeginInit();
             this.panelMM.SuspendLayout();
@@ -166,6 +166,82 @@
             this.dgvMM.TabIndex = 7;
             this.dgvMM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMM_CellContentClick);
             // 
+            // MAPHIM
+            // 
+            this.MAPHIM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.MAPHIM.DataPropertyName = "MAPHIM";
+            this.MAPHIM.HeaderText = "ID";
+            this.MAPHIM.MinimumWidth = 8;
+            this.MAPHIM.Name = "MAPHIM";
+            this.MAPHIM.ReadOnly = true;
+            this.MAPHIM.Width = 90;
+            // 
+            // MovieName
+            // 
+            this.MovieName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.MovieName.DataPropertyName = "TENPHIM";
+            this.MovieName.HeaderText = "Movie Name";
+            this.MovieName.MinimumWidth = 8;
+            this.MovieName.Name = "MovieName";
+            this.MovieName.ReadOnly = true;
+            this.MovieName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.MovieName.Width = 330;
+            // 
+            // Genre
+            // 
+            this.Genre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Genre.DataPropertyName = "THELOAIPHIM";
+            this.Genre.HeaderText = "Genre";
+            this.Genre.MinimumWidth = 8;
+            this.Genre.Name = "Genre";
+            this.Genre.ReadOnly = true;
+            this.Genre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Genre.Width = 135;
+            // 
+            // AgeRating
+            // 
+            this.AgeRating.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.AgeRating.DataPropertyName = "GIOIHANTUOI";
+            this.AgeRating.HeaderText = "Age Rating";
+            this.AgeRating.MinimumWidth = 8;
+            this.AgeRating.Name = "AgeRating";
+            this.AgeRating.ReadOnly = true;
+            this.AgeRating.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.AgeRating.Width = 203;
+            // 
+            // Duration
+            // 
+            this.Duration.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Duration.DataPropertyName = "THOILUONGPHIM";
+            this.Duration.HeaderText = "Duration (min)";
+            this.Duration.MinimumWidth = 8;
+            this.Duration.Name = "Duration";
+            this.Duration.ReadOnly = true;
+            this.Duration.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Duration.Width = 246;
+            // 
+            // TRANGTHAI
+            // 
+            this.TRANGTHAI.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.TRANGTHAI.DataPropertyName = "TRANGTHAI";
+            this.TRANGTHAI.HeaderText = "Is Active";
+            this.TRANGTHAI.MinimumWidth = 8;
+            this.TRANGTHAI.Name = "TRANGTHAI";
+            this.TRANGTHAI.ReadOnly = true;
+            this.TRANGTHAI.Visible = false;
+            this.TRANGTHAI.Width = 80;
+            // 
+            // NPH
+            // 
+            this.NPH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.NPH.DataPropertyName = "NGAYPHATHANH";
+            this.NPH.DefaultCellStyle.Format = "dd/MM/yyyy";
+            this.NPH.HeaderText = "Release Day";
+            this.NPH.MinimumWidth = 8;
+            this.NPH.Name = "NPH";
+            this.NPH.ReadOnly = true;
+            this.NPH.Width = 218;
+            // 
             // panelMM
             // 
             this.panelMM.Controls.Add(this.ckbShowDeleted);
@@ -221,6 +297,7 @@
             this.btnXoa.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnXoa.OverrideDefault.Border.Rounding = 20F;
             this.btnXoa.OverrideDefault.Border.Width = 1;
+            this.btnXoa.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnXoa.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.btnXoa.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnXoa.OverrideFocus.Back.ColorAngle = 45F;
@@ -234,10 +311,10 @@
             this.btnXoa.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnXoa.OverrideFocus.Border.Rounding = 20F;
             this.btnXoa.OverrideFocus.Border.Width = 1;
+            this.btnXoa.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnXoa.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnXoa.Size = new System.Drawing.Size(190, 58);
             this.btnXoa.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.btnXoa.StateCommon.Content.ShortText.ColorAngle = 45F;
             this.btnXoa.StateCommon.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
             this.btnXoa.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.StateDisabled.Back.Color1 = System.Drawing.Color.White;
@@ -302,10 +379,8 @@
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.Location = new System.Drawing.Point(949, 54);
             this.btnSua.Name = "btnSua";
-            this.btnSua.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
-            this.btnSua.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.btnSua.OverrideDefault.Back.ColorAngle = 60F;
-            this.btnSua.OverrideDefault.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnSua.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
+            this.btnSua.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
             this.btnSua.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnSua.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.btnSua.OverrideDefault.Border.ColorAngle = 60F;
@@ -314,7 +389,8 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSua.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnSua.OverrideDefault.Border.Rounding = 20F;
-            this.btnSua.OverrideDefault.Border.Width = 1;
+            this.btnSua.OverrideDefault.Border.Width = 4;
+            this.btnSua.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.btnSua.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.btnSua.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnSua.OverrideFocus.Back.ColorAngle = 45F;
@@ -328,6 +404,7 @@
             this.btnSua.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnSua.OverrideFocus.Border.Rounding = 20F;
             this.btnSua.OverrideFocus.Border.Width = 1;
+            this.btnSua.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSua.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnSua.Size = new System.Drawing.Size(190, 58);
             this.btnSua.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
@@ -387,7 +464,7 @@
             this.btnSua.Values.ImageStates.ImageCheckedTracking = null;
             this.btnSua.Values.ImageStates.ImagePressed = global::Cinema_management.Properties.Resources.akar_icons__edit__1_;
             this.btnSua.Values.ImageStates.ImageTracking = global::Cinema_management.Properties.Resources.akar_icons__edit__1_;
-            this.btnSua.Values.Text = "Edit";
+            this.btnSua.Values.Text = "Update";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnAdd
@@ -496,82 +573,6 @@
             this.paneldgv.Size = new System.Drawing.Size(1360, 357);
             this.paneldgv.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.paneldgv.TabIndex = 9;
-            // 
-            // MAPHIM
-            // 
-            this.MAPHIM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.MAPHIM.DataPropertyName = "MAPHIM";
-            this.MAPHIM.HeaderText = "ID";
-            this.MAPHIM.MinimumWidth = 8;
-            this.MAPHIM.Name = "MAPHIM";
-            this.MAPHIM.ReadOnly = true;
-            this.MAPHIM.Width = 90;
-            // 
-            // MovieName
-            // 
-            this.MovieName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.MovieName.DataPropertyName = "TENPHIM";
-            this.MovieName.HeaderText = "Movie Name";
-            this.MovieName.MinimumWidth = 8;
-            this.MovieName.Name = "MovieName";
-            this.MovieName.ReadOnly = true;
-            this.MovieName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MovieName.Width = 330;
-            // 
-            // Genre
-            // 
-            this.Genre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Genre.DataPropertyName = "THELOAIPHIM";
-            this.Genre.HeaderText = "Genre";
-            this.Genre.MinimumWidth = 8;
-            this.Genre.Name = "Genre";
-            this.Genre.ReadOnly = true;
-            this.Genre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Genre.Width = 135;
-            // 
-            // AgeRating
-            // 
-            this.AgeRating.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.AgeRating.DataPropertyName = "GIOIHANTUOI";
-            this.AgeRating.HeaderText = "Age Rating";
-            this.AgeRating.MinimumWidth = 8;
-            this.AgeRating.Name = "AgeRating";
-            this.AgeRating.ReadOnly = true;
-            this.AgeRating.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.AgeRating.Width = 203;
-            // 
-            // Duration
-            // 
-            this.Duration.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Duration.DataPropertyName = "THOILUONGPHIM";
-            this.Duration.HeaderText = "Duration (min)";
-            this.Duration.MinimumWidth = 8;
-            this.Duration.Name = "Duration";
-            this.Duration.ReadOnly = true;
-            this.Duration.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Duration.Width = 246;
-            // 
-            // TRANGTHAI
-            // 
-            this.TRANGTHAI.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.TRANGTHAI.DataPropertyName = "TRANGTHAI";
-            this.TRANGTHAI.HeaderText = "Is Active";
-            this.TRANGTHAI.MinimumWidth = 8;
-            this.TRANGTHAI.Name = "TRANGTHAI";
-            this.TRANGTHAI.ReadOnly = true;
-            this.TRANGTHAI.Visible = false;
-            this.TRANGTHAI.Width = 139;
-            // 
-            // NPH
-            // 
-            this.NPH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.NPH.DataPropertyName = "NGAYPHATHANH";
-            this.NPH.DefaultCellStyle.Format = "dd/MM/yyyy";
-            this.NPH.HeaderText = "Release Day";
-            this.NPH.MinimumWidth = 8;
-            this.NPH.Name = "NPH";
-            this.NPH.ReadOnly = true;
-            this.NPH.Width = 218;
             // 
             // UCMovies1
             // 
