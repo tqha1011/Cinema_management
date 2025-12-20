@@ -19,6 +19,7 @@ namespace Cinema_management
         {
             InitializeComponent();
             this.Load += UCTongQuan_Load;
+            
         }
 
         private void UCTongQuan_Load(object sender, EventArgs e)
@@ -26,6 +27,7 @@ namespace Cinema_management
             LoadRevenueComparison();
             LoadBestStaff();
             LoadTop5MoviesChart();
+            LoadChartKhungGio();
         }
         private void LoadTop5MoviesChart()
         {
@@ -122,6 +124,39 @@ namespace Cinema_management
         private void kryptonGroup2_Panel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void LoadChartKhungGio()
+        {
+            string query = @"SELECT TOP 5 
+                    DATEPART(HOUR, S.THOIGIANCHIEU) AS Gio, 
+                    COUNT(V.MAVE) AS SoVe 
+                 FROM VE V 
+                 JOIN SUATCHIEU S ON V.MASUATCHIEU = S.MASUATCHIEU 
+                 GROUP BY DATEPART(HOUR, S.THOIGIANCHIEU) 
+                 ORDER BY SoVe ASC";
+            DataTable dt = db.ReadData(query);
+
+            chartKhungGio.Series[0].Points.Clear();
+            chartKhungGio.ChartAreas[0].AxisX.Interval = 1;
+            chartKhungGio.Series[0].IsVisibleInLegend = false;
+            Color[] listMau = new Color[] {
+        Color.Red, Color.Blue, Color.Green, Color.Orange, Color.Purple, Color.Teal
+    };
+            int i = 0;
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    string gioChieu = row["Gio"].ToString() + "h";
+                    int soVe = int.Parse(row["SoVe"].ToString());
+                    int pIndex = chartKhungGio.Series[0].Points.AddXY(gioChieu, soVe);
+                    chartKhungGio.Series[0].Points[pIndex].Color = listMau[i % listMau.Length];
+                    chartKhungGio.Series[0].Points[pIndex].Label = soVe.ToString();
+                    i++;
+                    //chartKhungGio.Series[0].Points.AddXY(gioChieu, soVe);
+                }
+            }
         }
     }
 }
