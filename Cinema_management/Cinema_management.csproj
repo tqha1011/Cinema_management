@@ -544,6 +544,7 @@
     <None Include="Resources\akar-icons--edit %282%29.png" />
     <None Include="Resources\mi--delete.png" />
     <None Include="Resources\mi--delete %281%29.png" />
+    <None Include="Resources\icon-park-solid--movie %282%29.png" />
     <Content Include="Resources\popcorn_drink_logo_resize.jpg" />
     <None Include="Resources\lucide--popcorn.png" />
     <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />
