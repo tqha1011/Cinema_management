@@ -68,7 +68,7 @@
             this.pnAdd.Location = new System.Drawing.Point(0, 0);
             this.pnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.pnAdd.Name = "pnAdd";
-            this.pnAdd.Size = new System.Drawing.Size(1067, 131);
+            this.pnAdd.Size = new System.Drawing.Size(1115, 131);
             this.pnAdd.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnAdd.TabIndex = 1;
             // 
@@ -238,7 +238,7 @@
             this.btnCancel.OverrideDefault.Border.Width = 4;
             this.btnCancel.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnCancel.Size = new System.Drawing.Size(160, 56);
+            this.btnCancel.Size = new System.Drawing.Size(208, 56);
             this.btnCancel.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnCancel.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnCancel.StateCommon.Back.ColorAngle = 45F;
@@ -289,7 +289,7 @@
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(719, 455);
+            this.btnSave.Location = new System.Drawing.Point(767, 455);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
@@ -400,7 +400,7 @@
             this.Controls.Add(this.lblMovieName);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddShowtime";
-            this.Size = new System.Drawing.Size(1067, 562);
+            this.Size = new System.Drawing.Size(1115, 540);
             this.Load += new System.EventHandler(this.AddShowtime_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).EndInit();
             this.pnAdd.ResumeLayout(false);
