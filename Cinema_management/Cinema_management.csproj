@@ -459,6 +459,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ri--toggle-line %281%29.png" />
+    <None Include="Resources\ri--toggle-fill.png" />
+    <None Include="Resources\ri--toggle-line.png" />
     <None Include="Resources\uil--clock %282%29.png" />
     <None Include="Resources\zondicons--close-solid.png" />
     <None Include="Resources\pajamas--close.png" />
@@ -527,6 +530,11 @@
     <None Include="Resources\material-symbols--add-rounded %285%29.png" />
     <None Include="Resources\jam--movie %283%29.png" />
     <None Include="Resources\fluent--people-20-filled.png" />
+    <None Include="Resources\akar-icons--edit.png" />
+    <None Include="Resources\akar-icons--edit %281%29.png" />
+    <None Include="Resources\akar-icons--edit %282%29.png" />
+    <None Include="Resources\mi--delete.png" />
+    <None Include="Resources\mi--delete %281%29.png" />
     <Content Include="Resources\popcorn_drink_logo_resize.jpg" />
     <None Include="Resources\lucide--popcorn.png" />
     <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />
