@@ -323,6 +323,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_park_solid__movie__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icon-park-solid--movie (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconamoon__eye_light {
             get {
                 object obj = ResourceManager.GetObject("iconamoon--eye-light", resourceCulture);

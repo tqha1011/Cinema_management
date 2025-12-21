@@ -44,11 +44,11 @@ namespace Cinema_management
             if (ShowtimeIDToEdit.HasValue)
             {
                 kryptonLabel1.Text = "Edit Showtime";
-                btnSave.Text = "Update Showtime";
+                btnSave.Text = "Update";
                 kryptonDateTimePicker1.Enabled = false;
                 kryptonDateTimePicker3.Enabled = false;
                 cbbMovieName.Enabled = false;
-                btnCancel.Text = "Xóa suất chiếu";
+                btnCancel.Text = "Xóa";
                 LoadShowtimeForEditing(ShowtimeIDToEdit.Value);
             }
             else

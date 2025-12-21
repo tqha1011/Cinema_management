@@ -194,7 +194,7 @@ namespace Cinema_management
             {
                 Text = "Cập nhật suất chiếu",
                 StartPosition = FormStartPosition.CenterParent,
-                Size = new Size(1067, 562),
+                Size = new Size(1193, 600),
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 MaximizeBox = false,
                 MinimizeBox = false
@@ -212,7 +212,7 @@ namespace Cinema_management
             {
                 Text = "Thêm suất chiếu",
                 StartPosition = FormStartPosition.CenterParent,
-                Size = new Size(1067, 600),
+                Size = new Size(1193, 600),
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 MaximizeBox = false,
                 MinimizeBox = false

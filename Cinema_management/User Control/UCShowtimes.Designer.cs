@@ -19,10 +19,7 @@ namespace Cinema_management
         {
             this.panelTop = new Krypton.Toolkit.KryptonPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnPrevWeek = new Krypton.Toolkit.KryptonButton();
-            this.btnNextWeek = new Krypton.Toolkit.KryptonButton();
             this.lblDateRange = new Krypton.Toolkit.KryptonLabel();
-            this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.cbbRoom = new Krypton.Toolkit.KryptonComboBox();
             this.tlpCalendar = new System.Windows.Forms.TableLayoutPanel();
             this.lblHeaderSun = new System.Windows.Forms.Label();
@@ -39,6 +36,9 @@ namespace Cinema_management
             this.flpSat = new System.Windows.Forms.FlowLayoutPanel();
             this.flpSun = new System.Windows.Forms.FlowLayoutPanel();
             this.lblHeaderMon = new System.Windows.Forms.Label();
+            this.btnAddStaff = new Krypton.Toolkit.KryptonButton();
+            this.btnNextWeek = new Krypton.Toolkit.KryptonButton();
+            this.btnPrevWeek = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelTop)).BeginInit();
             this.panelTop.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -48,8 +48,8 @@ namespace Cinema_management
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.btnAddStaff);
             this.panelTop.Controls.Add(this.tableLayoutPanel1);
-            this.panelTop.Controls.Add(this.btnAdd);
             this.panelTop.Controls.Add(this.cbbRoom);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
@@ -66,7 +66,7 @@ namespace Cinema_management
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.69194F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.30806F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
             this.tableLayoutPanel1.Controls.Add(this.btnPrevWeek, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnNextWeek, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblDateRange, 1, 0);
@@ -78,40 +78,10 @@ namespace Cinema_management
             this.tableLayoutPanel1.Size = new System.Drawing.Size(821, 92);
             this.tableLayoutPanel1.TabIndex = 22;
             // 
-            // btnPrevWeek
-            // 
-            this.btnPrevWeek.AutoSize = true;
-            this.btnPrevWeek.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPrevWeek.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPrevWeek.Location = new System.Drawing.Point(6, 6);
-            this.btnPrevWeek.Margin = new System.Windows.Forms.Padding(6);
-            this.btnPrevWeek.Name = "btnPrevWeek";
-            this.btnPrevWeek.Size = new System.Drawing.Size(93, 80);
-            this.btnPrevWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevWeek.TabIndex = 1;
-            this.btnPrevWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnPrevWeek.Values.Text = "<";
-            this.btnPrevWeek.Click += new System.EventHandler(this.btnPrevWeek_Click);
-            // 
-            // btnNextWeek
-            // 
-            this.btnNextWeek.AutoSize = true;
-            this.btnNextWeek.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnNextWeek.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnNextWeek.Location = new System.Drawing.Point(720, 6);
-            this.btnNextWeek.Margin = new System.Windows.Forms.Padding(6);
-            this.btnNextWeek.Name = "btnNextWeek";
-            this.btnNextWeek.Size = new System.Drawing.Size(95, 80);
-            this.btnNextWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextWeek.TabIndex = 2;
-            this.btnNextWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnNextWeek.Values.Text = ">";
-            this.btnNextWeek.Click += new System.EventHandler(this.btnNextWeek_Click);
-            // 
             // lblDateRange
             // 
             this.lblDateRange.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDateRange.Location = new System.Drawing.Point(111, 6);
+            this.lblDateRange.Location = new System.Drawing.Point(110, 6);
             this.lblDateRange.Margin = new System.Windows.Forms.Padding(6);
             this.lblDateRange.Name = "lblDateRange";
             this.lblDateRange.Size = new System.Drawing.Size(597, 80);
@@ -121,60 +91,6 @@ namespace Cinema_management
             this.lblDateRange.TabIndex = 3;
             this.lblDateRange.Values.Text = "Tuần: 20/10 - 27/10";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(2058, 23);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(8);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAdd.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAdd.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnAdd.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAdd.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAdd.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnAdd.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAdd.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAdd.OverrideDefault.Border.Rounding = 10F;
-            this.btnAdd.OverrideDefault.Border.Width = 1;
-            this.btnAdd.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAdd.Size = new System.Drawing.Size(292, 69);
-            this.btnAdd.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAdd.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAdd.StateCommon.Back.ColorAngle = 45F;
-            this.btnAdd.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAdd.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAdd.StateCommon.Border.ColorAngle = 45F;
-            this.btnAdd.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAdd.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAdd.StateCommon.Border.Rounding = 10F;
-            this.btnAdd.StateCommon.Border.Width = 1;
-            this.btnAdd.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAdd.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.btnAdd.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.btnAdd.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAdd.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAdd.StateNormal.Back.ColorAngle = 45F;
-            this.btnAdd.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
-            this.btnAdd.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
-            this.btnAdd.StateNormal.Border.ColorAngle = 45F;
-            this.btnAdd.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAdd.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAdd.StateNormal.Border.Rounding = 10F;
-            this.btnAdd.StateNormal.Border.Width = 1;
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnAdd.Values.Text = "+ Add Show";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // cbbRoom
             // 
             this.cbbRoom.DropDownWidth = 232;
@@ -182,7 +98,7 @@ namespace Cinema_management
             this.cbbRoom.Margin = new System.Windows.Forms.Padding(12);
             this.cbbRoom.Name = "cbbRoom";
             this.cbbRoom.Size = new System.Drawing.Size(464, 49);
-            this.cbbRoom.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbRoom.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbRoom.TabIndex = 0;
             this.cbbRoom.Text = "Chọn phòng";
             // 
@@ -227,7 +143,7 @@ namespace Cinema_management
             this.lblHeaderSun.AutoSize = true;
             this.lblHeaderSun.BackColor = System.Drawing.Color.MistyRose;
             this.lblHeaderSun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHeaderSun.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderSun.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderSun.ForeColor = System.Drawing.Color.Red;
             this.lblHeaderSun.Location = new System.Drawing.Point(2053, 1);
             this.lblHeaderSun.Margin = new System.Windows.Forms.Padding(0);
@@ -242,7 +158,7 @@ namespace Cinema_management
             this.lblHeaderSat.AutoSize = true;
             this.lblHeaderSat.BackColor = System.Drawing.Color.AliceBlue;
             this.lblHeaderSat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHeaderSat.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderSat.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderSat.Location = new System.Drawing.Point(1711, 1);
             this.lblHeaderSat.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderSat.Name = "lblHeaderSat";
@@ -256,7 +172,7 @@ namespace Cinema_management
             this.lblHeaderFri.AutoSize = true;
             this.lblHeaderFri.BackColor = System.Drawing.Color.AliceBlue;
             this.lblHeaderFri.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHeaderFri.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderFri.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderFri.Location = new System.Drawing.Point(1369, 1);
             this.lblHeaderFri.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderFri.Name = "lblHeaderFri";
@@ -270,7 +186,7 @@ namespace Cinema_management
             this.lblHeaderThu.AutoSize = true;
             this.lblHeaderThu.BackColor = System.Drawing.Color.AliceBlue;
             this.lblHeaderThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHeaderThu.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderThu.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderThu.Location = new System.Drawing.Point(1027, 1);
             this.lblHeaderThu.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderThu.Name = "lblHeaderThu";
@@ -284,7 +200,7 @@ namespace Cinema_management
             this.lblHeaderWed.AutoSize = true;
             this.lblHeaderWed.BackColor = System.Drawing.Color.AliceBlue;
             this.lblHeaderWed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHeaderWed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderWed.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderWed.Location = new System.Drawing.Point(685, 1);
             this.lblHeaderWed.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderWed.Name = "lblHeaderWed";
@@ -298,7 +214,7 @@ namespace Cinema_management
             this.lblHeaderTue.AutoSize = true;
             this.lblHeaderTue.BackColor = System.Drawing.Color.AliceBlue;
             this.lblHeaderTue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHeaderTue.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderTue.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderTue.Location = new System.Drawing.Point(343, 1);
             this.lblHeaderTue.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderTue.Name = "lblHeaderTue";
@@ -389,7 +305,7 @@ namespace Cinema_management
             this.lblHeaderMon.AutoSize = true;
             this.lblHeaderMon.BackColor = System.Drawing.Color.AliceBlue;
             this.lblHeaderMon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHeaderMon.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderMon.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderMon.Location = new System.Drawing.Point(1, 1);
             this.lblHeaderMon.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderMon.Name = "lblHeaderMon";
@@ -397,6 +313,271 @@ namespace Cinema_management
             this.lblHeaderMon.TabIndex = 0;
             this.lblHeaderMon.Text = "Mon";
             this.lblHeaderMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAddStaff
+            // 
+            this.btnAddStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddStaff.Location = new System.Drawing.Point(1942, 27);
+            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddStaff.Name = "btnAddStaff";
+            this.btnAddStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnAddStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnAddStaff.OverrideDefault.Back.ColorAngle = 60F;
+            this.btnAddStaff.OverrideDefault.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnAddStaff.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnAddStaff.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnAddStaff.OverrideDefault.Border.ColorAngle = 60F;
+            this.btnAddStaff.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.OverrideDefault.Border.Rounding = 20F;
+            this.btnAddStaff.OverrideDefault.Border.Width = 1;
+            this.btnAddStaff.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnAddStaff.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnAddStaff.OverrideFocus.Back.ColorAngle = 45F;
+            this.btnAddStaff.OverrideFocus.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnAddStaff.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnAddStaff.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnAddStaff.OverrideFocus.Border.ColorAngle = 45F;
+            this.btnAddStaff.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.OverrideFocus.Border.Rounding = 20F;
+            this.btnAddStaff.OverrideFocus.Border.Width = 1;
+            this.btnAddStaff.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnAddStaff.Size = new System.Drawing.Size(345, 72);
+            this.btnAddStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.StateCommon.Back.ColorAngle = 45F;
+            this.btnAddStaff.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnAddStaff.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnAddStaff.StateCommon.Border.ColorAngle = 45F;
+            this.btnAddStaff.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.StateCommon.Border.Rounding = 10F;
+            this.btnAddStaff.StateCommon.Border.Width = 1;
+            this.btnAddStaff.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStaff.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnAddStaff.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnAddStaff.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnAddStaff.StateNormal.Back.ColorAngle = 60F;
+            this.btnAddStaff.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnAddStaff.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnAddStaff.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnAddStaff.StateNormal.Border.ColorAngle = 60F;
+            this.btnAddStaff.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.StateNormal.Border.Rounding = 20F;
+            this.btnAddStaff.StateNormal.Border.Width = 1;
+            this.btnAddStaff.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(97)))), ((int)(((byte)(44)))));
+            this.btnAddStaff.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
+            this.btnAddStaff.StatePressed.Back.ColorAngle = 135F;
+            this.btnAddStaff.StatePressed.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnAddStaff.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(97)))), ((int)(((byte)(44)))));
+            this.btnAddStaff.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
+            this.btnAddStaff.StatePressed.Border.ColorAngle = 135F;
+            this.btnAddStaff.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.StatePressed.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.StatePressed.Border.Rounding = 20F;
+            this.btnAddStaff.StatePressed.Border.Width = 1;
+            this.btnAddStaff.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStaff.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnAddStaff.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnAddStaff.StateTracking.Back.ColorAngle = 45F;
+            this.btnAddStaff.StateTracking.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnAddStaff.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnAddStaff.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnAddStaff.StateTracking.Border.ColorAngle = 45F;
+            this.btnAddStaff.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddStaff.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnAddStaff.StateTracking.Border.Rounding = 20F;
+            this.btnAddStaff.StateTracking.Border.Width = 1;
+            this.btnAddStaff.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddStaff.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStaff.TabIndex = 23;
+            this.btnAddStaff.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnAddStaff.Values.Image = global::Cinema_management.Properties.Resources.material_symbols__add_rounded;
+            this.btnAddStaff.Values.Text = "Add Showtime";
+            this.btnAddStaff.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnNextWeek
+            // 
+            this.btnNextWeek.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNextWeek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnNextWeek.Location = new System.Drawing.Point(717, 4);
+            this.btnNextWeek.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNextWeek.Name = "btnNextWeek";
+            this.btnNextWeek.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
+            this.btnNextWeek.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
+            this.btnNextWeek.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnNextWeek.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnNextWeek.OverrideDefault.Border.ColorAngle = 60F;
+            this.btnNextWeek.OverrideDefault.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnNextWeek.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnNextWeek.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnNextWeek.OverrideDefault.Border.Rounding = 20F;
+            this.btnNextWeek.OverrideDefault.Border.Width = 4;
+            this.btnNextWeek.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnNextWeek.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnNextWeek.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnNextWeek.OverrideFocus.Back.ColorAngle = 45F;
+            this.btnNextWeek.OverrideFocus.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnNextWeek.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnNextWeek.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnNextWeek.OverrideFocus.Border.ColorAngle = 45F;
+            this.btnNextWeek.OverrideFocus.Border.Rounding = 20F;
+            this.btnNextWeek.OverrideFocus.Border.Width = 1;
+            this.btnNextWeek.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnNextWeek.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnNextWeek.Size = new System.Drawing.Size(100, 84);
+            this.btnNextWeek.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnNextWeek.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnNextWeek.StateCommon.Back.ColorAngle = 45F;
+            this.btnNextWeek.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnNextWeek.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnNextWeek.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnNextWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextWeek.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnNextWeek.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnNextWeek.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnNextWeek.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnNextWeek.StateNormal.Border.ColorAngle = 60F;
+            this.btnNextWeek.StateNormal.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnNextWeek.StateNormal.Border.Rounding = 20F;
+            this.btnNextWeek.StateNormal.Border.Width = 4;
+            this.btnNextWeek.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnNextWeek.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnNextWeek.StatePressed.Back.ColorAngle = 135F;
+            this.btnNextWeek.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnNextWeek.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnNextWeek.StatePressed.Border.ColorAngle = 135F;
+            this.btnNextWeek.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnNextWeek.StatePressed.Border.Rounding = 10F;
+            this.btnNextWeek.StatePressed.Border.Width = 1;
+            this.btnNextWeek.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnNextWeek.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Nunito", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextWeek.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnNextWeek.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnNextWeek.StateTracking.Back.ColorAngle = 45F;
+            this.btnNextWeek.StateTracking.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnNextWeek.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnNextWeek.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnNextWeek.StateTracking.Border.ColorAngle = 45F;
+            this.btnNextWeek.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnNextWeek.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnNextWeek.StateTracking.Border.Rounding = 20F;
+            this.btnNextWeek.StateTracking.Border.Width = 1;
+            this.btnNextWeek.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnNextWeek.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Nunito", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextWeek.TabIndex = 24;
+            this.btnNextWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnNextWeek.Values.Text = ">";
+            this.btnNextWeek.Click += new System.EventHandler(this.btnNextWeek_Click);
+            // 
+            // btnPrevWeek
+            // 
+            this.btnPrevWeek.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrevWeek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPrevWeek.Location = new System.Drawing.Point(4, 4);
+            this.btnPrevWeek.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrevWeek.Name = "btnPrevWeek";
+            this.btnPrevWeek.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
+            this.btnPrevWeek.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
+            this.btnPrevWeek.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnPrevWeek.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnPrevWeek.OverrideDefault.Border.ColorAngle = 60F;
+            this.btnPrevWeek.OverrideDefault.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnPrevWeek.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnPrevWeek.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnPrevWeek.OverrideDefault.Border.Rounding = 20F;
+            this.btnPrevWeek.OverrideDefault.Border.Width = 4;
+            this.btnPrevWeek.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnPrevWeek.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnPrevWeek.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnPrevWeek.OverrideFocus.Back.ColorAngle = 45F;
+            this.btnPrevWeek.OverrideFocus.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnPrevWeek.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnPrevWeek.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnPrevWeek.OverrideFocus.Border.ColorAngle = 45F;
+            this.btnPrevWeek.OverrideFocus.Border.Rounding = 20F;
+            this.btnPrevWeek.OverrideFocus.Border.Width = 1;
+            this.btnPrevWeek.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnPrevWeek.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnPrevWeek.Size = new System.Drawing.Size(96, 84);
+            this.btnPrevWeek.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnPrevWeek.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnPrevWeek.StateCommon.Back.ColorAngle = 45F;
+            this.btnPrevWeek.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnPrevWeek.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnPrevWeek.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnPrevWeek.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevWeek.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnPrevWeek.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnPrevWeek.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnPrevWeek.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnPrevWeek.StateNormal.Border.ColorAngle = 60F;
+            this.btnPrevWeek.StateNormal.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnPrevWeek.StateNormal.Border.Rounding = 20F;
+            this.btnPrevWeek.StateNormal.Border.Width = 4;
+            this.btnPrevWeek.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnPrevWeek.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnPrevWeek.StatePressed.Back.ColorAngle = 135F;
+            this.btnPrevWeek.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnPrevWeek.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnPrevWeek.StatePressed.Border.ColorAngle = 135F;
+            this.btnPrevWeek.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnPrevWeek.StatePressed.Border.Rounding = 10F;
+            this.btnPrevWeek.StatePressed.Border.Width = 1;
+            this.btnPrevWeek.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnPrevWeek.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Nunito", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevWeek.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnPrevWeek.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnPrevWeek.StateTracking.Back.ColorAngle = 45F;
+            this.btnPrevWeek.StateTracking.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.btnPrevWeek.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
+            this.btnPrevWeek.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.btnPrevWeek.StateTracking.Border.ColorAngle = 45F;
+            this.btnPrevWeek.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnPrevWeek.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnPrevWeek.StateTracking.Border.Rounding = 20F;
+            this.btnPrevWeek.StateTracking.Border.Width = 1;
+            this.btnPrevWeek.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnPrevWeek.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Nunito", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevWeek.TabIndex = 25;
+            this.btnPrevWeek.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnPrevWeek.Values.Text = "<";
+            this.btnPrevWeek.Click += new System.EventHandler(this.btnPrevWeek_Click);
             // 
             // UCShowtimes
             // 
@@ -424,10 +605,7 @@ namespace Cinema_management
 
         private Krypton.Toolkit.KryptonPanel panelTop;
         private Krypton.Toolkit.KryptonComboBox cbbRoom;
-        private Krypton.Toolkit.KryptonButton btnNextWeek;
-        private Krypton.Toolkit.KryptonButton btnPrevWeek;
         private Krypton.Toolkit.KryptonLabel lblDateRange;
-        private Krypton.Toolkit.KryptonButton btnAdd;
         private System.Windows.Forms.TableLayoutPanel tlpCalendar;
         private System.Windows.Forms.Label lblHeaderMon;
         private System.Windows.Forms.Label lblHeaderSun;
@@ -444,5 +622,8 @@ namespace Cinema_management
         private System.Windows.Forms.FlowLayoutPanel flpSat;
         private System.Windows.Forms.FlowLayoutPanel flpSun;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Krypton.Toolkit.KryptonButton btnAddStaff;
+        private Krypton.Toolkit.KryptonButton btnPrevWeek;
+        private Krypton.Toolkit.KryptonButton btnNextWeek;
     }
 }

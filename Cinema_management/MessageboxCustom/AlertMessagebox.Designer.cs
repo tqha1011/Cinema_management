@@ -64,14 +64,14 @@
             this.ptbIcon.Location = new System.Drawing.Point(3, 4);
             this.ptbIcon.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
             this.ptbIcon.Name = "ptbIcon";
-            this.ptbIcon.Size = new System.Drawing.Size(36, 30);
+            this.ptbIcon.Size = new System.Drawing.Size(36, 28);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbIcon.TabIndex = 0;
             this.ptbIcon.TabStop = false;
             // 
             // lblMessage
             // 
-            this.lblMessage.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMessage.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
             this.lblMessage.Location = new System.Drawing.Point(43, 9);
             this.lblMessage.MaximumSize = new System.Drawing.Size(350, 0);
