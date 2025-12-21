@@ -12,6 +12,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Cinema_management.Ticket_Booking
 {
@@ -34,7 +35,7 @@ namespace Cinema_management.Ticket_Booking
             dtpSearchDate.Value = DateTime.Now;
 
             SetDoubleBuffered(flowPanelMovies);
-            
+
             LoadMoviesAsync();
             //LoadMovies();
         }
@@ -109,7 +110,7 @@ namespace Cinema_management.Ticket_Booking
                 lblThongBao.Text = "Không có suất chiếu nào trong ngày này.";
                 lblThongBao.AutoSize = true;
                 lblThongBao.Font = new Font("Nunito", 18, FontStyle.Italic);
-                lblThongBao.ForeColor = Color.Gray; 
+                lblThongBao.ForeColor = Color.Gray;
                 lblThongBao.Margin = new Padding(50);
 
                 flowPanelMovies.Controls.Add(lblThongBao);
@@ -142,63 +143,6 @@ namespace Cinema_management.Ticket_Booking
             flowPanelMovies.Visible = true;
         }
 
-        //public void LoadMovies(DateTime? filterDate = null)
-        //{
-        //    flowPanelMovies.Controls.Clear();
-
-        //    DateTime DateToUse = filterDate ?? dtpSearchDate.Value;
-
-        //    string query = @"SELECT DISTINCT P.MAPHIM, P.TENPHIM, P.ANHPHIM
-        //                    FROM PHIM P
-        //                    JOIN SUATCHIEU S ON P.MAPHIM = S.MAPHIM
-        //                    WHERE CAST(S.THOIGIANCHIEU AS DATE) = @NgayChieu";
-
-        //    using (SqlConnection conn = new SqlConnection(connectionString))
-        //    {
-        //        try
-        //        {
-        //            conn.Open();
-        //            SqlCommand cmd = new SqlCommand(query, conn);
-
-        //            //truyền tham số ngày
-        //            cmd.Parameters.AddWithValue("@NgayChieu", DateToUse.Date);
-
-        //            SqlDataReader reader = cmd.ExecuteReader();
-
-        //            //kiểm tra có phim trong ngày ko
-        //            if (!reader.HasRows)
-        //            {
-        //                Label lblThongBao = new Label();
-        //                lblThongBao.Text = "Không có suất chiếu nào trong ngày này.";
-        //                lblThongBao.AutoSize = true;
-        //                lblThongBao.Font = new Font("Arial", 14, FontStyle.Italic);
-        //                flowPanelMovies.Controls.Add(lblThongBao);
-        //                return;
-        //            }
-
-        //            while (reader.Read())
-        //            {
-        //                UCMovieCard item = new UCMovieCard();
-
-        //                int maPhim = Convert.ToInt32(reader["MAPHIM"]);
-        //                string tenPhim = reader["TENPHIM"].ToString();
-        //                string anhPhim = reader["ANHPHIM"] != DBNull.Value ? reader["ANHPHIM"].ToString() : "";
-
-        //                item.SetData(maPhim, tenPhim, anhPhim);
-
-        //                item.OnSelect += Item_OnSelect;
-
-        //                flowPanelMovies.Controls.Add(item);
-
-        //            }
-
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            Alert.Show("Lỗi tải danh sách phim: " + ex.Message, MessagboxCustom.AlertMessagebox.AlertType.Error);
-        //        }
-        //    }                     
-        //}
 
         private void Item_OnSelect(object sender, EventArgs e)
         {
@@ -212,15 +156,64 @@ namespace Cinema_management.Ticket_Booking
             //mở form chọn suất chiếu
             FormChonSuatChieu frm = new FormChonSuatChieu(item.MaPhim, dtpSearchDate.Value);
 
-            if(frm.ShowDialog() == DialogResult.OK)
+            if (frm.ShowDialog() == DialogResult.OK)
             {
                 OnSuatChieuSelected?.Invoke(frm.SelectedMaSuatChieu);
-            }    
+            }
         }
 
         private void panelMM_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private string RemoveDauTiengViet(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return string.Empty;
+
+            string normalizedString = text.Normalize(NormalizationForm.FormD);
+            StringBuilder stringBuilder = new StringBuilder();
+
+            foreach (char c in normalizedString)
+            {
+                System.Globalization.UnicodeCategory unicodeCategory = System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != System.Globalization.UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+
+        }
+
+        private void txtSearchMovie_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = RemoveDauTiengViet(txtSearchMovie.Text.Trim().ToLower());
+
+            flowPanelMovies.SuspendLayout();
+
+            foreach (Control control in flowPanelMovies.Controls)
+            {
+                if (control is UCMovieCard card)
+                {
+                    //lay ten phim dua ve chu thuong, bo dau
+                    string movieName = RemoveDauTiengViet(card.TenPhim.ToLower());
+
+                    if (movieName.Contains(keyword))
+                    {
+                        card.Visible = true;
+                    }
+                    else
+                    {
+                        card.Visible = false;
+                    }
+                }
+            }
+
+            flowPanelMovies.ResumeLayout();
+        }
+
     }
-}
+} 

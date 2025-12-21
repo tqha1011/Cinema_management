@@ -32,10 +32,10 @@
             this.lblMovieManagement = new Krypton.Toolkit.KryptonLabel();
             this.txtSearchMovie = new Krypton.Toolkit.KryptonTextBox();
             this.dtpSearchDate = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.panelMM = new Krypton.Toolkit.KryptonPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowPanelMovies = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelMM)).BeginInit();
             this.panelMM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,9 +43,10 @@
             // 
             // lblMovieManagement
             // 
-            this.lblMovieManagement.Location = new System.Drawing.Point(81, 56);
+            this.lblMovieManagement.Location = new System.Drawing.Point(108, 70);
+            this.lblMovieManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblMovieManagement.Name = "lblMovieManagement";
-            this.lblMovieManagement.Size = new System.Drawing.Size(374, 56);
+            this.lblMovieManagement.Size = new System.Drawing.Size(496, 74);
             this.lblMovieManagement.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.lblMovieManagement.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMovieManagement.TabIndex = 1;
@@ -56,16 +57,18 @@
             this.txtSearchMovie.CueHint.Color1 = System.Drawing.Color.Gray;
             this.txtSearchMovie.CueHint.CueHintText = "Search movie...";
             this.txtSearchMovie.CueHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchMovie.Location = new System.Drawing.Point(127, 139);
+            this.txtSearchMovie.Location = new System.Drawing.Point(169, 174);
+            this.txtSearchMovie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearchMovie.Multiline = true;
             this.txtSearchMovie.Name = "txtSearchMovie";
-            this.txtSearchMovie.Size = new System.Drawing.Size(330, 52);
+            this.txtSearchMovie.Size = new System.Drawing.Size(440, 65);
             this.txtSearchMovie.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtSearchMovie.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
             this.txtSearchMovie.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtSearchMovie.StateCommon.Border.Width = 4;
             this.txtSearchMovie.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchMovie.TabIndex = 4;
+            this.txtSearchMovie.TextChanged += new System.EventHandler(this.txtSearchMovie_TextChanged);
             // 
             // dtpSearchDate
             // 
@@ -75,10 +78,11 @@
             this.dtpSearchDate.DropButtonStyle = Krypton.Toolkit.ButtonStyle.Custom1;
             this.dtpSearchDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpSearchDate.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.dtpSearchDate.Location = new System.Drawing.Point(485, 146);
+            this.dtpSearchDate.Location = new System.Drawing.Point(647, 182);
+            this.dtpSearchDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpSearchDate.Name = "dtpSearchDate";
             this.dtpSearchDate.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.dtpSearchDate.Size = new System.Drawing.Size(191, 45);
+            this.dtpSearchDate.Size = new System.Drawing.Size(255, 58);
             this.dtpSearchDate.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.dtpSearchDate.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.dtpSearchDate.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -87,6 +91,13 @@
             this.dtpSearchDate.TabIndex = 6;
             this.dtpSearchDate.ValueChanged += new System.EventHandler(this.dtpSearchDate_ValueChanged);
             // 
+            // kryptonCustomPaletteBase1
+            // 
+            this.kryptonCustomPaletteBase1.ButtonStyles.ButtonCustom1.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonCustomPaletteBase1.ButtonStyles.ButtonCustom1.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonCustomPaletteBase1.ButtonStyles.ButtonCustom1.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
+            this.kryptonCustomPaletteBase1.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.True;
+            // 
             // panelMM
             // 
             this.panelMM.Controls.Add(this.lblMovieManagement);
@@ -94,10 +105,11 @@
             this.panelMM.Controls.Add(this.pictureBox1);
             this.panelMM.Controls.Add(this.dtpSearchDate);
             this.panelMM.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMM.Location = new System.Drawing.Point(25, 25);
+            this.panelMM.Location = new System.Drawing.Point(33, 31);
+            this.panelMM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMM.Name = "panelMM";
-            this.panelMM.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
-            this.panelMM.Size = new System.Drawing.Size(850, 203);
+            this.panelMM.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
+            this.panelMM.Size = new System.Drawing.Size(1134, 254);
             this.panelMM.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.panelMM.TabIndex = 9;
             this.panelMM.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMM_Paint);
@@ -105,9 +117,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cinema_management.Properties.Resources.lucide__search;
-            this.pictureBox1.Location = new System.Drawing.Point(81, 142);
+            this.pictureBox1.Location = new System.Drawing.Point(108, 178);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 49);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -116,29 +129,24 @@
             // 
             this.flowPanelMovies.AutoScroll = true;
             this.flowPanelMovies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowPanelMovies.Location = new System.Drawing.Point(25, 228);
+            this.flowPanelMovies.Location = new System.Drawing.Point(33, 285);
+            this.flowPanelMovies.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowPanelMovies.Name = "flowPanelMovies";
-            this.flowPanelMovies.Padding = new System.Windows.Forms.Padding(50, 40, 40, 40);
-            this.flowPanelMovies.Size = new System.Drawing.Size(850, 357);
+            this.flowPanelMovies.Padding = new System.Windows.Forms.Padding(67, 50, 53, 50);
+            this.flowPanelMovies.Size = new System.Drawing.Size(1134, 446);
             this.flowPanelMovies.TabIndex = 10;
-            // 
-            // kryptonCustomPaletteBase1
-            // 
-            this.kryptonCustomPaletteBase1.ButtonStyles.ButtonCustom1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonCustomPaletteBase1.ButtonStyles.ButtonCustom1.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonCustomPaletteBase1.ButtonStyles.ButtonCustom1.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
-            this.kryptonCustomPaletteBase1.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.True;
             // 
             // UCPhimDangChieu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowPanelMovies);
             this.Controls.Add(this.panelMM);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCPhimDangChieu";
-            this.Padding = new System.Windows.Forms.Padding(25);
-            this.Size = new System.Drawing.Size(900, 610);
+            this.Padding = new System.Windows.Forms.Padding(33, 31, 33, 31);
+            this.Size = new System.Drawing.Size(1200, 762);
             ((System.ComponentModel.ISupportInitialize)(this.panelMM)).EndInit();
             this.panelMM.ResumeLayout(false);
             this.panelMM.PerformLayout();

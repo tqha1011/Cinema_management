@@ -1,4 +1,5 @@
 ﻿using Cinema_management.MessageboxCustom.Utils;
+using Cinema_management.Personal_Info;
 using Cinema_management.Ticket_Booking;
 using Krypton.Toolkit;
 using System;
@@ -153,9 +154,9 @@ namespace Cinema_management
             int totalSpacingW = (Col + 1) * spacing; // Tổng khoảng trắng
             int dynamicSize = (panelWidth - totalSpacingW) / Col;
             // Giới hạn max size 
-            if (dynamicSize > 200) dynamicSize = 200;
+            if (dynamicSize > 150) dynamicSize = 150;
             // Giới hạn min size 
-            if (dynamicSize < 40) dynamicSize = 40;
+            if (dynamicSize < 100) dynamicSize = 100;
             int btnSize = dynamicSize;
 
             CountTongGhe = Row * Col;
@@ -391,7 +392,7 @@ namespace Cinema_management
             curBooking.ThoiGianChieu = this._thoiGianChieu;
             curBooking.MaSuatChieu = this.maSuatChieu;
             curBooking.GiaVe = this.GiaVe;
-            curBooking.MaNhanVien = 1; //////////////////// ID NV đang đăng nhập
+            curBooking.MaNhanVien = Session.currMaNV; //ID NV đang đăng nhập
 
             foreach(var btn in DSGheDangChon)
             {

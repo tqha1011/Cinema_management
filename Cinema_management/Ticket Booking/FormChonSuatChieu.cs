@@ -25,7 +25,7 @@ namespace Cinema_management.Ticket_Booking
         string connectionString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
 
         // Đường dẫn thư mục chứa ảnh (Ngang hàng với file .csproj và Form1.cs)
-        // Lưu ý: Dùng Path.GetFullPath để chuẩn hóa đường dẫn
+        // Dùng Path.GetFullPath để chuẩn hóa đường dẫn
         private string _posterFolderPath = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\Posters"));
 
         public FormChonSuatChieu(int maPhim, DateTime ngayChieu) //constructor

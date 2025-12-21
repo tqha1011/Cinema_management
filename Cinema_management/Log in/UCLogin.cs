@@ -1,4 +1,7 @@
 ﻿using Cinema_management.Log_in;
+using Cinema_management.MessagboxCustom;
+using Cinema_management.MessageboxCustom.Utils;
+using Cinema_management.Personal_Info;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,8 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Cinema_management.MessageboxCustom.Utils;
-using Cinema_management.MessagboxCustom;
 
 namespace Cinema_management
 {
@@ -62,9 +63,14 @@ namespace Cinema_management
             {
                 lblInfo.Visible = false;
                 // xu ly dang nhap
-                bool success = authLogic.AuthenticateUser(username, pass, role);
-                if (success)
+                ////bool success = authLogic.AuthenticateUser(username, pass, role);
+                var loginInfo = authLogic.GetEmployeeID(username, pass, role);
+                if (loginInfo.MaNV != -1)
                 {
+                    // LƯU VÀO SESSION
+                    Session.currMaNV = loginInfo.MaNV;
+                    Session.currHoTen = loginInfo.HoTen;
+
                     Alert.Show("Đăng nhập thành công", AlertMessagebox.AlertType.Success);
                     // Chuyển đến giao diện chính của ứng dụng
                     Form parentForm = this.FindForm();
