@@ -98,8 +98,9 @@ namespace Cinema_management
             cbbLoc.SelectedIndex = 0;
         }
 
-        private async void LoadFoodData(int foodTypeId)
+        public async void LoadFoodData(int foodTypeId)
         {
+            // dùng task để tránh treo UI ( bất đồng bộ )
             List<Food> foods = await Task.Run(() =>
             {
                 if (foodTypeId == 0)
@@ -177,5 +178,6 @@ namespace Cinema_management
         }
 
         private void kryptonPanel1_Paint(object sender, PaintEventArgs e) { }
+
     }
 }
