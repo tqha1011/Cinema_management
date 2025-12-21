@@ -35,12 +35,12 @@
             this.lblRoomName = new Krypton.Toolkit.KryptonLabel();
             this.panelSidebar = new Krypton.Toolkit.KryptonPanel();
             this.kryptonTableLayoutPanel1 = new Krypton.Toolkit.KryptonTableLayoutPanel();
-            this.btnContinue = new Krypton.Toolkit.KryptonButton();
-            this.bdeLine = new Krypton.Toolkit.KryptonBorderEdge();
             this.picMovie = new System.Windows.Forms.PictureBox();
             this.lblMovieName = new Krypton.Toolkit.KryptonLabel();
+            this.btnContinue = new Krypton.Toolkit.KryptonButton();
             this.lblTongTien = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
+            this.bdeLine = new Krypton.Toolkit.KryptonBorderEdge();
             this.lblTextShowtime = new Krypton.Toolkit.KryptonLabel();
             this.lblShowTime = new Krypton.Toolkit.KryptonLabel();
             this.lblPrice = new Krypton.Toolkit.KryptonLabel();
@@ -102,7 +102,7 @@
             // 
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.Location = new System.Drawing.Point(64, 29);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnBack.Size = new System.Drawing.Size(160, 62);
@@ -131,7 +131,7 @@
             // lblTGianChieu
             // 
             this.lblTGianChieu.Location = new System.Drawing.Point(931, 35);
-            this.lblTGianChieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTGianChieu.Margin = new System.Windows.Forms.Padding(4);
             this.lblTGianChieu.Name = "lblTGianChieu";
             this.lblTGianChieu.Size = new System.Drawing.Size(649, 54);
             this.lblTGianChieu.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -142,7 +142,7 @@
             // lblSeatsCount
             // 
             this.lblSeatsCount.Location = new System.Drawing.Point(561, 35);
-            this.lblSeatsCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblSeatsCount.Margin = new System.Windows.Forms.Padding(4);
             this.lblSeatsCount.Name = "lblSeatsCount";
             this.lblSeatsCount.Size = new System.Drawing.Size(308, 54);
             this.lblSeatsCount.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -153,7 +153,7 @@
             // lblRoomName
             // 
             this.lblRoomName.Location = new System.Drawing.Point(297, 32);
-            this.lblRoomName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblRoomName.Margin = new System.Windows.Forms.Padding(4);
             this.lblRoomName.Name = "lblRoomName";
             this.lblRoomName.Size = new System.Drawing.Size(191, 58);
             this.lblRoomName.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -166,7 +166,7 @@
             this.panelSidebar.Controls.Add(this.kryptonTableLayoutPanel1);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelSidebar.Location = new System.Drawing.Point(1045, 123);
-            this.panelSidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSidebar.Margin = new System.Windows.Forms.Padding(4);
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(536, 803);
             this.panelSidebar.StateCommon.Color1 = System.Drawing.Color.White;
@@ -195,7 +195,7 @@
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblGheChon, 1, 4);
             this.kryptonTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             this.kryptonTableLayoutPanel1.RowCount = 9;
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -211,13 +211,37 @@
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 5;
             // 
+            // picMovie
+            // 
+            this.picMovie.BackColor = System.Drawing.Color.White;
+            this.kryptonTableLayoutPanel1.SetColumnSpan(this.picMovie, 2);
+            this.picMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picMovie.Location = new System.Drawing.Point(4, 4);
+            this.picMovie.Margin = new System.Windows.Forms.Padding(4);
+            this.picMovie.Name = "picMovie";
+            this.picMovie.Size = new System.Drawing.Size(528, 100);
+            this.picMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMovie.TabIndex = 0;
+            this.picMovie.TabStop = false;
+            // 
+            // lblMovieName
+            // 
+            this.lblMovieName.Location = new System.Drawing.Point(4, 112);
+            this.lblMovieName.Margin = new System.Windows.Forms.Padding(4);
+            this.lblMovieName.Name = "lblMovieName";
+            this.lblMovieName.Size = new System.Drawing.Size(112, 54);
+            this.lblMovieName.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblMovieName.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMovieName.TabIndex = 1;
+            this.lblMovieName.Values.Text = "Phim:";
+            // 
             // btnContinue
             // 
             this.btnContinue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kryptonTableLayoutPanel1.SetColumnSpan(this.btnContinue, 2);
             this.btnContinue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnContinue.Location = new System.Drawing.Point(148, 724);
-            this.btnContinue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(4);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
             this.btnContinue.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
@@ -251,45 +275,10 @@
             this.btnContinue.Values.Text = "Continue";
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
-            // bdeLine
-            // 
-            this.kryptonTableLayoutPanel1.SetColumnSpan(this.bdeLine, 2);
-            this.bdeLine.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bdeLine.Location = new System.Drawing.Point(4, 640);
-            this.bdeLine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bdeLine.Name = "bdeLine";
-            this.bdeLine.Size = new System.Drawing.Size(528, 1);
-            this.bdeLine.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.bdeLine.Text = "kryptonBorderEdge1";
-            // 
-            // picMovie
-            // 
-            this.picMovie.BackColor = System.Drawing.Color.White;
-            this.kryptonTableLayoutPanel1.SetColumnSpan(this.picMovie, 2);
-            this.picMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picMovie.Location = new System.Drawing.Point(4, 4);
-            this.picMovie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.picMovie.Name = "picMovie";
-            this.picMovie.Size = new System.Drawing.Size(528, 100);
-            this.picMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMovie.TabIndex = 0;
-            this.picMovie.TabStop = false;
-            // 
-            // lblMovieName
-            // 
-            this.lblMovieName.Location = new System.Drawing.Point(4, 112);
-            this.lblMovieName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lblMovieName.Name = "lblMovieName";
-            this.lblMovieName.Size = new System.Drawing.Size(112, 54);
-            this.lblMovieName.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lblMovieName.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieName.TabIndex = 1;
-            this.lblMovieName.Values.Text = "Phim:";
-            // 
             // lblTongTien
             // 
             this.lblTongTien.Location = new System.Drawing.Point(243, 649);
-            this.lblTongTien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTongTien.Margin = new System.Windows.Forms.Padding(4);
             this.lblTongTien.Name = "lblTongTien";
             this.lblTongTien.Size = new System.Drawing.Size(165, 54);
             this.lblTongTien.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
@@ -300,7 +289,7 @@
             // kryptonLabel5
             // 
             this.kryptonLabel5.Location = new System.Drawing.Point(4, 649);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(112, 54);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
@@ -308,10 +297,21 @@
             this.kryptonLabel5.TabIndex = 1;
             this.kryptonLabel5.Values.Text = "Tổng:";
             // 
+            // bdeLine
+            // 
+            this.kryptonTableLayoutPanel1.SetColumnSpan(this.bdeLine, 2);
+            this.bdeLine.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bdeLine.Location = new System.Drawing.Point(4, 640);
+            this.bdeLine.Margin = new System.Windows.Forms.Padding(4);
+            this.bdeLine.Name = "bdeLine";
+            this.bdeLine.Size = new System.Drawing.Size(528, 1);
+            this.bdeLine.StateCommon.Color1 = System.Drawing.Color.Black;
+            this.bdeLine.Text = "kryptonBorderEdge1";
+            // 
             // lblTextShowtime
             // 
             this.lblTextShowtime.Location = new System.Drawing.Point(4, 262);
-            this.lblTextShowtime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTextShowtime.Margin = new System.Windows.Forms.Padding(4);
             this.lblTextShowtime.Name = "lblTextShowtime";
             this.lblTextShowtime.Size = new System.Drawing.Size(200, 54);
             this.lblTextShowtime.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -322,7 +322,7 @@
             // lblShowTime
             // 
             this.lblShowTime.Location = new System.Drawing.Point(243, 262);
-            this.lblShowTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblShowTime.Margin = new System.Windows.Forms.Padding(4);
             this.lblShowTime.Name = "lblShowTime";
             this.lblShowTime.Size = new System.Drawing.Size(242, 54);
             this.lblShowTime.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -333,7 +333,7 @@
             // lblPrice
             // 
             this.lblPrice.Location = new System.Drawing.Point(4, 562);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(4);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(130, 54);
             this.lblPrice.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -344,7 +344,7 @@
             // lblGiaVe
             // 
             this.lblGiaVe.Location = new System.Drawing.Point(243, 562);
-            this.lblGiaVe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblGiaVe.Margin = new System.Windows.Forms.Padding(4);
             this.lblGiaVe.Name = "lblGiaVe";
             this.lblGiaVe.Size = new System.Drawing.Size(165, 54);
             this.lblGiaVe.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -355,7 +355,7 @@
             // lblTextRoom
             // 
             this.lblTextRoom.Location = new System.Drawing.Point(4, 337);
-            this.lblTextRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTextRoom.Margin = new System.Windows.Forms.Padding(4);
             this.lblTextRoom.Name = "lblTextRoom";
             this.lblTextRoom.Size = new System.Drawing.Size(231, 54);
             this.lblTextRoom.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -366,7 +366,7 @@
             // lblSeat
             // 
             this.lblSeat.Location = new System.Drawing.Point(4, 412);
-            this.lblSeat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblSeat.Margin = new System.Windows.Forms.Padding(4);
             this.lblSeat.Name = "lblSeat";
             this.lblSeat.Size = new System.Drawing.Size(93, 54);
             this.lblSeat.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -377,7 +377,7 @@
             // lblRoom
             // 
             this.lblRoom.Location = new System.Drawing.Point(243, 337);
-            this.lblRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblRoom.Margin = new System.Windows.Forms.Padding(4);
             this.lblRoom.Name = "lblRoom";
             this.lblRoom.Size = new System.Drawing.Size(178, 54);
             this.lblRoom.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -414,7 +414,7 @@
             this.panelMain.Controls.Add(this.panelScreen);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(3, 123);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1042, 803);
             this.panelMain.StateCommon.Color1 = System.Drawing.Color.White;
@@ -426,7 +426,7 @@
             this.pnlSeats.Controls.Add(this.flowPanelSeats);
             this.pnlSeats.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSeats.Location = new System.Drawing.Point(0, 54);
-            this.pnlSeats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlSeats.Margin = new System.Windows.Forms.Padding(4);
             this.pnlSeats.Name = "pnlSeats";
             this.pnlSeats.Size = new System.Drawing.Size(1042, 658);
             this.pnlSeats.StateCommon.Color1 = System.Drawing.Color.White;
@@ -440,7 +440,7 @@
             this.flowPanelSeats.Location = new System.Drawing.Point(0, 0);
             this.flowPanelSeats.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowPanelSeats.Name = "flowPanelSeats";
-            this.flowPanelSeats.Padding = new System.Windows.Forms.Padding(100, 100, 100, 0);
+            this.flowPanelSeats.Padding = new System.Windows.Forms.Padding(100, 50, 100, 0);
             this.flowPanelSeats.Size = new System.Drawing.Size(1042, 658);
             this.flowPanelSeats.TabIndex = 0;
             this.flowPanelSeats.Paint += new System.Windows.Forms.PaintEventHandler(this.flowPanelSeats_Paint);
@@ -455,7 +455,7 @@
             this.panelLegend.Controls.Add(this.kryptonLabel2);
             this.panelLegend.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelLegend.Location = new System.Drawing.Point(0, 712);
-            this.panelLegend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLegend.Margin = new System.Windows.Forms.Padding(4);
             this.panelLegend.Name = "panelLegend";
             this.panelLegend.Size = new System.Drawing.Size(1042, 91);
             this.panelLegend.StateCommon.Color1 = System.Drawing.Color.White;
@@ -466,7 +466,7 @@
             // 
             this.pictureBox1.Image = global::Cinema_management.Properties.Resources.material_symbols__square_outline_rounded;
             this.pictureBox1.Location = new System.Drawing.Point(639, 30);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -476,7 +476,7 @@
             // kryptonPanel1
             // 
             this.kryptonPanel1.Location = new System.Drawing.Point(891, 32);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(27, 25);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(42)))), ((int)(((byte)(43)))));
@@ -486,7 +486,7 @@
             // squareGreen
             // 
             this.squareGreen.Location = new System.Drawing.Point(389, 32);
-            this.squareGreen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.squareGreen.Margin = new System.Windows.Forms.Padding(4);
             this.squareGreen.Name = "squareGreen";
             this.squareGreen.Size = new System.Drawing.Size(27, 25);
             this.squareGreen.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(128)))), ((int)(((byte)(3)))));
@@ -496,7 +496,7 @@
             // kryptonLabel8
             // 
             this.kryptonLabel8.Location = new System.Drawing.Point(420, 21);
-            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel8.Name = "kryptonLabel8";
             this.kryptonLabel8.Size = new System.Drawing.Size(177, 50);
             this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -507,7 +507,7 @@
             // kryptonLabel9
             // 
             this.kryptonLabel9.Location = new System.Drawing.Point(921, 21);
-            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(123, 50);
             this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -518,7 +518,7 @@
             // kryptonLabel2
             // 
             this.kryptonLabel2.Location = new System.Drawing.Point(681, 21);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(166, 50);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -531,7 +531,7 @@
             this.panelScreen.Controls.Add(this.kryptonLabel1);
             this.panelScreen.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelScreen.Location = new System.Drawing.Point(0, 0);
-            this.panelScreen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelScreen.Margin = new System.Windows.Forms.Padding(4);
             this.panelScreen.Name = "panelScreen";
             this.panelScreen.Size = new System.Drawing.Size(1042, 54);
             this.panelScreen.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(228)))), ((int)(((byte)(230)))));
@@ -541,7 +541,7 @@
             // 
             this.kryptonLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kryptonLabel1.Location = new System.Drawing.Point(421, 5);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(184, 58);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
@@ -557,7 +557,7 @@
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.panelTopInfo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCTickets";
             this.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Size = new System.Drawing.Size(1584, 928);

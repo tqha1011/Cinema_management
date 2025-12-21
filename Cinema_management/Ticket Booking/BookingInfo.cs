@@ -14,7 +14,7 @@ namespace Cinema_management.Ticket_Booking
         public string TenPhong { get; set; }
         public DateTime ThoiGianChieu { get; set; }
         public decimal GiaVe {  get; set; }
-        public int MaNhanVien { get; set; } = 1; //lay tu session dang nhap
+        public int MaNhanVien { get; set; } //lay tu session dang nhap
 
         public List<string> DanhSachGhe { get; set; } = new List<string>();
 

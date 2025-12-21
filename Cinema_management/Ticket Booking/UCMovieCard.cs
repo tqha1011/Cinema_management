@@ -15,6 +15,7 @@ namespace Cinema_management.Ticket_Booking
     {
         //Sự kiện để báo ra bên ngoài "card đã được click"
         public event EventHandler OnSelect;
+        public string TenPhim {  get; set; } //luu ten phim de tim kiem
         private bool isSelected = false;
 
         public int MaPhim {  get; set; } //lưu ID phim ẩn
@@ -40,6 +41,7 @@ namespace Cinema_management.Ticket_Booking
         public void SetData(int maPhim, string tenPhim, string pathAnh)
         {
             this.MaPhim = maPhim;
+            this.TenPhim = tenPhim;
             lbTitle.Text = tenPhim;
 
             // --- LOAD ẢNH ---
@@ -95,5 +97,6 @@ namespace Cinema_management.Ticket_Booking
         {
 
         }
+
     }
 }

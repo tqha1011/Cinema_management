@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Cinema_management.Personal_Info
 {
     public partial class UCThongTinCaNhan : UserControl
     {
+        string connectionString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
+
         public UCThongTinCaNhan()
         {
             InitializeComponent();
@@ -31,6 +35,57 @@ namespace Cinema_management.Personal_Info
         private void UCThongTinCaNhan_Load(object sender, EventArgs e)
         {
             MakePictureBoxRound(kryptonPictureBox1);
+            LoadUserInfo();
+        }
+
+        private void LoadUserInfo() 
+        {
+            //ktra session
+            if (Session.currMaNV == -1)
+                return;
+
+            string query = @"SELECT HOTEN, GIOITINH, NGAYSINH, SODIENTHOAI, NGAYVAOLAM, VAITRO,
+                                    EMAIL, USERNAME, PASSWORD
+                               FROM NHANVIEN
+                                WHERE MANV = @MaNV";
+
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaNV", Session.currMaNV);
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        txtHoTen.Text = reader["HOTEN"].ToString();
+                        string gioitinh = reader["GIOITINH"].ToString();
+                        if (gioitinh == "Nam")
+                            cbbGioiTinh.SelectedIndex = 0;
+                        else cbbGioiTinh.SelectedIndex = 1;
+
+                        txtSDT.Text = reader["SODIENTHOAI"].ToString();
+                        string vitri = reader["VAITRO"].ToString();
+                        if (vitri == "Quản lí")
+                            cbbViTri.SelectedIndex = 1;
+                        else if (vitri == "Nhân viên")
+                           cbbViTri.SelectedIndex = 0;
+
+                        txtEmail.Text = reader["EMAIL"].ToString();
+                        dtpNgaySinh.Value = Convert.ToDateTime(reader["NGAYSINH"]);
+                        dtpNgayVaoLam.Value = Convert.ToDateTime(reader["NGAYVAOLAM"]);
+
+                        txtUsername.Text = reader["USERNAME"].ToString();
+                        txtPass.Text = reader["PASSWORD"].ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi tải thông tin: " + ex.Message);
+                }
+            }
         }
 
         private void kryptonPictureBox1_Paint(object sender, PaintEventArgs e)

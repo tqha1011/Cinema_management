@@ -145,6 +145,7 @@
       <DependentUpon>MovieRowControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Movie\Movie.cs" />
+    <Compile Include="Personal Info\Session.cs" />
     <Compile Include="Personal Info\UCThongTinCaNhan.cs">
       <SubType>UserControl</SubType>
     </Compile>
