@@ -459,6 +459,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ri--toggle-line %281%29.png" />
+    <None Include="Resources\ri--toggle-fill.png" />
+    <None Include="Resources\ri--toggle-line.png" />
+    <None Include="Resources\uil--clock %282%29.png" />
     <None Include="Resources\zondicons--close-solid.png" />
     <None Include="Resources\pajamas--close.png" />
     <None Include="Resources\ion--close.png" />
@@ -519,6 +523,28 @@
     <Content Include="Image\sprite-removebg-preview_639011711555176176.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\material-symbols--add-rounded %281%29.png" />
+    <None Include="Resources\material-symbols--add-rounded %282%29.png" />
+    <None Include="Resources\material-symbols--add-rounded %283%29.png" />
+    <None Include="Resources\material-symbols--add-rounded %284%29.png" />
+    <None Include="Resources\material-symbols--add-rounded %285%29.png" />
+    <None Include="Resources\jam--movie %283%29.png" />
+    <None Include="Resources\fluent--people-20-filled.png" />
+    <Content Include="Posters\0e7c858b_Zootopia2.jpg" />
+    <Content Include="Posters\29eebb07_doreamon-2024.jpg" />
+    <Content Include="Posters\2ece14c8_your-name.png" />
+    <Content Include="Posters\653c2d37_Koro.jpg" />
+    <Content Include="Posters\97427270_YourName.jpg" />
+    <Content Include="Posters\9a782663_Godzilla %2819%29.jpg" />
+    <Content Include="Posters\aade3079_endgame.jpg" />
+    <Content Include="Posters\d695ce87_conan.jpg" />
+    <Content Include="Posters\d9695e6c_Frozen.jpg" />
+    <None Include="Resources\akar-icons--edit.png" />
+    <None Include="Resources\akar-icons--edit %281%29.png" />
+    <None Include="Resources\akar-icons--edit %282%29.png" />
+    <None Include="Resources\mi--delete.png" />
+    <None Include="Resources\mi--delete %281%29.png" />
+    <None Include="Resources\icon-park-solid--movie %282%29.png" />
     <Content Include="Resources\popcorn_drink_logo_resize.jpg" />
     <None Include="Resources\lucide--popcorn.png" />
     <None Include="Resources\Work and Employment_filmmaking, clapperboard, camera, director, cinema 1.png" />

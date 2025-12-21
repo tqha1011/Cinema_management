@@ -51,27 +51,29 @@
             // lblStatistic
             // 
             this.lblStatistic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblStatistic.Location = new System.Drawing.Point(45, 40);
+            this.lblStatistic.Location = new System.Drawing.Point(68, 62);
+            this.lblStatistic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblStatistic.Name = "lblStatistic";
-            this.lblStatistic.Size = new System.Drawing.Size(799, 40);
-            this.lblStatistic.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lblStatistic.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatistic.Size = new System.Drawing.Size(1198, 81);
+            this.lblStatistic.StateCommon.ShortText.Color1 = System.Drawing.Color.Brown;
+            this.lblStatistic.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatistic.TabIndex = 2;
             this.lblStatistic.Values.Text = "Statistic";
             // 
             // kryptonGroup1
             // 
             this.kryptonGroup1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonGroup1.Location = new System.Drawing.Point(71, 114);
+            this.kryptonGroup1.Location = new System.Drawing.Point(106, 178);
+            this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             // 
             // kryptonGroup1.Panel
             // 
             this.kryptonGroup1.Panel.Controls.Add(this.btnDoanhThu);
             this.kryptonGroup1.Panel.Controls.Add(this.btnTongQuan);
-            this.kryptonGroup1.Panel.Margin = new System.Windows.Forms.Padding(18, 16, 18, 16);
-            this.kryptonGroup1.Panel.Padding = new System.Windows.Forms.Padding(53, 0, 53, 0);
+            this.kryptonGroup1.Panel.Margin = new System.Windows.Forms.Padding(27, 25, 27, 25);
+            this.kryptonGroup1.Panel.Padding = new System.Windows.Forms.Padding(80, 0, 80, 0);
             this.kryptonGroup1.Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonGroup1_Panel_Paint);
-            this.kryptonGroup1.Size = new System.Drawing.Size(711, 48);
+            this.kryptonGroup1.Size = new System.Drawing.Size(1066, 75);
             this.kryptonGroup1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonGroup1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonGroup1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
@@ -88,7 +90,8 @@
             // btnDoanhThu
             // 
             this.btnDoanhThu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnDoanhThu.Location = new System.Drawing.Point(201, 0);
+            this.btnDoanhThu.Location = new System.Drawing.Point(306, 0);
+            this.btnDoanhThu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnDoanhThu.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -102,7 +105,7 @@
             this.btnDoanhThu.OverrideFocus.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.btnDoanhThu.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnDoanhThu.OverrideFocus.Border.Width = 4;
-            this.btnDoanhThu.Size = new System.Drawing.Size(445, 36);
+            this.btnDoanhThu.Size = new System.Drawing.Size(668, 63);
             this.btnDoanhThu.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnDoanhThu.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnDoanhThu.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
@@ -133,7 +136,8 @@
             // 
             this.btnTongQuan.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom1;
             this.btnTongQuan.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnTongQuan.Location = new System.Drawing.Point(53, 0);
+            this.btnTongQuan.Location = new System.Drawing.Point(80, 0);
+            this.btnTongQuan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTongQuan.Name = "btnTongQuan";
             this.btnTongQuan.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnTongQuan.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -147,7 +151,7 @@
             this.btnTongQuan.OverrideFocus.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.btnTongQuan.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnTongQuan.OverrideFocus.Border.Width = 4;
-            this.btnTongQuan.Size = new System.Drawing.Size(445, 36);
+            this.btnTongQuan.Size = new System.Drawing.Size(668, 63);
             this.btnTongQuan.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnTongQuan.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnTongQuan.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
@@ -179,9 +183,10 @@
             this.kryptonPanel1.Controls.Add(this.kryptonGroup1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(45, 40, 45, 40);
-            this.kryptonPanel1.Size = new System.Drawing.Size(889, 198);
+            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(68, 62, 68, 62);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1334, 309);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel1.TabIndex = 4;
             // 
@@ -189,18 +194,20 @@
             // 
             this.kryptonPanel2.Controls.Add(this.grUC);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel2.Location = new System.Drawing.Point(0, 198);
+            this.kryptonPanel2.Location = new System.Drawing.Point(0, 309);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(62, 0, 62, 56);
-            this.kryptonPanel2.Size = new System.Drawing.Size(889, 362);
+            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(93, 0, 93, 88);
+            this.kryptonPanel2.Size = new System.Drawing.Size(1334, 566);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel2.TabIndex = 5;
             // 
             // grUC
             // 
             this.grUC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grUC.Location = new System.Drawing.Point(62, 0);
-            this.grUC.Size = new System.Drawing.Size(765, 306);
+            this.grUC.Location = new System.Drawing.Point(93, 0);
+            this.grUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grUC.Size = new System.Drawing.Size(1148, 478);
             this.grUC.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.grUC.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(209)))));
             this.grUC.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
@@ -215,14 +222,15 @@
             // 
             // UCThongKeMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonPanel1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UCThongKeMain";
-            this.Size = new System.Drawing.Size(889, 560);
+            this.Size = new System.Drawing.Size(1334, 875);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();

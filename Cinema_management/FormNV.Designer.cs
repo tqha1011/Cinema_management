@@ -34,8 +34,6 @@
             this.kryptonDropButton1 = new Krypton.Toolkit.KryptonDropButton();
             this.kryptonContextMenu1 = new Krypton.Toolkit.KryptonContextMenu();
             this.kryptonContextMenuItems3 = new Krypton.Toolkit.KryptonContextMenuItems();
-            this.btnTTCN = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.kryptonContextMenuItem10 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
@@ -56,6 +54,9 @@
             this.kryptonContextMenuItem7 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem8 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.pnforUC = new Krypton.Toolkit.KryptonPanel();
+            this.btnBanVe = new Krypton.Toolkit.KryptonContextMenuItem();
+            this.btnTTCN = new Krypton.Toolkit.KryptonContextMenuItem();
+            this.kryptonContextMenuItem10 = new Krypton.Toolkit.KryptonContextMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnforUC)).BeginInit();
@@ -77,7 +78,7 @@
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(20);
-            this.kryptonPanel1.Size = new System.Drawing.Size(1924, 98);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1946, 98);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonPanel1.TabIndex = 0;
             // 
@@ -85,7 +86,7 @@
             // 
             this.kryptonDropButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.kryptonDropButton1.KryptonContextMenu = this.kryptonContextMenu1;
-            this.kryptonDropButton1.Location = new System.Drawing.Point(1539, 20);
+            this.kryptonDropButton1.Location = new System.Drawing.Point(1561, 20);
             this.kryptonDropButton1.Name = "kryptonDropButton1";
             this.kryptonDropButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.kryptonDropButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -153,8 +154,72 @@
             // kryptonContextMenuItems3
             // 
             this.kryptonContextMenuItems3.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.btnBanVe,
             this.btnTTCN,
             this.kryptonContextMenuItem10});
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
+            this.kryptonLabel1.Location = new System.Drawing.Point(20, 20);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(416, 58);
+            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Gordita", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.TabIndex = 1;
+            this.kryptonLabel1.Values.Image = global::Cinema_management.Properties.Resources.icon_park_solid__movie;
+            this.kryptonLabel1.Values.Text = "CINEMA MANAGER";
+            // 
+            // kryptonContextMenuRadioButton1
+            // 
+            this.kryptonContextMenuRadioButton1.ExtraText = "";
+            // 
+            // kryptonContextMenuColorColumns1
+            // 
+            this.kryptonContextMenuColorColumns1.SelectedColor = System.Drawing.Color.Empty;
+            // 
+            // kryptonContextMenuColorColumns2
+            // 
+            this.kryptonContextMenuColorColumns2.SelectedColor = System.Drawing.Color.Empty;
+            // 
+            // kryptonContextMenuColorColumns3
+            // 
+            this.kryptonContextMenuColorColumns3.SelectedColor = System.Drawing.Color.Empty;
+            // 
+            // pnforUC
+            // 
+            this.pnforUC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnforUC.Location = new System.Drawing.Point(0, 98);
+            this.pnforUC.Name = "pnforUC";
+            this.pnforUC.Size = new System.Drawing.Size(1946, 698);
+            this.pnforUC.StateCommon.Color1 = System.Drawing.Color.White;
+            this.pnforUC.TabIndex = 1;
+            // 
+            // btnBanVe
+            // 
+            this.btnBanVe.Image = global::Cinema_management.Properties.Resources.icon_park_solid__movie__2_;
+            this.btnBanVe.StateChecked.ItemImage.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(209)))));
+            this.btnBanVe.StateChecked.ItemImage.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(209)))));
+            this.btnBanVe.StateHighlight.ItemHighlight.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(209)))));
+            this.btnBanVe.StateHighlight.ItemHighlight.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(209)))));
+            this.btnBanVe.StateHighlight.ItemSplit.Back.Color1 = System.Drawing.Color.White;
+            this.btnBanVe.StateHighlight.ItemSplit.Back.Color2 = System.Drawing.Color.White;
+            this.btnBanVe.StateNormal.ItemHighlight.Back.Color1 = System.Drawing.Color.White;
+            this.btnBanVe.StateNormal.ItemHighlight.Back.Color2 = System.Drawing.Color.White;
+            this.btnBanVe.StateNormal.ItemHighlight.Border.Color1 = System.Drawing.Color.White;
+            this.btnBanVe.StateNormal.ItemImage.Back.Color1 = System.Drawing.Color.White;
+            this.btnBanVe.StateNormal.ItemImage.Back.Color2 = System.Drawing.Color.White;
+            this.btnBanVe.StateNormal.ItemImage.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnBanVe.StateNormal.ItemImage.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
+            this.btnBanVe.StateNormal.ItemSplit.Back.Color1 = System.Drawing.Color.White;
+            this.btnBanVe.StateNormal.ItemSplit.Back.Color2 = System.Drawing.Color.White;
+            this.btnBanVe.StateNormal.ItemTextStandard.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnBanVe.StateNormal.ItemTextStandard.ShortText.Font = new System.Drawing.Font("Nunito", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBanVe.StateNormal.ItemTextStandard.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.btnBanVe.Text = "Bán vé";
+            this.btnBanVe.Click += new System.EventHandler(this.btnBanVe_Click);
             // 
             // btnTTCN
             // 
@@ -199,51 +264,12 @@
             this.kryptonContextMenuItem10.StateNormal.ItemTextStandard.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonContextMenuItem10.Text = "Log Out";
             // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel1.Location = new System.Drawing.Point(20, 20);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(416, 58);
-            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Gordita", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.TabIndex = 1;
-            this.kryptonLabel1.Values.Image = global::Cinema_management.Properties.Resources.icon_park_solid__movie;
-            this.kryptonLabel1.Values.Text = "CINEMA MANAGER";
-            // 
-            // kryptonContextMenuRadioButton1
-            // 
-            this.kryptonContextMenuRadioButton1.ExtraText = "";
-            // 
-            // kryptonContextMenuColorColumns1
-            // 
-            this.kryptonContextMenuColorColumns1.SelectedColor = System.Drawing.Color.Empty;
-            // 
-            // kryptonContextMenuColorColumns2
-            // 
-            this.kryptonContextMenuColorColumns2.SelectedColor = System.Drawing.Color.Empty;
-            // 
-            // kryptonContextMenuColorColumns3
-            // 
-            this.kryptonContextMenuColorColumns3.SelectedColor = System.Drawing.Color.Empty;
-            // 
-            // pnforUC
-            // 
-            this.pnforUC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnforUC.Location = new System.Drawing.Point(0, 98);
-            this.pnforUC.Name = "pnforUC";
-            this.pnforUC.Size = new System.Drawing.Size(1924, 705);
-            this.pnforUC.StateCommon.Color1 = System.Drawing.Color.White;
-            this.pnforUC.TabIndex = 1;
-            // 
             // FormNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1924, 803);
+            this.ClientSize = new System.Drawing.Size(1946, 796);
             this.Controls.Add(this.pnforUC);
             this.Controls.Add(this.kryptonPanel1);
             this.LocalCustomPalette = this.kryptonCustomPaletteBase1;
@@ -298,5 +324,6 @@
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem7;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem8;
         private Krypton.Toolkit.KryptonPanel pnforUC;
+        private Krypton.Toolkit.KryptonContextMenuItem btnBanVe;
     }
 }

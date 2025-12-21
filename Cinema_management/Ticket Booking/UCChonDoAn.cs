@@ -113,7 +113,7 @@ namespace Cinema_management
                 );
 
                 card.OnSelect += Card_OnSelect;
-                card.Margin = new Padding(30); 
+                card.Margin = new Padding(10); 
 
                 _allFoodCards.Add(card);
             }

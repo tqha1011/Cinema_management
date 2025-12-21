@@ -15,6 +15,7 @@ namespace Cinema_management.Ticket_Booking
     {
         //Sự kiện để báo ra bên ngoài "card đã được click"
         public event EventHandler OnSelect;
+        private bool isSelected = false;
 
         public int MaPhim {  get; set; } //lưu ID phim ẩn
 
@@ -53,10 +54,39 @@ namespace Cinema_management.Ticket_Booking
                 }
             }
         }
-        
+
+        public bool IsSelected
+        {
+            get { return isSelected; }
+            set
+            {
+                isSelected = value;
+                UpdateWhenClick();
+            }
+        }
+        private void UpdateWhenClick()
+        {
+            if (isSelected)
+            {
+                kryptonGroup1.StateCommon.Border.Color1 = Color.Orange;
+                kryptonGroup1.StateCommon.Border.Color2 = Color.Red;
+                kryptonGroup1.StateCommon.Back.Color1 = Color.FromArgb(255, 242, 238);
+                kryptonTableLayoutPanel1.StateCommon.Color1 = Color.FromArgb(255, 242, 238);
+                kryptonTableLayoutPanel1.StateCommon.Color2 = Color.FromArgb(255, 242, 238);
+            }
+            else
+            {
+                kryptonGroup1.StateCommon.Border.Color1 = Color.FromArgb(230, 0, 18);
+                kryptonGroup1.StateCommon.Border.Color2 = Color.FromArgb(230, 0, 18);
+                kryptonGroup1.StateCommon.Back.Color1 = Color.White;
+                kryptonTableLayoutPanel1.StateCommon.Color1 = Color.White;
+                kryptonTableLayoutPanel1.StateCommon.Color2 = Color.White;
+            }
+        }
 
         private void UCMovieCard_Click(object sender, EventArgs e)
         {
+            IsSelected = true;
             //kich hoạt sự kiện để UC cha biết
             OnSelect?.Invoke(this, e);
         }

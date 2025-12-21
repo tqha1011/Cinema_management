@@ -27,6 +27,12 @@ namespace Cinema_management
             LoadWeekData();
         }
 
+        private DateTime GetMonday(DateTime date)
+        {
+            int diff = (7 + (date.DayOfWeek - DayOfWeek.Monday)) % 7;
+            return date.AddDays(-1 * diff).Date;
+        }
+
         private void LoadRoomComboBox()
         {
             string query = "SELECT TENPHONG FROM PHONGCHIEU ORDER BY TENPHONG";
@@ -34,10 +40,23 @@ namespace Cinema_management
 
             if (dt != null)
             {
+                DataRow dr = dt.NewRow();
+                dr["TENPHONG"] = "Tất cả phòng";
+                dt.Rows.InsertAt(dr, 0);
+
                 cbbRoom.DataSource = dt;
                 cbbRoom.DisplayMember = "TENPHONG";
                 cbbRoom.ValueMember = "TENPHONG";
-                cbbRoom.SelectedIndex = 0;
+
+                // Mặc định chọn "Phòng 1" (thường là index 1 vì index 0 là "Tất cả phòng")
+                if (cbbRoom.Items.Count > 1)
+                {
+                    cbbRoom.SelectedIndex = 1;
+                }
+                else
+                {
+                    cbbRoom.SelectedIndex = 0;
+                }
             }
             cbbRoom.SelectedIndexChanged += (s, e) => LoadWeekData();
         }
@@ -49,6 +68,7 @@ namespace Cinema_management
 
             DateTime startOfWeek = _currentMonday;
             DateTime endOfWeek = _currentMonday.AddDays(7);
+
             string query = @"
                 SELECT 
                     sc.MASUATCHIEU, 
@@ -91,6 +111,8 @@ namespace Cinema_management
 
                     UCShowtimeBlock block = new UCShowtimeBlock();
                     block.SetData(id, tenPhim, thoiGian, tenPhong);
+
+                    block.Width = flpMon.ClientSize.Width - 10;
                     block.Height = 120;
                     block.Margin = new Padding(3, 3, 3, 5);
 
@@ -110,28 +132,25 @@ namespace Cinema_management
             }
         }
 
-        private DateTime GetMonday(DateTime date)
-        {
-            int diff = (7 + (date.DayOfWeek - DayOfWeek.Monday)) % 7;
-            return date.AddDays(-1 * diff).Date;
-        }
-
-        private void ClearAllColumns()
-        {
-            flpMon.Controls.Clear(); flpTue.Controls.Clear(); flpWed.Controls.Clear();
-            flpThu.Controls.Clear(); flpFri.Controls.Clear(); flpSat.Controls.Clear(); flpSun.Controls.Clear();
-        }
-
         private void UpdateHeaderLabels()
         {
             lblDateRange.Text = $"Tuần: {_currentMonday:dd/MM} - {_currentMonday.AddDays(6):dd/MM/yyyy}";
+
+            lblHeaderMon.Text = $"Thứ 2\n{_currentMonday:dd/MM}";
+            lblHeaderTue.Text = $"Thứ 3\n{_currentMonday.AddDays(1):dd/MM}";
+            lblHeaderWed.Text = $"Thứ 4\n{_currentMonday.AddDays(2):dd/MM}";
+            lblHeaderThu.Text = $"Thứ 5\n{_currentMonday.AddDays(3):dd/MM}";
+            lblHeaderFri.Text = $"Thứ 6\n{_currentMonday.AddDays(4):dd/MM}";
+            lblHeaderSat.Text = $"Thứ 7\n{_currentMonday.AddDays(5):dd/MM}";
+            lblHeaderSun.Text = $"CN\n{_currentMonday.AddDays(6):dd/MM}";
+
             lblHeaderMon.BackColor = lblHeaderTue.BackColor = lblHeaderWed.BackColor =
-            lblHeaderThu.BackColor = lblHeaderFri.BackColor = lblHeaderSat.BackColor = lblHeaderSun.BackColor = Color.White;
+            lblHeaderThu.BackColor = lblHeaderFri.BackColor = lblHeaderSat.BackColor = lblHeaderSun.BackColor = Color.AliceBlue;
 
             DateTime today = DateTime.Today;
             if (today >= _currentMonday && today <= _currentMonday.AddDays(6))
             {
-                Color highlightColor = Color.FromArgb(255, 240, 240); // Màu đỏ nhạt
+                Color highlightColor = Color.FromArgb(255, 240, 240);
                 switch (today.DayOfWeek)
                 {
                     case DayOfWeek.Monday: lblHeaderMon.BackColor = highlightColor; break;
@@ -143,6 +162,17 @@ namespace Cinema_management
                     case DayOfWeek.Sunday: lblHeaderSun.BackColor = highlightColor; break;
                 }
             }
+        }
+
+        private void ClearAllColumns()
+        {
+            flpMon.Controls.Clear();
+            flpTue.Controls.Clear();
+            flpWed.Controls.Clear();
+            flpThu.Controls.Clear();
+            flpFri.Controls.Clear();
+            flpSat.Controls.Clear();
+            flpSun.Controls.Clear();
         }
 
         private void RegisterColumnClickEvents()
@@ -160,7 +190,15 @@ namespace Cinema_management
         {
             AddShowtime frm = new AddShowtime();
             frm.ShowtimeIDToEdit = maSuatChieu;
-            Form popup = new Form { StartPosition = FormStartPosition.CenterParent, Size = new Size(1067, 562), FormBorderStyle = FormBorderStyle.FixedDialog };
+            Form popup = new Form
+            {
+                Text = "Cập nhật suất chiếu",
+                StartPosition = FormStartPosition.CenterParent,
+                Size = new Size(1193, 600),
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
             frm.Dock = DockStyle.Fill;
             popup.Controls.Add(frm);
             popup.ShowDialog();
@@ -170,15 +208,41 @@ namespace Cinema_management
         private void OpenAddForm(DateTime selectedDate)
         {
             AddShowtime frm = new AddShowtime();
-            Form popup = new Form { StartPosition = FormStartPosition.CenterParent, Size = new Size(1067, 562), FormBorderStyle = FormBorderStyle.FixedDialog };
+            Form popup = new Form
+            {
+                Text = "Thêm suất chiếu",
+                StartPosition = FormStartPosition.CenterParent,
+                Size = new Size(1193, 600),
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
             frm.Dock = DockStyle.Fill;
             popup.Controls.Add(frm);
             popup.ShowDialog();
             LoadWeekData();
         }
 
-        private void btnPrevWeek_Click(object sender, EventArgs e) { _currentMonday = _currentMonday.AddDays(-7); LoadWeekData(); }
-        private void btnNextWeek_Click(object sender, EventArgs e) { _currentMonday = _currentMonday.AddDays(7); LoadWeekData(); }
-        private void btnAdd_Click(object sender, EventArgs e) { OpenAddForm(DateTime.Now); }
+        private void btnPrevWeek_Click(object sender, EventArgs e)
+        {
+            _currentMonday = _currentMonday.AddDays(-7);
+            LoadWeekData();
+        }
+
+        private void btnNextWeek_Click(object sender, EventArgs e)
+        {
+            _currentMonday = _currentMonday.AddDays(7);
+            LoadWeekData();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            OpenAddForm(DateTime.Now);
+        }
+
+        private void panelTop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
