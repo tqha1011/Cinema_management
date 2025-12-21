@@ -1,18 +1,19 @@
-﻿using Krypton.Toolkit;
+﻿using Cinema_management.MessageboxCustom.Utils;
+using Cinema_management.Ticket_Booking;
+using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
-using System.Reflection;
-using Cinema_management.Ticket_Booking;
-using Cinema_management.MessageboxCustom.Utils;
 
 namespace Cinema_management
 {
@@ -23,12 +24,14 @@ namespace Cinema_management
 
         public int maSuatChieu;
         private DateTime _thoiGianChieu;
+        private string _posterFolderPath = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\Posters"));
 
         string connectionString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
 
         private struct SuatChieuInfo
         {
             public string TenPhim;
+            public string AnhPhim;
             public string TenPhong;
             public DateTime ThoiGianChieu;
             public int ThoiLuongPhim; //phút
@@ -106,6 +109,28 @@ namespace Cinema_management
             lblMvName.Text = info.TenPhim;
             lblRoom.Text = lblRoomName.Text = info.TenPhong;
             lblShowTime.Text = $"{thoiGianBatDau: HH:mm} - {thoiGianKetThuc: HH:mm}";
+            // Load poster
+            if (!string.IsNullOrEmpty(info.AnhPhim))
+            {
+                string fullPath = Path.Combine(_posterFolderPath, info.AnhPhim);
+
+                if (File.Exists(fullPath))
+                {
+                    // Dispose ảnh cũ nếu có để tránh leak memory
+                    if (picMovie.Image != null) picMovie.Image.Dispose();
+
+                    picMovie.Image = Image.FromFile(fullPath);
+                    picMovie.SizeMode = PictureBoxSizeMode.Zoom; 
+                }
+                else
+                {
+                    picMovie.Image = null; 
+                }
+            }
+            else
+            {
+                picMovie.Image = null;
+            }
         }
 
         public void RenderSeatMap(List<string> dsGheDaBan)
@@ -250,6 +275,7 @@ namespace Cinema_management
             // Query JOIN 4 bảng để lấy tất cả thông tin cần thiết
             string query = @"SELECT 
                         P.TENPHIM, 
+                        P.ANHPHIM,
                         PC.TENPHONG, 
                         SC.THOIGIANCHIEU, 
                         P.THOILUONGPHIM, 
@@ -273,6 +299,7 @@ namespace Cinema_management
                         if (reader.Read()) // Chỉ mong đợi 1 dòng kết quả
                         {
                             info.TenPhim = reader["TENPHIM"].ToString();
+                            info.AnhPhim = reader["ANHPHIM"] != DBNull.Value ? reader["ANHPHIM"].ToString() : "";
                             info.TenPhong = reader["TENPHONG"].ToString();
                             info.ThoiGianChieu = Convert.ToDateTime(reader["THOIGIANCHIEU"]);
                             info.ThoiLuongPhim = Convert.ToInt32(reader["THOILUONGPHIM"]);
