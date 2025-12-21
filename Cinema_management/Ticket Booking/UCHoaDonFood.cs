@@ -23,5 +23,10 @@ namespace Cinema_management.Ticket_Booking
             lblSoLuong.Text = "SL: " + quantity;
             lblGia.Text = (price).ToString("N0") + " VNĐ";
         }
+
+        private void lblGia_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
