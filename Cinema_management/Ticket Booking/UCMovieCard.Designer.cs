@@ -43,7 +43,7 @@
             // picPoster
             // 
             this.picPoster.Location = new System.Drawing.Point(2, 2);
-            this.picPoster.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPoster.Margin = new System.Windows.Forms.Padding(2);
             this.picPoster.Name = "picPoster";
             this.picPoster.Size = new System.Drawing.Size(201, 240);
             this.picPoster.TabIndex = 0;
@@ -105,9 +105,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.kryptonGroup1);
-            this.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.Margin = new System.Windows.Forms.Padding(10);
             this.Name = "UCMovieCard";
-            this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.Size = new System.Drawing.Size(267, 451);
             this.Load += new System.EventHandler(this.UCMovieCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPoster)).EndInit();

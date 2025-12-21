@@ -29,48 +29,43 @@
         private void InitializeComponent()
         {
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.lblTenPhim = new Krypton.Toolkit.KryptonLabel();
             this.lblNgayChieu = new Krypton.Toolkit.KryptonLabel();
             this.flowPanelSuatChieu = new System.Windows.Forms.FlowLayoutPanel();
             this.btnTime = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new Krypton.Toolkit.KryptonButton();
             this.picPoster = new System.Windows.Forms.PictureBox();
+            this.lblTenPhim = new Krypton.Toolkit.KryptonWrapLabel();
+            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.flowPanelSuatChieu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPoster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
+            this.kryptonPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.lblTenPhim);
-            this.kryptonPanel1.Controls.Add(this.lblNgayChieu);
+            this.kryptonPanel1.Controls.Add(this.picPoster);
+            this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
+            this.kryptonPanel1.Controls.Add(this.flowPanelSuatChieu);
+            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1175, 246);
+            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1003, 565);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(11)))), ((int)(((byte)(20)))));
+            this.kryptonPanel1.StateCommon.ColorAngle = 270F;
+            this.kryptonPanel1.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear40;
             this.kryptonPanel1.TabIndex = 1;
-            // 
-            // lblTenPhim
-            // 
-            this.lblTenPhim.AutoSize = false;
-            this.lblTenPhim.Location = new System.Drawing.Point(377, 58);
-            this.lblTenPhim.Margin = new System.Windows.Forms.Padding(4);
-            this.lblTenPhim.Name = "lblTenPhim";
-            this.lblTenPhim.Size = new System.Drawing.Size(687, 54);
-            this.lblTenPhim.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.lblTenPhim.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenPhim.TabIndex = 3;
-            this.lblTenPhim.Values.Text = "Name";
             // 
             // lblNgayChieu
             // 
-            this.lblNgayChieu.Location = new System.Drawing.Point(377, 162);
-            this.lblNgayChieu.Margin = new System.Windows.Forms.Padding(4);
+            this.lblNgayChieu.Location = new System.Drawing.Point(337, 174);
             this.lblNgayChieu.Name = "lblNgayChieu";
-            this.lblNgayChieu.Size = new System.Drawing.Size(122, 49);
+            this.lblNgayChieu.Size = new System.Drawing.Size(79, 38);
             this.lblNgayChieu.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.lblNgayChieu.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgayChieu.TabIndex = 0;
@@ -80,21 +75,21 @@
             // 
             this.flowPanelSuatChieu.AutoScroll = true;
             this.flowPanelSuatChieu.AutoSize = true;
+            this.flowPanelSuatChieu.BackColor = System.Drawing.Color.Transparent;
             this.flowPanelSuatChieu.Controls.Add(this.btnTime);
             this.flowPanelSuatChieu.Controls.Add(this.kryptonButton2);
             this.flowPanelSuatChieu.Controls.Add(this.kryptonButton3);
-            this.flowPanelSuatChieu.Location = new System.Drawing.Point(411, 286);
-            this.flowPanelSuatChieu.Margin = new System.Windows.Forms.Padding(4);
+            this.flowPanelSuatChieu.Location = new System.Drawing.Point(337, 258);
             this.flowPanelSuatChieu.Name = "flowPanelSuatChieu";
-            this.flowPanelSuatChieu.Size = new System.Drawing.Size(653, 239);
+            this.flowPanelSuatChieu.Size = new System.Drawing.Size(490, 191);
             this.flowPanelSuatChieu.TabIndex = 2;
             // 
             // btnTime
             // 
-            this.btnTime.Location = new System.Drawing.Point(13, 25);
-            this.btnTime.Margin = new System.Windows.Forms.Padding(13, 25, 13, 25);
+            this.btnTime.Location = new System.Drawing.Point(10, 20);
+            this.btnTime.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
             this.btnTime.Name = "btnTime";
-            this.btnTime.Size = new System.Drawing.Size(179, 56);
+            this.btnTime.Size = new System.Drawing.Size(134, 45);
             this.btnTime.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.btnTime.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.btnTime.StateNormal.Border.Rounding = 10F;
@@ -107,10 +102,10 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(218, 25);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(13, 25, 13, 25);
+            this.kryptonButton2.Location = new System.Drawing.Point(164, 20);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(179, 56);
+            this.kryptonButton2.Size = new System.Drawing.Size(134, 45);
             this.kryptonButton2.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.kryptonButton2.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.kryptonButton2.StateNormal.Border.Rounding = 10F;
@@ -123,10 +118,10 @@
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(423, 25);
-            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(13, 25, 13, 25);
+            this.kryptonButton3.Location = new System.Drawing.Point(318, 20);
+            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
             this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(179, 56);
+            this.kryptonButton3.Size = new System.Drawing.Size(134, 45);
             this.kryptonButton3.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.kryptonButton3.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(80)))), ((int)(((byte)(253)))));
             this.kryptonButton3.StateNormal.Border.Rounding = 10F;
@@ -139,48 +134,74 @@
             // 
             // picPoster
             // 
-            this.picPoster.Location = new System.Drawing.Point(35, 40);
-            this.picPoster.Margin = new System.Windows.Forms.Padding(4);
+            this.picPoster.BackColor = System.Drawing.Color.Transparent;
+            this.picPoster.Location = new System.Drawing.Point(60, 32);
             this.picPoster.Name = "picPoster";
-            this.picPoster.Size = new System.Drawing.Size(307, 351);
+            this.picPoster.Size = new System.Drawing.Size(217, 303);
             this.picPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPoster.TabIndex = 3;
             this.picPoster.TabStop = false;
             // 
+            // lblTenPhim
+            // 
+            this.lblTenPhim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTenPhim.AutoSize = false;
+            this.lblTenPhim.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
+            this.lblTenPhim.Location = new System.Drawing.Point(337, 50);
+            this.lblTenPhim.Margin = new System.Windows.Forms.Padding(3, 0, 30, 0);
+            this.lblTenPhim.Name = "lblTenPhim";
+            this.lblTenPhim.Size = new System.Drawing.Size(618, 121);
+            this.lblTenPhim.StateCommon.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenPhim.StateCommon.TextColor = System.Drawing.Color.White;
+            this.lblTenPhim.Text = "Name";
+            // 
+            // kryptonPanel2
+            // 
+            this.kryptonPanel2.Controls.Add(this.lblNgayChieu);
+            this.kryptonPanel2.Controls.Add(this.lblTenPhim);
+            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel2.Name = "kryptonPanel2";
+            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.kryptonPanel2.Size = new System.Drawing.Size(973, 252);
+            this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonPanel2.TabIndex = 5;
+            // 
             // FormChonSuatChieu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1171, 609);
-            this.Controls.Add(this.picPoster);
-            this.Controls.Add(this.flowPanelSuatChieu);
+            this.ClientSize = new System.Drawing.Size(1003, 565);
             this.Controls.Add(this.kryptonPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormChonSuatChieu";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormChonSuatChieu";
             this.Load += new System.EventHandler(this.FormChonSuatChieu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             this.flowPanelSuatChieu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picPoster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
+            this.kryptonPanel2.ResumeLayout(false);
+            this.kryptonPanel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private Krypton.Toolkit.KryptonLabel lblNgayChieu;
-        private Krypton.Toolkit.KryptonLabel lblTenPhim;
         private System.Windows.Forms.FlowLayoutPanel flowPanelSuatChieu;
         private Krypton.Toolkit.KryptonButton btnTime;
         private Krypton.Toolkit.KryptonButton kryptonButton2;
         private Krypton.Toolkit.KryptonButton kryptonButton3;
         private System.Windows.Forms.PictureBox picPoster;
+        private Krypton.Toolkit.KryptonWrapLabel lblTenPhim;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel2;
     }
 }
