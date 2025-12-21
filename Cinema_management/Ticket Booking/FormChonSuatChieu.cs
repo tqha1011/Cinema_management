@@ -131,12 +131,24 @@ namespace Cinema_management.Ticket_Booking
                         btnTime.Tag = maSuatChieu;
 
                         btnTime.Size = new Size(180, 60);
-                        btnTime.StateCommon.Back.Color1 = Color.FromArgb(138, 43, 226); // Màu tím (BlueViolet)
-                        btnTime.StateCommon.Back.Color2 = Color.FromArgb(138, 43, 226);
+                        btnTime.StateCommon.Border.Color1 = Color.Transparent;
+                        btnTime.StateCommon.Border.Rounding = 20;
+                        btnTime.StateCommon.Border.GraphicsHint = PaletteGraphicsHint.AntiAlias;
+
+                        btnTime.StateCommon.Back.Color1 = Color.FromArgb(230, 0, 18);
+                        btnTime.StateCommon.Back.Color2 = Color.FromArgb(154, 5, 0);
+                        btnTime.StateCommon.Back.ColorAngle = 60;
+                        btnTime.StateCommon.Back.ColorStyle = PaletteColorStyle.Linear;
+
                         btnTime.StateCommon.Content.ShortText.Color1 = Color.White;
                         btnTime.StateCommon.Content.ShortText.Font = new Font("Nunito", 14, FontStyle.Bold);
-                        btnTime.OverrideDefault.Back.Color1 = Color.FromArgb(138, 43, 226);
-                        btnTime.OverrideDefault.Back.Color2 = Color.FromArgb(138, 43, 226);
+
+                        btnTime.OverrideDefault.Back.Color1 = Color.FromArgb(230, 0, 18);
+                        btnTime.OverrideDefault.Back.Color2 = Color.FromArgb(154, 5, 0);
+                        btnTime.OverrideDefault.Back.ColorAngle = 60;
+                        btnTime.OverrideDefault.Back.ColorStyle = PaletteColorStyle.Linear;
+                        btnTime.OverrideDefault.Border.Color1 = Color.Transparent;
+                        btnTime.OverrideDefault.Border.GraphicsHint = PaletteGraphicsHint.AntiAlias;
 
                         btnTime.Click += BtnTime_Click;
                         flowPanelSuatChieu.Controls.Add(btnTime);

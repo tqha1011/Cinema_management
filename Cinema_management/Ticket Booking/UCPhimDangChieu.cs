@@ -25,6 +25,8 @@ namespace Cinema_management.Ticket_Booking
         // List backup
         private List<Control> _renderedControls = new List<Control>();
 
+        private UCMovieCard _cardDangChon = null;
+
         public UCPhimDangChieu()
         {
             InitializeComponent();
@@ -94,7 +96,7 @@ namespace Cinema_management.Ticket_Booking
             // Tạm dừng vẽ để tránh nhấp nháy
             flowPanelMovies.Visible = false;
             flowPanelMovies.SuspendLayout();
-
+            _cardDangChon = null;
             // Dọn dẹp control cũ
             foreach (Control c in flowPanelMovies.Controls) c.Dispose();
             flowPanelMovies.Controls.Clear();
@@ -202,6 +204,11 @@ namespace Cinema_management.Ticket_Booking
         {
             UCMovieCard item = sender as UCMovieCard;
 
+            if (_cardDangChon != null && _cardDangChon != item)
+            {
+                _cardDangChon.IsSelected = false;
+            }
+            _cardDangChon = item;
             //mở form chọn suất chiếu
             FormChonSuatChieu frm = new FormChonSuatChieu(item.MaPhim, dtpSearchDate.Value);
 
