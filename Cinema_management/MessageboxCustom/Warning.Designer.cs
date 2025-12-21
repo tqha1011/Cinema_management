@@ -44,19 +44,18 @@
             this.kryptonTableLayoutPanel1.AutoSize = true;
             this.kryptonTableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonTableLayoutPanel1.ColumnCount = 2;
-            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.kryptonTableLayoutPanel1.Controls.Add(this.ptbWarning, 0, 0);
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblmsg, 1, 0);
             this.kryptonTableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
             this.kryptonTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(30, 31);
-            this.kryptonTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(20, 20);
             this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             this.kryptonTableLayoutPanel1.RowCount = 2;
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(490, 116);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(331, 60);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 0;
             // 
@@ -64,10 +63,9 @@
             // 
             this.ptbWarning.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ptbWarning.BackColor = System.Drawing.Color.Transparent;
-            this.ptbWarning.Location = new System.Drawing.Point(4, 5);
-            this.ptbWarning.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ptbWarning.Location = new System.Drawing.Point(3, 3);
             this.ptbWarning.Name = "ptbWarning";
-            this.ptbWarning.Size = new System.Drawing.Size(51, 48);
+            this.ptbWarning.Size = new System.Drawing.Size(34, 24);
             this.ptbWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbWarning.TabIndex = 0;
             this.ptbWarning.TabStop = false;
@@ -76,11 +74,10 @@
             // 
             this.lblmsg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblmsg.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.lblmsg.Location = new System.Drawing.Point(64, 13);
-            this.lblmsg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblmsg.MaximumSize = new System.Drawing.Size(480, 0);
+            this.lblmsg.Location = new System.Drawing.Point(43, 5);
+            this.lblmsg.MaximumSize = new System.Drawing.Size(320, 0);
             this.lblmsg.Name = "lblmsg";
-            this.lblmsg.Size = new System.Drawing.Size(221, 32);
+            this.lblmsg.Size = new System.Drawing.Size(139, 20);
             this.lblmsg.Text = "kryptonWrapLabel1";
             // 
             // flowLayoutPanel1
@@ -91,23 +88,23 @@
             this.kryptonTableLayoutPanel1.SetColumnSpan(this.flowLayoutPanel1, 2);
             this.flowLayoutPanel1.Controls.Add(this.btnOk);
             this.flowLayoutPanel1.Controls.Add(this.btnCancel);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(96, 89);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 31, 4, 5);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(66, 50);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(297, 22);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(199, 7);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // btnOk
             // 
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOk.Location = new System.Drawing.Point(4, 5);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(4, 5, 15, 5);
+            this.btnOk.Location = new System.Drawing.Point(3, 3);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.btnOk.Name = "btnOk";
             this.btnOk.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkOrange;
             this.btnOk.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkOrange;
             this.btnOk.OverrideDefault.Border.Color1 = System.Drawing.Color.Black;
             this.btnOk.OverrideDefault.Border.Rounding = 9F;
-            this.btnOk.Size = new System.Drawing.Size(135, 39);
+            this.btnOk.Size = new System.Drawing.Size(90, 25);
             this.btnOk.StateCommon.Back.Color1 = System.Drawing.Color.DarkOrange;
             this.btnOk.StateCommon.Back.Color2 = System.Drawing.Color.DarkOrange;
             this.btnOk.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -124,14 +121,13 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(158, 5);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancel.Location = new System.Drawing.Point(106, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkOrange;
             this.btnCancel.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkOrange;
             this.btnCancel.OverrideDefault.Border.Color1 = System.Drawing.Color.Black;
             this.btnCancel.OverrideDefault.Border.Rounding = 9F;
-            this.btnCancel.Size = new System.Drawing.Size(135, 39);
+            this.btnCancel.Size = new System.Drawing.Size(90, 25);
             this.btnCancel.StateCommon.Back.Color1 = System.Drawing.Color.DarkOrange;
             this.btnCancel.StateCommon.Back.Color2 = System.Drawing.Color.DarkOrange;
             this.btnCancel.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -147,19 +143,18 @@
             // 
             // Warning
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(550, 178);
+            this.ClientSize = new System.Drawing.Size(371, 100);
             this.Controls.Add(this.kryptonTableLayoutPanel1);
             this.Location = new System.Drawing.Point(0, 0);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Warning";
-            this.Padding = new System.Windows.Forms.Padding(30, 31, 30, 31);
+            this.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
