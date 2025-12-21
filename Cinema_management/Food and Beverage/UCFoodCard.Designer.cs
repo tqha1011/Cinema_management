@@ -52,8 +52,8 @@
             // 
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonTableLayoutPanel1);
             this.kryptonGroup1.Panel.Controls.Add(this.ptbMonAn);
-            this.kryptonGroup1.Panel.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
-            this.kryptonGroup1.Size = new System.Drawing.Size(255, 305);
+            this.kryptonGroup1.Panel.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.kryptonGroup1.Size = new System.Drawing.Size(300, 389);
             this.kryptonGroup1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonGroup1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(141)))));
             this.kryptonGroup1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(141)))));
@@ -72,23 +72,25 @@
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblGia, 1, 1);
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblTenMon, 0, 0);
             this.kryptonTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(18, 174);
+            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(20, 218);
+            this.kryptonTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             this.kryptonTableLayoutPanel1.RowCount = 2;
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(197, 93);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(238, 129);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 1;
             // 
             // lblSoLuong
             // 
             this.lblSoLuong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSoLuong.Location = new System.Drawing.Point(3, 59);
+            this.lblSoLuong.Location = new System.Drawing.Point(3, 80);
+            this.lblSoLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(75, 31);
+            this.lblSoLuong.Size = new System.Drawing.Size(106, 45);
             this.lblSoLuong.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lblSoLuong.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.lblSoLuong.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.lblSoLuong.TabIndex = 1;
@@ -97,11 +99,12 @@
             // lblGia
             // 
             this.lblGia.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblGia.Location = new System.Drawing.Point(135, 59);
+            this.lblGia.Location = new System.Drawing.Point(168, 83);
+            this.lblGia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(59, 31);
+            this.lblGia.Size = new System.Drawing.Size(67, 38);
             this.lblGia.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lblGia.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGia.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGia.TabIndex = 2;
             this.lblGia.Values.Image = global::Cinema_management.Properties.Resources.iconmoney_resize;
             this.lblGia.Values.Text = "1đ";
@@ -113,33 +116,33 @@
             this.lblTenMon.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
             this.lblTenMon.Location = new System.Drawing.Point(3, 0);
             this.lblTenMon.Name = "lblTenMon";
-            this.lblTenMon.Size = new System.Drawing.Size(191, 56);
-            this.lblTenMon.StateCommon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenMon.StateCommon.TextColor = System.Drawing.Color.Black;
+            this.lblTenMon.Size = new System.Drawing.Size(232, 76);
+            this.lblTenMon.StateCommon.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenMon.StateCommon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(1)))), ((int)(((byte)(0)))));
             this.lblTenMon.Text = "Combo bắp vị phô mai + nước";
             this.lblTenMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ptbMonAn
             // 
             this.ptbMonAn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ptbMonAn.Location = new System.Drawing.Point(18, 16);
+            this.ptbMonAn.Location = new System.Drawing.Point(20, 20);
             this.ptbMonAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbMonAn.Name = "ptbMonAn";
-            this.ptbMonAn.Size = new System.Drawing.Size(197, 158);
+            this.ptbMonAn.Size = new System.Drawing.Size(238, 198);
             this.ptbMonAn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbMonAn.TabIndex = 0;
             this.ptbMonAn.TabStop = false;
             // 
             // UCFoodCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.kryptonGroup1);
-            this.Margin = new System.Windows.Forms.Padding(27, 24, 27, 24);
-            this.MinimumSize = new System.Drawing.Size(246, 294);
+            this.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.MinimumSize = new System.Drawing.Size(277, 368);
             this.Name = "UCFoodCard";
-            this.Size = new System.Drawing.Size(255, 305);
+            this.Size = new System.Drawing.Size(300, 389);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
