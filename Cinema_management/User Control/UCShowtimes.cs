@@ -145,12 +145,12 @@ namespace Cinema_management
             lblHeaderSun.Text = $"CN\n{_currentMonday.AddDays(6):dd/MM}";
 
             lblHeaderMon.BackColor = lblHeaderTue.BackColor = lblHeaderWed.BackColor =
-            lblHeaderThu.BackColor = lblHeaderFri.BackColor = lblHeaderSat.BackColor = lblHeaderSun.BackColor = Color.AliceBlue;
+            lblHeaderThu.BackColor = lblHeaderFri.BackColor = lblHeaderSat.BackColor = lblHeaderSun.BackColor = Color.FromArgb(255, 242, 236);
 
             DateTime today = DateTime.Today;
             if (today >= _currentMonday && today <= _currentMonday.AddDays(6))
             {
-                Color highlightColor = Color.FromArgb(255, 240, 240);
+                Color highlightColor = Color.FromArgb(255, 178, 0);
                 switch (today.DayOfWeek)
                 {
                     case DayOfWeek.Monday: lblHeaderMon.BackColor = highlightColor; break;
