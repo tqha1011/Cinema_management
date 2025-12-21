@@ -56,6 +56,7 @@ namespace Cinema_management.Food_and_Beverage
         {
             if (ValidateInformation(newFood))
             {
+                // declare dung de lay ID vua moi them vao de them so luong vao kho
                 string query = "INSERT INTO DOAN(TENDOAN,GIADOAN,MOTADOAN,MALOAIDOAN,ANHDOAN)" +
                                "VALUES(@Name,@Price,@Description,@Type,@Image); " +
                                "DECLARE @NewID INT = SCOPE_IDENTITY(); " +
@@ -116,6 +117,7 @@ namespace Cinema_management.Food_and_Beverage
         #region Get Food Details
         public Food GetDetails(int ID)
         {
+            // query lấy thông tin đồ ăn theo ID
             string query = "SELECT d.*, k.SOLUONG " +
                            "FROM DOAN d LEFT JOIN KHODOAN k ON d.MADOAN = k.MADOAN " +
                            "WHERE d.MADOAN = @Id";
@@ -126,7 +128,7 @@ namespace Cinema_management.Food_and_Beverage
             DataTable table = dtb.ReadData(query, sqlParameter);
             if(table.Equals(null) || table.Rows.Count == 0)
             {
-                return null; // tra ve null neu khong co do an trong database
+                return null; // trả về null nếu không có đồ ăn trong database
             }
             else
             {

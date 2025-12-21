@@ -38,6 +38,7 @@ namespace Cinema_management
             if(foodLogic.DeleteFood(foodID))
             {
                 Alert.Show("Xóa món thành công",MessagboxCustom.AlertMessagebox.AlertType.Success);
+                DialogResult = DialogResult.OK;
                 this.Close();
             }
             else
