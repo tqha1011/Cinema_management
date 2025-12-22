@@ -92,7 +92,7 @@
             // 
             // txtNameFood
             // 
-            this.txtNameFood.Location = new System.Drawing.Point(226, 4);
+            this.txtNameFood.Location = new System.Drawing.Point(231, 4);
             this.txtNameFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNameFood.Name = "txtNameFood";
             this.txtNameFood.Size = new System.Drawing.Size(300, 41);
@@ -115,7 +115,7 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(226, 96);
+            this.txtPrice.Location = new System.Drawing.Point(231, 96);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(300, 41);
@@ -138,7 +138,7 @@
             // 
             // txtAmount
             // 
-            this.txtAmount.Location = new System.Drawing.Point(226, 188);
+            this.txtAmount.Location = new System.Drawing.Point(231, 188);
             this.txtAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(300, 41);
@@ -166,7 +166,7 @@
             this.cboType.DropDownWidth = 239;
             this.cboType.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
             this.cboType.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cboType.Location = new System.Drawing.Point(226, 280);
+            this.cboType.Location = new System.Drawing.Point(231, 280);
             this.cboType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboType.Name = "cboType";
             this.cboType.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
@@ -193,7 +193,7 @@
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(741, 440);
+            this.btnSave.Location = new System.Drawing.Point(753, 440);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
@@ -248,7 +248,7 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.Location = new System.Drawing.Point(534, 440);
+            this.btnDelete.Location = new System.Drawing.Point(546, 440);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
@@ -314,7 +314,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonPanel1.Location = new System.Drawing.Point(22, 25);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(335, 485);
+            this.kryptonPanel1.Size = new System.Drawing.Size(335, 477);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel1.TabIndex = 6;
             // 
@@ -325,7 +325,7 @@
             this.kryptonPanel2.Location = new System.Drawing.Point(357, 25);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(20);
-            this.kryptonPanel2.Size = new System.Drawing.Size(598, 408);
+            this.kryptonPanel2.Size = new System.Drawing.Size(612, 408);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel2.TabIndex = 7;
             // 
@@ -350,7 +350,7 @@
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(558, 368);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(572, 368);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 6;
             // 
@@ -359,7 +359,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1005, 535);
+            this.ClientSize = new System.Drawing.Size(1019, 527);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.kryptonPanel2);

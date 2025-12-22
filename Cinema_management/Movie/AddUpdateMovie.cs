@@ -40,14 +40,14 @@ namespace Cinema_management
             if (!string.IsNullOrEmpty(_movieIDToEdit))
             {
                 // --- CHẾ ĐỘ SỬA ---
-                this.Text = "Cập nhật phim";
+                label.Text = "Update Movie";
                 txtMovieID.Text = _movieIDToEdit;
                 LoadMovieData();
             }
             else
             {
                 // --- CHẾ ĐỘ THÊM MỚI ---
-                this.Text = "Thêm phim mới";
+                label.Text = "Add New Movie";
                 txtMovieID.Text = GetNextMovieID().ToString();
 
                 // Mặc định chọn item đầu tiên
