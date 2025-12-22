@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cinema_management.MessageboxCustom.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,18 +22,20 @@ namespace Cinema_management.Ticket_Booking
         public decimal GiaTien { get; set; }
         public string TenDoan { get; set; }
         public int SoLuong { get; set; } = 1;
+        public int SoLuongTon { get; set; }
 
         public UCThanhToanFood()
         {
             InitializeComponent();
         }
 
-        public void SetData (int id, string name, decimal price, int soLuong = 1)
+        public void SetData (int id, string name, decimal price, int maxStock, int soLuong = 1)
         {
             MaDoan = id;
             SoLuong = soLuong;
             TenDoan = name;
             GiaTien = price;
+            SoLuongTon = maxStock;// lưu sl tồn kho
 
             UpdateUI();
 
@@ -40,6 +43,12 @@ namespace Cinema_management.Ticket_Booking
 
         public void TangSoLuong() // dc gọi khi click vào card bên trái
         {
+            if(SoLuong >= SoLuongTon) //ktra sl 
+            {
+                Alert.Show("Đã chọn số lượng tối đa trong kho!", MessagboxCustom.AlertMessagebox.AlertType.Info);
+                return;
+            }
+
             SoLuong++;
             UpdateUI();
             OnUpdate?.Invoke(this, EventArgs.Empty); 
