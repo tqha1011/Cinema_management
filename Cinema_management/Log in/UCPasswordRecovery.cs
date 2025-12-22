@@ -71,7 +71,8 @@ namespace Cinema_management
             }
             else
             {
-                lblEmailExist.Visible = true;
+                //lblEmailExist.Visible = true;
+                Alert.Show("Email không tồn tại.", MessagboxCustom.AlertMessagebox.AlertType.Error);
                 lblCheck.Visible = false;
             }
         }
