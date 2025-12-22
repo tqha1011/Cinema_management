@@ -69,15 +69,28 @@ namespace Cinema_management.Services
                     {
                         foreach (var item in bookingData.DanhSachDoAn)
                         {
+                            int maDoan = item.Key;
+                            int soLuongMua = item.Value;
+
                             string queryFood = @"INSERT INTO CHITIETHOADON (MAHOADON, MADOAN, SOLUONG, THANHTIEN)
-                                                VALUES (@MaHD, @MaDoan, @SL, @SL * (SELECT GIADOAN 
-                                                                                    FROM DOAN WHERE MADOAN = @MaDoan))";
+                                                 VALUES (@MaHD, @MaDoan, @SL, @SL * (SELECT GIADOAN 
+                                                                                     FROM DOAN WHERE MADOAN = @MaDoan))";
 
                             SqlCommand cmdFood = new SqlCommand(queryFood, conn, transaction);
                             cmdFood.Parameters.AddWithValue("@MaHD", maHD);
-                            cmdFood.Parameters.AddWithValue("@MaDoan", item.Key);
-                            cmdFood.Parameters.AddWithValue("SL", item.Value);
+                            cmdFood.Parameters.AddWithValue("@MaDoan", maDoan);
+                            cmdFood.Parameters.AddWithValue("@SL", soLuongMua);
                             cmdFood.ExecuteNonQuery();
+
+                            string queryUpdateKho = @"UPDATE KHODOAN 
+                                                      SET SOLUONG = SOLUONG - @SLMua 
+                                                      WHERE MADOAN = @MaDoanKho";
+
+                            SqlCommand cmdKho = new SqlCommand(queryUpdateKho, conn, transaction);
+                            cmdKho.Parameters.AddWithValue("@SLMua", soLuongMua);
+                            cmdKho.Parameters.AddWithValue("@MaDoanKho", maDoan);
+
+                            int rowsAffected = cmdKho.ExecuteNonQuery();
                         }
                     }
 

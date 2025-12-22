@@ -78,7 +78,7 @@
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.kryptonPanel1.Size = new System.Drawing.Size(2647, 122);
+            this.kryptonPanel1.Size = new System.Drawing.Size(2675, 122);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonPanel1.TabIndex = 0;
             // 
@@ -86,8 +86,8 @@
             // 
             this.kryptonDropButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.kryptonDropButton1.KryptonContextMenu = this.kryptonContextMenu1;
-            this.kryptonDropButton1.Location = new System.Drawing.Point(2133, 25);
-            this.kryptonDropButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonDropButton1.Location = new System.Drawing.Point(2161, 25);
+            this.kryptonDropButton1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonDropButton1.Name = "kryptonDropButton1";
             this.kryptonDropButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.kryptonDropButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -261,9 +261,9 @@
             // 
             this.pnforUC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnforUC.Location = new System.Drawing.Point(0, 122);
-            this.pnforUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnforUC.Margin = new System.Windows.Forms.Padding(4);
             this.pnforUC.Name = "pnforUC";
-            this.pnforUC.Size = new System.Drawing.Size(2647, 875);
+            this.pnforUC.Size = new System.Drawing.Size(2675, 865);
             this.pnforUC.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnforUC.TabIndex = 1;
             // 
@@ -272,12 +272,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(2647, 997);
+            this.ClientSize = new System.Drawing.Size(2675, 987);
             this.Controls.Add(this.pnforUC);
             this.Controls.Add(this.kryptonPanel1);
             this.LocalCustomPalette = this.kryptonCustomPaletteBase1;
             this.Location = new System.Drawing.Point(0, 0);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormNV";

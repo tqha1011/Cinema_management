@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+using Cinema_management.MessageboxCustom.Utils;
 
 namespace Cinema_management
 {
@@ -26,6 +27,8 @@ namespace Cinema_management
         // list lưu tất cả đồ ăn để lọc ko cần query lại DB
         private List<UCOrderFoodCard> _allFoodCards = new List<UCOrderFoodCard>();
 
+        //key: Mã đồ ăn, value: số lượng trong kho
+        private Dictionary<int, int> _stockInfo = new Dictionary<int, int>();
 
         public UCChonDoAn()
         {
@@ -53,7 +56,6 @@ namespace Cinema_management
         {
             this.bookingInfo = info;
 
-            //LoadListFood();
             lblMovieInfo.Text = $"{bookingInfo.TenPhim} - {bookingInfo.ThoiGianChieu:dd/MM/yyyy HH:mm} - {bookingInfo.TenPhong}";
 
             // Gọi hàm load async
@@ -72,7 +74,10 @@ namespace Cinema_management
         private DataTable GetFoodDataFromDB()
         {
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM DOAN WHERE SELLING = 1";
+            string query = @"SELECT D.MADOAN, D.TENDOAN, D.GIADOAN, D.ANHDOAN, D.MALOAIDOAN, ISNULL(K.SOLUONG, 0) AS SOLUONG
+                                FROM DOAN D 
+                                LEFT JOIN KHODOAN K ON D.MADOAN = K.MADOAN 
+                               WHERE SELLING = 1";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -91,9 +96,16 @@ namespace Cinema_management
             foreach (Control c in flowPanelMenu.Controls) c.Dispose();
             flowPanelMenu.Controls.Clear();
             _allFoodCards.Clear();
+            _stockInfo.Clear(); //reset kho
 
             foreach (DataRow row in dt.Rows)
             {
+                int maDoan = Convert.ToInt32(row["MADOAN"]);
+                int soluongTon = Convert.ToInt32(row["SOLUONG"]);
+                //lưu vào dictionary để ktra 
+                if(!_stockInfo.ContainsKey(maDoan))
+                    _stockInfo.Add(maDoan, soluongTon);
+
                 UCOrderFoodCard card = new UCOrderFoodCard();
 
                 // Xử lý ảnh
@@ -111,6 +123,13 @@ namespace Cinema_management
                     img,
                     Convert.ToInt32(row["MALOAIDOAN"])
                 );
+
+                //////////////////// nếu hết hàng thì làm mờ 
+                if (soluongTon <= 0)
+                {
+                    card.Enabled = false;
+                    card.ForeColor = Color.Gray;
+                }
 
                 card.OnSelect += Card_OnSelect;
                 card.Margin = new Padding(10); 
@@ -178,10 +197,20 @@ namespace Cinema_management
         private void Card_OnSelect(object sender, EventArgs e)
         {
             UCOrderFoodCard selectedItem = sender as UCOrderFoodCard;
+            int maDoan = selectedItem.MaDoan;
 
-            //ktra xem đã có trong giỏ hàng chưa
+            int stockAvailable = _stockInfo.ContainsKey(maDoan)?_stockInfo[maDoan]:0;
+
+            if (stockAvailable <= 0)
+            {
+                Alert.Show("Đã hết hàng!", MessagboxCustom.AlertMessagebox.AlertType.Info);
+                return;
+            }
+
+            //ktra xem đã có trong giỏ hàng đã chọn bao nhiêu r
             var existingItem = flowPanelCart.Controls.OfType<UCThanhToanFood>()
-                                .FirstOrDefault(x => x.MaDoan == selectedItem.MaDoan);    
+                                .FirstOrDefault(x => x.MaDoan == selectedItem.MaDoan);
+            int currInCart = (existingItem != null) ? existingItem.SoLuong : 0;
 
             if (existingItem != null)
             {
@@ -192,7 +221,7 @@ namespace Cinema_management
 
                 ///// nếu chưa có --> tạo mới thẻ UCThanhToanFood
             UCThanhToanFood cartItem = new UCThanhToanFood();
-            cartItem.SetData(selectedItem.MaDoan, selectedItem.TenDoan, selectedItem.GiaTien);
+            cartItem.SetData(selectedItem.MaDoan, selectedItem.TenDoan, selectedItem.GiaTien, stockAvailable);
 
             cartItem.OnUpdate += (s, ev) => UpdateTotalMoney();
             cartItem.OnDelete += (s, ev) =>
