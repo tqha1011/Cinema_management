@@ -57,7 +57,8 @@ namespace Cinema_management
             // validate du lieu dau vao
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(pass) || string.IsNullOrEmpty(role))
             {
-                lblInfo.Visible = true;
+                //lblInfo.Visible = true;
+                Alert.Show("Vui lòng nhập đầy đủ thông tin", AlertMessagebox.AlertType.Error);
             }
             else
             {
