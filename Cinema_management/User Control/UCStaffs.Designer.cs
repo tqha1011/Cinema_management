@@ -57,7 +57,8 @@
             // 
             this.btnUpdateStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdateStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdateStaff.Location = new System.Drawing.Point(949, 54);
+            this.btnUpdateStaff.Location = new System.Drawing.Point(843, 43);
+            this.btnUpdateStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateStaff.Name = "btnUpdateStaff";
             this.btnUpdateStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnUpdateStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -83,7 +84,7 @@
             this.btnUpdateStaff.OverrideFocus.Border.Width = 1;
             this.btnUpdateStaff.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnUpdateStaff.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnUpdateStaff.Size = new System.Drawing.Size(190, 58);
+            this.btnUpdateStaff.Size = new System.Drawing.Size(169, 46);
             this.btnUpdateStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnUpdateStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnUpdateStaff.StateCommon.Back.ColorAngle = 45F;
@@ -144,7 +145,8 @@
             // 
             this.btnDeleteStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeleteStaff.Location = new System.Drawing.Point(1150, 54);
+            this.btnDeleteStaff.Location = new System.Drawing.Point(1021, 43);
+            this.btnDeleteStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteStaff.Name = "btnDeleteStaff";
             this.btnDeleteStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnDeleteStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -169,7 +171,7 @@
             this.btnDeleteStaff.OverrideFocus.Border.Width = 1;
             this.btnDeleteStaff.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnDeleteStaff.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnDeleteStaff.Size = new System.Drawing.Size(190, 58);
+            this.btnDeleteStaff.Size = new System.Drawing.Size(169, 46);
             this.btnDeleteStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnDeleteStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnDeleteStaff.StateCommon.Back.ColorAngle = 45F;
@@ -226,10 +228,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(81, 56);
+            this.kryptonLabel1.Location = new System.Drawing.Point(72, 45);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(339, 56);
+            this.kryptonLabel1.Size = new System.Drawing.Size(284, 47);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 0;
@@ -240,7 +242,8 @@
             // 
             this.btnAddStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddStaff.Location = new System.Drawing.Point(678, 54);
+            this.btnAddStaff.Location = new System.Drawing.Point(602, 43);
+            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddStaff.Name = "btnAddStaff";
             this.btnAddStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnAddStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
@@ -270,7 +273,7 @@
             this.btnAddStaff.OverrideFocus.Border.Rounding = 20F;
             this.btnAddStaff.OverrideFocus.Border.Width = 1;
             this.btnAddStaff.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAddStaff.Size = new System.Drawing.Size(259, 58);
+            this.btnAddStaff.Size = new System.Drawing.Size(230, 46);
             this.btnAddStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnAddStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.btnAddStaff.StateCommon.Back.ColorAngle = 45F;
@@ -341,11 +344,11 @@
             this.txbSearchStaff.CueHint.Color1 = System.Drawing.Color.Gray;
             this.txbSearchStaff.CueHint.CueHintText = "Search staff\'s name...";
             this.txbSearchStaff.CueHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSearchStaff.Location = new System.Drawing.Point(127, 139);
+            this.txbSearchStaff.Location = new System.Drawing.Point(113, 111);
             this.txbSearchStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbSearchStaff.Multiline = true;
             this.txbSearchStaff.Name = "txbSearchStaff";
-            this.txbSearchStaff.Size = new System.Drawing.Size(330, 52);
+            this.txbSearchStaff.Size = new System.Drawing.Size(293, 42);
             this.txbSearchStaff.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txbSearchStaff.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
             this.txbSearchStaff.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -357,10 +360,10 @@
             // pictureBoxFind
             // 
             this.pictureBoxFind.Image = global::Cinema_management.Properties.Resources.lucide__search;
-            this.pictureBoxFind.Location = new System.Drawing.Point(81, 142);
+            this.pictureBoxFind.Location = new System.Drawing.Point(72, 114);
             this.pictureBoxFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxFind.Name = "pictureBoxFind";
-            this.pictureBoxFind.Size = new System.Drawing.Size(40, 49);
+            this.pictureBoxFind.Size = new System.Drawing.Size(36, 39);
             this.pictureBoxFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxFind.TabIndex = 0;
             this.pictureBoxFind.TabStop = false;
@@ -388,7 +391,7 @@
             this.Position,
             this.HireDate});
             this.dgvMM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvMM.Location = new System.Drawing.Point(50, 30);
+            this.dgvMM.Location = new System.Drawing.Point(44, 24);
             this.dgvMM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvMM.Name = "dgvMM";
             this.dgvMM.ReadOnly = true;
@@ -398,7 +401,7 @@
             this.dgvMM.RowTemplate.DividerHeight = 20;
             this.dgvMM.RowTemplate.Height = 80;
             this.dgvMM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMM.Size = new System.Drawing.Size(1320, 337);
+            this.dgvMM.Size = new System.Drawing.Size(1173, 270);
             this.dgvMM.StateCommon.Background.Color1 = System.Drawing.Color.White;
             this.dgvMM.StateCommon.Background.Color2 = System.Drawing.Color.White;
             this.dgvMM.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -434,7 +437,7 @@
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ID.Width = 86;
+            this.ID.Width = 73;
             // 
             // StaffName
             // 
@@ -445,7 +448,7 @@
             this.StaffName.Name = "StaffName";
             this.StaffName.ReadOnly = true;
             this.StaffName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.StaffName.Width = 191;
+            this.StaffName.Width = 163;
             // 
             // Gender
             // 
@@ -457,7 +460,7 @@
             this.Gender.ReadOnly = true;
             this.Gender.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Gender.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Gender.Width = 122;
+            this.Gender.Width = 106;
             // 
             // Birthday
             // 
@@ -468,7 +471,7 @@
             this.Birthday.Name = "Birthday";
             this.Birthday.ReadOnly = true;
             this.Birthday.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Birthday.Width = 169;
+            this.Birthday.Width = 144;
             // 
             // PhoneNumber
             // 
@@ -479,7 +482,7 @@
             this.PhoneNumber.Name = "PhoneNumber";
             this.PhoneNumber.ReadOnly = true;
             this.PhoneNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.PhoneNumber.Width = 251;
+            this.PhoneNumber.Width = 215;
             // 
             // Email
             // 
@@ -490,7 +493,7 @@
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
             this.Email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Email.Width = 130;
+            this.Email.Width = 110;
             // 
             // Position
             // 
@@ -501,7 +504,7 @@
             this.Position.Name = "Position";
             this.Position.ReadOnly = true;
             this.Position.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Position.Width = 161;
+            this.Position.Width = 139;
             // 
             // HireDate
             // 
@@ -512,7 +515,7 @@
             this.HireDate.Name = "HireDate";
             this.HireDate.ReadOnly = true;
             this.HireDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.HireDate.Width = 182;
+            this.HireDate.Width = 155;
             // 
             // kryptonPanel1
             // 
@@ -523,10 +526,11 @@
             this.kryptonPanel1.Controls.Add(this.pictureBoxFind);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel1.Location = new System.Drawing.Point(20, 20);
+            this.kryptonPanel1.Location = new System.Drawing.Point(18, 16);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(20);
-            this.kryptonPanel1.Size = new System.Drawing.Size(1370, 203);
+            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1217, 162);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel1.TabIndex = 9;
             // 
@@ -534,24 +538,26 @@
             // 
             this.kryptonPanel2.Controls.Add(this.dgvMM);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel2.Location = new System.Drawing.Point(20, 223);
+            this.kryptonPanel2.Location = new System.Drawing.Point(18, 178);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(50, 30, 0, 0);
-            this.kryptonPanel2.Size = new System.Drawing.Size(1370, 367);
+            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(44, 24, 0, 0);
+            this.kryptonPanel2.Size = new System.Drawing.Size(1217, 294);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel2.TabIndex = 10;
             // 
             // UCStaffs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonPanel1);
-            this.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.Name = "UCStaffs";
-            this.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
-            this.Size = new System.Drawing.Size(1410, 610);
+            this.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
+            this.Size = new System.Drawing.Size(1253, 488);
             this.Load += new System.EventHandler(this.UCStaffs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMM)).EndInit();
