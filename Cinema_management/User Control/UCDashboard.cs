@@ -103,7 +103,7 @@ namespace Cinema_management
             {
                 Text = showtimeID.HasValue ? "Edit Showtime" : "Add Showtime",
                 StartPosition = FormStartPosition.CenterParent,
-                ClientSize = new System.Drawing.Size(1067, 562),
+                ClientSize = new System.Drawing.Size(1200,700),
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 MaximizeBox = false,
                 MinimizeBox = false

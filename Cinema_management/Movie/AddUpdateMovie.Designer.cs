@@ -64,16 +64,18 @@
             this.pnAdd.Controls.Add(this.label);
             this.pnAdd.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnAdd.Location = new System.Drawing.Point(0, 0);
+            this.pnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnAdd.Name = "pnAdd";
-            this.pnAdd.Size = new System.Drawing.Size(833, 105);
+            this.pnAdd.Size = new System.Drawing.Size(1111, 131);
             this.pnAdd.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnAdd.TabIndex = 1;
             // 
             // label
             // 
-            this.label.Location = new System.Drawing.Point(47, 34);
+            this.label.Location = new System.Drawing.Point(63, 42);
+            this.label.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(261, 50);
+            this.label.Size = new System.Drawing.Size(346, 66);
             this.label.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.label.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.TabIndex = 0;
@@ -85,10 +87,11 @@
             this.txtDirector.CueHint.CueHintText = "Enter director name";
             this.txtDirector.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDirector.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtDirector.Location = new System.Drawing.Point(306, 376);
+            this.txtDirector.Location = new System.Drawing.Point(408, 470);
+            this.txtDirector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDirector.Name = "txtDirector";
             this.txtDirector.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.txtDirector.Size = new System.Drawing.Size(430, 57);
+            this.txtDirector.Size = new System.Drawing.Size(573, 68);
             this.txtDirector.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.txtDirector.TabIndex = 12;
             // 
@@ -244,18 +247,20 @@
             this.txtMovieName.CueHint.CueHintText = "Enter movie name";
             this.txtMovieName.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMovieName.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtMovieName.Location = new System.Drawing.Point(306, 267);
+            this.txtMovieName.Location = new System.Drawing.Point(408, 334);
+            this.txtMovieName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMovieName.Name = "txtMovieName";
             this.txtMovieName.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.txtMovieName.Size = new System.Drawing.Size(430, 57);
+            this.txtMovieName.Size = new System.Drawing.Size(573, 68);
             this.txtMovieName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.txtMovieName.TabIndex = 13;
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(306, 340);
+            this.kryptonLabel3.Location = new System.Drawing.Point(408, 425);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(182, 38);
+            this.kryptonLabel3.Size = new System.Drawing.Size(240, 50);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 9;
@@ -263,9 +268,10 @@
             // 
             // lblMovieName
             // 
-            this.lblMovieName.Location = new System.Drawing.Point(306, 231);
+            this.lblMovieName.Location = new System.Drawing.Point(408, 289);
+            this.lblMovieName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblMovieName.Name = "lblMovieName";
-            this.lblMovieName.Size = new System.Drawing.Size(157, 38);
+            this.lblMovieName.Size = new System.Drawing.Size(207, 50);
             this.lblMovieName.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblMovieName.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMovieName.TabIndex = 10;
@@ -273,9 +279,10 @@
             // 
             // picPoster
             // 
-            this.picPoster.Location = new System.Drawing.Point(53, 211);
+            this.picPoster.Location = new System.Drawing.Point(71, 264);
+            this.picPoster.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPoster.Name = "picPoster";
-            this.picPoster.Size = new System.Drawing.Size(212, 222);
+            this.picPoster.Size = new System.Drawing.Size(283, 278);
             this.picPoster.TabIndex = 11;
             this.picPoster.TabStop = false;
             // 
@@ -287,10 +294,11 @@
             this.dtpReleaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpReleaseDate.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
             this.dtpReleaseDate.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.dtpReleaseDate.Location = new System.Drawing.Point(495, 618);
+            this.dtpReleaseDate.Location = new System.Drawing.Point(660, 772);
+            this.dtpReleaseDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpReleaseDate.Name = "dtpReleaseDate";
             this.dtpReleaseDate.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.dtpReleaseDate.Size = new System.Drawing.Size(270, 39);
+            this.dtpReleaseDate.Size = new System.Drawing.Size(360, 50);
             this.dtpReleaseDate.StateActive.Back.Color1 = System.Drawing.Color.White;
             this.dtpReleaseDate.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.dtpReleaseDate.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -300,6 +308,8 @@
             // 
             // cbbAge
             // 
+            this.cbbAge.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbAge.CueHint.Color1 = System.Drawing.Color.Black;
             this.cbbAge.CueHint.CueHintText = "Select rating";
             this.cbbAge.CueHint.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -307,10 +317,11 @@
             this.cbbAge.DropDownWidth = 156;
             this.cbbAge.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
             this.cbbAge.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cbbAge.Location = new System.Drawing.Point(290, 512);
+            this.cbbAge.Location = new System.Drawing.Point(387, 640);
+            this.cbbAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbAge.Name = "cbbAge";
             this.cbbAge.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.cbbAge.Size = new System.Drawing.Size(133, 40);
+            this.cbbAge.Size = new System.Drawing.Size(206, 51);
             this.cbbAge.StateCommon.ComboBox.Border.Rounding = 5F;
             this.cbbAge.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cbbAge.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
@@ -324,6 +335,8 @@
             // 
             // cbbGenre
             // 
+            this.cbbGenre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbGenre.CueHint.Color1 = System.Drawing.Color.Black;
             this.cbbGenre.CueHint.CueHintText = "Select genre";
             this.cbbGenre.CueHint.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -333,10 +346,11 @@
             this.cbbGenre.Items.AddRange(new object[] {
             "Hành động"});
             this.cbbGenre.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cbbGenre.Location = new System.Drawing.Point(68, 512);
+            this.cbbGenre.Location = new System.Drawing.Point(91, 640);
+            this.cbbGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbGenre.Name = "cbbGenre";
             this.cbbGenre.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.cbbGenre.Size = new System.Drawing.Size(160, 40);
+            this.cbbGenre.Size = new System.Drawing.Size(226, 51);
             this.cbbGenre.StateCommon.ComboBox.Border.Rounding = 5F;
             this.cbbGenre.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cbbGenre.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
@@ -354,10 +368,11 @@
             this.txtDuration.CueHint.CueHintText = "Enter duration";
             this.txtDuration.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuration.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtDuration.Location = new System.Drawing.Point(495, 498);
+            this.txtDuration.Location = new System.Drawing.Point(660, 622);
+            this.txtDuration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.txtDuration.Size = new System.Drawing.Size(270, 57);
+            this.txtDuration.Size = new System.Drawing.Size(360, 68);
             this.txtDuration.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.txtDuration.TabIndex = 20;
             // 
@@ -368,18 +383,20 @@
             this.rtbDescription.CueHint.CueHintText = "Enter movie description";
             this.rtbDescription.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbDescription.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.rtbDescription.Location = new System.Drawing.Point(68, 610);
+            this.rtbDescription.Location = new System.Drawing.Point(91, 762);
+            this.rtbDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtbDescription.Name = "rtbDescription";
             this.rtbDescription.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.rtbDescription.Size = new System.Drawing.Size(371, 57);
+            this.rtbDescription.Size = new System.Drawing.Size(495, 68);
             this.rtbDescription.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.rtbDescription.TabIndex = 21;
             // 
             // lblDuration
             // 
-            this.lblDuration.Location = new System.Drawing.Point(495, 462);
+            this.lblDuration.Location = new System.Drawing.Point(660, 578);
+            this.lblDuration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblDuration.Name = "lblDuration";
-            this.lblDuration.Size = new System.Drawing.Size(232, 38);
+            this.lblDuration.Size = new System.Drawing.Size(307, 50);
             this.lblDuration.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblDuration.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDuration.TabIndex = 15;
@@ -387,9 +404,10 @@
             // 
             // lblAgeRating
             // 
-            this.lblAgeRating.Location = new System.Drawing.Point(279, 462);
+            this.lblAgeRating.Location = new System.Drawing.Point(372, 578);
+            this.lblAgeRating.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblAgeRating.Name = "lblAgeRating";
-            this.lblAgeRating.Size = new System.Drawing.Size(144, 38);
+            this.lblAgeRating.Size = new System.Drawing.Size(189, 50);
             this.lblAgeRating.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblAgeRating.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgeRating.TabIndex = 16;
@@ -397,9 +415,10 @@
             // 
             // lblRlDate
             // 
-            this.lblRlDate.Location = new System.Drawing.Point(495, 574);
+            this.lblRlDate.Location = new System.Drawing.Point(660, 718);
+            this.lblRlDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblRlDate.Name = "lblRlDate";
-            this.lblRlDate.Size = new System.Drawing.Size(167, 38);
+            this.lblRlDate.Size = new System.Drawing.Size(221, 50);
             this.lblRlDate.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblRlDate.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRlDate.TabIndex = 17;
@@ -407,9 +426,10 @@
             // 
             // lblDescription
             // 
-            this.lblDescription.Location = new System.Drawing.Point(68, 574);
+            this.lblDescription.Location = new System.Drawing.Point(91, 718);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(146, 38);
+            this.lblDescription.Size = new System.Drawing.Size(192, 50);
             this.lblDescription.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblDescription.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.TabIndex = 18;
@@ -417,9 +437,10 @@
             // 
             // lblGenre
             // 
-            this.lblGenre.Location = new System.Drawing.Point(68, 462);
+            this.lblGenre.Location = new System.Drawing.Point(91, 578);
+            this.lblGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblGenre.Name = "lblGenre";
-            this.lblGenre.Size = new System.Drawing.Size(84, 38);
+            this.lblGenre.Size = new System.Drawing.Size(109, 50);
             this.lblGenre.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblGenre.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenre.TabIndex = 19;
@@ -431,19 +452,21 @@
             this.txtMovieID.CueHint.CueHintText = "Movie ID";
             this.txtMovieID.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMovieID.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtMovieID.Location = new System.Drawing.Point(306, 163);
+            this.txtMovieID.Location = new System.Drawing.Point(408, 204);
+            this.txtMovieID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMovieID.Name = "txtMovieID";
             this.txtMovieID.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.txtMovieID.ReadOnly = true;
-            this.txtMovieID.Size = new System.Drawing.Size(430, 57);
+            this.txtMovieID.Size = new System.Drawing.Size(573, 68);
             this.txtMovieID.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.txtMovieID.TabIndex = 28;
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(306, 127);
+            this.kryptonLabel4.Location = new System.Drawing.Point(408, 159);
+            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(115, 38);
+            this.kryptonLabel4.Size = new System.Drawing.Size(152, 50);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.TabIndex = 27;
@@ -455,14 +478,15 @@
             this.btnUploadPoster.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom2;
             this.btnUploadPoster.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUploadPoster.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.btnUploadPoster.Location = new System.Drawing.Point(53, 127);
+            this.btnUploadPoster.Location = new System.Drawing.Point(71, 159);
+            this.btnUploadPoster.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUploadPoster.Name = "btnUploadPoster";
             this.btnUploadPoster.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnUploadPoster.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnUploadPoster.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.btnUploadPoster.Size = new System.Drawing.Size(212, 64);
+            this.btnUploadPoster.Size = new System.Drawing.Size(283, 80);
             this.btnUploadPoster.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -490,10 +514,11 @@
             this.btnSave.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom2;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.btnSave.Location = new System.Drawing.Point(602, 692);
+            this.btnSave.Location = new System.Drawing.Point(803, 865);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.btnSave.Size = new System.Drawing.Size(163, 59);
+            this.btnSave.Size = new System.Drawing.Size(217, 74);
             this.btnSave.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -516,7 +541,8 @@
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(419, 692);
+            this.btnCancel.Location = new System.Drawing.Point(559, 865);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnCancel.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -539,7 +565,7 @@
             this.btnCancel.OverrideFocus.Border.Width = 4;
             this.btnCancel.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnCancel.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nunito", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Size = new System.Drawing.Size(163, 59);
+            this.btnCancel.Size = new System.Drawing.Size(217, 74);
             this.btnCancel.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.StateNormal.Back.Color1 = System.Drawing.Color.White;
@@ -579,10 +605,10 @@
             // 
             // AddUpdateMovieForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(833, 791);
+            this.ClientSize = new System.Drawing.Size(1111, 989);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnUploadPoster);
@@ -604,6 +630,7 @@
             this.Controls.Add(this.kryptonLabel3);
             this.Controls.Add(this.lblMovieName);
             this.Controls.Add(this.pnAdd);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddUpdateMovieForm";

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.txtEmailConfirm = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.lblEmailExist = new Krypton.Toolkit.KryptonLabel();
             this.lblCheck = new Krypton.Toolkit.KryptonLabel();
             this.btnSendCode = new Krypton.Toolkit.KryptonButton();
@@ -41,7 +42,6 @@
             this.ptbIconBack = new Krypton.Toolkit.KryptonPictureBox();
             this.ptbLock = new Krypton.Toolkit.KryptonPictureBox();
             this.kryptonPictureBox2 = new Krypton.Toolkit.KryptonPictureBox();
-            this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ptbIconBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).BeginInit();
@@ -49,10 +49,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(106, 34);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel1.Location = new System.Drawing.Point(141, 42);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(338, 47);
+            this.kryptonLabel1.Size = new System.Drawing.Size(448, 62);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 1;
@@ -64,182 +64,17 @@
             this.txtEmailConfirm.CueHint.CueHintText = "Email";
             this.txtEmailConfirm.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailConfirm.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtEmailConfirm.Location = new System.Drawing.Point(138, 108);
-            this.txtEmailConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmailConfirm.Location = new System.Drawing.Point(184, 135);
+            this.txtEmailConfirm.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEmailConfirm.Multiline = true;
             this.txtEmailConfirm.Name = "txtEmailConfirm";
             this.txtEmailConfirm.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.txtEmailConfirm.Size = new System.Drawing.Size(322, 55);
+            this.txtEmailConfirm.Size = new System.Drawing.Size(429, 69);
             this.txtEmailConfirm.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtEmailConfirm.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailConfirm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             this.txtEmailConfirm.TabIndex = 3;
-            // 
-            // lblEmailExist
-            // 
-            this.lblEmailExist.Location = new System.Drawing.Point(180, 279);
-            this.lblEmailExist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblEmailExist.Name = "lblEmailExist";
-            this.lblEmailExist.Size = new System.Drawing.Size(206, 31);
-            this.lblEmailExist.StateCommon.ShortText.Color1 = System.Drawing.Color.Firebrick;
-            this.lblEmailExist.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmailExist.TabIndex = 6;
-            this.lblEmailExist.Values.Text = "Email không tồn tại";
-            // 
-            // lblCheck
-            // 
-            this.lblCheck.Location = new System.Drawing.Point(135, 318);
-            this.lblCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblCheck.Name = "lblCheck";
-            this.lblCheck.Size = new System.Drawing.Size(281, 38);
-            this.lblCheck.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.lblCheck.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCheck.TabIndex = 7;
-            this.lblCheck.Values.Text = "Vui lòng kiểm tra email";
-            // 
-            // btnSendCode
-            // 
-            this.btnSendCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSendCode.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom1;
-            this.btnSendCode.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSendCode.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.btnSendCode.Location = new System.Drawing.Point(281, 368);
-            this.btnSendCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSendCode.Name = "btnSendCode";
-            this.btnSendCode.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSendCode.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnSendCode.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.btnSendCode.Size = new System.Drawing.Size(195, 54);
-            this.btnSendCode.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSendCode.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnSendCode.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSendCode.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSendCode.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnSendCode.TabIndex = 15;
-            this.btnSendCode.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnSendCode.Values.Text = "Send Code";
-            this.btnSendCode.Click += new System.EventHandler(this.btnSendCode_Click);
-            // 
-            // txtPassNew
-            // 
-            this.txtPassNew.ButtonSpecs.Add(this.btnShowHide);
-            this.txtPassNew.CueHint.Color1 = System.Drawing.Color.Gray;
-            this.txtPassNew.CueHint.CueHintText = "Mật khẩu mới";
-            this.txtPassNew.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassNew.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtPassNew.Location = new System.Drawing.Point(137, 246);
-            this.txtPassNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPassNew.Multiline = true;
-            this.txtPassNew.Name = "txtPassNew";
-            this.txtPassNew.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.txtPassNew.Size = new System.Drawing.Size(322, 55);
-            this.txtPassNew.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.txtPassNew.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassNew.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            this.txtPassNew.TabIndex = 9;
-            // 
-            // btnShowHide
-            // 
-            this.btnShowHide.Image = global::Cinema_management.Properties.Resources.iconoir__eye;
-            this.btnShowHide.UniqueName = "3fb880b079f3444cb04ef0f5a6fd933d";
-            this.btnShowHide.Click += new System.EventHandler(this.btnShowHide_Click);
-            // 
-            // txtVerified
-            // 
-            this.txtVerified.CueHint.Color1 = System.Drawing.Color.Gray;
-            this.txtVerified.CueHint.CueHintText = "Nhập mã xác nhận";
-            this.txtVerified.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVerified.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtVerified.Location = new System.Drawing.Point(137, 176);
-            this.txtVerified.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtVerified.Multiline = true;
-            this.txtVerified.Name = "txtVerified";
-            this.txtVerified.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.txtVerified.Size = new System.Drawing.Size(322, 57);
-            this.txtVerified.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.txtVerified.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVerified.TabIndex = 11;
-            // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfirm.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom2;
-            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConfirm.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.btnConfirm.Location = new System.Drawing.Point(65, 368);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnConfirm.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnConfirm.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnConfirm.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnConfirm.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.btnConfirm.Size = new System.Drawing.Size(195, 54);
-            this.btnConfirm.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnConfirm.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnConfirm.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnConfirm.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnConfirm.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Nunito", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnConfirm.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnConfirm.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Nunito", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.TabIndex = 13;
-            this.btnConfirm.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.btnConfirm.Values.Text = "Confirm";
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
-            // 
-            // ptbIconBack
-            // 
-            this.ptbIconBack.Image = global::Cinema_management.Properties.Resources.iconbackarrow;
-            this.ptbIconBack.Location = new System.Drawing.Point(20, 16);
-            this.ptbIconBack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ptbIconBack.Name = "ptbIconBack";
-            this.ptbIconBack.Size = new System.Drawing.Size(43, 35);
-            this.ptbIconBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbIconBack.TabIndex = 13;
-            this.ptbIconBack.TabStop = false;
-            this.ptbIconBack.Click += new System.EventHandler(this.ptbIconBack_Click);
-            // 
-            // ptbLock
-            // 
-            this.ptbLock.Image = global::Cinema_management.Properties.Resources.iconpass;
-            this.ptbLock.Location = new System.Drawing.Point(100, 246);
-            this.ptbLock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbLock.Name = "ptbLock";
-            this.ptbLock.Size = new System.Drawing.Size(32, 42);
-            this.ptbLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbLock.TabIndex = 10;
-            this.ptbLock.TabStop = false;
-            // 
-            // kryptonPictureBox2
-            // 
-            this.kryptonPictureBox2.Image = global::Cinema_management.Properties.Resources.iconemail;
-            this.kryptonPictureBox2.Location = new System.Drawing.Point(91, 108);
-            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonPictureBox2.Name = "kryptonPictureBox2";
-            this.kryptonPictureBox2.Size = new System.Drawing.Size(41, 41);
-            this.kryptonPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.kryptonPictureBox2.TabIndex = 4;
-            this.kryptonPictureBox2.TabStop = false;
+            this.txtEmailConfirm.WordWrap = false;
             // 
             // kryptonCustomPaletteBase1
             // 
@@ -426,9 +261,175 @@
             this.kryptonCustomPaletteBase1.InputControlStyles.InputControlStandalone.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCustomPaletteBase1.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.True;
             // 
+            // lblEmailExist
+            // 
+            this.lblEmailExist.Location = new System.Drawing.Point(240, 349);
+            this.lblEmailExist.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.lblEmailExist.Name = "lblEmailExist";
+            this.lblEmailExist.Size = new System.Drawing.Size(273, 41);
+            this.lblEmailExist.StateCommon.ShortText.Color1 = System.Drawing.Color.Firebrick;
+            this.lblEmailExist.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailExist.TabIndex = 6;
+            this.lblEmailExist.Values.Text = "Email không tồn tại";
+            // 
+            // lblCheck
+            // 
+            this.lblCheck.Location = new System.Drawing.Point(180, 398);
+            this.lblCheck.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.lblCheck.Name = "lblCheck";
+            this.lblCheck.Size = new System.Drawing.Size(373, 50);
+            this.lblCheck.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.lblCheck.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCheck.TabIndex = 7;
+            this.lblCheck.Values.Text = "Vui lòng kiểm tra email";
+            // 
+            // btnSendCode
+            // 
+            this.btnSendCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSendCode.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom1;
+            this.btnSendCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSendCode.LocalCustomPalette = this.kryptonCustomPaletteBase1;
+            this.btnSendCode.Location = new System.Drawing.Point(375, 460);
+            this.btnSendCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSendCode.Name = "btnSendCode";
+            this.btnSendCode.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSendCode.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnSendCode.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
+            this.btnSendCode.Size = new System.Drawing.Size(260, 68);
+            this.btnSendCode.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSendCode.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnSendCode.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSendCode.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSendCode.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnSendCode.TabIndex = 15;
+            this.btnSendCode.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnSendCode.Values.Text = "Send Code";
+            this.btnSendCode.Click += new System.EventHandler(this.btnSendCode_Click);
+            // 
+            // txtPassNew
+            // 
+            this.txtPassNew.ButtonSpecs.Add(this.btnShowHide);
+            this.txtPassNew.CueHint.Color1 = System.Drawing.Color.Gray;
+            this.txtPassNew.CueHint.CueHintText = "Mật khẩu mới";
+            this.txtPassNew.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassNew.LocalCustomPalette = this.kryptonCustomPaletteBase1;
+            this.txtPassNew.Location = new System.Drawing.Point(183, 308);
+            this.txtPassNew.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtPassNew.Multiline = true;
+            this.txtPassNew.Name = "txtPassNew";
+            this.txtPassNew.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
+            this.txtPassNew.Size = new System.Drawing.Size(429, 69);
+            this.txtPassNew.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtPassNew.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassNew.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
+            this.txtPassNew.TabIndex = 9;
+            // 
+            // btnShowHide
+            // 
+            this.btnShowHide.Image = global::Cinema_management.Properties.Resources.iconoir__eye;
+            this.btnShowHide.UniqueName = "3fb880b079f3444cb04ef0f5a6fd933d";
+            this.btnShowHide.Click += new System.EventHandler(this.btnShowHide_Click);
+            // 
+            // txtVerified
+            // 
+            this.txtVerified.CueHint.Color1 = System.Drawing.Color.Gray;
+            this.txtVerified.CueHint.CueHintText = "Nhập mã xác nhận";
+            this.txtVerified.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVerified.LocalCustomPalette = this.kryptonCustomPaletteBase1;
+            this.txtVerified.Location = new System.Drawing.Point(183, 220);
+            this.txtVerified.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtVerified.Multiline = true;
+            this.txtVerified.Name = "txtVerified";
+            this.txtVerified.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
+            this.txtVerified.Size = new System.Drawing.Size(429, 71);
+            this.txtVerified.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtVerified.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVerified.TabIndex = 11;
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfirm.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom2;
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.LocalCustomPalette = this.kryptonCustomPaletteBase1;
+            this.btnConfirm.Location = new System.Drawing.Point(87, 460);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
+            this.btnConfirm.Size = new System.Drawing.Size(260, 68);
+            this.btnConfirm.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Nunito", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnConfirm.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnConfirm.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Nunito", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.TabIndex = 13;
+            this.btnConfirm.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.btnConfirm.Values.Text = "Confirm";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // ptbIconBack
+            // 
+            this.ptbIconBack.Image = global::Cinema_management.Properties.Resources.iconbackarrow;
+            this.ptbIconBack.Location = new System.Drawing.Point(27, 20);
+            this.ptbIconBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ptbIconBack.Name = "ptbIconBack";
+            this.ptbIconBack.Size = new System.Drawing.Size(57, 44);
+            this.ptbIconBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbIconBack.TabIndex = 13;
+            this.ptbIconBack.TabStop = false;
+            this.ptbIconBack.Click += new System.EventHandler(this.ptbIconBack_Click);
+            // 
+            // ptbLock
+            // 
+            this.ptbLock.Image = global::Cinema_management.Properties.Resources.iconpass;
+            this.ptbLock.Location = new System.Drawing.Point(133, 308);
+            this.ptbLock.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.ptbLock.Name = "ptbLock";
+            this.ptbLock.Size = new System.Drawing.Size(43, 52);
+            this.ptbLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbLock.TabIndex = 10;
+            this.ptbLock.TabStop = false;
+            // 
+            // kryptonPictureBox2
+            // 
+            this.kryptonPictureBox2.Image = global::Cinema_management.Properties.Resources.iconemail;
+            this.kryptonPictureBox2.Location = new System.Drawing.Point(121, 135);
+            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.kryptonPictureBox2.Name = "kryptonPictureBox2";
+            this.kryptonPictureBox2.Size = new System.Drawing.Size(55, 51);
+            this.kryptonPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.kryptonPictureBox2.TabIndex = 4;
+            this.kryptonPictureBox2.TabStop = false;
+            // 
             // UCPasswordRecovery
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.ptbIconBack);
@@ -443,9 +444,9 @@
             this.Controls.Add(this.txtEmailConfirm);
             this.Controls.Add(this.kryptonLabel1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "UCPasswordRecovery";
-            this.Size = new System.Drawing.Size(550, 450);
+            this.Size = new System.Drawing.Size(733, 562);
             ((System.ComponentModel.ISupportInitialize)(this.ptbIconBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).EndInit();
