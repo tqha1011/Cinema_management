@@ -105,6 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.kryptonGroup1);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.Name = "UCMovieCard";
             this.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
