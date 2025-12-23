@@ -92,14 +92,14 @@
             // 
             // txtNameFood
             // 
-            this.txtNameFood.Location = new System.Drawing.Point(231, 4);
+            this.txtNameFood.Location = new System.Drawing.Point(196, 4);
             this.txtNameFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNameFood.Name = "txtNameFood";
-            this.txtNameFood.Size = new System.Drawing.Size(300, 41);
-            this.txtNameFood.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
-            this.txtNameFood.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.txtNameFood.StateCommon.Border.Width = 4;
-            this.txtNameFood.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameFood.Size = new System.Drawing.Size(287, 52);
+            this.txtNameFood.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.txtNameFood.StateCommon.Border.Rounding = 15F;
+            this.txtNameFood.StateCommon.Border.Width = 2;
+            this.txtNameFood.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F);
             this.txtNameFood.TabIndex = 3;
             // 
             // kryptonLabel2
@@ -107,55 +107,55 @@
             this.kryptonLabel2.Location = new System.Drawing.Point(3, 4);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(211, 44);
+            this.kryptonLabel2.Size = new System.Drawing.Size(182, 38);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 2;
             this.kryptonLabel2.Values.Text = "Tên sản phẩm:";
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(231, 96);
+            this.txtPrice.Location = new System.Drawing.Point(196, 88);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(300, 41);
-            this.txtPrice.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
-            this.txtPrice.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.txtPrice.StateCommon.Border.Width = 4;
-            this.txtPrice.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Size = new System.Drawing.Size(287, 52);
+            this.txtPrice.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.txtPrice.StateCommon.Border.Rounding = 15F;
+            this.txtPrice.StateCommon.Border.Width = 2;
+            this.txtPrice.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.TabIndex = 3;
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(3, 96);
+            this.kryptonLabel3.Location = new System.Drawing.Point(3, 88);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(205, 44);
+            this.kryptonLabel3.Size = new System.Drawing.Size(177, 38);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 2;
             this.kryptonLabel3.Values.Text = "Giá sản phẩm:";
             // 
             // txtAmount
             // 
-            this.txtAmount.Location = new System.Drawing.Point(231, 188);
+            this.txtAmount.Location = new System.Drawing.Point(196, 172);
             this.txtAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(300, 41);
-            this.txtAmount.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
-            this.txtAmount.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.txtAmount.StateCommon.Border.Width = 4;
-            this.txtAmount.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount.Size = new System.Drawing.Size(287, 52);
+            this.txtAmount.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.txtAmount.StateCommon.Border.Rounding = 15F;
+            this.txtAmount.StateCommon.Border.Width = 2;
+            this.txtAmount.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmount.TabIndex = 3;
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(3, 188);
+            this.kryptonLabel4.Location = new System.Drawing.Point(3, 172);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(142, 44);
+            this.kryptonLabel4.Size = new System.Drawing.Size(123, 38);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.TabIndex = 2;
             this.kryptonLabel4.Values.Text = "Số lượng:";
             // 
@@ -166,20 +166,20 @@
             this.cboType.DropDownWidth = 239;
             this.cboType.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
             this.cboType.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cboType.Location = new System.Drawing.Point(231, 280);
+            this.cboType.Location = new System.Drawing.Point(196, 256);
             this.cboType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboType.Name = "cboType";
             this.cboType.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.cboType.Size = new System.Drawing.Size(300, 40);
+            this.cboType.Size = new System.Drawing.Size(287, 41);
             this.cboType.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.cboType.StateCommon.ComboBox.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.cboType.StateCommon.ComboBox.Border.Width = 4;
-            this.cboType.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboType.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Nunito", 12F);
             this.cboType.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cboType.StateCommon.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(153)))));
             this.cboType.StateCommon.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(153)))));
             this.cboType.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.cboType.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboType.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Nunito", 12F);
             this.cboType.TabIndex = 4;
             this.cboType.SelectedIndexChanged += new System.EventHandler(this.cboType_SelectedIndexChanged);
             // 
@@ -193,7 +193,7 @@
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(753, 440);
+            this.btnSave.Location = new System.Drawing.Point(662, 411);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
@@ -224,7 +224,7 @@
             this.btnSave.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
             this.btnSave.StateCommon.Border.Rounding = 25F;
             this.btnSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnSave.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnSave.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
@@ -248,7 +248,7 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.Location = new System.Drawing.Point(546, 440);
+            this.btnDelete.Location = new System.Drawing.Point(464, 411);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
@@ -270,7 +270,7 @@
             this.btnDelete.StateCommon.Border.Rounding = 25F;
             this.btnDelete.StateCommon.Border.Width = 3;
             this.btnDelete.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
-            this.btnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnDelete.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.btnDelete.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -288,21 +288,21 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(3, 280);
+            this.kryptonLabel1.Location = new System.Drawing.Point(3, 256);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(217, 44);
+            this.kryptonLabel1.Size = new System.Drawing.Size(187, 38);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 5;
             this.kryptonLabel1.Values.Text = "Loại sản phẩm:";
             // 
             // ptbDoAn
             // 
-            this.ptbDoAn.Location = new System.Drawing.Point(34, 115);
+            this.ptbDoAn.Location = new System.Drawing.Point(55, 115);
             this.ptbDoAn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ptbDoAn.Name = "ptbDoAn";
-            this.ptbDoAn.Size = new System.Drawing.Size(267, 256);
+            this.ptbDoAn.Size = new System.Drawing.Size(230, 256);
             this.ptbDoAn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbDoAn.TabIndex = 0;
             this.ptbDoAn.TabStop = false;
@@ -314,7 +314,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonPanel1.Location = new System.Drawing.Point(22, 25);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(335, 477);
+            this.kryptonPanel1.Size = new System.Drawing.Size(335, 445);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel1.TabIndex = 6;
             // 
@@ -325,15 +325,15 @@
             this.kryptonPanel2.Location = new System.Drawing.Point(357, 25);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(20);
-            this.kryptonPanel2.Size = new System.Drawing.Size(612, 408);
+            this.kryptonPanel2.Size = new System.Drawing.Size(553, 379);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel2.TabIndex = 7;
             // 
             // kryptonTableLayoutPanel1
             // 
             this.kryptonTableLayoutPanel1.ColumnCount = 2;
-            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.kryptonTableLayoutPanel1.Controls.Add(this.kryptonLabel2, 0, 0);
             this.kryptonTableLayoutPanel1.Controls.Add(this.txtNameFood, 1, 0);
             this.kryptonTableLayoutPanel1.Controls.Add(this.cboType, 1, 3);
@@ -350,7 +350,7 @@
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(572, 368);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(513, 339);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 6;
             // 
@@ -359,7 +359,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1019, 527);
+            this.ClientSize = new System.Drawing.Size(960, 495);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.kryptonPanel2);
