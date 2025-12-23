@@ -68,6 +68,7 @@
             this.kryptonBorderEdge1 = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.btnBack = new Krypton.Toolkit.KryptonButton();
+            this.ucHoaDonFood1 = new Cinema_management.Ticket_Booking.UCHoaDonFood();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -93,8 +94,8 @@
             // kryptonLabel1
             // 
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonLabel1.Location = new System.Drawing.Point(89, 24);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.kryptonLabel1.Location = new System.Drawing.Point(100, 30);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(10);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.kryptonLabel1.Size = new System.Drawing.Size(1225, 52);
@@ -188,8 +189,8 @@
             // 
             // kryptonGroup2.Panel
             // 
-            this.kryptonGroup2.Panel.Controls.Add(this.kryptonPanel8);
             this.kryptonGroup2.Panel.Controls.Add(this.kryptonPanel7);
+            this.kryptonGroup2.Panel.Controls.Add(this.kryptonPanel8);
             this.kryptonGroup2.Panel.Controls.Add(this.kryptonLabel3);
             this.kryptonGroup2.Panel.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
             this.kryptonGroup2.Size = new System.Drawing.Size(533, 645);
@@ -235,9 +236,9 @@
             this.lblTong.Location = new System.Drawing.Point(325, 152);
             this.lblTong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblTong.Name = "lblTong";
-            this.lblTong.Size = new System.Drawing.Size(126, 37);
+            this.lblTong.Size = new System.Drawing.Size(152, 44);
             this.lblTong.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.lblTong.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTong.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTong.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.lblTong.TabIndex = 2;
             this.lblTong.Values.Text = "100,000 đ";
@@ -282,9 +283,9 @@
             this.kryptonLabel22.Location = new System.Drawing.Point(41, 152);
             this.kryptonLabel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel22.Name = "kryptonLabel22";
-            this.kryptonLabel22.Size = new System.Drawing.Size(116, 37);
+            this.kryptonLabel22.Size = new System.Drawing.Size(143, 44);
             this.kryptonLabel22.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.kryptonLabel22.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel22.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel22.TabIndex = 2;
             this.kryptonLabel22.Values.Text = "Tổng tiền";
             // 
@@ -318,14 +319,16 @@
             this.kryptonPanel7.Location = new System.Drawing.Point(0, 68);
             this.kryptonPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel7.Name = "kryptonPanel7";
-            this.kryptonPanel7.Padding = new System.Windows.Forms.Padding(9, 8, 9, 0);
-            this.kryptonPanel7.Size = new System.Drawing.Size(505, 549);
+            this.kryptonPanel7.Padding = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.kryptonPanel7.Size = new System.Drawing.Size(572, 446);
             this.kryptonPanel7.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel7.TabIndex = 4;
             // 
             // flowPanelFoodList
             // 
             this.flowPanelFoodList.AutoScroll = true;
+            this.flowPanelFoodList.AutoSize = true;
+            this.flowPanelFoodList.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowPanelFoodList.BackColor = System.Drawing.Color.White;
             this.flowPanelFoodList.Controls.Add(this.ucHoaDonFood1);
             this.flowPanelFoodList.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -333,7 +336,7 @@
             this.flowPanelFoodList.Location = new System.Drawing.Point(9, 10);
             this.flowPanelFoodList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowPanelFoodList.Name = "flowPanelFoodList";
-            this.flowPanelFoodList.Size = new System.Drawing.Size(487, 539);
+            this.flowPanelFoodList.Size = new System.Drawing.Size(552, 433);
             this.flowPanelFoodList.TabIndex = 4;
             this.flowPanelFoodList.WrapContents = false;
             // 
@@ -407,6 +410,8 @@
             // 
             // kryptonTableLayoutPanel1
             // 
+            this.kryptonTableLayoutPanel1.AutoSize = true;
+            this.kryptonTableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonTableLayoutPanel1.ColumnCount = 2;
             this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -426,19 +431,18 @@
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblTenPhim, 1, 0);
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblGhe, 1, 4);
             this.kryptonTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(9, 10);
-            this.kryptonTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(10, 12);
             this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             this.kryptonTableLayoutPanel1.RowCount = 8;
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112F));
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112F));
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(487, 539);
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(552, 687);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 8;
             // 
@@ -447,19 +451,17 @@
             this.kryptonBorderEdge3.AutoSize = false;
             this.kryptonTableLayoutPanel1.SetColumnSpan(this.kryptonBorderEdge3, 2);
             this.kryptonBorderEdge3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonBorderEdge3.Location = new System.Drawing.Point(3, 428);
-            this.kryptonBorderEdge3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonBorderEdge3.Location = new System.Drawing.Point(3, 354);
             this.kryptonBorderEdge3.Name = "kryptonBorderEdge3";
-            this.kryptonBorderEdge3.Size = new System.Drawing.Size(481, 2);
+            this.kryptonBorderEdge3.Size = new System.Drawing.Size(546, 3);
             this.kryptonBorderEdge3.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.kryptonBorderEdge3.Text = "kryptonBorderEdge3";
             // 
             // lblGio
             // 
-            this.lblGio.Location = new System.Drawing.Point(156, 162);
-            this.lblGio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblGio.Location = new System.Drawing.Point(184, 113);
             this.lblGio.Name = "lblGio";
-            this.lblGio.Size = new System.Drawing.Size(78, 37);
+            this.lblGio.Size = new System.Drawing.Size(92, 44);
             this.lblGio.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblGio.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGio.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
@@ -468,10 +470,9 @@
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(3, 2);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel4.Location = new System.Drawing.Point(3, 3);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(69, 37);
+            this.kryptonLabel4.Size = new System.Drawing.Size(82, 44);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.TabIndex = 2;
@@ -479,10 +480,9 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(3, 114);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel5.Location = new System.Drawing.Point(3, 53);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(134, 37);
+            this.kryptonLabel5.Size = new System.Drawing.Size(160, 44);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.TabIndex = 2;
@@ -490,10 +490,9 @@
             // 
             // lblTongTienVe
             // 
-            this.lblTongTienVe.Location = new System.Drawing.Point(156, 434);
-            this.lblTongTienVe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblTongTienVe.Location = new System.Drawing.Point(184, 363);
             this.lblTongTienVe.Name = "lblTongTienVe";
-            this.lblTongTienVe.Size = new System.Drawing.Size(126, 37);
+            this.lblTongTienVe.Size = new System.Drawing.Size(150, 44);
             this.lblTongTienVe.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblTongTienVe.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTongTienVe.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
@@ -502,10 +501,9 @@
             // 
             // kryptonLabel16
             // 
-            this.kryptonLabel16.Location = new System.Drawing.Point(3, 434);
-            this.kryptonLabel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel16.Location = new System.Drawing.Point(3, 363);
             this.kryptonLabel16.Name = "kryptonLabel16";
-            this.kryptonLabel16.Size = new System.Drawing.Size(70, 37);
+            this.kryptonLabel16.Size = new System.Drawing.Size(83, 44);
             this.kryptonLabel16.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel16.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel16.TabIndex = 2;
@@ -513,8 +511,7 @@
             // 
             // lblNgay
             // 
-            this.lblNgay.Location = new System.Drawing.Point(156, 114);
-            this.lblNgay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblNgay.Location = new System.Drawing.Point(184, 53);
             this.lblNgay.Name = "lblNgay";
             this.lblNgay.Size = new System.Drawing.Size(114, 37);
             this.lblNgay.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -525,8 +522,7 @@
             // 
             // lblPhong
             // 
-            this.lblPhong.Location = new System.Drawing.Point(156, 210);
-            this.lblPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblPhong.Location = new System.Drawing.Point(184, 173);
             this.lblPhong.Name = "lblPhong";
             this.lblPhong.Size = new System.Drawing.Size(107, 37);
             this.lblPhong.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -537,8 +533,7 @@
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(3, 162);
-            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel6.Location = new System.Drawing.Point(3, 113);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(114, 37);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -548,8 +543,7 @@
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(3, 210);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel7.Location = new System.Drawing.Point(3, 173);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(147, 37);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -559,10 +553,9 @@
             // 
             // lblGiaVe
             // 
-            this.lblGiaVe.Location = new System.Drawing.Point(156, 370);
-            this.lblGiaVe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblGiaVe.Location = new System.Drawing.Point(184, 283);
             this.lblGiaVe.Name = "lblGiaVe";
-            this.lblGiaVe.Size = new System.Drawing.Size(126, 37);
+            this.lblGiaVe.Size = new System.Drawing.Size(150, 44);
             this.lblGiaVe.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblGiaVe.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiaVe.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
@@ -571,8 +564,7 @@
             // 
             // kryptonLabel8
             // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(3, 258);
-            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel8.Location = new System.Drawing.Point(3, 233);
             this.kryptonLabel8.Name = "kryptonLabel8";
             this.kryptonLabel8.Size = new System.Drawing.Size(58, 37);
             this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -582,10 +574,9 @@
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(3, 370);
-            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel9.Location = new System.Drawing.Point(3, 283);
             this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(81, 37);
+            this.kryptonLabel9.Size = new System.Drawing.Size(96, 44);
             this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel9.TabIndex = 2;
@@ -595,10 +586,10 @@
             // 
             this.lblTenPhim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTenPhim.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.lblTenPhim.Location = new System.Drawing.Point(156, 0);
+            this.lblTenPhim.Location = new System.Drawing.Point(184, 0);
             this.lblTenPhim.Name = "lblTenPhim";
-            this.lblTenPhim.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
-            this.lblTenPhim.Size = new System.Drawing.Size(328, 112);
+            this.lblTenPhim.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblTenPhim.Size = new System.Drawing.Size(365, 50);
             this.lblTenPhim.StateCommon.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenPhim.StateCommon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblTenPhim.Text = "Tên phim";
@@ -607,10 +598,10 @@
             // 
             this.lblGhe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblGhe.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.lblGhe.Location = new System.Drawing.Point(156, 256);
+            this.lblGhe.Location = new System.Drawing.Point(184, 230);
             this.lblGhe.Name = "lblGhe";
-            this.lblGhe.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.lblGhe.Size = new System.Drawing.Size(328, 112);
+            this.lblGhe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblGhe.Size = new System.Drawing.Size(365, 50);
             this.lblGhe.StateCommon.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGhe.StateCommon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblGhe.Text = "A1, A2";
@@ -629,10 +620,9 @@
             // kryptonLabel2
             // 
             this.kryptonLabel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonLabel2.Location = new System.Drawing.Point(0, 16);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel2.Location = new System.Drawing.Point(0, 20);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(505, 52);
+            this.kryptonLabel2.Size = new System.Drawing.Size(572, 62);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -680,6 +670,16 @@
             this.btnBack.Values.Text = "Back";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // ucHoaDonFood1
+            // 
+            this.ucHoaDonFood1.BackColor = System.Drawing.Color.White;
+            this.ucHoaDonFood1.Location = new System.Drawing.Point(4, 4);
+            this.ucHoaDonFood1.Margin = new System.Windows.Forms.Padding(4);
+            this.ucHoaDonFood1.MinimumSize = new System.Drawing.Size(524, 142);
+            this.ucHoaDonFood1.Name = "ucHoaDonFood1";
+            this.ucHoaDonFood1.Size = new System.Drawing.Size(524, 142);
+            this.ucHoaDonFood1.TabIndex = 0;
+            // 
             // UCThanhToanHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -708,6 +708,7 @@
             this.kryptonPanel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel7)).EndInit();
             this.kryptonPanel7.ResumeLayout(false);
+            this.kryptonPanel7.PerformLayout();
             this.flowPanelFoodList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
@@ -716,6 +717,7 @@
             this.kryptonGroup1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
+            this.kryptonPanel3.PerformLayout();
             this.kryptonTableLayoutPanel1.ResumeLayout(false);
             this.kryptonTableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
