@@ -28,6 +28,16 @@ namespace Cinema_management.Ticket_Booking
             bookingInfo = info;
             LoadData();
         }
+        // Tăng hiệu ứng mượt khi load dữ liệu
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
 
         private void LoadData()
         {
