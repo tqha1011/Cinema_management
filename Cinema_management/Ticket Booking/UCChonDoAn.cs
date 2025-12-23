@@ -51,6 +51,16 @@ namespace Cinema_management
                 BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
                 null, control, new object[] { true });
         }
+        // set hiệu ứng mượt khi load dữ liệu
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
 
         public void SetBookingData(BookingInfo info)
         {
