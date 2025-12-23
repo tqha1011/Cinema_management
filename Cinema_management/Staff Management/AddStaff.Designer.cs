@@ -83,8 +83,8 @@
             this.pnAdd.Location = new System.Drawing.Point(0, 0);
             this.pnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnAdd.Name = "pnAdd";
-            this.pnAdd.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.pnAdd.Size = new System.Drawing.Size(675, 72);
+            this.pnAdd.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.pnAdd.Size = new System.Drawing.Size(759, 90);
             this.pnAdd.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnAdd.TabIndex = 2;
             // 
@@ -96,9 +96,10 @@
             this.btnExitAddStaf.FlatAppearance.BorderSize = 0;
             this.btnExitAddStaf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitAddStaf.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitAddStaf.Location = new System.Drawing.Point(637, 15);
+            this.btnExitAddStaf.Location = new System.Drawing.Point(717, 19);
+            this.btnExitAddStaf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExitAddStaf.Name = "btnExitAddStaf";
-            this.btnExitAddStaf.Size = new System.Drawing.Size(26, 23);
+            this.btnExitAddStaf.Size = new System.Drawing.Size(29, 29);
             this.btnExitAddStaf.TabIndex = 1;
             this.btnExitAddStaf.Text = "X";
             this.btnExitAddStaf.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -107,10 +108,10 @@
             // 
             // lblAdd
             // 
-            this.lblAdd.Location = new System.Drawing.Point(51, 34);
+            this.lblAdd.Location = new System.Drawing.Point(57, 42);
             this.lblAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblAdd.Name = "lblAdd";
-            this.lblAdd.Size = new System.Drawing.Size(230, 47);
+            this.lblAdd.Size = new System.Drawing.Size(275, 56);
             this.lblAdd.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.lblAdd.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdd.TabIndex = 0;
@@ -123,24 +124,27 @@
             this.pnBody.Controls.Add(this.kryptonPanel2);
             this.pnBody.Controls.Add(this.kryptonPanel1);
             this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBody.Location = new System.Drawing.Point(0, 72);
-            this.pnBody.MinimumSize = new System.Drawing.Size(675, 0);
+            this.pnBody.Location = new System.Drawing.Point(0, 90);
+            this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBody.MinimumSize = new System.Drawing.Size(759, 0);
             this.pnBody.Name = "pnBody";
-            this.pnBody.Padding = new System.Windows.Forms.Padding(20, 10, 20, 14);
-            this.pnBody.Size = new System.Drawing.Size(675, 677);
+            this.pnBody.Padding = new System.Windows.Forms.Padding(22, 12, 22, 18);
+            this.pnBody.Size = new System.Drawing.Size(759, 846);
             this.pnBody.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnBody.TabIndex = 3;
             // 
             // kryptonPanel2
             // 
+            this.kryptonPanel2.AutoSize = true;
+            this.kryptonPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonPanel2.Controls.Add(this.kryptonTableLayoutPanel1);
             this.kryptonPanel2.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel2.Location = new System.Drawing.Point(20, 10);
+            this.kryptonPanel2.Location = new System.Drawing.Point(22, 12);
             this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(27, 8, 27, 8);
-            this.kryptonPanel2.Size = new System.Drawing.Size(635, 405);
+            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.kryptonPanel2.Size = new System.Drawing.Size(715, 501);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel2.TabIndex = 37;
             // 
@@ -166,7 +170,7 @@
             this.kryptonTableLayoutPanel1.Controls.Add(this.kryptonLabel2, 0, 0);
             this.kryptonTableLayoutPanel1.Controls.Add(this.txbName, 1, 0);
             this.kryptonTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(27, 45);
+            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(30, 54);
             this.kryptonTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             this.kryptonTableLayoutPanel1.RowCount = 7;
@@ -177,17 +181,17 @@
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(581, 351);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(655, 426);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 35;
             // 
             // kryptonLabel3
             // 
             this.kryptonLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel3.Location = new System.Drawing.Point(3, 62);
+            this.kryptonLabel3.Location = new System.Drawing.Point(3, 77);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(157, 32);
+            this.kryptonLabel3.Size = new System.Drawing.Size(187, 38);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 13;
@@ -196,10 +200,10 @@
             // kryptonLabel4
             // 
             this.kryptonLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel4.Location = new System.Drawing.Point(3, 109);
+            this.kryptonLabel4.Location = new System.Drawing.Point(3, 132);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(157, 32);
+            this.kryptonLabel4.Size = new System.Drawing.Size(187, 38);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.TabIndex = 14;
@@ -213,11 +217,11 @@
             this.datePickerHire.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.datePickerHire.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
             this.datePickerHire.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.datePickerHire.Location = new System.Drawing.Point(166, 311);
-            this.datePickerHire.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.datePickerHire.Location = new System.Drawing.Point(196, 379);
+            this.datePickerHire.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.datePickerHire.Name = "datePickerHire";
             this.datePickerHire.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.datePickerHire.Size = new System.Drawing.Size(240, 34);
+            this.datePickerHire.Size = new System.Drawing.Size(270, 39);
             this.datePickerHire.StateActive.Back.Color1 = System.Drawing.Color.White;
             this.datePickerHire.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.datePickerHire.TabIndex = 32;
@@ -381,11 +385,11 @@
             "Quản lý",
             "Nhân viên"});
             this.cboPosition.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cboPosition.Location = new System.Drawing.Point(166, 264);
-            this.cboPosition.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.cboPosition.Location = new System.Drawing.Point(196, 323);
+            this.cboPosition.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.cboPosition.Name = "cboPosition";
             this.cboPosition.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.cboPosition.Size = new System.Drawing.Size(240, 35);
+            this.cboPosition.Size = new System.Drawing.Size(270, 40);
             this.cboPosition.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.cboPosition.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Nunito", 12F);
             this.cboPosition.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -396,10 +400,10 @@
             // kryptonLabel7
             // 
             this.kryptonLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel7.Location = new System.Drawing.Point(3, 265);
+            this.kryptonLabel7.Location = new System.Drawing.Point(3, 324);
             this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(157, 32);
+            this.kryptonLabel7.Size = new System.Drawing.Size(187, 38);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel7.TabIndex = 17;
@@ -408,10 +412,10 @@
             // kryptonLabel12
             // 
             this.kryptonLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel12.Location = new System.Drawing.Point(3, 312);
+            this.kryptonLabel12.Location = new System.Drawing.Point(3, 379);
             this.kryptonLabel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel12.Name = "kryptonLabel12";
-            this.kryptonLabel12.Size = new System.Drawing.Size(157, 32);
+            this.kryptonLabel12.Size = new System.Drawing.Size(187, 38);
             this.kryptonLabel12.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel12.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel12.TabIndex = 31;
@@ -421,11 +425,10 @@
             // 
             this.txbPhoneNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPhoneNum.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
-            this.txbPhoneNum.Location = new System.Drawing.Point(166, 209);
-            this.txbPhoneNum.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.txbPhoneNum.Multiline = true;
+            this.txbPhoneNum.Location = new System.Drawing.Point(196, 255);
+            this.txbPhoneNum.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.txbPhoneNum.Name = "txbPhoneNum";
-            this.txbPhoneNum.Size = new System.Drawing.Size(412, 43);
+            this.txbPhoneNum.Size = new System.Drawing.Size(456, 52);
             this.txbPhoneNum.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
             this.txbPhoneNum.StateCommon.Border.Rounding = 15F;
             this.txbPhoneNum.StateCommon.Border.Width = 2;
@@ -440,11 +443,11 @@
             this.datePickerBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.datePickerBirth.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
             this.datePickerBirth.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.datePickerBirth.Location = new System.Drawing.Point(166, 108);
-            this.datePickerBirth.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.datePickerBirth.Location = new System.Drawing.Point(196, 132);
+            this.datePickerBirth.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.datePickerBirth.Name = "datePickerBirth";
             this.datePickerBirth.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.datePickerBirth.Size = new System.Drawing.Size(240, 34);
+            this.datePickerBirth.Size = new System.Drawing.Size(270, 39);
             this.datePickerBirth.StateActive.Back.Color1 = System.Drawing.Color.White;
             this.datePickerBirth.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.datePickerBirth.TabIndex = 29;
@@ -453,11 +456,10 @@
             // 
             this.txbEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txbEmail.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
-            this.txbEmail.Location = new System.Drawing.Point(166, 154);
-            this.txbEmail.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.txbEmail.Multiline = true;
+            this.txbEmail.Location = new System.Drawing.Point(196, 187);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(412, 43);
+            this.txbEmail.Size = new System.Drawing.Size(456, 52);
             this.txbEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
             this.txbEmail.StateCommon.Border.Rounding = 15F;
             this.txbEmail.StateCommon.Border.Width = 2;
@@ -474,11 +476,11 @@
             "Nam",
             "Nữ"});
             this.cbGender.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cbGender.Location = new System.Drawing.Point(166, 61);
-            this.cbGender.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.cbGender.Location = new System.Drawing.Point(196, 76);
+            this.cbGender.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.cbGender.Name = "cbGender";
             this.cbGender.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.cbGender.Size = new System.Drawing.Size(240, 35);
+            this.cbGender.Size = new System.Drawing.Size(270, 40);
             this.cbGender.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGender.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cbGender.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -488,10 +490,10 @@
             // kryptonLabel5
             // 
             this.kryptonLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel5.Location = new System.Drawing.Point(3, 159);
+            this.kryptonLabel5.Location = new System.Drawing.Point(3, 194);
             this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(157, 32);
+            this.kryptonLabel5.Size = new System.Drawing.Size(187, 38);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.TabIndex = 15;
@@ -500,10 +502,10 @@
             // kryptonLabel6
             // 
             this.kryptonLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel6.Location = new System.Drawing.Point(3, 214);
+            this.kryptonLabel6.Location = new System.Drawing.Point(3, 262);
             this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(157, 32);
+            this.kryptonLabel6.Size = new System.Drawing.Size(187, 38);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel6.TabIndex = 16;
@@ -512,10 +514,10 @@
             // kryptonLabel2
             // 
             this.kryptonLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel2.Location = new System.Drawing.Point(3, 11);
+            this.kryptonLabel2.Location = new System.Drawing.Point(3, 15);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(157, 32);
+            this.kryptonLabel2.Size = new System.Drawing.Size(187, 38);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 21;
@@ -524,11 +526,10 @@
             // txbName
             // 
             this.txbName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbName.Location = new System.Drawing.Point(166, 6);
-            this.txbName.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.txbName.Multiline = true;
+            this.txbName.Location = new System.Drawing.Point(196, 8);
+            this.txbName.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(412, 43);
+            this.txbName.Size = new System.Drawing.Size(456, 52);
             this.txbName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
             this.txbName.StateCommon.Border.Rounding = 15F;
             this.txbName.StateCommon.Border.Width = 2;
@@ -538,10 +539,10 @@
             // kryptonLabel1
             // 
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonLabel1.Location = new System.Drawing.Point(27, 8);
+            this.kryptonLabel1.Location = new System.Drawing.Point(30, 10);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(581, 37);
+            this.kryptonLabel1.Size = new System.Drawing.Size(655, 44);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 12;
@@ -549,14 +550,16 @@
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.AutoSize = true;
+            this.kryptonPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonPanel1.Controls.Add(this.kryptonTableLayoutPanel2);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel8);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanel1.Location = new System.Drawing.Point(20, 415);
+            this.kryptonPanel1.Location = new System.Drawing.Point(22, 513);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(27, 8, 27, 8);
-            this.kryptonPanel1.Size = new System.Drawing.Size(635, 248);
+            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.kryptonPanel1.Size = new System.Drawing.Size(715, 315);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel1.TabIndex = 36;
             // 
@@ -575,7 +578,7 @@
             this.kryptonTableLayoutPanel2.Controls.Add(this.txbAccount, 1, 0);
             this.kryptonTableLayoutPanel2.Controls.Add(this.btnSaveStaff, 1, 3);
             this.kryptonTableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonTableLayoutPanel2.Location = new System.Drawing.Point(27, 45);
+            this.kryptonTableLayoutPanel2.Location = new System.Drawing.Point(30, 54);
             this.kryptonTableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonTableLayoutPanel2.Name = "kryptonTableLayoutPanel2";
             this.kryptonTableLayoutPanel2.RowCount = 4;
@@ -583,17 +586,17 @@
             this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.kryptonTableLayoutPanel2.Size = new System.Drawing.Size(581, 204);
+            this.kryptonTableLayoutPanel2.Size = new System.Drawing.Size(655, 251);
             this.kryptonTableLayoutPanel2.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel2.TabIndex = 36;
             // 
             // kryptonLabel9
             // 
             this.kryptonLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel9.Location = new System.Drawing.Point(3, 9);
+            this.kryptonLabel9.Location = new System.Drawing.Point(3, 12);
             this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(170, 32);
+            this.kryptonLabel9.Size = new System.Drawing.Size(202, 38);
             this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel9.TabIndex = 18;
@@ -602,10 +605,10 @@
             // kryptonLabel10
             // 
             this.kryptonLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel10.Location = new System.Drawing.Point(3, 60);
+            this.kryptonLabel10.Location = new System.Drawing.Point(3, 74);
             this.kryptonLabel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(170, 32);
+            this.kryptonLabel10.Size = new System.Drawing.Size(202, 38);
             this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel10.TabIndex = 19;
@@ -615,12 +618,11 @@
             // 
             this.txbPasswordConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPasswordConfirm.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
-            this.txbPasswordConfirm.Location = new System.Drawing.Point(179, 106);
-            this.txbPasswordConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbPasswordConfirm.Multiline = true;
+            this.txbPasswordConfirm.Location = new System.Drawing.Point(211, 129);
+            this.txbPasswordConfirm.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txbPasswordConfirm.Name = "txbPasswordConfirm";
             this.txbPasswordConfirm.PasswordChar = '*';
-            this.txbPasswordConfirm.Size = new System.Drawing.Size(399, 43);
+            this.txbPasswordConfirm.Size = new System.Drawing.Size(441, 52);
             this.txbPasswordConfirm.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
             this.txbPasswordConfirm.StateCommon.Border.Rounding = 15F;
             this.txbPasswordConfirm.StateCommon.Border.Width = 2;
@@ -630,10 +632,10 @@
             // kryptonLabel11
             // 
             this.kryptonLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel11.Location = new System.Drawing.Point(3, 111);
+            this.kryptonLabel11.Location = new System.Drawing.Point(3, 136);
             this.kryptonLabel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel11.Name = "kryptonLabel11";
-            this.kryptonLabel11.Size = new System.Drawing.Size(170, 32);
+            this.kryptonLabel11.Size = new System.Drawing.Size(202, 38);
             this.kryptonLabel11.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.kryptonLabel11.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel11.TabIndex = 20;
@@ -643,12 +645,11 @@
             // 
             this.txbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPassword.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
-            this.txbPassword.Location = new System.Drawing.Point(179, 55);
-            this.txbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbPassword.Multiline = true;
+            this.txbPassword.Location = new System.Drawing.Point(211, 67);
+            this.txbPassword.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.PasswordChar = '*';
-            this.txbPassword.Size = new System.Drawing.Size(399, 43);
+            this.txbPassword.Size = new System.Drawing.Size(441, 52);
             this.txbPassword.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
             this.txbPassword.StateCommon.Border.Rounding = 15F;
             this.txbPassword.StateCommon.Border.Width = 2;
@@ -659,11 +660,10 @@
             // 
             this.txbAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txbAccount.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
-            this.txbAccount.Location = new System.Drawing.Point(179, 4);
-            this.txbAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbAccount.Multiline = true;
+            this.txbAccount.Location = new System.Drawing.Point(211, 5);
+            this.txbAccount.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txbAccount.Name = "txbAccount";
-            this.txbAccount.Size = new System.Drawing.Size(399, 43);
+            this.txbAccount.Size = new System.Drawing.Size(441, 52);
             this.txbAccount.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
             this.txbAccount.StateCommon.Border.Rounding = 15F;
             this.txbAccount.StateCommon.Border.Width = 2;
@@ -676,11 +676,11 @@
             this.btnSaveStaff.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom2;
             this.btnSaveStaff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSaveStaff.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.btnSaveStaff.Location = new System.Drawing.Point(420, 159);
-            this.btnSaveStaff.Margin = new System.Windows.Forms.Padding(6);
+            this.btnSaveStaff.Location = new System.Drawing.Point(474, 194);
+            this.btnSaveStaff.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnSaveStaff.Name = "btnSaveStaff";
             this.btnSaveStaff.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.btnSaveStaff.Size = new System.Drawing.Size(155, 39);
+            this.btnSaveStaff.Size = new System.Drawing.Size(174, 49);
             this.btnSaveStaff.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -704,10 +704,10 @@
             // kryptonLabel8
             // 
             this.kryptonLabel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonLabel8.Location = new System.Drawing.Point(27, 8);
+            this.kryptonLabel8.Location = new System.Drawing.Point(30, 10);
             this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(581, 37);
+            this.kryptonLabel8.Size = new System.Drawing.Size(655, 44);
             this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel8.TabIndex = 22;
@@ -715,21 +715,22 @@
             // 
             // AddStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnBody);
             this.Controls.Add(this.pnAdd);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(675, 0);
+            this.MinimumSize = new System.Drawing.Size(759, 0);
             this.Name = "AddStaff";
-            this.Size = new System.Drawing.Size(675, 749);
+            this.Size = new System.Drawing.Size(759, 936);
             this.Load += new System.EventHandler(this.AddStaff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnAdd)).EndInit();
             this.pnAdd.ResumeLayout(false);
             this.pnAdd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnBody)).EndInit();
             this.pnBody.ResumeLayout(false);
+            this.pnBody.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
             this.kryptonPanel2.PerformLayout();
