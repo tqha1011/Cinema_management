@@ -58,6 +58,10 @@ namespace Cinema_management
         {
             InitializeComponent();
             SetDoubleBuffered(flowPanelSeats);
+            // set double buffer cho các control khác để giảm nhấp nháy
+            SetDoubleBuffered(kryptonTableLayoutPanel1);
+            SetDoubleBuffered(panelSidebar);
+            SetDoubleBuffered(lblGheChon);
         }
 
         public static void SetDoubleBuffered(Control control)
@@ -65,6 +69,17 @@ namespace Cinema_management
             typeof(Control).InvokeMember("DoubleBuffered",
                 BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
                 null, control, new object[] { true });
+        }
+
+        // giúp giảm hiện tượng nhấp nháy khi vẽ lại giao diện
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // WS_EX_COMPOSITED
+                return cp;
+            }
         }
 
         public void LoadSeats(int maSuatChieu)
@@ -346,6 +361,7 @@ namespace Cinema_management
         //// Cập nhật các Label hiển thị ghế đã chọn và tổng tiền.
         private void CapNhatThongTinVe()
         {
+            kryptonTableLayoutPanel1.SuspendLayout();
             var tenCacGhe = DSGheDangChon.Select(btn => btn.Tag.ToString())
                                             .OrderBy(ten => ten.Length)
                                             .ThenBy(ten => ten);
@@ -364,6 +380,7 @@ namespace Cinema_management
 
             decimal Sum = DSGheDangChon.Count * GiaVe;
             lblTongTien.Text = Sum.ToString("N0") + " đ";
+            kryptonTableLayoutPanel1.ResumeLayout(true);
         }
 
         private void CapNhatSoGhe()
