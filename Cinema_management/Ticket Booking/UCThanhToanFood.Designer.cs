@@ -44,10 +44,9 @@
             // 
             // lblGia
             // 
-            this.lblGia.Location = new System.Drawing.Point(36, 132);
-            this.lblGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblGia.Location = new System.Drawing.Point(24, 84);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(173, 50);
+            this.lblGia.Size = new System.Drawing.Size(110, 32);
             this.lblGia.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.lblGia.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGia.TabIndex = 1;
@@ -55,8 +54,7 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(32, 184);
-            this.btnMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinus.Location = new System.Drawing.Point(21, 118);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnMinus.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
@@ -64,7 +62,7 @@
             this.btnMinus.OverrideFocus.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnMinus.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
             this.btnMinus.OverrideFocus.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
-            this.btnMinus.Size = new System.Drawing.Size(67, 55);
+            this.btnMinus.Size = new System.Drawing.Size(45, 35);
             this.btnMinus.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnMinus.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnMinus.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
@@ -88,10 +86,9 @@
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(103, 188);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Location = new System.Drawing.Point(69, 120);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(89, 49);
+            this.txtSoLuong.Size = new System.Drawing.Size(59, 33);
             this.txtSoLuong.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.txtSoLuong.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
             this.txtSoLuong.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
@@ -104,8 +101,7 @@
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(196, 184);
-            this.btnPlus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlus.Location = new System.Drawing.Point(131, 118);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnPlus.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
@@ -113,7 +109,7 @@
             this.btnPlus.OverrideFocus.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnPlus.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
             this.btnPlus.OverrideFocus.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
-            this.btnPlus.Size = new System.Drawing.Size(67, 55);
+            this.btnPlus.Size = new System.Drawing.Size(45, 35);
             this.btnPlus.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnPlus.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnPlus.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
@@ -139,8 +135,7 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.Location = new System.Drawing.Point(8, 34);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Location = new System.Drawing.Point(5, 22);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnDelete.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
@@ -148,7 +143,7 @@
             this.btnDelete.OverrideFocus.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnDelete.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
             this.btnDelete.OverrideFocus.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
-            this.btnDelete.Size = new System.Drawing.Size(67, 55);
+            this.btnDelete.Size = new System.Drawing.Size(45, 35);
             this.btnDelete.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnDelete.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnDelete.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
@@ -175,10 +170,9 @@
             this.lblTenMon.AutoSize = false;
             this.lblTenMon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTenMon.LabelStyle = Krypton.Toolkit.LabelStyle.AlternateControl;
-            this.lblTenMon.Location = new System.Drawing.Point(27, 12);
-            this.lblTenMon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTenMon.Location = new System.Drawing.Point(18, 8);
             this.lblTenMon.Name = "lblTenMon";
-            this.lblTenMon.Size = new System.Drawing.Size(397, 117);
+            this.lblTenMon.Size = new System.Drawing.Size(264, 75);
             this.lblTenMon.StateCommon.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenMon.StateCommon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblTenMon.Text = "Bắp rang Caramel";
@@ -187,11 +181,10 @@
             // 
             this.kryptonPanel1.Controls.Add(this.btnDelete);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.kryptonPanel1.Location = new System.Drawing.Point(424, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel1.Location = new System.Drawing.Point(282, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(0, 25, 13, 0);
-            this.kryptonPanel1.Size = new System.Drawing.Size(79, 266);
+            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(0, 16, 9, 0);
+            this.kryptonPanel1.Size = new System.Drawing.Size(53, 170);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel1.TabIndex = 12;
             // 
@@ -200,16 +193,15 @@
             this.kryptonPanel2.Controls.Add(this.lblTenMon);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(27, 12, 0, 0);
-            this.kryptonPanel2.Size = new System.Drawing.Size(424, 129);
+            this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(18, 8, 0, 0);
+            this.kryptonPanel2.Size = new System.Drawing.Size(282, 83);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel2.TabIndex = 13;
             // 
             // UCThanhToanFood
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.kryptonPanel2);
@@ -218,10 +210,11 @@
             this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.lblGia);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.MinimumSize = new System.Drawing.Size(503, 266);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.MinimumSize = new System.Drawing.Size(335, 170);
             this.Name = "UCThanhToanFood";
-            this.Size = new System.Drawing.Size(503, 266);
+            this.Size = new System.Drawing.Size(335, 170);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
