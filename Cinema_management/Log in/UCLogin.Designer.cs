@@ -47,10 +47,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(145, 34);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel1.Location = new System.Drawing.Point(193, 42);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(260, 47);
+            this.kryptonLabel1.Size = new System.Drawing.Size(344, 62);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 0;
@@ -62,11 +62,11 @@
             this.txtUser.CueHint.CueHintText = "Tên đăng nhập";
             this.txtUser.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtUser.Location = new System.Drawing.Point(145, 115);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUser.Location = new System.Drawing.Point(193, 144);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtUser.Name = "txtUser";
             this.txtUser.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.txtUser.Size = new System.Drawing.Size(315, 57);
+            this.txtUser.Size = new System.Drawing.Size(420, 68);
             this.txtUser.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtUser.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.TabIndex = 1;
@@ -225,12 +225,12 @@
             this.txtPass.CueHint.CueHintText = "Mật khẩu";
             this.txtPass.CueHint.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.txtPass.Location = new System.Drawing.Point(145, 186);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPass.Location = new System.Drawing.Point(193, 232);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtPass.Name = "txtPass";
             this.txtPass.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.txtPass.PasswordChar = '●';
-            this.txtPass.Size = new System.Drawing.Size(315, 57);
+            this.txtPass.Size = new System.Drawing.Size(420, 68);
             this.txtPass.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtPass.StateCommon.Content.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.TabIndex = 1;
@@ -246,10 +246,10 @@
             // 
             this.llbQuenMK.LabelStyle = Krypton.Toolkit.LabelStyle.Custom1;
             this.llbQuenMK.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.NeverUnderline;
-            this.llbQuenMK.Location = new System.Drawing.Point(259, 332);
-            this.llbQuenMK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.llbQuenMK.Location = new System.Drawing.Point(345, 415);
+            this.llbQuenMK.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.llbQuenMK.Name = "llbQuenMK";
-            this.llbQuenMK.Size = new System.Drawing.Size(201, 38);
+            this.llbQuenMK.Size = new System.Drawing.Size(266, 50);
             this.llbQuenMK.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.llbQuenMK.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llbQuenMK.TabIndex = 3;
@@ -259,10 +259,10 @@
             // 
             // lblInfo
             // 
-            this.lblInfo.Location = new System.Drawing.Point(118, 308);
-            this.lblInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblInfo.Location = new System.Drawing.Point(157, 385);
+            this.lblInfo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(303, 32);
+            this.lblInfo.Size = new System.Drawing.Size(402, 42);
             this.lblInfo.StateCommon.ShortText.Color1 = System.Drawing.Color.Firebrick;
             this.lblInfo.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfo.TabIndex = 5;
@@ -280,11 +280,11 @@
             "Quản lý",
             "Nhân viên"});
             this.cboRole.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cboRole.Location = new System.Drawing.Point(272, 262);
-            this.cboRole.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cboRole.Location = new System.Drawing.Point(363, 328);
+            this.cboRole.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboRole.Name = "cboRole";
             this.cboRole.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.cboRole.Size = new System.Drawing.Size(184, 40);
+            this.cboRole.Size = new System.Drawing.Size(280, 51);
             this.cboRole.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.cboRole.StateCommon.ComboBox.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.cboRole.StateCommon.ComboBox.Border.Width = 3;
@@ -301,8 +301,8 @@
             this.btnLogin.ButtonStyle = Krypton.Toolkit.ButtonStyle.Custom2;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.btnLogin.Location = new System.Drawing.Point(272, 376);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLogin.Location = new System.Drawing.Point(363, 470);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.OverrideDefault.Back.ColorAngle = 45F;
             this.btnLogin.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -314,7 +314,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnLogin.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnLogin.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.btnLogin.Size = new System.Drawing.Size(210, 54);
+            this.btnLogin.Size = new System.Drawing.Size(280, 68);
             this.btnLogin.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -338,10 +338,10 @@
             // kryptonPictureBox2
             // 
             this.kryptonPictureBox2.Image = global::Cinema_management.Properties.Resources.iconpass;
-            this.kryptonPictureBox2.Location = new System.Drawing.Point(91, 188);
-            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonPictureBox2.Location = new System.Drawing.Point(121, 235);
+            this.kryptonPictureBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonPictureBox2.Name = "kryptonPictureBox2";
-            this.kryptonPictureBox2.Size = new System.Drawing.Size(42, 48);
+            this.kryptonPictureBox2.Size = new System.Drawing.Size(56, 60);
             this.kryptonPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.kryptonPictureBox2.TabIndex = 2;
             this.kryptonPictureBox2.TabStop = false;
@@ -349,17 +349,17 @@
             // kryptonPictureBox1
             // 
             this.kryptonPictureBox1.Image = global::Cinema_management.Properties.Resources.iconuser;
-            this.kryptonPictureBox1.Location = new System.Drawing.Point(90, 120);
-            this.kryptonPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonPictureBox1.Location = new System.Drawing.Point(120, 150);
+            this.kryptonPictureBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.kryptonPictureBox1.Name = "kryptonPictureBox1";
-            this.kryptonPictureBox1.Size = new System.Drawing.Size(48, 38);
+            this.kryptonPictureBox1.Size = new System.Drawing.Size(64, 48);
             this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.kryptonPictureBox1.TabIndex = 2;
             this.kryptonPictureBox1.TabStop = false;
             // 
             // UCLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnLogin);
@@ -374,7 +374,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UCLogin";
-            this.Size = new System.Drawing.Size(550, 450);
+            this.Size = new System.Drawing.Size(733, 562);
             ((System.ComponentModel.ISupportInitialize)(this.cboRole)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).EndInit();
