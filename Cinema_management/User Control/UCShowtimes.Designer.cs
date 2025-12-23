@@ -55,9 +55,9 @@ namespace Cinema_management
             this.panelTop.Controls.Add(this.cbbRoom);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1600, 74);
+            this.panelTop.Size = new System.Drawing.Size(1800, 92);
             this.panelTop.StateCommon.Color1 = System.Drawing.Color.White;
             this.panelTop.TabIndex = 0;
             this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
@@ -66,7 +66,7 @@ namespace Cinema_management
             // 
             this.btnAddStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddStaff.Location = new System.Drawing.Point(1294, 18);
+            this.btnAddStaff.Location = new System.Drawing.Point(1456, 22);
             this.btnAddStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddStaff.Name = "btnAddStaff";
             this.btnAddStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
@@ -97,7 +97,7 @@ namespace Cinema_management
             this.btnAddStaff.OverrideFocus.Border.Rounding = 20F;
             this.btnAddStaff.OverrideFocus.Border.Width = 1;
             this.btnAddStaff.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAddStaff.Size = new System.Drawing.Size(230, 46);
+            this.btnAddStaff.Size = new System.Drawing.Size(259, 58);
             this.btnAddStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnAddStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.btnAddStaff.StateCommon.Back.ColorAngle = 45F;
@@ -169,16 +169,16 @@ namespace Cinema_management
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.69194F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.30806F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tableLayoutPanel1.Controls.Add(this.btnPrevWeek, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnNextWeek, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblDateRange, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(521, 11);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(586, 14);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(548, 59);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 74);
             this.tableLayoutPanel1.TabIndex = 22;
             // 
             // btnPrevWeek
@@ -212,7 +212,7 @@ namespace Cinema_management
             this.btnPrevWeek.OverrideFocus.Border.Width = 1;
             this.btnPrevWeek.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnPrevWeek.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnPrevWeek.Size = new System.Drawing.Size(63, 55);
+            this.btnPrevWeek.Size = new System.Drawing.Size(72, 70);
             this.btnPrevWeek.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnPrevWeek.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnPrevWeek.StateCommon.Back.ColorAngle = 45F;
@@ -267,7 +267,7 @@ namespace Cinema_management
             // 
             this.btnNextWeek.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNextWeek.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnNextWeek.Location = new System.Drawing.Point(477, 2);
+            this.btnNextWeek.Location = new System.Drawing.Point(535, 2);
             this.btnNextWeek.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNextWeek.Name = "btnNextWeek";
             this.btnNextWeek.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
@@ -294,7 +294,7 @@ namespace Cinema_management
             this.btnNextWeek.OverrideFocus.Border.Width = 1;
             this.btnNextWeek.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnNextWeek.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnNextWeek.Size = new System.Drawing.Size(68, 55);
+            this.btnNextWeek.Size = new System.Drawing.Size(78, 70);
             this.btnNextWeek.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnNextWeek.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.btnNextWeek.StateCommon.Back.ColorAngle = 45F;
@@ -348,10 +348,10 @@ namespace Cinema_management
             // lblDateRange
             // 
             this.lblDateRange.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDateRange.Location = new System.Drawing.Point(73, 4);
-            this.lblDateRange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblDateRange.Location = new System.Drawing.Point(82, 5);
+            this.lblDateRange.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblDateRange.Name = "lblDateRange";
-            this.lblDateRange.Size = new System.Drawing.Size(397, 51);
+            this.lblDateRange.Size = new System.Drawing.Size(446, 64);
             this.lblDateRange.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.lblDateRange.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateRange.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -368,11 +368,11 @@ namespace Cinema_management
             this.cbbRoom.DropButtonStyle = Krypton.Toolkit.ButtonStyle.Custom1;
             this.cbbRoom.DropDownWidth = 232;
             this.cbbRoom.LocalCustomPalette = this.kryptonCustomPaletteBase1;
-            this.cbbRoom.Location = new System.Drawing.Point(106, 18);
-            this.cbbRoom.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.cbbRoom.Location = new System.Drawing.Point(119, 22);
+            this.cbbRoom.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.cbbRoom.Name = "cbbRoom";
             this.cbbRoom.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.cbbRoom.Size = new System.Drawing.Size(223, 40);
+            this.cbbRoom.Size = new System.Drawing.Size(299, 47);
             this.cbbRoom.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.cbbRoom.StateCommon.ComboBox.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.cbbRoom.StateCommon.ComboBox.Border.Width = 4;
@@ -418,13 +418,13 @@ namespace Cinema_management
             this.tlpCalendar.Controls.Add(this.flpSun, 6, 1);
             this.tlpCalendar.Controls.Add(this.lblHeaderMon, 0, 0);
             this.tlpCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpCalendar.Location = new System.Drawing.Point(0, 74);
-            this.tlpCalendar.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.tlpCalendar.Location = new System.Drawing.Point(0, 92);
+            this.tlpCalendar.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.tlpCalendar.Name = "tlpCalendar";
             this.tlpCalendar.RowCount = 2;
-            this.tlpCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tlpCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 78F));
             this.tlpCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpCalendar.Size = new System.Drawing.Size(1600, 910);
+            this.tlpCalendar.Size = new System.Drawing.Size(1800, 1138);
             this.tlpCalendar.TabIndex = 1;
             // 
             // lblHeaderSun
@@ -434,10 +434,10 @@ namespace Cinema_management
             this.lblHeaderSun.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblHeaderSun.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderSun.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.lblHeaderSun.Location = new System.Drawing.Point(1369, 1);
+            this.lblHeaderSun.Location = new System.Drawing.Point(1537, 1);
             this.lblHeaderSun.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderSun.Name = "lblHeaderSun";
-            this.lblHeaderSun.Size = new System.Drawing.Size(230, 62);
+            this.lblHeaderSun.Size = new System.Drawing.Size(262, 78);
             this.lblHeaderSun.TabIndex = 6;
             this.lblHeaderSun.Text = "Sun";
             this.lblHeaderSun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -449,10 +449,10 @@ namespace Cinema_management
             this.lblHeaderSat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblHeaderSat.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderSat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(40)))));
-            this.lblHeaderSat.Location = new System.Drawing.Point(1141, 1);
+            this.lblHeaderSat.Location = new System.Drawing.Point(1281, 1);
             this.lblHeaderSat.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderSat.Name = "lblHeaderSat";
-            this.lblHeaderSat.Size = new System.Drawing.Size(227, 62);
+            this.lblHeaderSat.Size = new System.Drawing.Size(255, 78);
             this.lblHeaderSat.TabIndex = 5;
             this.lblHeaderSat.Text = "Sat";
             this.lblHeaderSat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -464,10 +464,10 @@ namespace Cinema_management
             this.lblHeaderFri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblHeaderFri.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderFri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(40)))));
-            this.lblHeaderFri.Location = new System.Drawing.Point(913, 1);
+            this.lblHeaderFri.Location = new System.Drawing.Point(1025, 1);
             this.lblHeaderFri.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderFri.Name = "lblHeaderFri";
-            this.lblHeaderFri.Size = new System.Drawing.Size(227, 62);
+            this.lblHeaderFri.Size = new System.Drawing.Size(255, 78);
             this.lblHeaderFri.TabIndex = 4;
             this.lblHeaderFri.Text = "Fri";
             this.lblHeaderFri.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -479,10 +479,10 @@ namespace Cinema_management
             this.lblHeaderThu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblHeaderThu.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderThu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(40)))));
-            this.lblHeaderThu.Location = new System.Drawing.Point(685, 1);
+            this.lblHeaderThu.Location = new System.Drawing.Point(769, 1);
             this.lblHeaderThu.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderThu.Name = "lblHeaderThu";
-            this.lblHeaderThu.Size = new System.Drawing.Size(227, 62);
+            this.lblHeaderThu.Size = new System.Drawing.Size(255, 78);
             this.lblHeaderThu.TabIndex = 3;
             this.lblHeaderThu.Text = "Thu";
             this.lblHeaderThu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -494,10 +494,10 @@ namespace Cinema_management
             this.lblHeaderWed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblHeaderWed.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderWed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(40)))));
-            this.lblHeaderWed.Location = new System.Drawing.Point(457, 1);
+            this.lblHeaderWed.Location = new System.Drawing.Point(513, 1);
             this.lblHeaderWed.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderWed.Name = "lblHeaderWed";
-            this.lblHeaderWed.Size = new System.Drawing.Size(227, 62);
+            this.lblHeaderWed.Size = new System.Drawing.Size(255, 78);
             this.lblHeaderWed.TabIndex = 2;
             this.lblHeaderWed.Text = "Wed";
             this.lblHeaderWed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -509,10 +509,10 @@ namespace Cinema_management
             this.lblHeaderTue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblHeaderTue.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderTue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(40)))));
-            this.lblHeaderTue.Location = new System.Drawing.Point(229, 1);
+            this.lblHeaderTue.Location = new System.Drawing.Point(257, 1);
             this.lblHeaderTue.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderTue.Name = "lblHeaderTue";
-            this.lblHeaderTue.Size = new System.Drawing.Size(227, 62);
+            this.lblHeaderTue.Size = new System.Drawing.Size(255, 78);
             this.lblHeaderTue.TabIndex = 1;
             this.lblHeaderTue.Text = "Tue";
             this.lblHeaderTue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -521,77 +521,77 @@ namespace Cinema_management
             // 
             this.flpMon.AutoScroll = true;
             this.flpMon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpMon.Location = new System.Drawing.Point(9, 72);
-            this.flpMon.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.flpMon.Location = new System.Drawing.Point(10, 90);
+            this.flpMon.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.flpMon.Name = "flpMon";
-            this.flpMon.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.flpMon.Size = new System.Drawing.Size(211, 829);
+            this.flpMon.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.flpMon.Size = new System.Drawing.Size(237, 1037);
             this.flpMon.TabIndex = 7;
             // 
             // flpTue
             // 
             this.flpTue.AutoScroll = true;
             this.flpTue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpTue.Location = new System.Drawing.Point(237, 72);
-            this.flpTue.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.flpTue.Location = new System.Drawing.Point(266, 90);
+            this.flpTue.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.flpTue.Name = "flpTue";
-            this.flpTue.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.flpTue.Size = new System.Drawing.Size(211, 829);
+            this.flpTue.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.flpTue.Size = new System.Drawing.Size(237, 1037);
             this.flpTue.TabIndex = 8;
             // 
             // flpWed
             // 
             this.flpWed.AutoScroll = true;
             this.flpWed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpWed.Location = new System.Drawing.Point(465, 72);
-            this.flpWed.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.flpWed.Location = new System.Drawing.Point(522, 90);
+            this.flpWed.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.flpWed.Name = "flpWed";
-            this.flpWed.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.flpWed.Size = new System.Drawing.Size(211, 829);
+            this.flpWed.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.flpWed.Size = new System.Drawing.Size(237, 1037);
             this.flpWed.TabIndex = 9;
             // 
             // flpThu
             // 
             this.flpThu.AutoScroll = true;
             this.flpThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpThu.Location = new System.Drawing.Point(693, 72);
-            this.flpThu.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.flpThu.Location = new System.Drawing.Point(778, 90);
+            this.flpThu.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.flpThu.Name = "flpThu";
-            this.flpThu.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.flpThu.Size = new System.Drawing.Size(211, 829);
+            this.flpThu.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.flpThu.Size = new System.Drawing.Size(237, 1037);
             this.flpThu.TabIndex = 10;
             // 
             // flpFri
             // 
             this.flpFri.AutoScroll = true;
             this.flpFri.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpFri.Location = new System.Drawing.Point(921, 72);
-            this.flpFri.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.flpFri.Location = new System.Drawing.Point(1034, 90);
+            this.flpFri.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.flpFri.Name = "flpFri";
-            this.flpFri.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.flpFri.Size = new System.Drawing.Size(211, 829);
+            this.flpFri.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.flpFri.Size = new System.Drawing.Size(237, 1037);
             this.flpFri.TabIndex = 11;
             // 
             // flpSat
             // 
             this.flpSat.AutoScroll = true;
             this.flpSat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpSat.Location = new System.Drawing.Point(1149, 72);
-            this.flpSat.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.flpSat.Location = new System.Drawing.Point(1290, 90);
+            this.flpSat.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.flpSat.Name = "flpSat";
-            this.flpSat.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.flpSat.Size = new System.Drawing.Size(211, 829);
+            this.flpSat.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.flpSat.Size = new System.Drawing.Size(237, 1037);
             this.flpSat.TabIndex = 12;
             // 
             // flpSun
             // 
             this.flpSun.AutoScroll = true;
             this.flpSun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpSun.Location = new System.Drawing.Point(1377, 72);
-            this.flpSun.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.flpSun.Location = new System.Drawing.Point(1546, 90);
+            this.flpSun.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.flpSun.Name = "flpSun";
-            this.flpSun.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.flpSun.Size = new System.Drawing.Size(214, 829);
+            this.flpSun.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.flpSun.Size = new System.Drawing.Size(244, 1037);
             this.flpSun.TabIndex = 13;
             // 
             // lblHeaderMon
@@ -604,22 +604,22 @@ namespace Cinema_management
             this.lblHeaderMon.Location = new System.Drawing.Point(1, 1);
             this.lblHeaderMon.Margin = new System.Windows.Forms.Padding(0);
             this.lblHeaderMon.Name = "lblHeaderMon";
-            this.lblHeaderMon.Size = new System.Drawing.Size(227, 62);
+            this.lblHeaderMon.Size = new System.Drawing.Size(255, 78);
             this.lblHeaderMon.TabIndex = 0;
             this.lblHeaderMon.Text = "Mon";
             this.lblHeaderMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UCShowtimes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tlpCalendar);
             this.Controls.Add(this.panelTop);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.Name = "UCShowtimes";
-            this.Size = new System.Drawing.Size(1600, 984);
+            this.Size = new System.Drawing.Size(1800, 1230);
             this.Load += new System.EventHandler(this.UCShowtimes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelTop)).EndInit();
             this.panelTop.ResumeLayout(false);
