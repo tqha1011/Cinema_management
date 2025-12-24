@@ -73,10 +73,17 @@ namespace Cinema_management.Ticket_Booking
         {
             // gọi Service Transaction
             TicketService service = new TicketService();
+            string text = lblTenPhim.Text + "\n" + lblPhong.Text + "\n" + lblGhe.Text;
+            string day = lblNgay.Text;
+            string showtime = lblGio.Text;
+            string money = lblTong.Text;
             if (service.LuuGiaoDich(bookingInfo))
             {
-                Alert.Show("Thanh toán thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
-                OnPayMentSuccess?.Invoke(this, EventArgs.Empty);
+                PaymentForm receiptForm = new PaymentForm(text, day, showtime, money);
+                if(DialogResult.OK == receiptForm.ShowDialog())
+                {
+                    OnPayMentSuccess?.Invoke(this, EventArgs.Empty);
+                }
             }
         }
 
