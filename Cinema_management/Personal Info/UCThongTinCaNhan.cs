@@ -34,7 +34,7 @@ namespace Cinema_management.Personal_Info
 
         private void UCThongTinCaNhan_Load(object sender, EventArgs e)
         {
-            MakePictureBoxRound(kryptonPictureBox1);
+            //MakePictureBoxRound(kryptonPictureBox1);
             LoadUserInfo();
         }
 
@@ -91,10 +91,10 @@ namespace Cinema_management.Personal_Info
         private void kryptonPictureBox1_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-            using (Pen pen = new Pen(Color.LightGray, 2))
-            {
-                e.Graphics.DrawEllipse(pen, 0, 0, kryptonPictureBox1.Width - 1, kryptonPictureBox1.Height - 1);
-            }
+            //using (Pen pen = new Pen(Color.LightGray, 2))
+            //{
+            //    e.Graphics.DrawEllipse(pen, 0, 0, kryptonPictureBox1.Width - 1, kryptonPictureBox1.Height - 1);
+            //}
         }
 
         private void kryptonTableLayoutPanel2_Paint(object sender, PaintEventArgs e)

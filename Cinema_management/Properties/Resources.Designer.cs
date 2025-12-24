@@ -133,6 +133,16 @@ namespace Cinema_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap choice_worker_concept {
+            get {
+                object obj = ResourceManager.GetObject("choice-worker-concept", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clarity__analytics_solid {
             get {
                 object obj = ResourceManager.GetObject("clarity--analytics-solid", resourceCulture);
