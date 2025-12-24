@@ -49,7 +49,7 @@
             this.TicketID = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Customer = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Movie = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.Showtime = new Krypton.Toolkit.KryptonDataGridViewTreeTextColumn();
+            this.Showtime = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Seat = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Price = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Status = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
@@ -518,7 +518,7 @@
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn TicketID;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Customer;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Movie;
-        private Krypton.Toolkit.KryptonDataGridViewTreeTextColumn Showtime;
+        private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Showtime;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Seat;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Price;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn Status;
