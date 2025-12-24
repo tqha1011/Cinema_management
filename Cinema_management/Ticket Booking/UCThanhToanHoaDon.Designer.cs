@@ -68,7 +68,6 @@
             this.kryptonBorderEdge1 = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.btnBack = new Krypton.Toolkit.KryptonButton();
-            this.ucHoaDonFood1 = new Cinema_management.Ticket_Booking.UCHoaDonFood();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
