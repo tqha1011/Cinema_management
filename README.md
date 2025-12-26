@@ -11,8 +11,11 @@
 **Đồ án môn học: IT008 - Lập trình trực quan**
 **Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM (UIT-VNUHCM)**
 
-![Banner/GIF](https://github.com/user-attachments/assets/43f51b59-30e9-4c20-8012-04bdad649056)
-*Zerobug's Project - "Rạp chiếu phim hiện đại trong tầm tay"*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/43f51b59-30e9-4c20-8012-04bdad649056" alt="Banner/GIF" />
+  <br/>
+  <i>Zerobug's Project - "Rạp chiếu phim hiện đại trong tầm tay"</i>
+</p>
 
 </div>
 
