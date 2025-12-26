@@ -17,6 +17,7 @@ namespace Cinema_management.Ticket_Booking
         private BookingInfo bookingInfo;
         public event EventHandler OnPayMentSuccess; //báo về form main
         public event EventHandler OnBack;
+        List<FoodDetail> foodDetails = new List<FoodDetail>();
 
         public UCThanhToanHoaDon()
         {
@@ -58,6 +59,13 @@ namespace Cinema_management.Ticket_Booking
                 int sl = item.Value;
                 string ten = bookingInfo.TenDoan.ContainsKey(maDoan) ? bookingInfo.TenDoan[maDoan] : "Unknown";
                 decimal gia = bookingInfo.GiaDoAn.ContainsKey(maDoan) ? bookingInfo.GiaDoAn[maDoan] : 0;
+                // dua vao danh sach chi tiet do an
+                foodDetails.Add(new FoodDetail
+                {
+                    TenDoAn = ten,
+                    SoLuong = sl,
+                    Gia = gia
+                });
 
                 UCHoaDonFood card = new UCHoaDonFood();
                 card.SetData(ten, sl, gia);
@@ -73,13 +81,16 @@ namespace Cinema_management.Ticket_Booking
         {
             // gọi Service Transaction
             TicketService service = new TicketService();
-            string text = lblTenPhim.Text + "\n" + lblPhong.Text + "\n" + lblGhe.Text;
+            // text để truyền vô form Payment
+            string text = "\n" + lblTenPhim.Text + "\n"
+                          + lblPhong.Text + "\n"
+                          + "Ghế: " + lblGhe.Text + "\n";
             string day = lblNgay.Text;
             string showtime = lblGio.Text;
             string money = lblTong.Text;
             if (service.LuuGiaoDich(bookingInfo))
             {
-                PaymentForm receiptForm = new PaymentForm(text, day, showtime, money);
+                PaymentForm receiptForm = new PaymentForm(text, day, showtime, money,foodDetails);
                 if(DialogResult.OK == receiptForm.ShowDialog())
                 {
                     OnPayMentSuccess?.Invoke(this, EventArgs.Empty);

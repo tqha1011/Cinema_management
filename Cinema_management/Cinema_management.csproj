@@ -213,6 +213,7 @@
       <DependentUpon>UCLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Ticket Booking\BookingInfo.cs" />
+    <Compile Include="Ticket Booking\FoodDetail.cs" />
     <Compile Include="Ticket Booking\FormChonSuatChieu.cs">
       <SubType>Form</SubType>
     </Compile>

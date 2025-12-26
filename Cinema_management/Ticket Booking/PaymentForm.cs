@@ -22,12 +22,12 @@ namespace Cinema_management.Ticket_Booking
     public partial class PaymentForm : KryptonForm
     {
         private string qrText;
-        private int _time = 5; // thời gian đếm ngược
         // khai bao cac bien can thiet
         private string _date;
         private string _timeShow;
         private string _totalMoney;
-        public PaymentForm(string text,string date,string timeShow,string money)
+        List<FoodDetail> foodDetails = new List<FoodDetail>();
+        public PaymentForm(string text,string date,string timeShow,string money, List<FoodDetail> ds)
         {
             InitializeComponent();
             QuestPDF.Settings.License = LicenseType.Community;
@@ -35,8 +35,7 @@ namespace Cinema_management.Ticket_Booking
             _date = date;
             _timeShow = timeShow;
             _totalMoney = money;
-            timerDemNguoc.Interval = 1000; // 1 giây
-            timerDemNguoc.Start();
+            foodDetails = ds;
         }
 
         private void CenterPanel()
@@ -71,19 +70,6 @@ namespace Cinema_management.Ticket_Booking
             }
         }
 
-        private void timerDemNguoc_Tick(object sender, EventArgs e)
-        {
-            _time--;
-            if (_time <= 0)
-            {
-                timerDemNguoc.Stop(); // dung timer sau khi dem nguoc 5s
-                Alert.Show("Thanh toán thành công!", MessagboxCustom.AlertMessagebox.AlertType.Info);
-                openPDF();
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            }
-        }
-
         private void openPDF()
         {
             try
@@ -109,11 +95,20 @@ namespace Cinema_management.Ticket_Booking
                         // content
                         page.Content().PaddingVertical(1, Unit.Centimetre).Column(col =>
                         {
-                            col.Spacing(10); // Khoảng cách giữa các dòng
+                            col.Spacing(7); // Khoảng cách giữa các dòng
 
                             col.Item().Text($"Ngày: " + _date);
                             col.Item().Text($"Giờ: " + _timeShow);
-                            col.Item().Text($"Nội dung vé: {qrText}");
+                            col.Item().Text(qrText);
+                            // xuat danh sach do an
+                            if (foodDetails != null && foodDetails.Count > 0)
+                            {
+                                col.Item().Text("Đồ ăn đã đặt:").Bold();
+                                foreach(var food in foodDetails)
+                                {
+                                    col.Item().Text($"{food.TenDoAn} x {food.SoLuong} - {food.Gia * food.SoLuong:N0} đ");
+                                }
+                            }
 
                             col.Item().LineHorizontal(1).LineColor(Colors.Grey.Medium); // Đường kẻ ngang
 
@@ -146,6 +141,14 @@ namespace Cinema_management.Ticket_Booking
             {
                 MessageBox.Show("Lỗi khi mở file PDF: " + ex.Message);
             }
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            Alert.Show("Thanh toán thành công!", MessagboxCustom.AlertMessagebox.AlertType.Success);
+            this.DialogResult = DialogResult.OK;
+            openPDF();
+            this.Close();
         }
     }
 }
