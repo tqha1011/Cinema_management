@@ -28,7 +28,6 @@
 - [Tính năng (Features)](#-tính-năng-features)
 - [Cơ sở dữ liệu (Database)](#%EF%B8%8F-cơ-sở-dữ-liệu-database)
 - [Hướng dẫn cài đặt & Sử dụng (Installation & Usage)](#-hướng-dẫn-cài-đặt--sử-dụng-installation--usage)
-- [Hình ảnh Demo (Screenshots)](#-hình-ảnh-demo-screenshots)
 
 ---
 
