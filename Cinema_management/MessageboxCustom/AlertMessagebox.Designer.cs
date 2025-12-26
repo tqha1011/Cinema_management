@@ -42,7 +42,7 @@
             this.kryptonTableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonTableLayoutPanel1.ColumnCount = 2;
             this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.kryptonTableLayoutPanel1.Controls.Add(this.ptbIcon, 0, 0);
             this.kryptonTableLayoutPanel1.Controls.Add(this.lblMessage, 1, 0);
             this.kryptonTableLayoutPanel1.Controls.Add(this.btnConfirm, 0, 1);
@@ -51,21 +51,21 @@
             this.kryptonTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             this.kryptonTableLayoutPanel1.RowCount = 2;
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(334, 61);
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(342, 81);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.StateCommon.Color2 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 0;
             // 
             // ptbIcon
             // 
-            this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ptbIcon.BackColor = System.Drawing.Color.Transparent;
-            this.ptbIcon.Location = new System.Drawing.Point(3, 4);
+            this.ptbIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ptbIcon.Location = new System.Drawing.Point(3, 2);
             this.ptbIcon.Margin = new System.Windows.Forms.Padding(3, 2, 1, 2);
             this.ptbIcon.Name = "ptbIcon";
-            this.ptbIcon.Size = new System.Drawing.Size(36, 22);
+            this.ptbIcon.Size = new System.Drawing.Size(36, 38);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbIcon.TabIndex = 0;
             this.ptbIcon.TabStop = false;
@@ -77,9 +77,10 @@
             this.lblMessage.Location = new System.Drawing.Point(43, 0);
             this.lblMessage.MaximumSize = new System.Drawing.Size(350, 0);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(288, 30);
+            this.lblMessage.Size = new System.Drawing.Size(296, 42);
             this.lblMessage.StateCommon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMessage.Text = "kryptonWrapLabel1";
+            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnConfirm
             // 
@@ -87,14 +88,14 @@
             this.btnConfirm.AutoSize = true;
             this.kryptonTableLayoutPanel1.SetColumnSpan(this.btnConfirm, 2);
             this.btnConfirm.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnConfirm.Location = new System.Drawing.Point(126, 35);
+            this.btnConfirm.Location = new System.Drawing.Point(130, 47);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 5, 3, 2);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.SeaGreen;
             this.btnConfirm.OverrideDefault.Back.Color2 = System.Drawing.Color.SeaGreen;
             this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.Black;
             this.btnConfirm.OverrideDefault.Border.Color2 = System.Drawing.Color.Black;
-            this.btnConfirm.Size = new System.Drawing.Size(82, 24);
+            this.btnConfirm.Size = new System.Drawing.Size(82, 32);
             this.btnConfirm.StateCommon.Back.Color1 = System.Drawing.Color.SeaGreen;
             this.btnConfirm.StateCommon.Back.Color2 = System.Drawing.Color.SeaGreen;
             this.btnConfirm.StateCommon.Border.Rounding = 9F;
@@ -114,8 +115,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(374, 93);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(382, 113);
             this.Controls.Add(this.kryptonTableLayoutPanel1);
+            this.Location = new System.Drawing.Point(0, 0);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
