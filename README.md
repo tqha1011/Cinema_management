@@ -123,7 +123,7 @@ Hệ thống sử dụng **SQL Server** được deploy trên **Azure SQL Databa
 1. **Clone Repository**
    Mở Git Bash hoặc Terminal và chạy lệnh:
    ```bash
-   git clone [https://github.com/tqha1011/Cinema_management.git](https://github.com/tqha1011/Cinema_management.git)
+   git clone https://github.com/tqha1011/Cinema_management.git
 2. **Database Setup**
    Bạn có thể chọn 1 trong 2 cách sau:
 
