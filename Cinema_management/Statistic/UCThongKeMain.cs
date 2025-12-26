@@ -26,7 +26,7 @@ namespace Cinema_management
 
             grUC.Panel.Controls.Add(uc);
         }
-
+        
         private void btnTongQuan_Click(object sender, EventArgs e)
         {
             grUC.Panel.Controls.Clear();

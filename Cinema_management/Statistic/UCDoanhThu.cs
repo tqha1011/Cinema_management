@@ -19,6 +19,7 @@ namespace Cinema_management
             InitializeComponent();
             kryptonComboBox1.SelectedIndex = 0; 
         }
+      
         //Đếm tổng số hóa đơn
         private int GetTotalInvoices(int month, int year, bool isYearly)
         {

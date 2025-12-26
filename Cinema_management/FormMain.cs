@@ -26,6 +26,16 @@ namespace Cinema_management
         {
 
         }
+        // tang do muot khi load du lieu
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
 
         private void btnDashboard_Click(object sender, System.EventArgs e)
         {
@@ -38,7 +48,7 @@ namespace Cinema_management
             pnContentforUC.Controls.Add(uc);
             CenterUC();
         }
-
+        // nút bấm phim
         private void kryptonButton1_Click(object sender, System.EventArgs e)
         {
             pnContentforUC.Controls.Clear();
@@ -52,6 +62,7 @@ namespace Cinema_management
             //pnContentforUC.Controls.Add(uc);
         }
 
+        // nút bấm nhân viên
         private void kryptonButton2_Click(object sender, System.EventArgs e)
         {
             pnContentforUC.Controls.Clear();
@@ -61,7 +72,8 @@ namespace Cinema_management
 
             pnContentforUC.Controls.Add(uc);
         }
-
+        
+        // nút bấm suất chiếu
         private void kryptonButton3_Click(object sender, System.EventArgs e)
         {
             pnContentforUC.Controls.Clear();
@@ -71,7 +83,7 @@ namespace Cinema_management
 
             pnContentforUC.Controls.Add(uc);
         }
-
+        // nút bấm Now Showing
         private void kryptonButton4_Click(object sender, System.EventArgs e)
         {
             pnContentforUC.Controls.Clear();
@@ -150,6 +162,8 @@ namespace Cinema_management
         private void FormMain_Load(object sender, System.EventArgs e)
         {
             btnDashboard_Click(sender, e);
+            kryptonButton4.Enabled = false;
+            kryptonButton4.Visible = false;
         }
 
         private void ucMovies1_Load(object sender, System.EventArgs e)
