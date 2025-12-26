@@ -81,13 +81,11 @@ namespace Cinema_management
             if (food.Quantity <= 0)
             {
                 lblSoLuong.Text = "Hết hàng";
-                lblSoLuong.ForeColor = Color.Red;
-                this.Enabled = false; // lam mo card neu het hang   
+                lblSoLuong.ForeColor = Color.Red; 
             }
             else
             {
                 lblSoLuong.Text = "SL: " + food.Quantity.ToString();
-                this.Enabled = true;
                 lblSoLuong.ForeColor = Color.Black;
             }
             LoadImage(food.imgFood);
