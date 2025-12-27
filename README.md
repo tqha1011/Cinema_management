@@ -104,7 +104,7 @@ Giao diện tối ưu cho tốc độ phục vụ tại quầy.
 
 Hệ thống sử dụng **SQL Server** được deploy trên **Azure SQL Database**.
 
-<img width="1699" height="1076" alt="datadiagram" src="https://github.com/user-attachments/assets/bf1518be-c623-415d-b86b-0fafe48dcd2c" />
+<img width="1347" height="1049" alt="datadiagram" src="https://github.com/user-attachments/assets/fa11a6fe-f8b0-4f88-965c-cde413fcbe68" />
 
 ---
 
