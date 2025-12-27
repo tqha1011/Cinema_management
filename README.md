@@ -71,7 +71,7 @@ Hệ thống phân quyền rõ ràng cho hai đối tượng sử dụng chính:
 Người quản trị có toàn quyền kiểm soát hệ thống và dữ liệu.
 - **Quản lý Phim (Movie Management):**
   - Thêm, xóa, sửa thông tin phim.
-  - Cập nhật Poster, Trailer, Thể loại, Thời lượng.
+  - Cập nhật Poster,Thể loại, Thời lượng,Đạo diễn
 - **Quản lý Lịch chiếu (Showtime Management):**
   - Sắp xếp lịch chiếu cho từng phòng.
   - Tự động kiểm tra trùng lặp lịch chiếu.
@@ -104,7 +104,7 @@ Giao diện tối ưu cho tốc độ phục vụ tại quầy.
 
 Hệ thống sử dụng **SQL Server** được deploy trên **Azure SQL Database**.
 
-![erd Database](https://github.com/user-attachments/assets/9a47715c-899c-4868-92c2-02216f85fe93)
+<img width="1699" height="1076" alt="datadiagram" src="https://github.com/user-attachments/assets/bf1518be-c623-415d-b86b-0fafe48dcd2c" />
 
 ---
 
