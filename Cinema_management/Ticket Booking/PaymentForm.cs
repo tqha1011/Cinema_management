@@ -16,6 +16,8 @@ using Cinema_management.MessageboxCustom;
 using Cinema_management.MessageboxCustom.Utils;
 using System.Diagnostics;
 using System.IO;
+using Cinema_management.Personal_Info;
+using Cinema_management.Services;
 
 namespace Cinema_management.Ticket_Booking
 {
@@ -96,7 +98,7 @@ namespace Cinema_management.Ticket_Booking
                         page.Content().PaddingVertical(1, Unit.Centimetre).Column(col =>
                         {
                             col.Spacing(7); // Khoảng cách giữa các dòng
-
+                            col.Item().Text("Nhân viên: " + Session.currHoTen).Bold();
                             col.Item().Text($"Ngày: " + _date);
                             col.Item().Text($"Giờ: " + _timeShow);
                             col.Item().Text(qrText);
