@@ -56,7 +56,9 @@
             // 
             // btnChooseImage
             // 
-            this.btnChooseImage.Location = new System.Drawing.Point(55, 20);
+            this.btnChooseImage.AutoSize = true;
+            this.btnChooseImage.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnChooseImage.Location = new System.Drawing.Point(46, 24);
             this.btnChooseImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnChooseImage.Name = "btnChooseImage";
             this.btnChooseImage.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
@@ -71,7 +73,7 @@
             this.btnChooseImage.OverrideFocus.Back.ColorAngle = 45F;
             this.btnChooseImage.OverrideFocus.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
             this.btnChooseImage.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnChooseImage.Size = new System.Drawing.Size(230, 70);
+            this.btnChooseImage.Size = new System.Drawing.Size(243, 64);
             this.btnChooseImage.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnChooseImage.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
             this.btnChooseImage.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
@@ -193,7 +195,7 @@
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(678, 411);
+            this.btnSave.Location = new System.Drawing.Point(694, 411);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(136)))), ((int)(((byte)(64)))));
@@ -248,7 +250,7 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.Location = new System.Drawing.Point(480, 411);
+            this.btnDelete.Location = new System.Drawing.Point(496, 411);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
@@ -314,7 +316,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonPanel1.Location = new System.Drawing.Point(22, 25);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(335, 437);
+            this.kryptonPanel1.Size = new System.Drawing.Size(335, 429);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel1.TabIndex = 6;
             // 
@@ -325,7 +327,7 @@
             this.kryptonPanel2.Location = new System.Drawing.Point(357, 25);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.Padding = new System.Windows.Forms.Padding(20);
-            this.kryptonPanel2.Size = new System.Drawing.Size(571, 379);
+            this.kryptonPanel2.Size = new System.Drawing.Size(589, 379);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel2.TabIndex = 7;
             // 
@@ -350,7 +352,7 @@
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(531, 339);
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(549, 339);
             this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel1.TabIndex = 6;
             // 
@@ -359,7 +361,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(978, 487);
+            this.ClientSize = new System.Drawing.Size(996, 479);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.kryptonPanel2);
@@ -389,6 +391,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbDoAn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
+            this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
             this.kryptonTableLayoutPanel1.ResumeLayout(false);
