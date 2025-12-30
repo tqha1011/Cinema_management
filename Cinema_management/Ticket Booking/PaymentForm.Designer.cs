@@ -48,14 +48,15 @@
             this.tableQR.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableQR.Controls.Add(this.ptbQR, 0, 1);
             this.tableQR.Controls.Add(this.kryptonButton1, 0, 2);
-            this.tableQR.Location = new System.Drawing.Point(82, 19);
+            this.tableQR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableQR.Location = new System.Drawing.Point(0, 0);
             this.tableQR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableQR.Name = "tableQR";
             this.tableQR.RowCount = 3;
             this.tableQR.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableQR.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableQR.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableQR.Size = new System.Drawing.Size(334, 522);
+            this.tableQR.Size = new System.Drawing.Size(388, 502);
             this.tableQR.TabIndex = 4;
             // 
             // tableLayoutPanel2
@@ -72,7 +73,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(326, 216);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(380, 206);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // kryptonLabel1
@@ -81,7 +82,7 @@
             this.kryptonLabel1.Location = new System.Drawing.Point(4, 5);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(318, 98);
+            this.kryptonLabel1.Size = new System.Drawing.Size(372, 93);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -92,10 +93,10 @@
             // kryptonLabel2
             // 
             this.kryptonLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel2.Location = new System.Drawing.Point(4, 113);
+            this.kryptonLabel2.Location = new System.Drawing.Point(4, 108);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(318, 98);
+            this.kryptonLabel2.Size = new System.Drawing.Size(372, 93);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -106,19 +107,20 @@
             // ptbQR
             // 
             this.ptbQR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ptbQR.Location = new System.Drawing.Point(4, 231);
+            this.ptbQR.Location = new System.Drawing.Point(4, 221);
             this.ptbQR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptbQR.Name = "ptbQR";
-            this.ptbQR.Size = new System.Drawing.Size(326, 216);
+            this.ptbQR.Size = new System.Drawing.Size(380, 206);
             this.ptbQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbQR.TabIndex = 1;
             this.ptbQR.TabStop = false;
+            this.ptbQR.Click += new System.EventHandler(this.ptbQR_Click);
             // 
             // kryptonButton1
             // 
             this.kryptonButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kryptonButton1.AutoSize = true;
-            this.kryptonButton1.Location = new System.Drawing.Point(98, 468);
+            this.kryptonButton1.Location = new System.Drawing.Point(125, 448);
             this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 16, 4, 5);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.Blue;
@@ -144,7 +146,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(436, 550);
+            this.ClientSize = new System.Drawing.Size(388, 502);
             this.CloseBox = false;
             this.ControlBox = false;
             this.Controls.Add(this.tableQR);

@@ -152,5 +152,10 @@ namespace Cinema_management.Ticket_Booking
             openPDF();
             this.Close();
         }
+
+        private void ptbQR_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
