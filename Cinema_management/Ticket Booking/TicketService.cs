@@ -5,7 +5,9 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Cinema_management.MessageboxCustom.Utils;
 using Cinema_management.Ticket_Booking;
+using Cinema_management.MessageboxCustom;
 
 namespace Cinema_management.Services
 {
@@ -53,15 +55,25 @@ namespace Cinema_management.Services
                         int maGhe = Convert.ToInt32(result);
 
                         // INSERT Vé 
-                        string queryVe = @"INSERT INTO VE (MASUATCHIEU, MAHOADON, MAGHE, GIAVE, TRANGTHAIVE)
+                        try
+                        {
+                            string queryVe = @"INSERT INTO VE (MASUATCHIEU, MAHOADON, MAGHE, GIAVE, TRANGTHAIVE)
                                            VALUES (@MaSC, @MaHD, @MaGhe, @Gia, N'Đã bán')";
 
-                        SqlCommand cmdVe = new SqlCommand(queryVe, conn, transaction);
-                        cmdVe.Parameters.AddWithValue("@MaSC", bookingData.MaSuatChieu);
-                        cmdVe.Parameters.AddWithValue("@MaHD", maHD);
-                        cmdVe.Parameters.AddWithValue("@MaGhe", maGhe);
-                        cmdVe.Parameters.AddWithValue("@Gia", bookingData.GiaVe);
-                        cmdVe.ExecuteNonQuery();
+                            SqlCommand cmdVe = new SqlCommand(queryVe, conn, transaction);
+                            cmdVe.Parameters.AddWithValue("@MaSC", bookingData.MaSuatChieu);
+                            cmdVe.Parameters.AddWithValue("@MaHD", maHD);
+                            cmdVe.Parameters.AddWithValue("@MaGhe", maGhe);
+                            cmdVe.Parameters.AddWithValue("@Gia", bookingData.GiaVe);
+                            cmdVe.ExecuteNonQuery();
+                        }
+                        catch (SqlException ex)
+                        {
+                            if(ex.Number == 2627 || ex.Number == 2601) // MÃ LỖI TRÙNG KHÓA CHÍNH
+                            {
+                                throw new Exception("Ghế " + ghe + " đã được bán. Vui lòng chọn ghế khác.");
+                            }
+                        }
                     }
 
                     //// TẠO CHI TIẾT ĐỒ ĂN
@@ -98,10 +110,11 @@ namespace Cinema_management.Services
                     transaction.Commit();
                     return true;
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     //// NẾU LỖI --> ROLLBACK
                     transaction.Rollback();
+                    Alert.Show(ex.Message,MessagboxCustom.AlertMessagebox.AlertType.Error);
                     throw;
                 }
             }
