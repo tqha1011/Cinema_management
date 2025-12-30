@@ -163,6 +163,7 @@ namespace Cinema_management
 
         private void btnCombo_Click(object sender, EventArgs e)
         {
+            Background.Image = Properties.Resources.combo;
             FilterFood(1);
         }
 

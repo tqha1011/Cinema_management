@@ -34,9 +34,9 @@
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonTableLayoutPanel2 = new Krypton.Toolkit.KryptonTableLayoutPanel();
+            this.kryptonPanel10 = new Krypton.Toolkit.KryptonPanel();
             this.txtEmail = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel10 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel10 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel9 = new Krypton.Toolkit.KryptonPanel();
             this.cbbViTri = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonLabel8 = new Krypton.Toolkit.KryptonLabel();
@@ -165,7 +165,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(3, 3);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1217, 559);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1217, 592);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel1.TabIndex = 0;
             // 
@@ -179,7 +179,7 @@
             this.kryptonGroup2.Panel.Controls.Add(this.kryptonTableLayoutPanel2);
             this.kryptonGroup2.Panel.Controls.Add(this.kryptonPanel3);
             this.kryptonGroup2.Panel.Padding = new System.Windows.Forms.Padding(30, 0, 30, 0);
-            this.kryptonGroup2.Size = new System.Drawing.Size(1217, 473);
+            this.kryptonGroup2.Size = new System.Drawing.Size(1217, 506);
             this.kryptonGroup2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonGroup2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(209)))));
             this.kryptonGroup2.StateCommon.Border.Rounding = 20F;
@@ -207,12 +207,25 @@
             this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.kryptonTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.kryptonTableLayoutPanel2.Size = new System.Drawing.Size(771, 455);
+            this.kryptonTableLayoutPanel2.Size = new System.Drawing.Size(771, 488);
             this.kryptonTableLayoutPanel2.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonTableLayoutPanel2.TabIndex = 1;
             this.kryptonTableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonTableLayoutPanel2_Paint);
+            // 
+            // kryptonPanel10
+            // 
+            this.kryptonTableLayoutPanel2.SetColumnSpan(this.kryptonPanel10, 2);
+            this.kryptonPanel10.Controls.Add(this.txtEmail);
+            this.kryptonPanel10.Controls.Add(this.kryptonLabel10);
+            this.kryptonPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel10.Location = new System.Drawing.Point(13, 283);
+            this.kryptonPanel10.Margin = new System.Windows.Forms.Padding(3, 3, 200, 3);
+            this.kryptonPanel10.Name = "kryptonPanel10";
+            this.kryptonPanel10.Size = new System.Drawing.Size(548, 94);
+            this.kryptonPanel10.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonPanel10.TabIndex = 6;
             // 
             // txtEmail
             // 
@@ -235,24 +248,11 @@
             this.kryptonLabel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonLabel10.Location = new System.Drawing.Point(0, 0);
             this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(98, 84);
+            this.kryptonLabel10.Size = new System.Drawing.Size(98, 94);
             this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Nunito", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel10.TabIndex = 0;
             this.kryptonLabel10.Values.Text = "Email:";
-            // 
-            // kryptonPanel10
-            // 
-            this.kryptonTableLayoutPanel2.SetColumnSpan(this.kryptonPanel10, 2);
-            this.kryptonPanel10.Controls.Add(this.txtEmail);
-            this.kryptonPanel10.Controls.Add(this.kryptonLabel10);
-            this.kryptonPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel10.Location = new System.Drawing.Point(13, 283);
-            this.kryptonPanel10.Margin = new System.Windows.Forms.Padding(3, 3, 200, 3);
-            this.kryptonPanel10.Name = "kryptonPanel10";
-            this.kryptonPanel10.Size = new System.Drawing.Size(548, 84);
-            this.kryptonPanel10.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonPanel10.TabIndex = 6;
             // 
             // kryptonPanel9
             // 
@@ -523,7 +523,7 @@
             this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(3, 3, 30, 3);
             this.kryptonPanel3.Name = "kryptonPanel3";
             this.kryptonPanel3.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.kryptonPanel3.Size = new System.Drawing.Size(368, 455);
+            this.kryptonPanel3.Size = new System.Drawing.Size(368, 488);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel3.TabIndex = 0;
             // 
