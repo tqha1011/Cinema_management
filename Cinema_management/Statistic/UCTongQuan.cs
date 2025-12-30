@@ -45,22 +45,19 @@ namespace Cinema_management
             {
                 DataTable dt = db.ReadData(query);
 
-                // 2. Xóa dữ liệu mẫu mặc định của Chart (nếu có)
+                // 2. Xóa dữ liệu mẫu mặc định của Chart
                 chartTopMovies.Series[0].Points.Clear();
 
-                // 3. Đổ dữ liệu từ DataTable vào Chart
+                // 3. Đưa dữ liệu từ DataTable vào Chart
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    // Đặt tên cho Series (nếu chưa đặt trong Properties)
                     chartTopMovies.Series[0].Name = "Phim";
                     chartTopMovies.Series[0]["PieLabelStyle"] = "Disabled";
-                    // Duyệt từng dòng dữ liệu
                     foreach (DataRow row in dt.Rows)
                     {
                         string tenPhim = row["TENPHIM"].ToString();
                         int soVe = Convert.ToInt32(row["SoVe"]);
 
-                        // Thêm điểm vào biểu đồ
                         DataPoint point = new DataPoint();
                         point.SetValueXY(tenPhim, soVe);
                         point.Label = "";
