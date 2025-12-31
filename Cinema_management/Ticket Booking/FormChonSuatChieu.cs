@@ -113,6 +113,7 @@ namespace Cinema_management.Ticket_Booking
                         Label lblThongBao = new Label();
                         lblThongBao.Text = "Hết suất chiếu trong hôm nay.";
                         lblThongBao.AutoSize = true;
+                        lblThongBao.Font = new Font("Nunito", 14, FontStyle.Bold);
                         lblThongBao.ForeColor = Color.Red;
                         flowPanelSuatChieu.Controls.Add(lblThongBao);
                         return;
