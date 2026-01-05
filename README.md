@@ -132,7 +132,7 @@ Hệ thống sử dụng **SQL Server** được deploy trên **Azure SQL Databa
 
    ### Cách B: Sử dụng Local SQL Server
    *  Mở **SQL Server Management Studio (SSMS)**.
-   *  Mở file script tạo database tại: `Cinema_management/Database/script.sql`.
+   *  Mở file script tạo database tại: `scriptSQL_DoAn.sql`.
    *  Nhấn **Execute** (`F5`) để tạo Database và dữ liệu mẫu.
    *  Lấy **Connection String** của máy bạn và cập nhật vào file `App.config` trong code:
 
